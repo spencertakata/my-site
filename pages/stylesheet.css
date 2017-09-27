@@ -8,12 +8,12 @@ h1 {
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   text-align: center;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.75rem;
   margin-top: 3em;
 }
 
@@ -32,6 +32,20 @@ li {
 img {
   width: 100%;
   height: auto;
+}
+
+a:link, a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a.light-link:link, a.light-link:visited {
+  color: red;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: rgb(249, 171, 24);
 }
 /* navbar */
 #title {
@@ -58,6 +72,7 @@ nav {
   display: inline;
   padding: 0 3rem;
   font-size: 1rem;
+  font-family: 'Righteous';
 }
 
 /* banner */
@@ -94,8 +109,9 @@ nav {
 /* home body */
 .mission {
   text-align: center;
-  font-size: 2.25rem;
-  margin: 5rem 15% -3rem 15%;
+  font-size: 2rem;
+  margin: 5rem 20% -4rem 20%;
+
 }
 
 .preview {
@@ -107,12 +123,17 @@ nav {
 .content-box {
   position: relative;
   display: inline;
-  margin: 2rem 4rem 4rem 4rem;
+  margin: 5rem 3rem 4rem 3rem;
   width: 33%;
   text-align:center;
 }
 
-
+.dark {
+  padding: .8rem 0;
+  background-color: rgba(0,0,0,.8);
+  font-family: 'Righteous';
+  color: white;
+}
 
 /* blog body */
 #blog-body {
