@@ -35,16 +35,16 @@ img {
 }
 
 a:link, a:visited {
-  color: white;
-  text-decoration: none;
-}
-
-a.light-link:link, a.light-link:visited {
   color: red;
   text-decoration: underline;
 }
 
-a:hover {
+a.darkLink, a.darkLink:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover, a.darkLink:hover {
   color: rgb(249, 171, 24);
 }
 /* navbar */
@@ -111,7 +111,6 @@ nav {
   text-align: center;
   font-size: 2rem;
   margin: 5rem 20% -4rem 20%;
-
 }
 
 .preview {
@@ -170,6 +169,10 @@ nav {
   height: auto;
 }
 
+/* Services Body */
+.center {
+  text-align: center;
+}
 /* footer */
 footer {
   padding: 2em 20%;
