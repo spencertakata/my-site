@@ -135,6 +135,11 @@ nav {
   text-align:center;
 }
 
+.home-img {
+  width: 100%;
+  height: auto;  
+}
+
 .dark {
   padding: .8rem 0;
   background-color: rgba(0,0,0,.8);
