@@ -26,52 +26,94 @@
       <meta name="msapplication-TileImage" content="/media/spencertakata/Data/spencer-website/images/ms-icon-144x144.png">
       <meta name="theme-color" content="#ffffff">
 <!-- stylesheet -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
       <link rel="stylesheet" href="./stylesheet.css">
 <!-- fonts -->
       <link href="https://fonts.googleapis.com/css?family=Arvo|Crimson+Text|Righteous|Spectral" rel="stylesheet">
   </head>
   <body>
-    <div id="wrapper">
-      <header id="header">
-<!-- Home and navbar -->
-      <nav>
-        <a class="darkLink" href="./index.html"><h2 id="name">Spencer Takata</h2></a>
-          <div id="navbar">
-            <ul class="nav-text">
-              <a class="darkLink" href="./index.html"><li id="nav-item">Home</li></a>
-              <a class="darkLink" href="./about.html"><li id="nav-item">Who I Am</li></a>
-              <a class="darkLink" href="./services.html"><li id="nav-item">What I Do</li></a>
-              <a class="darkLink" href="./blog.html"><li id="nav-item">Blog</li></a>
-              <a class="darkLink" href="./contact.html"><li id="nav-item">Contact</li></a>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+          <a class="navbar-brand" href="./index.html">Spencer Takata</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">Home<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">Who I Am</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./services.html">What I Do</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contact</a>
+              </li>
             </ul>
           </div>
       </nav>
-<!-- banner -->
-        <div class="banner">
-          <div class="headline">
-            <div class="">
-              <h1>What I Do</h1>
+  <!-- banner -->
+        <div class="jumbotron">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-6">
+                <h1 class="align-middle">What I Do</h1>
+              </div>
             </div>
           </div>
         </div>
       </header>
 <!-- body -->
-    <div class="one-col">
-      <div class="center">
-        <h2>Events and Projects</h2>
-        <p>When it really comes down to it, what I do can be described in 3 simple words:</p>
-        <p><b>Make Things Happen</b></p>
-        <p>Throughout my life I've had the opportunity to work with a variety of groups, events, and projects that each come with their own unique set goals, rewards, and challenges.</p>
-        <p>However, at the core they all share a fundamental truth: <i>something needs to happen</i>. Through hard work, collaboration, and dedication, I ensure that goals are achieved on time and under budget.</p>
-        <p><b>My Work</b></p>
-        <p>So, do you want to make something happen? If so, I’d love to help. Please feel free to write me a message at spencer.takata@gmail.com</p>
-
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <h3 align="center"><b>My Work</b></h3>
+          <hr>
+          <br>
+        <!--  <p>What I do can be described in 3 simple words: <b>Make Things Happen</b></p>
+          <p>Throughout my life I've had the opportunity to work with a variety of groups, events, and projects that each come with their own unique set goals, rewards, and challenges.</p>
+          <p>However, at the core they all share a fundamental truth: <i>an idea needs to become reality</i>. Through hard work, collaboration, and dedication, I ensure that goals are achieved on time and under budget.</p>
+        -->
+        </div>
       </div>
     </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-sm-12" align="center">
+          <i class="fas fa-project-diagram"></i>
+          <h4><b>Project Management</b></h4>
+          <p>Turning goals into results. I specialize in digital marketing and event planning.</p>
+        </div>
+        <div class="col-lg-4 col-sm-12" align="center">
+          <i class="fas fa-code"></i>
+          <h4><b>Web Development</b></h4>
+          <p>Web developer specializing in small to medium sized professional websites.</p>
+        </div>
+        <div class="col-lg-4 col-sm-12" align="center">
+          <i class="fas fa-camera"></i>
+          <h4><b>Photography</b></h4>
+          <p>Freelance photographer for products, events, and portraits.</p>
+        </div>
+      </div>
+    </div>
+    <br>
+    <!--<p>So, do you want to make something happen? If so, I’d love to help. Please feel free to write me a message at spencer.takata@gmail.com</p> -->
+
+
     <!-- footer -->
     <footer>
       <p><b>By Spencer Takata</b></p>
       <p>email: spencer.takata@gmail.com</p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   </body>
 </html>
