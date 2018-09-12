@@ -29,12 +29,6 @@ hr {
   height: 1px;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
-.caption {
-  font-size: 0.85rem;
-  color: rgb(81, 81, 81);
-  font-style: italic;
-  text-align: center;
-}
 
 li {
   font-size: 1.5rem;
@@ -54,6 +48,18 @@ a:hover, a.dark-link:hover {
   color: rgb(249, 171, 24);
 }
 
+.righteous {
+  font-family: 'Righteous'
+}
+
+div.shadow {
+  /*background-color: #3d3d3d;
+  color: white;
+  background-color: #efefef;*/
+  box-shadow: 10px 10px 10px rgba(0,0,0,.95);
+  margin: 1.25%;
+  padding: 1rem;
+}
 
 /* navbar - Bootstrap Navbar overrides */
 
@@ -121,6 +127,22 @@ a:hover, a.dark-link:hover {
   width: 100%
 }
 
+/* About Body */
+.body-img {
+  display: block;
+  margin: 2.5rem auto 1rem auto;
+  width: 70%;
+  height: auto;
+  border: 4px solid black;
+}
+
+.caption {
+  font-size: 0.85rem;
+  color: rgb(81, 81, 81);
+  font-style: italic;
+  text-align: center;
+}
+
 /* blog body */
 #blog-body {
   display: flex;
@@ -142,15 +164,6 @@ a:hover, a.dark-link:hover {
   font-size: .7em;
   font-style: italic;
   color: rgba(0, 0, 0, 0.7);
-}
-
-/* About Body */
-.body-img {
-  display: block;
-  margin: 2.5rem auto 1rem auto;
-  width: 70%;
-  height: auto;
-  border: 4px solid black;
 }
 
 /* Services Body */
