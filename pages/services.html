@@ -7,24 +7,6 @@
       <meta name="description" content="Spencer Takata's website">
       <meta name="author" content="Spencer Takata">
       <meta name="viewport" content="width=device-width; initial-scale=1.0">
-<!-- favicons -->
-      <link rel="apple-touch-icon" sizes="57x57" href="/media/spencertakata/Data/spencer-website/images/apple-icon-57x57.png">
-      <link rel="apple-touch-icon" sizes="60x60" href="/media/spencertakata/Data/spencer-website/images/apple-icon-60x60.png">
-      <link rel="apple-touch-icon" sizes="72x72" href="/media/spencertakata/Data/spencer-website/images/apple-icon-72x72.png">
-      <link rel="apple-touch-icon" sizes="76x76" href="/media/spencertakata/Data/spencer-website/images/apple-icon-76x76.png">
-      <link rel="apple-touch-icon" sizes="114x114" href="/media/spencertakata/Data/spencer-website/images/apple-icon-114x114.png">
-      <link rel="apple-touch-icon" sizes="120x120" href="/media/spencertakata/Data/spencer-website/images/apple-icon-120x120.png">
-      <link rel="apple-touch-icon" sizes="144x144" href="/media/spencertakata/Data/spencer-website/images/apple-icon-144x144.png">
-      <link rel="apple-touch-icon" sizes="152x152" href="/media/spencertakata/Data/spencer-website/images/apple-icon-152x152.png">
-      <link rel="apple-touch-icon" sizes="180x180" href="/media/spencertakata/Data/spencer-website/images/apple-icon-180x180.png">
-      <link rel="icon" type="image/png" sizes="192x192"  href="/media/spencertakata/Data/spencer-website/images/android-icon-192x192.png">
-      <link rel="icon" type="image/png" sizes="32x32" href="/media/spencertakata/Data/spencer-website/images/favicon-32x32.png">
-      <link rel="icon" type="image/png" sizes="96x96" href="/media/spencertakata/Data/spencer-website/images/favicon-96x96.png">
-      <link rel="icon" type="image/png" sizes="16x16" href="/media/spencertakata/Data/spencer-website/images/favicon-16x16.png">
-      <link rel="manifest" href="/media/spencertakata/Data/spencer-website/images/manifest.json">
-      <meta name="msapplication-TileColor" content="#ffffff">
-      <meta name="msapplication-TileImage" content="/media/spencertakata/Data/spencer-website/images/ms-icon-144x144.png">
-      <meta name="theme-color" content="#ffffff">
 <!-- stylesheet -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -34,6 +16,7 @@
   </head>
   <body>
     <header>
+      <!-- NAVBAR -->
       <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
           <a class="navbar-brand" href="./index.html">Spencer Takata</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,77 +42,175 @@
             </ul>
           </div>
       </nav>
-  <!-- banner -->
-        <div class="jumbotron">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-6">
-                <h1 class="align-middle">What I Do</h1>
-              </div>
+  <!-- BANNER -->
+      <div class="jumbotron">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-6">
+              <h1 class="headline">What I Do</h1>
             </div>
           </div>
         </div>
-      </header>
-<!-- body -->
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-10">
-          <h2 align="center"><b>Services</b></h2>
-          <hr>
-          <br>
-        <!--  <p>What I do can be described in 3 simple words: <b>Make Things Happen</b></p>
-          <p>Throughout my life I've had the opportunity to work with a variety of groups, events, and projects that each come with their own unique set goals, rewards, and challenges.</p>
-          <p>However, at the core they all share a fundamental truth: <i>an idea needs to become reality</i>. Through hard work, collaboration, and dedication, I ensure that goals are achieved on time and under budget.</p>
-        -->
-        </div>
       </div>
-    </div>
+    </header>
+<!-- MAIN BODY -->
+
+<!-- OVERVIEW -->
     <div class="grey-background">
-      <!--<div class="container">-->
-        <div class="row justify-content-center">
-          <div class="col-lg-3 col-sm-10 my-shadow purple" align="center">
+      <br>
+      <div class="row justify-content-center">
+        <!-- PM -->
+        <div class="col-lg-3 col-sm-10 card-sm purple">
+          <div class="center">
             <i class="fas fa-project-diagram"></i>
             <h4><b>Project Management</b></h4>
-            <div class="underline-purple"></div>
+            <div class="underline-purple center"></div>
             <p>Turning goals into results, with a focus on email campaigns, event planning, and agency creative work.</p>
             <button type="button" class="btn btn-secondary btn-purple">Learn more</button>
           </div>
-          <div class="col-lg-3 col-sm-10 my-shadow orange" align="center">
+        </div>
+        <!-- WEB DEV -->
+        <div class="col-lg-3 col-sm-10 card-sm orange">
+          <div class="center">
             <i class="fas fa-code"></i>
             <h4><b>Web Development</b></h4>
-            <div class="underline-orange"></div>
+            <div class="underline-orange center"></div>
             <p>Build sleek, engaging, professional websites to define your brand and stand out from the competition.</p>
             <div>
               <button type="button" class="btn btn-secondary btn-orange">Learn more</button>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-10 my-shadow blue" align="center">
-            <i class="fas fa-desktop"></i>
-            <h4><b>Digital Marketing</b></h4>
-            <div class="underline-blue"></div>
-            <p>Drive customer acquisition, engagement, and retention through email marketing, SEO, and content management.</p>
-            <button type="button" class="btn btn-secondary btn-blue">Learn more</button>
-            <!--<p class="portfolio">I have experience leading data-driven B2B and B2C email campaigns for the Google Assistant, Google News Initiative, and Actions on Google.</p>
-            <p class="portfolio">Our award winning CRM program boosts user retention and engagement in 16 countries worldwide.</p>
-            <img class="img-thumbnail" src="https://i.imgur.com/tSrjHHW.png">
-            <img class="img-thumbnail" src="https://i.imgur.com/Pvu0N29.png">
-            <img class="img-thumbnail" src="https://i.imgur.com/qRwCaVl.png" -->
-
           </div>
         </div>
-      <!--</div> -->
+        </div>
+        <!-- MARKETING -->
+        <div class="col-lg-3 col-sm-10 card-sm blue">
+          <div class="center">
+            <i class="fas fa-desktop"></i>
+            <h4><b>Digital Marketing</b></h4>
+            <div class="underline-blue center"></div>
+            <p>Drive customer acquisition, engagement, and retention through email marketing, SEO, and content management.</p>
+            <button type="button" class="btn btn-secondary btn-blue">Learn more</button>
+          </div>
+        </div>
+        <!-- TESTIMONIAL -->
+        <div class="col-lg-8 center feature-text" id="testimonial">
+          <h3><i>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</i></h3>
+          <h4>-Mitchell Burk</h4>
+        </div>
+      </div>
     </div>
-    <br>
-    <!--<p>So, do you want to make something happen? If so, I’d love to help. Please feel free to write me a message at spencer.takata@gmail.com</p> -->
 
+<!-- PORTFOLIO -->
 
-    <!-- footer -->
+    <div class="row justify-content-center grey-background-2">
+      <div class="col-lg-6 col-sm-10 col-xs-8 card-lg purple">
+        <!--PROJECT MANAGEMENT -->
+        <h3 class="dark center">Project Management</h3>
+        <br>
+        <div class="left">
+          <p>As a Project Manager, I’m committed to achieving real results for my clients on time and on budget. My approach to project management is centered on three main pillars:</p>
+          <ol>
+            <li><b>Support and empower</b> individual project team members, arming them with the resources, clarity, and self-efficacy to achieve project deliverables.</li>
+            <li><b>Understand and drive</b> all stakeholder priorities, ensuring project requirements are realized with nothing but the highest quality.</li>
+            <li><b>Proactively identify</b> opportunities for efficiencies, process improvements, and project development, facilitating continuous growth.</li>
+          </ol>
+          <p>With this philosophy, I’ve led digital marketing projects, agency creative work, award ceremonies, fundraisers, multi-faceted volunteer initiatives, and more.</p>
+          <p>Check out some of my favorite projects below</p>
+        </div>
+        <hr>
+        <div class="row portfolio left">
+          <div class="col-lg-4">
+            <img src="https://i.imgur.com/Q4AlLl6.jpg" class="img-thumbnail img-small">
+          </div>
+          <div class="col-lg-8">
+            <p><b><a href="https://humanracesc.org/">The 2017 Human Race</a></b> - A 6 week fundraising campaign, culminating in a 5 mile run and celebration. $400,000+ raised for 130 nonprofits. </p>
+            <p><a href="https://www.santacruzsentinel.com/2017/05/13/human-race-rounds-west-cliff-drive-with-record-year/">See what the Santa Cruz Sentinel had to say</a></p>
+          </div>
+        </div>
+        <div class="row portfolio left">
+          <div class="col-lg-4">
+            <img src="https://i.imgur.com/nE8OaIx.jpg" class="img-thumbnail img-small">
+          </div>
+          <div class="col-lg-8">
+            <p><b><a href="https://scvolunteercenter.org/events-2/be-the-difference-awards/">Be the Difference Awards</a></b> - Recognizing the Top 50 People, Groups and Businesses who do the most to transform Santa Cruz County through volunteerism.</p>
+            <p><a href="https://www.youtube.com/playlist?list=PLzOAByB5_2-nbapYRhmpEvZRTSrR1G7BT">Hear their stories</a></p>
+          </div>
+        </div>
+        <div class="row portfolio left">
+          <div class="col-lg-4">
+            <img src="https://i.imgur.com/W1r0T8Z.jpg" class="img-thumbnail img-small">
+          </div>
+          <div class="col-lg-8">
+            <p><b><a href="https://www.phc-santacruz.org/">Project Homeless Connect</a></b> - make the community more accessible by providing an integrated system of care for those who need it most.</p>
+            <p><a href="https://www.phc-santacruz.org/">Learn more about PHC</a></p>
+          </div>
+        </div>
+        <div class="row portfolio left">
+          <div class="col-lg-4">
+            <img src="https://i.imgur.com/yEixbky.jpg" class="img-thumbnail img-small">
+          </div>
+          <div class="col-lg-8 left">
+            <p><b><a href="https://scvolunteercenter.org/programs/adopt-a-family/">Adopt a Family Project</a></b> - Enlisting community support to help struggling families by providing, food, gifts, and clothing for the holidays.</p>
+            <p><a href="https://www.santacruzsentinel.com/2014/12/14/volunteers-adopt-local-santa-cruz-county-families-in-need/">See how we gave back</a></p>
+          </div>
+        </div>
+
+      <!--WEB DEV -->
+      </div>
+      <div class="col-lg-6 col-sm-10 col-xs-8 card-lg orange">
+        <h3 class="dark center">Web Development</h3>
+        <br>
+        <div class="left">
+          <p>Want to bring your brand into the digital space? Or maybe give your existing site a fresh new look? Either way, <b>I'm here to help.</b></p>
+          <p>I build sleek, engaging, mobile responsive websites for small businesses, nonprofits, and individuals who want to stand out from the crowd. Whether you’re starting from scratch or coming in for a tune up, I will take a personalized, goal oriented approach to optimizing your online presence.</p>
+          <p>On top of building the nuts and bolts of the site, I’m happy to help with other aspects of building your brand including:</p>
+          <ul>
+            <li>Designing a look and feel for your site</li>
+            <li>Sourcing beautiful, professional imagery</li>
+            <li>Writing keyword rich web copy</li>
+            <li>Finding your brand’s voice</li>
+            <li>Developing a logo</li>
+          </ul>
+          <p>Together, we can talk through your aspirations and ideas to make sure your site truly representantes your brand and supports your goals.</p>
+        </div>
+      </div>
+
+      <!-- DIGITAL MARKETING -->
+      <div class="col-lg-6 col-sm-10 col-xs-8 card-lg blue">
+        <h3 class="dark center">Digital Marketing</h3>
+        <br>
+        <div class="left">
+          <p>Currently I'm at <a href="https://www.agency.epsilon.com/">Epsilon Agency</a>, leading data-driven B2B and B2C email campaigns for the <a href="https://assistant.google.com/">Google Assistant</a>, <a href="https://newsinitiative.withgoogle.com/">Google News Initiative</a>, and <a href="https://developers.google.com/actions/">Actions on Google</a>. Our award winning CRM program utilizes long-term brand strategies, game-changing creative campaigns, and one-of-a-kind media marketing programs to boost user retention and engagement in 16 countries worldwide.</p>
+          <p>In addition to my current work, I also have experience with email, social, and content marketing for past events & projects I've managed. Thoughtful, targeted, strategic marketing practices inform my work to help you reach your audience with the right content, in the right place, at the right time.</p>
+          <hr>
+        </div>
+        <div class="row center">
+          <div class="col-lg-4">
+            <a href="https://hermesawards.com/"><img src="https://i.imgur.com/tSrjHHW.png" class="img-thumbnail img-small"></a>
+          </div>
+          <div class="col-lg-4">
+            <a href="https://www.horizoninteractiveawards.com/"><img src="https://i.imgur.com/Pvu0N29.png" class="img-thumbnail img-small"></a>
+          </div>
+          <div class="col-lg-4">
+            <a href="http://www.iacaward.org/iac/"><img src="https://i.imgur.com/qRwCaVl.png" class="img-thumbnail img-small"></a>
+          </div>
+        </div>
+      </div>
+
+    <!-- CTA -->
+      <div class="col-lg-6 feature-text center">
+        <h3>Do you want to make something happen?<br>If so, I'd love to help.</h3>
+        <a href="./contact.html"><button class="btn btn-danger"><h4>Let's talk</h4></button></a>
+      </div>
+    </div>
+
+<!-- FOOTER -->
     <footer>
       <p><b>By Spencer Takata</b></p>
-      <p>email: spencer.takata@gmail.com</p>
+      <p>spencer.takata@gmail.com</p>
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="my-scripts.js"></script>
   </body>
 </html>
