@@ -100,6 +100,11 @@ a:hover, a.dark-link:hover {
   display: block;
 }
 
+#bitmoji {
+  height: 12em;
+  width: auto;
+}
+
 .feature-text {
   margin: 3em 0;
   padding: 2%;
@@ -166,12 +171,11 @@ a:hover, a.dark-link:hover {
 .jumbotron {
   height: 30%;
   width: 100%;
-  background-image: url(http://i.imgur.com/naSXpb0.jpg);
+  background-image: url(https://i.imgur.com/ZF0I5c4.jpg);
   background-size: cover;
   background-position: center center;
   justify-content: center;
-  padding: 15% 0;
-  border-bottom: 1px solid black;
+  padding: 12% 0 25% 0;
   margin-bottom: 0;
 }
 
@@ -203,19 +207,23 @@ a:hover, a.dark-link:hover {
   /*display: flex;*/
   justify-content: center;
   align-items: center;
-  padding: 5%;
+  padding: 2%;
   margin: 5%;
   border: 1px solid black;
-  background-color: rgba(0,0,0,.5);
+  background-color: rgba(0, 0, 0, .75);
   color: white;
   font-family: 'Righteous',cursive;
   text-align: center;
 }
 
+.subhead {
+  font-family: 'Raleway';
+}
+
 
 .grey-background {
   /*background-color: #e8e8e8;*/
-  background-image: url(https://i.imgur.com/b1r9epz.jpg);
+  background-image: url(https://i.imgur.com/FqSbDFm.jpg);
   background-size: cover;
   background-position: center center;
   padding: 1%;
@@ -234,17 +242,24 @@ a:hover, a.dark-link:hover {
 }
 
 .buffer {
-  padding: 3em 0;
+  padding: 1em 0;
 }
 
-.fab {
+.icon-lg {
   font-size: 3em;
   margin: 0 .5em;
   color: white;
 }
 
-.fab:hover {
+.icon-lg:hover,
+.icon-sm:hover {
   color: #f9ab18;
+}
+
+.icon-sm {
+  font-size: 1.5em;
+  margin: 0 .5em;
+  color: white;
 }
 
 /* Home page Content Box headers */
@@ -395,4 +410,8 @@ footer {
   color: white;
   line-height: 90%;
   text-align: center;
+  }
+
+  .footnote {
+    font-size: .7em;
   }
