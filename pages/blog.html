@@ -7,90 +7,91 @@
       <meta name="description" content="Spencer Takata's website">
       <meta name="author" content="Spencer Takata">
       <meta name="viewport" content="width=device-width; initial-scale=1.0">
-<!-- favicons -->
-      <link rel="apple-touch-icon" sizes="57x57" href="/media/spencertakata/Data/spencer-website/images/apple-icon-57x57.png">
-      <link rel="apple-touch-icon" sizes="60x60" href="/media/spencertakata/Data/spencer-website/images/apple-icon-60x60.png">
-      <link rel="apple-touch-icon" sizes="72x72" href="/media/spencertakata/Data/spencer-website/images/apple-icon-72x72.png">
-      <link rel="apple-touch-icon" sizes="76x76" href="/media/spencertakata/Data/spencer-website/images/apple-icon-76x76.png">
-      <link rel="apple-touch-icon" sizes="114x114" href="/media/spencertakata/Data/spencer-website/images/apple-icon-114x114.png">
-      <link rel="apple-touch-icon" sizes="120x120" href="/media/spencertakata/Data/spencer-website/images/apple-icon-120x120.png">
-      <link rel="apple-touch-icon" sizes="144x144" href="/media/spencertakata/Data/spencer-website/images/apple-icon-144x144.png">
-      <link rel="apple-touch-icon" sizes="152x152" href="/media/spencertakata/Data/spencer-website/images/apple-icon-152x152.png">
-      <link rel="apple-touch-icon" sizes="180x180" href="/media/spencertakata/Data/spencer-website/images/apple-icon-180x180.png">
-      <link rel="icon" type="image/png" sizes="192x192"  href="/media/spencertakata/Data/spencer-website/images/android-icon-192x192.png">
-      <link rel="icon" type="image/png" sizes="32x32" href="/media/spencertakata/Data/spencer-website/images/favicon-32x32.png">
-      <link rel="icon" type="image/png" sizes="96x96" href="/media/spencertakata/Data/spencer-website/images/favicon-96x96.png">
-      <link rel="icon" type="image/png" sizes="16x16" href="/media/spencertakata/Data/spencer-website/images/favicon-16x16.png">
-      <link rel="manifest" href="/media/spencertakata/Data/spencer-website/images/manifest.json">
-      <meta name="msapplication-TileColor" content="#ffffff">
-      <meta name="msapplication-TileImage" content="/media/spencertakata/Data/spencer-website/images/ms-icon-144x144.png">
-      <meta name="theme-color" content="#ffffff">
 <!-- stylesheet -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
       <link rel="stylesheet" href="./stylesheet.css">
 <!-- fonts -->
-      <link href="https://fonts.googleapis.com/css?family=Arvo|Crimson+Text|Righteous|Spectral" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Arvo|Crimson+Text|Righteous|Spectral|Raleway" rel="stylesheet">
   </head>
   <body>
-      <div id="wrapper">
-        <header id="header">
-<!-- Home and navbar -->
-        <nav>
-          <a class="darkLink" href="./index.html"><h2 id="name">Spencer Takata</h2></a>
-            <div id="navbar">
-              <ul class="nav-text">
-                <a class="darkLink" href="./index.html"><li id="nav-item">Home</li></a>
-                <a class="darkLink" href="./about.html"><li id="nav-item">Who I Am</li></a>
-                <a class="darkLink" href="./services.html"><li id="nav-item">What I Do</li></a>
-                <a class="darkLink" href="./blog.html"><li id="nav-item">Blog</li></a>
-                <a class="darkLink" href="./contact.html"><li id="nav-item">Contact</li></a>
-              </ul>
-            </div>
-        </nav>
-<!-- banner -->
-          <div class="banner">
-            <div class="headline">
-              <div class="subtitle">
-                <h1>Blog</h1>
-                <p>Read My Mind</p>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+          <a class="navbar-brand" href="./index.html">Spencer Takata</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">Home<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">Who I Am</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./services.html">What I Do</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+      </nav>
+  <!-- banner -->
+        <div class="jumbotron">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-4">
+                <h1 class="headline">Blog</h1>
               </div>
             </div>
           </div>
-        </header>
-<!-- blog main body -->
-        <div id="blog-body">
-          <div class="main-column">
-            <div class="post-preview">
-              <h3>Post Title Here</h3>
-              <p class="date">Posted mm/dd/yyyy</p>
-              <p>Post Preview Here</p>
-              <img> <!--insert image preview -->
-            </div>
-            <div class="post-preview">
-              <h3>Post 2 Title</h3>
-              <p class="date">Posted mm/dd/yyyy</p>
-              <p>Post Text</p>
-            </div>
-            <div class="post-preview">
-              <h3>Post 3 Title</h3>
-              <p class="date">Posted mm/dd/yyyy</p>
-              <p>Post Text</p>
-            </div>
-          </div>
-        <!-- sidebar -->
-          <aside class="side-bar">
-            <h4>Archive</h4>
-            <ul>
-              <li>Post 1</li>
-              <li>Post 2</li>
-              <li>Post 3</li>
-            </ul>
-          </aside>
         </div>
+      </header>
+<!-- blog main body -->
+      <div class="grey-background-2">
+        <div class="row justify-content-center">
+          <div class="col-lg-4 col-md-10 col-sm-10 card-lg blue">
+            <h3><b>Post Title Here</b></h3>
+            <p class="date">Posted mm/dd/yyyy</p>
+            <p>Post Preview Here</p>
+          </div>
+          <div class="col-lg-4 col-md-10 col-sm-10 card-lg blue">
+            <h3><b>Post Title Here</b></h3>
+            <p class="date">Posted mm/dd/yyyy</p>
+            <p>Post Preview Here</p>
+          </div>
+          <div class="col-lg-4 col-md-10 col-sm-10 card-lg blue">
+            <h3><b>Post Title Here</b></h3>
+            <p class="date">Posted mm/dd/yyyy</p>
+            <p>Post Preview Here</p>
+          </div>
+          <div class="col-lg-4 col-md-10 col-sm-10 card-lg blue">
+            <h3><b>Post Title Here</b></h3>
+            <p class="date">Posted mm/dd/yyyy</p>
+            <p>Post Preview Here</p>
+          </div>
+        </div>
+      </div>
 <!-- footer -->
     <footer>
       <p><b>By Spencer Takata</b></h4>
-      <p>email: spencer.takata@gmail.com</p>
-      <p>phone: (916) 524-9606</p>
-    </footer>
+      <p>spencer.takata@gmail.com</p>
+      <div class="icons">
+        <a href="https://www.instagram.com/spenstar123/"><i class="fab fa-instagram icon-sm"></i></a>
+        <a href="https://www.linkedin.com/in/spencertakata"><i class="fab fa-linkedin-in icon-sm"></i></a>
+        <a href="https://www.flickr.com/photos/156465445@N07/https://www.flickr.com/photos/156465445@N07/"><i class="fab fa-flickr icon-sm"></i></a>
+        <a href="https://github.com/spencertakata"><i class="fab fa-github-square icon-sm"></i></a>
+      </div>
+      <br>
+      <br>
+      <p class="footnote">Banner photo by <a href="https://unsplash.com/photos/R-WtV-QyVnY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Rob Bye</a> on Unsplash</p>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   </body>
 </html>
