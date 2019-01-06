@@ -17,7 +17,7 @@
   <body>
     <header>
       <!-- NAVBAR -->
-      <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
           <a class="navbar-brand" href="./index.html">Spencer Takata</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -43,7 +43,7 @@
           </div>
       </nav>
   <!-- BANNER -->
-      <div class="jumbotron">
+      <div class="jumbotron jumbo2">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-6 headline">
@@ -65,21 +65,19 @@
           <div class="center">
             <i class="fas fa-project-diagram"></i>
             <h4><b>Project Management</b></h4>
-            <div class="underline-purple center"></div>
+            <div class="underline-purple"></div>
             <p>Turning goals into results, with a focus on email campaigns, event planning, and agency creative work.</p>
-            <button type="button" class="btn btn-secondary btn-purple">Learn more</button>
+            <a href="#projectManagement" class="scrollTo"><button type="button" class="btn btn-secondary btn-purple">Learn more</button></a>
           </div>
         </div>
         <!-- WEB DEV -->
         <div class="col-lg-3 col-sm-10 card-sm orange">
-          <div class="center">
+          <div class="center justify-content-center">
             <i class="fas fa-code"></i>
             <h4><b>Web Development</b></h4>
-            <div class="underline-orange center"></div>
+            <div class="underline-orange"></div>
             <p>Build sleek, engaging, professional websites to define your brand and stand out from the competition.</p>
-            <div>
-              <button type="button" class="btn btn-secondary btn-orange">Learn more</button>
-          </div>
+            <a href="#webDev" class="scrollTo"><button type="button" class="btn btn-secondary btn-orange">Learn more</button></a>
         </div>
         </div>
         <!-- MARKETING -->
@@ -87,9 +85,9 @@
           <div class="center">
             <i class="fas fa-desktop"></i>
             <h4><b>Digital Marketing</b></h4>
-            <div class="underline-blue center"></div>
-            <p>Drive customer acquisition, engagement, and retention through email marketing, SEO, and content management.</p>
-            <button type="button" class="btn btn-secondary btn-blue">Learn more</button>
+            <div class="underline-blue"></div>
+            <p>Drive customer acquisition, engagement, and retention through email marketing and content management.</p>
+            <a href="#marketing" class="scrollTo"><button type="button" class="btn btn-secondary btn-blue">Learn more</button></a>
           </div>
         </div>
         <!-- TESTIMONIAL -->
@@ -102,11 +100,10 @@
 
 <!-- PORTFOLIO -->
 
-    <div class="row justify-content-center grey-background-2">
-      <div class="col-lg-6 col-sm-10 col-xs-8 card-lg purple">
+    <div class="row justify-content-center grey-background-3">
 
-<!--PROJECT MANAGEMENT -->
-
+  <!--PROJECT MANAGEMENT -->
+      <div class="col-lg-6 col-sm-10 col-xs-8 card-lg purple" id="projectManagement">
         <h3 class="dark center">Project Management</h3>
         <br>
         <div class="left">
@@ -151,9 +148,9 @@
           </div>
         </div>
 
-<!--WEB DEV -->
+  <!--WEB DEV -->
       </div>
-      <div class="col-lg-6 col-sm-10 col-xs-8 card-lg orange">
+      <div class="col-lg-6 col-sm-10 col-xs-8 card-lg orange" id="webDev">
         <h3 class="dark center">Web Development</h3>
         <br>
         <div class="left">
@@ -171,7 +168,7 @@
       </div>
 
       <!-- DIGITAL MARKETING -->
-      <div class="col-lg-6 col-sm-10 col-xs-8 card-lg blue">
+      <div class="col-lg-6 col-sm-10 col-xs-8 card-lg blue" id="marketing">
         <h3 class="dark center">Digital Marketing</h3>
         <br>
         <div class="left">
