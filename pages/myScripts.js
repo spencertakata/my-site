@@ -26,3 +26,11 @@ $(document).ready(function() {
 		}
 	});
 });
+
+//Background images
+$("#jumboHome").css("background-image", "url(https://i.imgur.com/6tS1WVR.jpg)");
+$("#jumboAbout").css("background-image", "url(https://i.imgur.com/H4rzWkb.jpg)");
+$("#jumboGallery").css("background-image", "url(https://i.imgur.com/wU2wpBO.jpg)");
+$("#jumboServices").css("background-image", "url(https://i.imgur.com/5rCEzKW.jpg)");
+
+$(".blog").css("display", "none");
