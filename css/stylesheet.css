@@ -220,6 +220,19 @@ a:hover, a.dark-link:hover {
   text-align: center;
 }
 
+#headlineContact {
+  /*display: flex;*/
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+  margin: 20%;
+  border: 1px solid black;
+  background-color: rgba(0, 0, 0, .75);
+  color: white;
+  font-family: 'Righteous',cursive;
+  text-align: center;
+}
+
 .subhead {
   font-family: 'Raleway';
 }
