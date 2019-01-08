@@ -127,17 +127,7 @@ a:hover, a.dark-link:hover {
 }
 
 .jumbo3 {
-  background: url(https://i.imgur.com/ZF0I5c4.jpg);
-  background-repeat: no-repeat;
-  background-position: center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 100%;
-}
-
-  /*background-image: url(https://i.imgur.com/ZF0I5c4.jpg);
+  background-image: url(https://i.imgur.com/ZF0I5c4.jpg);
   height: 100%;
   background-position: center center;
   background-repeat: no-repeat;
@@ -222,7 +212,7 @@ a:hover, a.dark-link:hover {
   justify-content: center;
   align-items: center;
   padding: 2%;
-  margin: 20%;
+  margin: 5%;
   border: 1px solid black;
   background-color: rgba(0, 0, 0, .75);
   color: white;
