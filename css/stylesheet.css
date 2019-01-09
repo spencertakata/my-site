@@ -250,6 +250,7 @@ a:hover, a.dark-link:hover {
   background-size: cover;
   background-position: center center;
   padding: 1%;
+  margin: 0;
 }
 
 .grey-background-2 {
@@ -512,7 +513,15 @@ footer {
     font-size: .8rem;
     }
   .card-sm {
-    padding: 1em 4em;
-    margin: 2em 0;
-  }
+    padding: 1em 4em 2em 4em;
+    margin: 2em;
+    }
+    #testimonial {
+      margin: 2em;
+    }
+    .img-shrink {
+      margin-bottom: 1em;
+      width: 70%;
+      height: auto;
+    }
   }
