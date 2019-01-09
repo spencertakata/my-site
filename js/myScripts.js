@@ -33,4 +33,5 @@ $("#jumboAbout").css("background-image", "url(https://i.imgur.com/H4rzWkb.jpg)")
 $("#jumboGallery").css("background-image", "url(https://i.imgur.com/wU2wpBO.jpg)");
 $("#jumboServices").css("background-image", "url(https://i.imgur.com/5rCEzKW.jpg)");
 
+//Hide Blog
 $(".blog").css("display", "none");

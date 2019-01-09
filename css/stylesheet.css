@@ -94,6 +94,11 @@ a:hover, a.dark-link:hover {
   color: rgb(249, 171, 24);
 }
 
+.nav-link:active {
+  color: #f9ab18;
+}
+
+
 /* Bootstrap jumbotron */
 
 
@@ -499,4 +504,13 @@ footer {
   margin: 1em 2em;
   width: 100%;
   height: auto;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: @screen-xs) {
+    body{font-size: 10px;}
+}
+
+@media (max-width: @screen-sm) {
+    body{font-size: 14px;}
 }
