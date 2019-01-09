@@ -509,6 +509,10 @@ footer {
 /* MEDIA QUERIES */
 @media (max-width: 767.98px) {
   html {
-    font-size: .75rem;
+    font-size: .8rem;
     }
+  .card-sm {
+    padding: 1em 4em;
+    margin: 2em 0;
+  }
   }
