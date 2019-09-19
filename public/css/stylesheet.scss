@@ -367,7 +367,7 @@ a:hover, a.dark-link:hover {
 /* Home page Content Box headers */
 .dark {
   padding: .8rem 0;
-  margin: .8rem 0;
+  margin: .8rem auto !important;
   background-color: $black-rgba-75;
   font-family: $font-1;;
   color: $white;
