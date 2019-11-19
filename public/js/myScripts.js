@@ -1,3 +1,8 @@
+
+$(document).ready(function(){
+    $("#nav-placeholder").load("nav.html");
+});
+
 // Smooth Scroll
 $('.scrollTo').click(function(){
   $('html, body').animate({
@@ -26,6 +31,8 @@ $(document).ready(function() {
 		}
 	});
 });
+
+
 
 //Background images
 $("#jumboHome").css("background-image", "url(https://i.imgur.com/6tS1WVR.jpg)");

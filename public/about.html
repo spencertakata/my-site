@@ -19,38 +19,20 @@
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
     <link rel="manifest" href="img/site.webmanifest">
+<!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   </head>
 <!-- BODY -->
   <body>
-    <header>
-      <!-- NAVBAR -->
-      <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
-          <a class="navbar-brand" href="./index.html">Spencer Takata</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="./about.html">Who I Am</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./services.html">What I Do</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./gallery.html">Photography</a>
-              </li>
-              <li class="nav-item blog">
-                <a class="nav-link" href="./blog.html">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./contact.html">Contact</a>
-              </li>
-            </ul>
-          </div>
-      </nav>
+  <!-- Home and navbar -->
+    <div id="nav-placeholder"></div>
+    <script>
+      $(function(){
+        $("#nav-placeholder").load("./nav.html");
+      });
+    </script>
   <!-- banner -->
-      </header>
       <div class="jumbotron jumbo" id="jumboAbout">
         <div class="container">
           <div class="row justify-content-center">
@@ -115,6 +97,8 @@
       <br>
       <p class="footnote">Banner photo by <a href="https://unsplash.com/@cbarbalis">Chris Barbalis</a> on Unsplash</p>
     </footer>
+    <!-- firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase.js"></script>
     <script>
       // Initialize Firebase
       var config = {
@@ -127,14 +111,12 @@
       };
       firebase.initializeApp(config);
     </script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase.js"></script>
   <!-- bootstrap -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <!-- my scripts -->
     <script src="./js/myScripts.js"></script>
-  <!-- firebase -->
-    <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase.js"></script>
+  <!-- magnific popup -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
   </body>
 </html>
