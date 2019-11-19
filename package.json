@@ -8,6 +8,7 @@
     "gulp-concat": "^2.6.1",
     "gulp-concat-css": "^3.1.0",
     "gulp-htmlmin": "^5.0.1",
+<<<<<<< HEAD
     "gulp-imagemin": "^6.2.0",
     "gulp-jshint": "^2.1.0",
     "gulp-minify-css": "^1.2.4",
@@ -20,6 +21,16 @@
   "devDependencies": {
     "clean-css": "^4.2.1",
     "gulp-clean-css": "^4.2.0"
+=======
+    "gulp-minify-css": "^1.2.4",
+    "gulp-uglify": "^3.0.2"
+  },
+  "devDependencies": {
+    "gulp-imagemin": "^6.1.1",
+    "gulp-jshint": "^2.1.0",
+    "gulp-svgmin": "^2.2.0",
+    "jshint": "^2.10.2"
+>>>>>>> d91fee3c59028c78b7d445c9abf760509b4fc4c1
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
