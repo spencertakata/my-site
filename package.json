@@ -4,34 +4,22 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "clean-css": "^4.2.1",
     "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.2.0",
     "gulp-concat": "^2.6.1",
     "gulp-concat-css": "^3.1.0",
     "gulp-htmlmin": "^5.0.1",
-<<<<<<< HEAD
     "gulp-imagemin": "^6.2.0",
     "gulp-jshint": "^2.1.0",
     "gulp-minify-css": "^1.2.4",
-    "gulp-svgmin": "^2.2.0",
     "gulp-uglify": "^3.0.2",
+    "gulp-svgmin": "^2.2.0",
     "jquery": "^3.4.1",
     "jshint": "^2.10.3",
     "lodash.template": "^4.5.0"
   },
-  "devDependencies": {
-    "clean-css": "^4.2.1",
-    "gulp-clean-css": "^4.2.0"
-=======
-    "gulp-minify-css": "^1.2.4",
-    "gulp-uglify": "^3.0.2"
-  },
-  "devDependencies": {
-    "gulp-imagemin": "^6.1.1",
-    "gulp-jshint": "^2.1.0",
-    "gulp-svgmin": "^2.2.0",
-    "jshint": "^2.10.2"
->>>>>>> d91fee3c59028c78b7d445c9abf760509b4fc4c1
-  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
