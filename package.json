@@ -13,8 +13,9 @@
     "gulp-imagemin": "^6.2.0",
     "gulp-jshint": "^2.1.0",
     "gulp-minify-css": "^1.2.4",
-    "gulp-uglify": "^3.0.2",
     "gulp-svgmin": "^2.2.0",
+    "gulp-uglify": "^3.0.2",
+    "http-server": "^0.12.0",
     "jquery": "^3.4.1",
     "jshint": "^2.10.3",
     "lodash.template": "^4.5.0"
