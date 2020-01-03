@@ -1,3 +1,51 @@
 h1 {
-  color: red;
+  color: #dc3545;
+  font-family: 'Raleway';
+  padding: 30px 0 15px 0;
+}
+
+.body {
+  padding: 15px 0;
+  font-family: 'Raleway';
+  font-size: 1.5rem;
+}
+.container {
+  margin: 0 auto;
+}
+
+.fa-film {
+  font-size: 20px;
+}
+
+#randomMovie {
+  font-size: 2rem;
+  padding: 10px 20px;
+}
+
+#output {
+  padding: 30px 0;
+  font-size: 3rem;
+}
+
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -180px;
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+  height: 142px;
+}
+
+.footnote {
+  display: none;
 }

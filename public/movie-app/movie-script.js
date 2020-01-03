@@ -5,7 +5,7 @@ const output = document.getElementById('output');
 var movieData = {};
 
 // Get JSON data
- $.getJSON("./movieData.json", function(data) {
+ $.getJSON("movie-app/movieData.json", function(data) {
   console.log(data);
   // Declare global var for JSON data
   movieData = data;

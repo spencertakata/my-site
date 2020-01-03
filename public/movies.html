@@ -1,19 +1,68 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <link rel="stylesheet" type="text/css" href="movie-app/movie-styles.css">
     <meta charset="utf-8">
-    <title>Movie App</title>
-    <script type = "text/javascript"
-       src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
-    </script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <title>Spencer Takata</title>
+    <!-- site metadata -->
+    <meta name="description" content="Spencer Takata Portfolio">
+    <meta name="author" content="Spencer Takata">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="movie-app/movie-styles.css">
+    <link rel="stylesheet" href="./css/stylesheet-scss.css">
+    <link rel="stylesheet" href="./css/magnific-popup.css">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Crimson+Text|Righteous|Spectral|Raleway" rel="stylesheet">
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <!-- firebase -->
+    <script src="/__/firebase/7.5.0/firebase-app.js"></script>
+
+    <!-- Magnific Popup -->
+    <script src="./js/jquery.magnific-popup.min.js"></script>
   </head>
   <body>
-    <div class="container">
-      <h1>Movie App</h1>
-      <button type="button" id="randomMovie">What should I watch?</button>
-      <p id="output"></p>
+    <div class="page-wrap">
+    <!-- Home and navbar -->
+      <div class="nav-placeholder"></div>
+      <script>
+        $(function(){
+          $(".nav-placeholder").load("./nav.html");
+        })
+      </script>
+    <!-- BODY -->
+      <div class="center">
+        <h1 class="title"><b>Movie Night</b></h1>
+        <p class="body">Can't decide what to watch? Click below to get a random suggestion</p>
+        <button type="button" id="randomMovie" class="btn btn-primary btn-large btn-blue">What should I watch?</button>
+        <p id="output"></p>
+      </div>
     </div>
-    <script type="text/javascript" src="movie-app/movie-script.js"></script>
-  </body>
+      <!-- footer -->
+
+      <footer>
+        <div class="footer-placeholder"></div>
+        <script type="text/javascript">
+          $(function(){
+            $(".footer-placeholder").load("./footer.html");
+          });
+        </script>
+      </footer>
+      <!-- firebase -->
+      <div class="bottom-scripts"></div>
+      <script type="text/javascript">
+        $(function(){
+          $(".bottom-scripts").load("./bottom-scripts.html");
+        });
+      </script>
+      <script type="text/javascript" src="movie-app/movie-script.js"></script>
+    </body>
 </html>

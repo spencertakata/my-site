@@ -58,9 +58,6 @@ else if (url == services){
   });
 };
 
-else if (url == "https://spencertakata.com/contact.html"){
-
-}
 else {
   $(function(){
     $(".footnote").css("display", "none");
