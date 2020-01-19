@@ -1,7 +1,6 @@
 {
   "name": "my-site",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "dependencies": {
     "clean-css": "^4.2.1",
@@ -35,5 +34,6 @@
   "bugs": {
     "url": "https://github.com/spencertakata/my-site/issues"
   },
-  "homepage": "https://github.com/spencertakata/my-site#readme"
+  "homepage": "https://github.com/spencertakata/my-site#readme",
+  "description": ""
 }

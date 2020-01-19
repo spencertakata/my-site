@@ -1,0 +1,357 @@
+// CONTENTS
+    Variables
+    Typography
+    Design Elements
+    Alignment
+    Navbar
+    Jumbotron
+    Cards
+    Icons & Images
+    Backgrounds
+    Buttons
+    Footer
+    Media Query
+
+/* Variables */
+$raleway: 'Raleway', Verdana, Arial, sans-serif
+$righteous: 'Righteous', Palatino, Times, serif
+$orange: #f9ab18
+$orange-hover: #fbbf51
+$blue: #000066
+$blue-hover: #000099
+$green: #26734d
+$green-hover: #339966
+$red: #dc3545
+$black-transparent: rgba(0, 0, 0, 0.75)
+$white: #fff
+$light-gray-border: #cccccc
+$card-dark-bg: #3d3d3d
+
+
+html
+    scroll-behavior: smooth
+body
+    margin: 0
+    padding: 0
+    font-family: $raleway
+
+// Typography
+
+h1
+    display: block
+    font-size: 3em
+    margin: .67em 0
+    font-weight: bold
+h2
+    display: block
+    font-size: 1.5em
+    //margin: 0.83em 0
+    font-weight: bold
+h3
+    display: block
+    font-size: 1.17em
+    //margin: 1em 0
+    font-weight: bold
+h4
+    display: block
+    font-size: 1em
+    //margin: 1.33em 0
+    font-weight: bold
+h5
+    display: block
+    //font-size: .83em
+    //margin: 1.67em 0
+    font-weight: bold
+h6
+    display: block
+    //font-size: .67em
+    //margin: 2.33em 0
+    font-weight: bold
+p
+    font-size: 1.1em
+li
+    font-size: 1.1em
+.righteous
+    font-family: $righteous
+.raley
+    font-famiy: $raleway
+hr
+    border: 0
+    height: 1px
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), $black-transparent, rgba(0, 0, 0, 0))
+a:link, a:visited
+    color: #3076e5
+    text-decoration: none
+a.dark-link, a.dark-link:visited
+    color: $white
+    text-decoration: none
+a:hover, a.dark-link:hover
+    color: $orange
+.subhead
+    font-family: $raleway
+.caption
+    font-size: 0.85rem
+    color: #515151
+    font-style: italic
+    text-align: center
+.date
+    font-size: 0.7em
+    font-style: italic
+    color: $black-transparent
+.footnote
+    font-size: 0.7em
+
+// Design Elements
+.feature-text, .headline, #headlineContact
+    justify-content: center
+    align-items: center
+    border: 1px solid black
+    color: $white
+    font-family: $righteous
+    text-align: center
+.feature-text
+    margin: 3em 0
+    padding: 2%
+    background-color: rgba(0, 0, 0, 0.5)
+.headline
+    padding: 2%
+    margin: 5%
+    background-color: $black-transparent
+#headlineContact
+    padding: 3em
+    margin: 10em 1em 0 1em
+    background-color: $black-transparent
+#testimonial
+    margin: 3em 0
+
+// Alignment
+.left
+    text-align: left
+    align-items: left
+.center
+    margin: 0 auto
+    text-align: center
+    justify-content: center
+    align-items: center
+
+//Navbar
+
+.navbar-dark
+    font-family: $righteous
+    background-color: $black-transparent
+    .navbar-brand
+        color: $white
+        text-decoration: none
+    .navbar-nav
+        .nav-link
+            color: $white
+            text-decoration: none
+.nav-item
+    padding: 0 1.5rem
+    font-size: 1rem
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-brand:hover,
+.navbar-dark .navbar-brand:focus
+    color: $orange
+.nav-link
+    &:active
+        color: $orange
+
+// Jumbotron
+
+.jumbo, .jumbo1, .jumbotron2, .jumbo3
+    background-size: cover
+    background-position: center center
+    margin-bottom: 0
+.jumbo
+    //background-image: url(https://i.imgur.com/ZF0I5c4.jpg)
+    background-image: url(../img/city.jpg)
+.jumbo1
+    //background-image: url(../img/city.jpg)
+    justify-content: center
+    padding: 10% 0 25% 0
+//.jumbotron2
+    height: 100%
+    width: 100%
+    background-image: url(https://i.imgur.com/93acVoz.jpg)
+    justify-content: center
+    padding: 10%
+    border-bottom: 1px solid black
+//.jumbo3
+    background-image: url(https://i.imgur.com/ZF0I5c4.jpg)
+    height: 100%
+    background-repeat: no-repeat
+    padding-top: 10%
+//#banner
+    margin: 2rem
+
+// Cards
+
+.card-sm, .card-lg, .card-lg-dark
+    background-color: $white
+    border-left: 1px solid $light-gray-border
+    border-bottom: 1px solid $light-gray-border
+    border-right: 1px solid $light-gray-border
+.card-sm
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1)
+    margin: 1.25%
+    padding: 0.5em 0.9em 0.9em 0.9em
+.card-lg
+    box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.1)
+    margin: 1.25%
+    padding: 2rem 2.5rem
+.card-lg-dark
+    box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.1)
+    margin: 1.25%
+    background-color: $card-dark-bg
+.underline
+    height: 0.5em
+    width: 35%
+    margin: 0 auto 0.5em
+.red
+    border-top: 3px solid $red
+.underline-red
+    background-color: $red
+.green
+    border-top: 3px solid $green
+.underline-green
+    background-color: $green
+.orange
+    border-top: 3px solid $orange
+.underline-orange
+    background-color: $orange
+.blue
+    border-top: 3px solid $blue
+.underline-blue
+    background-color: $blue
+.dark
+    padding: 0.8rem 0
+    margin: 0.8rem 0
+    background-color: $black-transparent
+    font-family: $righteous
+    color: $white
+    width: 100%
+    text-align: center
+//.img-home
+    margin-top: 1.5rem
+
+//Icons & Images
+
+#bitmoji
+    height: 12em
+    width: auto
+.icon-lg
+    font-size: 3em
+    margin: 0 0.5em
+    color: $white
+.icon-lg:hover,
+.icon-sm:hover
+    color: $orange
+.icon-sm
+    font-size: 1.5em
+    margin: 0 0.5em
+    color: $white
+.img-thumbnail
+    padding: 0.1em
+    background-color: #383838
+
+//Backgrounds
+
+.grey-background, .grey-background-2, .grey-background-3, .contact-background
+    padding: 1%
+    margin: 0
+    background-size: cover
+    background-position: center center
+.grey-background
+    background-image: url(../img/grey-background.jpg)
+.grey-background-2
+    background-color: #e0e0e0
+.grey-background-3
+    background-color: #5b5b5b
+//.contact-background
+    background-image: url(https://i.imgur.com/zykL6QS.jpg)
+#contactBody
+    background: url(../img/city.jpg)
+    background-size: cover
+    background-position: center
+    height: 100vh
+.buffer
+    padding: 0.75em 0
+
+// Buttons
+
+.btn
+    font-family: $righteous
+.btn-primary
+    background-color: $blue
+    border: 1px solid black
+.btn-secondary
+    background-color: #8e8e8e
+.btn-secondary:hover, .btn-primary:hover
+    background-color: $orange
+    border: 1px solid black
+.btn-green
+    color: $white
+    background-color: $green
+    &:hover
+        color: $white
+        background-color: $green-hover
+.btn-orange
+    background-color: $orange
+    color: $white
+    border: 1px solid black
+    &:hover
+        background-color: $orange-hover
+.btn-blue
+    background-color: $blue
+    &:hover
+        background-color: $blue-hover
+//.body-img
+    display: block
+    margin: 2.5rem auto 1rem auto
+    width: 70%
+    height: auto
+    border: 4px solid black
+//#about
+    padding: 3em 0
+//#content-box
+    background-color: #CAC6C3
+    padding: 1em 0.5em
+//.portfolio
+    margin: 1em 0
+//.img-small
+    margin: 0 0 1em 0
+    width: 100%
+    height: auto
+//.section-accent
+    background-image: url(https://i.imgur.com/b1r9epz.jpg)
+    background-size: cover
+    background-position: center center
+    height: 200px
+    width: 100%
+footer
+    width: 100%
+    padding: 2em 20%
+    margin: 0
+    background-color: $black-transparent
+    color: $white
+    line-height: 90%
+    text-align: center
+@media (max-width: 767.98px)
+    html
+        font-size: 0.8rem
+.img-shrink
+    margin-bottom: 1em
+    width: 70%
+    height: auto
+.img-gallery
+    margin: 1em 2em
+    width: 100%
+    height: auto
+    margin: 1em auto
+.card-sm
+    padding: 1em 4em 2em 4em
+    margin: 2em
+#testimonial
+    margin: 2em
