@@ -2,51 +2,37 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Services</title>
-<!-- site metadata -->
-      <meta name="description" content="Spencer Takata's website">
-      <meta name="author" content="Spencer Takata">
-      <meta name="viewport" content="width=device-width; initial-scale=1.0">
-<!-- stylesheet -->
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-      <link rel="stylesheet" href="./css/stylesheet-scss.css">
-<!-- fonts -->
-      <link href="https://fonts.googleapis.com/css?family=Arvo|Crimson+Text|Righteous|Spectral|Raleway" rel="stylesheet">
-<!-- favicons -->
-      <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-      <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-      <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-      <link rel="manifest" href="img/site.webmanifest">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <title>Spencer Takata</title>
+    <!-- site metadata -->
+    <meta name="description" content="Spencer Takata Portfolio">
+    <meta name="author" content="Spencer Takata">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/stylesheet.css">
+    <link rel="stylesheet" href="./css/magnific-popup.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Crimson+Text|Righteous|Spectral|Raleway" rel="stylesheet">
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <!-- jquery -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Magnific Popup -->
+    <script src="./js/jquery.magnific-popup.min.js"></script>
   </head>
   <body>
-    <header>
-      <!-- NAVBAR -->
-      <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
-          <a class="navbar-brand" href="./index.html">Spencer Takata</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="./about.html">Who I Am</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./services.html">What I Do</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./gallery.html">Photography</a>
-              </li>
-              <li class="nav-item blog">
-                <a class="nav-link" href="./blog.html">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./contact.html">Contact</a>
-              </li>
-            </ul>
-          </div>
-      </nav>
+  <!-- Home and navbar -->
+    <div class="nav-placeholder"></div>
+    <script>
+      $(function(){
+        $(".nav-placeholder").load("./nav.html");
+      });
+    </script>
   <!-- BANNER -->
       <div class="jumbotron jumbo" id="jumboServices">
         <div class="container">
@@ -57,7 +43,6 @@
           </div>
         </div>
       </div>
-    </header>
 <!-- MAIN BODY -->
 
 <!-- OVERVIEW -->
@@ -79,7 +64,7 @@
           <i class="fas fa-code"></i>
           <h4><b>Web Development</b></h4>
           <div class="underline underline-orange"></div>
-          <p>Build sleek, professional websites and emails to define your brand and stand out from the competition.</p>
+          <p>Build sleek, engaging, professional websites and emails to define your brand and stand out from the competition.</p>
           <a href="#webDev" class="scrollTo"><button type="button" class="btn btn-secondary btn-orange">Learn more</button></a>
       </div>
       </div>
@@ -175,7 +160,7 @@
         <h3 class="dark center">Digital Marketing</h3>
         <br>
         <div class="left">
-          <p>Currently I'm at <a href="https://www.agency.epsilon.com/">Epsilon Agency</a>, supporting data-driven B2B and B2C email campaigns for products such as the <a href="https://assistant.google.com/">Google Assistant</a>, <a href="https://store.google.com/us/product/chromecast">Chromecast</a>, and <a href="https://developers.google.com/actions/">Actions on Google</a>. Our award winning CRM program utilizes long-term brand strategies, game-changing creative campaigns, and one-of-a-kind media marketing programs to boost user retention and engagement in 16 countries worldwide.</p>
+          <p>Currently I'm at <a href="https://www.agency.epsilon.com/">Epsilon Agency</a>, supporting data-driven B2B and B2C email campaigns for products such as the <a href="https://assistant.google.com/">Google Assistant</a>, <a href="https://store.google.com/us/product/chromecast">Chromecast</a>, and <a href="https://developers.google.com/actions/">Actions on Google</a>. Our award winning CRM program utilizes long-term brand strategies, game-changing creative campaigns, and one-of-a-kind media marketing programs to boost user retention and engagement.</p>
           <p>In addition to my current work, I also have experience with <b>email, social, and content marketing</b> for past events & projects I've managed. Thoughtful, targeted, strategic marketing practices inform my work to help you reach your audience with the right content, in the right place, at the right time.</p>
           <hr>
         </div>
@@ -199,39 +184,23 @@
       </div>
     </div>
 
-<!-- FOOTER -->
-    <footer>
-      <p><b>By Spencer Takata</b></p>
-      <p>spencer@spencertakata.com</p>
-      <div class="icons">
-        <a href="https://www.instagram.com/spenstar123/"><i class="fab fa-instagram icon-sm"></i></a>
-        <a href="https://www.linkedin.com/in/spencertakata"><i class="fab fa-linkedin-in icon-sm"></i></a>
-        <a href="https://www.flickr.com/photos/156465445@N07/https://www.flickr.com/photos/156465445@N07/"><i class="fab fa-flickr icon-sm"></i></a>
-        <a href="https://github.com/spencertakata"><i class="fab fa-github-square icon-sm"></i></a>
-      </div>
-      <br>
-      <br>
-      <p class="footnote">Banner photo by <a href="https://unsplash.com/@anete_lusina">Anete Lūsiņa</a> on Unsplash</p>
-    </footer>
-    <script>
-      // Initialize Firebase
-      var config = {
-        apiKey: "AIzaSyCZNrfbkbZ5UWh_uF0iFQkOzZWFJ1uSZuA",
-        authDomain: "my-site-5311a.firebaseapp.com",
-        databaseURL: "https://my-site-5311a.firebaseio.com",
-        projectId: "my-site-5311a",
-        storageBucket: "my-site-5311a.appspot.com",
-        messagingSenderId: "824955399962"
-      };
-      firebase.initializeApp(config);
+
+  <!-- footer -->
+
+  <footer>
+    <div class="footer-placeholder"></div>
+    <script type="text/javascript">
+      $(function(){
+        $(".footer-placeholder").load("./footer.html");
+      });
     </script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <!-- bootstrap -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  <!-- my scripts -->
-    <script src="./js/myScripts.js"></script>
+  </footer>
   <!-- firebase -->
-    <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase.js"></script>
+  <div class="bottom-scripts"></div>
+  <script type="text/javascript">
+    $(function(){
+      $(".bottom-scripts").load("./bottom-scripts.html");
+    });
+  </script>
   </body>
 </html>

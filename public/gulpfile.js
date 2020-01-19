@@ -7,23 +7,32 @@ var jshint = require('gulp-jshint');
 var imagemin = require('gulp-imagemin'),
     svgmin = require('gulp-svgmin');
 const htmlmin = require('gulp-htmlmin');
+var nunjucksRender = require('gulp-nunjucks-render');
+
+gulp.task('default', function () {
+  return gulp.src('src/test.njk')
+    .pipe(nunjucksRender({
+      path: ['./'] // String or Array
+    }))
+    .pipe(gulp.dest('dist'));
+});
 
 // CSS concatenation + minification task
-gulp.task('compressCSS', function() {
-  return gulp.src('./src/*.css')
+/* gulp.task('compressCSS', function() {
+    return gulp.src('./src/*.css')
     .pipe(concatcss('style.min.css'))
     .pipe(minifycss())
     .pipe(gulp.dest('./css'));
-});
+});*/
 
 // JS concatenation + minification task
-gulp.task('compressJS', function() {
+/* gulp.task('compressJS', function() {
   return gulp.src('.src/js/*.js')
     .pipe(jshint()).pipe(jshint.reporter("default"))
     .pipe(uglify())
     .pipe(concat('scripts.min.js'))
     .pipe(gulp.dest('/js'));
-});
+}); */
 
 
 // Image optimization task
@@ -41,10 +50,10 @@ gulp.task('svg', function () {
 });
 
 //Minify HTML
-gulp.task('minify', () => {
+/* gulp.task('minify', () => {
   return gulp.src('src/*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('./'));
-});
+}); */
 
 gulp.task('default', gulp.parallel('compressCSS', 'compressJS', 'img', 'svg', 'minify'));
