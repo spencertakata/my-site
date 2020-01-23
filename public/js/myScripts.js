@@ -1,9 +1,3 @@
-
-
-$(document).ready(function(){
-    $("#nav-placeholder").load("nav.html");
-});
-
 // Smooth Scroll
 $('.scrollTo').click(function(){
   $('html, body').animate({
