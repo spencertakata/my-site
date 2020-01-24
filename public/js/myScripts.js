@@ -1,3 +1,6 @@
+console.log("myScripts.js has been loaded");
+
+
 // Smooth Scroll
 $('.scrollTo').click(function(){
   $('html, body').animate({
@@ -25,6 +28,39 @@ $(document).ready(function() {
 			}
 		}
 	});
+    //Footer photo creditCopyText
+    var url = window.location.href
+    var home = "https://spencertakata.com/"
+    var index = "https://spencertakata.com/index.html"
+    var about = "https://spencertakata.com/about.html"
+    var services = "https://spencertakata.com/services.html"
+    console.log( "ready!" );
+    function photoCred(url){
+        if(url == home || url == index){
+          $(function(){
+            $("#photo-cred").html(<a href="https://unsplash.com/@robertbye">Rob Bye</a>);
+          };
+        };
+
+        else if (url == about){
+          $(function(){
+            $("#photo-cred").html(<a href="https://unsplash.com/@cbarbalis">Chris Barbalis</a>);
+          };
+        };
+
+        else if (url == services){
+          $(function(){
+            $("#photo-cred").html(<a href="https://unsplash.com/@anete_lusina">Anete Lūsiņa</a>);
+          });
+        };
+
+        else {
+          $(function(){
+            $(".footnote").css("display", "none");
+          };
+        };
+    }
+
 });
 
 //Footer photo creditCopyText
@@ -34,31 +70,34 @@ var index = "https://spencertakata.com/index.html"
 var about = "https://spencertakata.com/about.html"
 var services = "https://spencertakata.com/services.html"
 
-function photoCred(url){
-    if(url == home || url == index){
-      $(function(){
-        $("#photo-cred").html(<a href="https://unsplash.com/@robertbye">Rob Bye</a>);
-      };
-    };
+$( document ).ready(function() {
+    console.log( "ready!" );
+    function photoCred(url){
+        if(url == home || url == index){
+          $(function(){
+            $("#photo-cred").html(<a href="https://unsplash.com/@robertbye">Rob Bye</a>);
+          };
+        };
 
-    else if (url == about){
-      $(function(){
-        $("#photo-cred").html(<a href="https://unsplash.com/@cbarbalis">Chris Barbalis</a>);
-      };
-    };
+        else if (url == about){
+          $(function(){
+            $("#photo-cred").html(<a href="https://unsplash.com/@cbarbalis">Chris Barbalis</a>);
+          };
+        };
 
-    else if (url == services){
-      $(function(){
-        $("#photo-cred").html(<a href="https://unsplash.com/@anete_lusina">Anete Lūsiņa</a>);
-      });
-    };
+        else if (url == services){
+          $(function(){
+            $("#photo-cred").html(<a href="https://unsplash.com/@anete_lusina">Anete Lūsiņa</a>);
+          });
+        };
 
-    else {
-      $(function(){
-        $(".footnote").css("display", "none");
-      };
-    };
-}
+        else {
+          $(function(){
+            $(".footnote").css("display", "none");
+          };
+        };
+    }
+});
 
 //Background images
 $("#jumboHome").css("background-image", "url(https://i.imgur.com/6tS1WVR.jpg)");
@@ -68,5 +107,3 @@ $("#jumboServices").css("background-image", "url(https://i.imgur.com/5rCEzKW.jpg
 
 //Hide Blog
 $(".blog").css("display", "none");
-
-console.log("myScripts.js has been loaded");
