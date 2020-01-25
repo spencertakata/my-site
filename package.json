@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "dependencies": {
+    "bootstrap": "^4.4.1",
     "clean-css": "^4.2.1",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.2.0",
