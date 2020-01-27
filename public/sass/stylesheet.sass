@@ -73,8 +73,10 @@ li
     font-size: 1.1em
 .righteous
     font-family: $righteous
-.raley
-    font-famiy: $raleway
+.raleway
+    font-family: $raleway
+.font-white
+    color: $white
 hr
     border: 0
     height: 1px
@@ -87,7 +89,7 @@ a.dark-link, a.dark-link:visited
     text-decoration: none
 a:hover, a.dark-link:hover
     color: $orange
-.subhead
+//.subhead
     font-family: $raleway
 .caption
     font-size: 0.85rem
@@ -98,31 +100,31 @@ a:hover, a.dark-link:hover
     font-size: 0.7em
     font-style: italic
     color: $black-transparent
-.footnote
+//.footnote
     font-size: 0.7em
 
 // Design Elements
 .feature-text, .headline, #headlineContact
-    justify-content: center
+    //justify-content: center
     align-items: center
     border: 1px solid black
-    color: $white
-    font-family: $righteous
+    //color: $white
+    //font-family: $righteous
     text-align: center
 .feature-text
-    margin: 3em 0
-    padding: 2%
+    //margin: 3em 0
+    //padding: 2%
     background-color: rgba(0, 0, 0, 0.5)
 .headline
-    padding: 2%
-    margin: 5%
+    //padding: 2%
+    //margin: 5%
     background-color: $black-transparent
 #headlineContact
-    padding: 3em
+    //padding: 3em
     margin: 10em 1em 0 1em
-    background-color: $black-transparent
-#testimonial
-    margin: 3em 0
+    //background-color: $black-transparent
+//#testimonial
+    //margin: 3em 0
 
 // Alignment
 .left
@@ -160,17 +162,19 @@ a:hover, a.dark-link:hover
 
 // Jumbotron
 
-.jumbo, .jumbo1, .jumbotron2, .jumbo3
+.jumbo
     background-size: cover
     background-position: center center
     margin-bottom: 0
-.jumbo
-    //background-image: url(https://i.imgur.com/ZF0I5c4.jpg)
     background-image: url(../img/city.jpg)
-.jumbo1
+.jumbo-home
     //background-image: url(../img/city.jpg)
-    justify-content: center
+    //justify-content: center
     padding: 10% 0 25% 0
+#jumboServices
+    min-height: 350px
+    width: 100%
+
 //.jumbotron2
     height: 100%
     width: 100%
@@ -217,6 +221,8 @@ a:hover, a.dark-link:hover
     border-top: 3px solid $green
 .underline-green
     background-color: $green
+.orange
+    color: $orange
 .orange-top
     border-top: 3px solid $orange
 .underline-orange
@@ -276,6 +282,8 @@ a:hover, a.dark-link:hover
     background-color: #e0e0e0
 .grey-background-3
     background-color: #5b5b5b
+.bg-black-transparent
+    background-color: $black-transparent
 //.contact-background
     background-image: url(https://i.imgur.com/zykL6QS.jpg)
 #contactBody
@@ -345,6 +353,9 @@ footer
     color: $white
     line-height: 90%
     text-align: center
+    #photo-cred
+        font-size: .75rem
+
 @media (max-width: 767.98px)
     html
         font-size: 0.8rem
@@ -362,3 +373,5 @@ footer
         margin: 2em
     #testimonial
         margin: 2em
+    #jumboServices, #jumboGallery
+        min-height: 200px

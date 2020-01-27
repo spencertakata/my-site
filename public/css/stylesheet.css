@@ -56,8 +56,12 @@ li {
   font-family: "Righteous", Palatino, Times, serif;
 }
 
-.raley {
-  font-famiy: "Raleway", Verdana, Arial, sans-serif;
+.raleway {
+  font-family: "Raleway", Verdana, Arial, sans-serif;
+}
+
+.font-white {
+  color: #fff;
 }
 
 hr {
@@ -80,10 +84,6 @@ a:hover, a.dark-link:hover {
   color: #f9ab18;
 }
 
-.subhead {
-  font-family: "Raleway", Verdana, Arial, sans-serif;
-}
-
 .caption {
   font-size: 0.85rem;
   color: #515151;
@@ -97,44 +97,22 @@ a:hover, a.dark-link:hover {
   color: rgba(0, 0, 0, 0.75);
 }
 
-.footnote {
-  font-size: 0.7em;
-}
-
 .feature-text, .headline, #headlineContact {
-  justify-content: center;
   align-items: center;
   border: 1px solid black;
-  color: #fff;
-  font-family: "Righteous", Palatino, Times, serif;
   text-align: center;
 }
 
 .feature-text {
-  margin: 3em 0;
-  padding: 2%;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
 .headline {
-  padding: 2%;
-  margin: 5%;
   background-color: rgba(0, 0, 0, 0.75);
 }
 
 #headlineContact {
-  padding: 3em;
   margin: 10em 1em 0 1em;
-  background-color: rgba(0, 0, 0, 0.75);
-}
-
-#testimonial {
-  margin: 3em 0;
-}
-
-.home-mod-2 {
-  padding-top: 45px;
-  padding-bottom: 18px;
 }
 
 .left {
@@ -178,19 +156,20 @@ a:hover, a.dark-link:hover {
   color: #f9ab18;
 }
 
-.jumbo, .jumbo1, .jumbotron2, .jumbo3 {
+.jumbo {
   background-size: cover;
   background-position: center center;
   margin-bottom: 0;
-}
-
-.jumbo {
   background-image: url(../img/city.jpg);
 }
 
-.jumbo1 {
-  justify-content: center;
+.jumbo-home {
   padding: 10% 0 25% 0;
+}
+
+#jumboServices {
+  min-height: 350px;
+  width: 100%;
 }
 
 .card-sm, .card-lg, .card-lg-dark {
@@ -224,7 +203,7 @@ a:hover, a.dark-link:hover {
   margin: 0 auto 0.5em;
 }
 
-.red {
+.red-top {
   border-top: 3px solid #dc3545;
 }
 
@@ -232,7 +211,7 @@ a:hover, a.dark-link:hover {
   background-color: #dc3545;
 }
 
-.green {
+.green-top {
   border-top: 3px solid #26734d;
 }
 
@@ -241,6 +220,10 @@ a:hover, a.dark-link:hover {
 }
 
 .orange {
+  color: #f9ab18;
+}
+
+.orange-top {
   border-top: 3px solid #f9ab18;
 }
 
@@ -248,7 +231,7 @@ a:hover, a.dark-link:hover {
   background-color: #f9ab18;
 }
 
-.blue {
+.blue-top {
   border-top: 3px solid #000066;
 }
 
@@ -320,6 +303,10 @@ a:hover, a.dark-link:hover {
   background-color: #5b5b5b;
 }
 
+.bg-black-transparent {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
 #contactBody {
   background: url(../img/city.jpg);
   background-size: cover;
@@ -383,6 +370,9 @@ footer {
   line-height: 90%;
   text-align: center;
 }
+footer #photo-cred {
+  font-size: 0.75rem;
+}
 
 @media (max-width: 767.98px) {
   html {
@@ -409,6 +399,10 @@ footer {
 
   #testimonial {
     margin: 2em;
+  }
+
+  #jumboServices, #jumboGallery {
+    min-height: 200px;
   }
 }
 
