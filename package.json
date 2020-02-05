@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "dependencies": {
+    "@popperjs/core": "^2.0.5",
     "bootstrap": "^4.4.1",
     "clean-css": "^4.2.1",
     "gulp": "^4.0.2",
@@ -13,20 +14,24 @@
     "gulp-imagemin": "^6.2.0",
     "gulp-jshint": "^2.1.0",
     "gulp-minify-css": "^1.2.4",
+    "gulp-purifycss": "^0.2.0",
     "gulp-svgmin": "^2.2.0",
     "gulp-uglify": "^3.0.2",
     "http-server": "^0.12.0",
     "jquery": "^3.4.1",
     "jshint": "^2.10.3",
     "lodash.template": "^4.5.0",
+    "mem": "^6.0.1",
     "nunjucks": "^3.2.0"
   },
   "devDependencies": {
     "eslint": "^6.7.2",
-    "gulp-nunjucks-render": "^2.2.3"
+    "gulp-nunjucks-render": "^2.2.3",
+    "purify-css": "^1.2.5"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp nunjucks && gulp css"
   },
   "repository": {
     "type": "git",
