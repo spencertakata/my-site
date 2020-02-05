@@ -14,7 +14,7 @@ gulp.task('nunjucks', function () {
 });
 
 gulp.task('css', function() {
-    return gulp.src('./public/bootstrap-4.4.1-dist/css/bootstrap.min.css')
+    return gulp.src('./public/bootstrap-4.4.1-dist/css/bootstrap.css')
     .pipe(purify(['.public/**/*.js', './public/*.html']))
     .pipe(gulp.dest('./public/css'))
 })
