@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
     {% macro galleryImg(imgLg, imgSm) %}
         <div class="col-lg-4 col-sm-12">
@@ -6,3 +7,12 @@
             </a>
         </div>
     {% endmacro %}
+=======
+{% macro galleryImg(imgLg, imgSm) %}
+    <div class="col-lg-4 col-sm-12">
+        <a data-fancybox="gallery" href="{{ imgLg }}">
+            <img src="{{ imgSm }}" class="img-fluid img-thumbnail img-gallery">
+        </a>
+    </div>
+{% endmacro %}
+>>>>>>> parent of 99d4c3b... Revert "adding nunjucks image gallery macros, added more images"
