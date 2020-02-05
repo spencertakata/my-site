@@ -3,10 +3,16 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
+html, body {
   margin: 0;
   padding: 0;
   font-family: "Raleway", Verdana, Arial, sans-serif;
+  height: 100%;
+}
+
+container {
+  min-height: 100vh;
+  position: relative;
 }
 
 h1 {
@@ -362,9 +368,10 @@ a:hover, a.dark-link:hover {
 }
 
 footer {
+  position: absolute;
+  bottom: 0;
   width: 100%;
   padding: 2em 20%;
-  margin: 0;
   background-color: rgba(0, 0, 0, 0.75);
   color: #fff;
   line-height: 90%;

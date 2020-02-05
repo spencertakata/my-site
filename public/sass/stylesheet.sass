@@ -30,10 +30,18 @@ $card-dark-bg: #3d3d3d
 
 html
     scroll-behavior: smooth
-body
+html, body
     margin: 0
     padding: 0
     font-family: $raleway
+    height: 100%
+container
+    min-height: 100vh
+    position: relative
+
+
+
+
 
 // Typography
 
@@ -345,10 +353,13 @@ a:hover, a.dark-link:hover
     background-position: center center
     height: 200px
     width: 100%
+
+
 footer
+    position: absolute
+    bottom: 0
     width: 100%
     padding: 2em 20%
-    margin: 0
     background-color: $black-transparent
     color: $white
     line-height: 90%

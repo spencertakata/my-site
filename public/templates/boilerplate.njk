@@ -32,6 +32,7 @@
   {% import "partials/macros.njk" as macro %}
   {% block body %}
   <body>
+      <div id="container">
      {% block navbar %}
           <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
             <a class="navbar-brand" href="./index.html">Spencer Takata</a>
@@ -80,6 +81,8 @@
           <p id="photo-cred"></p>
         </div>
     </footer>
+</div>
+
     {% endblock %}
 
     {% block bottom_scripts %}
