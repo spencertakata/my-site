@@ -10,9 +10,10 @@ html, body {
   height: 100%;
 }
 
-container {
+#container {
   min-height: 100vh;
   position: relative;
+  background-color: #000000;
 }
 
 h1 {
@@ -367,9 +368,12 @@ a:hover, a.dark-link:hover {
   background-color: #000099;
 }
 
-footer {
+.footer-movie {
   position: absolute;
   bottom: 0;
+}
+
+footer {
   width: 100%;
   padding: 2em 20%;
   background-color: rgba(0, 0, 0, 0.75);

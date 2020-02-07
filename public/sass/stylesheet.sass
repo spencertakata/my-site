@@ -35,10 +35,10 @@ html, body
     padding: 0
     font-family: $raleway
     height: 100%
-container
+#container
     min-height: 100vh
     position: relative
-
+    background-color: #000000
 
 
 
@@ -53,27 +53,20 @@ h1
 h2
     display: block
     font-size: 1.5em
-    //margin: 0.83em 0
     font-weight: bold
 h3
     display: block
     font-size: 1.75em
-    //margin: 1em 0
     font-weight: bold
 h4
     display: block
     font-size: 1.5em
-    //margin: 1.33em 0
     font-weight: bold
 h5
     display: block
-    //font-size: .83em
-    //margin: 1.67em 0
     font-weight: bold
 h6
     display: block
-    //font-size: .67em
-    //margin: 2.33em 0
     font-weight: bold
 p
     font-size: 1.1em
@@ -97,8 +90,6 @@ a.dark-link, a.dark-link:visited
     text-decoration: none
 a:hover, a.dark-link:hover
     color: $orange
-//.subhead
-    font-family: $raleway
 .caption
     font-size: 0.85rem
     color: #515151
@@ -108,31 +99,18 @@ a:hover, a.dark-link:hover
     font-size: 0.7em
     font-style: italic
     color: $black-transparent
-//.footnote
-    font-size: 0.7em
 
 // Design Elements
 .feature-text, .headline, #headlineContact
-    //justify-content: center
     align-items: center
     border: 1px solid black
-    //color: $white
-    //font-family: $righteous
     text-align: center
 .feature-text
-    //margin: 3em 0
-    //padding: 2%
     background-color: rgba(0, 0, 0, 0.5)
 .headline
-    //padding: 2%
-    //margin: 5%
     background-color: $black-transparent
 #headlineContact
-    //padding: 3em
     margin: 10em 1em 0 1em
-    //background-color: $black-transparent
-//#testimonial
-    //margin: 3em 0
 
 // Alignment
 .left
@@ -176,27 +154,10 @@ a:hover, a.dark-link:hover
     margin-bottom: 0
     background-image: url(../img/city.jpg)
 .jumbo-home
-    //background-image: url(../img/city.jpg)
-    //justify-content: center
     padding: 10% 0 25% 0
 #jumboServices
     min-height: 350px
     width: 100%
-
-//.jumbotron2
-    height: 100%
-    width: 100%
-    background-image: url(https://i.imgur.com/93acVoz.jpg)
-    justify-content: center
-    padding: 10%
-    border-bottom: 1px solid black
-//.jumbo3
-    background-image: url(https://i.imgur.com/ZF0I5c4.jpg)
-    height: 100%
-    background-repeat: no-repeat
-    padding-top: 10%
-//#banner
-    margin: 2rem
 
 // Cards
 
@@ -247,8 +208,6 @@ a:hover, a.dark-link:hover
     color: $white
     width: 100%
     text-align: center
-//.img-home
-    margin-top: 1.5rem
 
 //Icons & Images
 
@@ -292,8 +251,6 @@ a:hover, a.dark-link:hover
     background-color: #5b5b5b
 .bg-black-transparent
     background-color: $black-transparent
-//.contact-background
-    background-image: url(https://i.imgur.com/zykL6QS.jpg)
 #contactBody
     background: url(../img/city.jpg)
     background-size: cover
@@ -330,34 +287,12 @@ a:hover, a.dark-link:hover
     background-color: $blue
     &:hover
         background-color: $blue-hover
-//.body-img
-    display: block
-    margin: 2.5rem auto 1rem auto
-    width: 70%
-    height: auto
-    border: 4px solid black
-//#about
-    padding: 3em 0
-//#content-box
-    background-color: #CAC6C3
-    padding: 1em 0.5em
-//.portfolio
-    margin: 1em 0
-//.img-small
-    margin: 0 0 1em 0
-    width: 100%
-    height: auto
-//.section-accent
-    background-image: url(https://i.imgur.com/b1r9epz.jpg)
-    background-size: cover
-    background-position: center center
-    height: 200px
-    width: 100%
 
 
-footer
+.footer-movie
     position: absolute
     bottom: 0
+footer
     width: 100%
     padding: 2em 20%
     background-color: $black-transparent
