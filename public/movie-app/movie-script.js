@@ -24,3 +24,9 @@ button.addEventListener("click", function() {
   //Insert result of randomMovie() into html
   output.innerHTML = randomMovie();
 });
+
+$( ".new-movie" ).click(function() {
+    $.post("movie-app/handler_v2.js"), function(success) {
+        console.log("form data posted to handler");
+    }
+});

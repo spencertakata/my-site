@@ -6,10 +6,17 @@
     <h1 class="title"><b>Movie Night</b></h1>
     <p class="body">Can't decide what to watch? Click below to get a random suggestion</p>
     <button type="button" id="randomMovie" class="btn btn-primary btn-large btn-blue">What should I watch?</button>
-    <p id="output"></p>
+    <p id="output" class="py-3"></p>
   </div>
 </div>
+<!-- add new movie form -->
+<form class="" action="movie-app/handler_v2.js" method="POST">
+    <input type="text" name="movies[name]" value="">
+    <input type="submit" name="Submit" class="new-movie">
+</form>
 <script src="./movie-app/movie-script.js" type="text/javascript"></script>
+<!-- <script src="./movie-app/movie-handler.js" type="text/javascript"></script> -->
+
 {% endblock %}
 
 {% block footer %}

@@ -1,6 +1,7 @@
-var gulp = require('gulp');
-var nunjucksRender = require('gulp-nunjucks-render');
-var purify = require('gulp-purifycss');
+const gulp = require('gulp');
+const nunjucksRender = require('gulp-nunjucks-render');
+const purify = require('gulp-purifycss');
+
 
 gulp.task('nunjucks', function () {
     //Get .html and .njk files in pages folder
@@ -18,6 +19,7 @@ gulp.task('css', function() {
     .pipe(purify(['.public/**/*.js', './public/*.html']))
     .pipe(gulp.dest('./public/css'))
 })
+
 
 //Minify HTML
 /* gulp.task('minify', () => {

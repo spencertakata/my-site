@@ -1,4 +1,5 @@
 /* Variables */
+/* New Design */
 html {
   scroll-behavior: smooth;
 }
@@ -71,6 +72,26 @@ li {
   color: #fff;
 }
 
+.font-teal {
+  color: #00c4cc;
+}
+
+.font-teal-dark {
+  color: #00939b;
+}
+
+.font-teal-light {
+  color: #62f7ff;
+}
+
+.font-blue {
+  color: #3b96ff;
+}
+
+.font-purple {
+  color: #5f4bb6;
+}
+
 hr {
   border: 0;
   height: 1px;
@@ -136,7 +157,7 @@ a:hover, a.dark-link:hover {
 
 .navbar-dark {
   font-family: "Righteous", Palatino, Times, serif;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 .navbar-dark .navbar-brand {
   color: #fff;
@@ -167,16 +188,36 @@ a:hover, a.dark-link:hover {
   background-size: cover;
   background-position: center center;
   margin-bottom: 0;
+}
+
+#jumboHome {
+  padding: 10% 0 25% 0;
   background-image: url(../img/city.jpg);
 }
 
-.jumbo-home {
-  padding: 10% 0 25% 0;
+#jumboAbout {
+  background-image: url("https://i.imgur.com/H4rzWkb.jpg") !important;
 }
 
 #jumboServices {
+  background-image: url("https://i.imgur.com/5rCEzKW.jpg");
   min-height: 350px;
   width: 100%;
+}
+
+#jumboServices-v2 {
+  background: #5f4bb6;
+  background: linear-gradient(90deg, #00c4cc 0%, #3b96ff 52%, #5f4bb6 100%);
+}
+#jumboServices-v2 h1 {
+  font-size: 72px;
+}
+#jumboServices-v2 p {
+  font-size: 24px;
+}
+
+#jumboGallery {
+  background-image: url("../img/jumboGallery.jpg");
 }
 
 .card-sm, .card-lg, .card-lg-dark {
@@ -250,7 +291,6 @@ a:hover, a.dark-link:hover {
   padding: 0.8rem 0;
   margin: 0.8rem 0;
   background-color: rgba(0, 0, 0, 0.75);
-  font-family: "Righteous", Palatino, Times, serif;
   color: #fff;
   width: 100%;
   text-align: center;
@@ -291,6 +331,20 @@ a:hover, a.dark-link:hover {
   border: 4px solid black;
 }
 
+#photography {
+  background-image: url("https://images.unsplash.com/photo-1480365334925-2aee561aa28e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1546&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+#web-dev {
+  padding: 0;
+}
+
+.full-opacity {
+  opacity: 1 !important;
+}
+
 .grey-background, .grey-background-2, .grey-background-3, .contact-background {
   padding: 1%;
   margin: 0;
@@ -312,6 +366,30 @@ a:hover, a.dark-link:hover {
 
 .bg-black-transparent {
   background-color: rgba(0, 0, 0, 0.75);
+}
+
+.bg-black {
+  background-color: #000000;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.bg-orange {
+  background-color: #f9ab18;
+}
+
+.bg-red {
+  background-color: #dc3545;
+}
+
+.bg-blue {
+  background-color: #000066;
+}
+
+.bg-green {
+  background-color: #26734d;
 }
 
 #contactBody {
@@ -376,7 +454,7 @@ a:hover, a.dark-link:hover {
 footer {
   width: 100%;
   padding: 2em 20%;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.9);
   color: #fff;
   line-height: 90%;
   text-align: center;

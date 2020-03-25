@@ -23,9 +23,21 @@ $green: #26734d
 $green-hover: #339966
 $red: #dc3545
 $black-transparent: rgba(0, 0, 0, 0.75)
+$black-transparent-dark: rgba(0, 0, 0, 0.9)
 $white: #fff
 $light-gray-border: #cccccc
 $card-dark-bg: #3d3d3d
+
+/* New Design */
+$blue-primary: #3b96ff
+$blue-dark: #0069cb
+$blue-light: #7dc2ff
+$teal-primary: #00c4cc
+$teal-dark: #00939b
+$teal-light: #62f7ff
+$purple-primary: #5f4bb6
+$purple-dark: #2a2285
+$purple-light: #9177e9
 
 
 html
@@ -39,9 +51,6 @@ html, body
     min-height: 100vh
     position: relative
     background-color: #000000
-
-
-
 
 // Typography
 
@@ -78,6 +87,16 @@ li
     font-family: $raleway
 .font-white
     color: $white
+.font-teal
+    color: $teal-primary
+.font-teal-dark
+    color: $teal-dark
+.font-teal-light
+    color: $teal-light
+.font-blue
+    color: $blue-primary
+.font-purple
+    color: $purple-primary
 hr
     border: 0
     height: 1px
@@ -126,7 +145,7 @@ a:hover, a.dark-link:hover
 
 .navbar-dark
     font-family: $righteous
-    background-color: $black-transparent
+    background-color: $black-transparent-dark
     .navbar-brand
         color: $white
         text-decoration: none
@@ -152,12 +171,24 @@ a:hover, a.dark-link:hover
     background-size: cover
     background-position: center center
     margin-bottom: 0
-    background-image: url(../img/city.jpg)
-.jumbo-home
+#jumboHome
     padding: 10% 0 25% 0
+    background-image: url(../img/city.jpg)
+#jumboAbout
+    background-image: url("https://i.imgur.com/H4rzWkb.jpg") !important
 #jumboServices
+    background-image: url("https://i.imgur.com/5rCEzKW.jpg")
     min-height: 350px
     width: 100%
+#jumboServices-v2
+    background: rgb(95,75,182)
+    background: linear-gradient(90deg, $teal-primary 0%, $blue-primary 52%, $purple-primary 100%)
+    h1
+        font-size: 72px
+    p
+        font-size: 24px
+#jumboGallery
+    background-image: url("../img/jumboGallery.jpg")
 
 // Cards
 
@@ -200,11 +231,11 @@ a:hover, a.dark-link:hover
     border-top: 3px solid $blue
 .underline-blue
     background-color: $blue
+
 .dark
     padding: 0.8rem 0
     margin: 0.8rem 0
     background-color: $black-transparent
-    font-family: $righteous
     color: $white
     width: 100%
     text-align: center
@@ -237,7 +268,18 @@ a:hover, a.dark-link:hover
 
 
 //Backgrounds
+#photography
+    background-image: url("https://images.unsplash.com/photo-1480365334925-2aee561aa28e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1546&q=80")
+    background-size: cover
+    background-position: center
+#web-dev
+    // background-image: url("https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80")
+    // background-size: cover
+    // background-position: center
+    padding: 0
 
+.full-opacity
+    opacity: 1.0 !important
 .grey-background, .grey-background-2, .grey-background-3, .contact-background
     padding: 1%
     margin: 0
@@ -251,6 +293,19 @@ a:hover, a.dark-link:hover
     background-color: #5b5b5b
 .bg-black-transparent
     background-color: $black-transparent
+.bg-black
+    background-color: #000000
+.bg-white
+    background-color: #ffffff
+.bg-orange
+    background-color: $orange
+.bg-red
+    background-color: $red
+.bg-blue
+    background-color: $blue
+.bg-green
+    background-color: $green
+
 #contactBody
     background: url(../img/city.jpg)
     background-size: cover
@@ -295,7 +350,7 @@ a:hover, a.dark-link:hover
 footer
     width: 100%
     padding: 2em 20%
-    background-color: $black-transparent
+    background-color: $black-transparent-dark
     color: $white
     line-height: 90%
     text-align: center
