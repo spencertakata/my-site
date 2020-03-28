@@ -20,12 +20,4 @@ gulp.task('css', function() {
     .pipe(gulp.dest('./public/css'))
 })
 
-
-//Minify HTML
-/* gulp.task('minify', () => {
-  return gulp.src('src/*.html')
-    .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(gulp.dest('./'));
-}); */
-
 gulp.task('default', gulp.parallel('nunjucks', 'css'));
