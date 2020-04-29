@@ -1,0 +1,208 @@
+/* Variables */
+/* New Design */
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", "Raleway", Verdana, Arial, sans-serif;
+}
+
+h1, .h1 {
+  font-size: 2.75rem;
+}
+
+h2, .h2 {
+  font-size: 2.25rem;
+}
+
+h3, .h3 {
+  font-size: 2rem;
+}
+
+h4, .h4 {
+  font-size: 1.75rem;
+}
+
+h5, .h5 {
+  font-size: 1.5rem;
+}
+
+h6, .h6 {
+  font-size: 1.25rem;
+}
+
+p, .p {
+  font-size: 1.1rem;
+  line-height: 1.75;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  line-height: 1.5;
+}
+
+.righteous {
+  font-family: "Righteous", Palatino, Times, serif;
+}
+
+.raleway {
+  font-family: "Lato", "Raleway", Verdana, Arial, sans-serif;
+}
+
+.font-white {
+  color: #ffffff;
+}
+
+.font-blue {
+  color: #3b96ff;
+}
+
+.font-blue-dark {
+  color: #0069cb;
+}
+
+.font-blue-light {
+  color: #7dc2ff;
+}
+
+.font-teal {
+  color: #00c4cc;
+}
+
+.font-teal-dark {
+  color: #00939b;
+}
+
+.font-teal-light {
+  color: #62f7ff;
+}
+
+.font-purple {
+  color: #5f4bb6;
+}
+
+.font-purple-dark {
+  color: #2a2285;
+}
+
+.font-purple-light {
+  color: #9177e9;
+}
+
+a:link, a:visited {
+  color: #3b96ff;
+  text-decoration: none;
+}
+
+a.dark-link, a.dark-link:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover, a.dark-link:hover {
+  color: #9177e9;
+}
+
+.navbar-dark {
+  background-color: #242424;
+}
+.navbar-dark .navbar-brand {
+  color: #ffffff;
+  text-decoration: none;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav-item {
+  padding: 0 1.5rem;
+  font-size: 1rem;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-brand:hover,
+.navbar-dark .navbar-brand:focus {
+  color: #f9ab18;
+}
+
+.nav-link:active {
+  color: #f9ab18;
+}
+
+#services-page #jumbo-services {
+  background: #5f4bb6;
+  background: linear-gradient(90deg, #00c4cc 0%, #3b96ff 52%, #5f4bb6 100%);
+}
+#services-page #jumbo-services h1 {
+  font-size: 72px;
+}
+#services-page #jumbo-services p {
+  font-size: 24px;
+}
+#services-page #portrait-filter {
+  width: 300px;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.icon-sm {
+  font-size: 1.5em;
+  margin: 0 0.5em;
+  color: #ffffff;
+}
+
+.icon-lg {
+  font-size: 3em;
+  margin: 0 0.5em;
+  color: #ffffff;
+}
+
+.icon-lg:hover,
+.icon-sm:hover {
+  color: #f9ab18;
+}
+
+.bg-black {
+  background-color: #000000;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.bg-blue {
+  background-color: #3b96ff;
+}
+
+footer {
+  width: 100%;
+  padding: 2em 20%;
+  background-color: #000000;
+  color: #ffffff;
+  line-height: 90%;
+  text-align: center;
+}
+footer #photo-cred {
+  font-size: 0.75rem;
+}
+
+@media (max-width: 767.98px) {
+  .img-shrink {
+    margin-bottom: 1em;
+    width: 70%;
+    height: auto;
+  }
+
+  .img-gallery {
+    margin: 1em 2em;
+    width: 100%;
+    height: auto;
+    margin: 1em auto;
+  }
+}
+
+/*# sourceMappingURL=stylesheet_v2.css.map */

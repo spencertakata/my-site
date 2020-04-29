@@ -1,0 +1,389 @@
+// CONTENTS
+    Variables
+    Typography
+    Design Elements
+    Alignment
+    Navbar
+    Jumbotron
+    Cards
+    Icons & Images
+    Backgrounds
+    Buttons
+    Footer
+    Media Query
+
+/* Variables */
+$raleway: 'Lato', 'Raleway', Verdana, Arial, sans-serif
+$righteous: 'Righteous', Palatino, Times, serif
+$orange: #f9ab18
+$orange-hover: #fbbf51
+/* New Design */
+$blue: #3b96ff
+$blue-dark: #0069cb
+$blue-light: #7dc2ff
+$teal: #00c4cc
+$teal-dark: #00939b
+$teal-light: #62f7ff
+$purple: #5f4bb6
+$purple-dark: #2a2285
+$purple-light: #9177e9
+$white: #ffffff
+$black: #000000
+$gray-dark: #242424
+// $blue: #000066
+// $blue-hover: #000099
+// $green: #26734d
+// $green-hover: #339966
+// $red: #dc3545
+// $black-transparent: rgba(0, 0, 0, 0.75)
+// $black-transparent-dark: rgba(0, 0, 0, 0.9)
+// $white: #fff
+// $light-gray-border: #cccccc
+// $card-dark-bg: #3d3d3d
+
+
+
+
+html
+    scroll-behavior: smooth
+html, body
+    margin: 0
+    padding: 0
+    font-family: $raleway
+    //height: 100%
+// #container
+//     min-height: 100vh
+//     position: relative
+//     background-color: #000000
+
+// Typography
+
+h1, .h1
+    font-size: 2.75rem
+h2, .h2
+    font-size: 2.25rem
+h3, .h3
+    font-size: 2rem
+h4, .h4
+    font-size: 1.75rem
+h5, .h5
+    font-size: 1.5rem
+h6, .h6
+    font-size: 1.25rem
+p, .p
+    font-size: 1.1rem
+    line-height: 1.75
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
+    line-height: 1.5
+
+
+.righteous
+    font-family: $righteous
+.raleway
+    font-family: $raleway
+.font-white
+    color: $white
+.font-blue
+    color: $blue
+.font-blue-dark
+    color: $blue-dark
+.font-blue-light
+    color: $blue-light
+.font-teal
+    color: $teal
+.font-teal-dark
+    color: $teal-dark
+.font-teal-light
+    color: $teal-light
+.font-purple
+    color: $purple
+.font-purple-dark
+    color: $purple-dark
+.font-purple-light
+    color: $purple-light
+// hr
+//     border: 0
+//     height: 1px
+//     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), $black-transparent, rgba(0, 0, 0, 0))
+a:link, a:visited
+    color: $blue
+    text-decoration: none
+a.dark-link, a.dark-link:visited
+    color: $white
+    text-decoration: none
+a:hover, a.dark-link:hover
+    color: $purple-light
+// .caption
+//     font-size: 0.85rem
+//     color: #515151
+//     font-style: italic
+//     text-align: center
+// .date
+//     font-size: 0.7em
+//     font-style: italic
+//     color: $black-transparent
+
+// Design Elements
+// .feature-text, .headline, #headlineContact
+//     align-items: center
+//     border: 1px solid black
+//     text-align: center
+// .feature-text
+//     background-color: rgba(0, 0, 0, 0.5)
+// .headline
+//     background-color: $black-transparent
+// #headlineContact
+//     margin: 10em 1em 0 1em
+
+// Alignment
+// .left
+//     text-align: left
+//     align-items: left
+// .center
+//     margin: 0 auto
+//     text-align: center
+//     justify-content: center
+//     align-items: center
+
+//Navbar
+
+.navbar-dark
+    // font-family: $righteous
+    background-color: $gray-dark
+    .navbar-brand
+        color: $white
+        text-decoration: none
+    .navbar-nav
+        .nav-link
+            color: $white
+            text-decoration: none
+.nav-item
+    padding: 0 1.5rem
+    font-size: 1rem
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-brand:hover,
+.navbar-dark .navbar-brand:focus
+    color: $orange
+.nav-link
+    &:active
+        color: $orange
+
+// Jumbotron
+
+// .jumbo
+//     background-size: cover
+//     background-position: center center
+//     margin-bottom: 0
+// #jumboHome
+//     padding: 10% 0 25% 0
+//     background-image: url(../img/city.jpg)
+// #jumboAbout
+//     background-image: url("https://i.imgur.com/H4rzWkb.jpg") !important
+// #jumboServices
+//     background-image: url("https://i.imgur.com/5rCEzKW.jpg")
+//     min-height: 350px
+//     width: 100%
+
+#services-page
+    #jumbo-services
+        background: rgb(95,75,182)
+        background: linear-gradient(90deg, $teal 0%, $blue 52%, $purple 100%)
+        h1
+            font-size: 72px
+        p
+            font-size: 24px
+    #portrait-filter
+        width: 300px
+        border-radius: 10px
+        border: 2px solid black
+// #jumboGallery
+//     background-image: url("../img/jumboGallery.jpg")
+
+// Cards
+
+// .card-sm, .card-lg, .card-lg-dark
+//     background-color: $white
+//     border-left: 1px solid $light-gray-border
+//     border-bottom: 1px solid $light-gray-border
+//     border-right: 1px solid $light-gray-border
+// .card-sm
+//     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1)
+//     margin: 1.25%
+//     padding: 0.5em 0.9em 0.9em 0.9em
+// .card-lg
+//     box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.1)
+//     margin: 1.25%
+//     padding: 2rem 2.5rem
+// .card-lg-dark
+//     box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.1)
+//     margin: 1.25%
+//     background-color: $card-dark-bg
+// .underline
+//     height: 0.5em
+//     width: 35%
+//     margin: 0 auto 0.5em
+// .red-top
+//     border-top: 3px solid $red
+// .underline-red
+//     background-color: $red
+// .green-top
+//     border-top: 3px solid $green
+// .underline-green
+//     background-color: $green
+// .orange
+//     color: $orange
+// .orange-top
+//     border-top: 3px solid $orange
+// .underline-orange
+//     background-color: $orange
+// .blue-top
+//     border-top: 3px solid $blue
+// .underline-blue
+//     background-color: $blue
+//
+// .dark
+//     padding: 0.8rem 0
+//     margin: 0.8rem 0
+//     background-color: $black-transparent
+//     color: $white
+//     width: 100%
+//     text-align: center
+
+//Icons & Images
+
+// #bitmoji
+//     height: 12em
+//     width: auto
+.icon-sm
+    font-size: 1.5em
+    margin: 0 0.5em
+    color: $white
+.icon-lg
+    font-size: 3em
+    margin: 0 0.5em
+    color: $white
+.icon-lg:hover,
+.icon-sm:hover
+    color: $orange
+//
+// .img-thumbnail
+//     padding: 0.1em
+//     background-color: #383838
+// .body-img
+//   display: block
+//   margin: 2.5rem auto 1rem auto
+//   width: 70%
+//   height: auto
+//   border: 4px solid black
+
+
+//Backgrounds
+// #photography
+//     background-image: url("https://images.unsplash.com/photo-1480365334925-2aee561aa28e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1546&q=80")
+//     background-size: cover
+//     background-position: center
+// #web-dev
+//     // background-image: url("https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80")
+//     // background-size: cover
+//     // background-position: center
+//     padding: 0
+
+// .full-opacity
+//     opacity: 1.0 !important
+// .grey-background, .grey-background-2, .grey-background-3, .contact-background
+//     padding: 1%
+//     margin: 0
+//     background-size: cover
+//     background-position: center center
+// .grey-background
+//     background-image: url(../img/grey-background.jpg)
+// .grey-background-2
+//     background-color: #e0e0e0
+// .grey-background-3
+//     background-color: #5b5b5b
+// .bg-black-transparent
+//     background-color: $black-transparent
+.bg-black
+    background-color: #000000
+.bg-white
+    background-color: #ffffff
+// .bg-orange
+//     background-color: $orange
+// .bg-red
+//     background-color: $red
+.bg-blue
+    background-color: $blue
+// .bg-green
+//     background-color: $green
+
+// #contactBody
+//     background: url(../img/city.jpg)
+//     background-size: cover
+//     background-position: center
+//     height: 100vh
+// .buffer
+//     padding: 0.75em 0
+
+// Buttons
+//
+// .btn
+//     font-family: $righteous
+// .btn
+//     background-color: $blue
+//     border: 1px solid black
+// .btn-secondary
+//     background-color: #8e8e8e
+// .btn-secondary:hover, .btn:hover
+//     background-color: $orange
+//     border: 1px solid black
+// .btn-green
+//     color: $white
+//     background-color: $green
+//     &:hover
+//         color: $white
+//         background-color: $green-hover
+// .btn-orange
+//     background-color: $orange
+//     color: $white
+//     border: 1px solid black
+//     &:hover
+//         background-color: $orange-hover
+// .btn-blue
+//     background-color: $blue
+//     &:hover
+//         background-color: $blue-hover
+
+
+// .footer-movie
+//     position: absolute
+//     bottom: 0
+footer
+    width: 100%
+    padding: 2em 20%
+    background-color: $black
+    color: $white
+    line-height: 90%
+    text-align: center
+    #photo-cred
+        font-size: .75rem
+
+@media (max-width: 767.98px)
+    // html
+    //     font-size: 0.8rem
+    .img-shrink
+        margin-bottom: 1em
+        width: 70%
+        height: auto
+    .img-gallery
+        margin: 1em 2em
+        width: 100%
+        height: auto
+        margin: 1em auto
+    // .card-sm
+    //     padding: 1em 4em 2em 4em
+    //     margin: 2em
+    // #testimonial
+    //     margin: 2em
+    // #jumboServices, #jumboGallery
+    //     min-height: 200px

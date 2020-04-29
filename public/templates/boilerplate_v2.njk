@@ -1,4 +1,4 @@
-
+{% import "partials/macros.njk" as macro %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -27,10 +27,10 @@
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   </head>
-  
+  {% block body %}
   <body>
-      <div class="content-container" id="services-page">
-          
+      <div class="content-container" id="{{ page_id }}">
+          {% block navbar %}
           <nav class="navbar navbar-expand-lg navbar-dark righteous">
               <a class="navbar-brand" href="./index.html">Spencer Takata</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,36 +53,16 @@
                 </ul>
               </div>
             </nav>
-        
+        {% endblock %}
 
-    
-  <!-- BANNER -->
-      <div class="jumbotron jumbotron-fluid" id="jumbo-services">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col mx-auto text-center">
-              <h1 class="py-1 font-white righteous">Front End Developer</h1>
-              <p class="lead raleway font-white">Crafting beautiful websites for an exquisite user-experience</p>
-            </div>
-          </div>
-        </div>
-      </div>
+    {% block banner %}
+    {% endblock %}
 
+    {% block content %}
 
-    
-    <div class="container web-dev-bio">
-        <div class="row">
-            <div class="col-lg-8 mx-auto text-left">
-                <h3 class="font-teal-dark">Jack of all trades, Master of some</h3>
-                <p>My philosophy towards my work emphasizes a <i>Jack of all trades, Master to <span class="font-teal-dark"><strong>some</strong></span></i> approach. As a Front End Developer, my purview includes working with designers to bring mockups to life, effectively integrating with backend arhitecture, understanding the product strategy, and of course creating interfaces for the best user experience possible. </p>
-                <p>While building websites and applications on the client side is my primary focus, I also maintain proficiency with Back End Principles, Creative Design Tools, Marketing and Project Management skills.</p>
-                
-            </div>
-        </div>
-    </div>
+    {% endblock %}
 
-
-    
+    {% block footer %}
         <footer>
             <div class="footer">
               <p><b>By Spencer Takata</b></p>
@@ -100,9 +80,9 @@
         </footer>
     </div>
 
-    
+    {% endblock %}
 
-    
+    {% block bottom_scripts %}
     <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase.js"></script>
     <script>
           // Initialize Firebase
@@ -123,7 +103,7 @@
     <script src="js/myScripts.js"></script>
     <!-- Fancy Box -->
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-    
+    {% endblock %}
   </body>
-  
+  {% endblock %}
 </html>

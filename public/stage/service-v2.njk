@@ -1,13 +1,14 @@
-{% extends "boilerplate.njk" %}
+{% extends "boilerplate_v2.njk" %}
+{% set page_id = "services-page"%}
 
 {% block banner %}
   <!-- BANNER -->
-      <div class="jumbotron jumbo" id="jumboServices-v2">
+      <div class="jumbotron jumbotron-fluid" id="jumbo-services">
         <div class="container">
           <div class="row justify-content-center">
-            <div class="col">
+            <div class="col mx-auto text-center">
               <h1 class="py-1 font-white righteous">Front End Developer</h1>
-              <p class="raleway font-white">Crafting beautiful websites for an exquisite user-experience</p>
+              <p class="lead raleway font-white">Crafting beautiful websites for an exquisite user-experience</p>
             </div>
           </div>
         </div>
@@ -15,13 +16,14 @@
 {% endblock %}
 
 {% block content %}
-    <div class="container">
+    <div class="container web-dev-bio">
         <div class="row">
-            <div class="col-lg-8">
-                {{ macro.spacer("py-2")}}
-                <h4 class="font-teal-dark"><b>Web Development</b></h4>
-                <p class="py-3">Build sleek, engaging, professional websites to define your brand and stand out from the competition.</p>
-                {{ macro.spacer("py-3")}}
+            <div class="col-lg-8 mx-auto text-left">
+                <h3 class="font-teal-dark">Jack of all trades, Master of some</h3>
+                <p>My philosophy towards my work emphasizes a <em>Jack of all trades, Master to <span class="font-teal-dark"><strong>some</strong></span></em> approach. As a Front End Developer, my purview includes working with designers to bring mockups to life, effectively integrating with backend arhitecture, understanding the product strategy, and of course, creating interfaces for the best user experience possible. </p>
+                <p>While building websites and applications on the client side is my primary focus, I also maintain proficiency with Back End Principles, Creative Design Tools, Marketing and Project Management skills.</p>
+                {# <p class="py-3">As a Front End Developer, I build engaging, responsive, professional websites for businesses, nonprofits, and entreprenuers.</p>
+                <p>My philosophy towards Front End Development is one that emphasizes a "Jack of all trades, master to <strong>some</strong>" approach. As a Front End Dev, it's my job to collaborate with people from multiple different independent disciplines. To work effectively, it is important to communicate with creatives, project managers, QA and back end developers. Each of these disciplines involve different ways of thinking, and different pools of knowledge. While client side coding is my primary focus, I also do my best to develop a working procifiency with the fundamentals of Creative Design, Back End Development, Project Management, and General Business Principles.</p> #}
             </div>
         </div>
     </div>
