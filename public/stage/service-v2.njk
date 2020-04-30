@@ -3,11 +3,7 @@
 
 {% block banner %}
   <!-- BANNER -->
-<<<<<<< HEAD
       <div class="jumbotron jumbotron-fluid" id="jumbo-services">
-=======
-      <div class="jumbotron jumbo jumbotron-fluid" id="jumboServices-v2">
->>>>>>> 26c5f1676adf1e8ea55062e91fd493cdf8f6bb16
         <div class="container">
           <div class="row justify-content-center">
             <div class="col mx-auto text-center">
@@ -21,29 +17,92 @@
 
 {% block content %}
     <div class="container web-dev-bio">
+        <!-- Bio text -->
         <div class="row">
             <div class="col-lg-8 mx-auto text-left">
-                <h3 class="font-teal-dark">Jack of all trades, Master of some</h3>
-                <p>My philosophy towards my work emphasizes a <em>Jack of all trades, Master to <span class="font-teal-dark"><strong>some</strong></span></em> approach. As a Front End Developer, my purview includes working with designers to bring mockups to life, effectively integrating with backend arhitecture, understanding the product strategy, and of course, creating interfaces for the best user experience possible. </p>
-                <p>While building websites and applications on the client side is my primary focus, I also maintain proficiency with Back End Principles, Creative Design Tools, Marketing and Project Management skills.</p>
-                {# <p class="py-3">As a Front End Developer, I build engaging, responsive, professional websites for businesses, nonprofits, and entreprenuers.</p>
-                <p>My philosophy towards Front End Development is one that emphasizes a "Jack of all trades, master to <strong>some</strong>" approach. As a Front End Dev, it's my job to collaborate with people from multiple different independent disciplines. To work effectively, it is important to communicate with creatives, project managers, QA and back end developers. Each of these disciplines involve different ways of thinking, and different pools of knowledge. While client side coding is my primary focus, I also do my best to develop a working procifiency with the fundamentals of Creative Design, Back End Development, Project Management, and General Business Principles.</p> #}
+                <h3 class="font-teal-dark copy">Jack of all trades, Master of some</h3>
+                <p class="copy">My philosophy towards my work emphasizes a <em>Jack of all trades, Master to <span class="font-teal-dark"><strong>some</strong></span></em> approach. As a Front End Developer, my purview includes working with designers to bring mockups to life, effectively integrating with backend arhitecture, understanding the product strategy, and of course, creating interfaces for the best user experience possible. </p>
+                <p class="copy">While building websites and applications on the client side is my primary focus, I also maintain proficiency with Back End Principles, Creative Design Tools, Marketing and Project Management skills.</p>
+            </div>
+        </div>
+        <!-- Row 1 -->
+        <div class="row icon-row">
+            <!-- Front end icons -->
+            <div class="col-lg-8 mx-auto">
+                <h4 class="font-teal-dark copy">Front End</h4>
+                <div class="flex-container">
+                    <div class="logo">
+                        <img src="img/html.png" alt="hmtl logo" class="img-fluid">
+                        <p>HTML</p>
+                    </div>
+                    <div class="logo">
+                        <img src="img/css.png" alt="css logo" class="img-fluid">
+                        <p>CSS</p>
+                    </div>
+                    <div class="logo">
+                        <img src="img/javascript.png" alt="javascript logo" class="img-fluid">
+                        <p>Javascript</p>
+                    </div>
+                    <div class="logo">
+                        <img src="img/sass.png" alt="Sass logo" class="img-fluid">
+                        <p>Sass</p>
+                    </div>
+                    <div class="logo">
+                        <img src="img/amp.png" alt="Amp logo" class="img-fluid">
+                        <p>AMP</p>
+                    </div>
+                    <div class="logo">
+                        <img src="img/nunjucks.png" alt="Nunjucks logo" class="img-fluid">
+                        <p>Nunjucks</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Row 2 -->
+        <div class="row icon-row">
+            <div class="col-lg-8 mx-auto">
+                <!-- Nested container for responsive back end/creative layout -->
+                <div class="container-fluid">
+                    <div class="row">
+                        <!-- Back end column -->
+                        <div class="col-lg-6">
+                            <h4 class="font-teal-dark">Back End</h4>
+                            <div class="flex-container">
+                                <div class="logo">
+                                    <img src="img/python.png" alt="Python logo" class="img-fluid">
+                                    <p>Python</p>
+                                </div>
+                                <div class="logo">
+                                    <img src="img/node.png" alt="Node logo" class="img-fluid">
+                                    <p>Node</p>
+                                </div>
+                                <div class="logo">
+                                    <img src="img/mongo.png" alt="Mongo Database logo" class="img-fluid">
+                                    <p>Mongo DB</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Creative column -->
+                        <div class="col-lg-6">
+                            <h4 class="font-teal-dark">Creative</h4>
+                            <div class="flex-container">
+                                <div class="logo">
+                                    <img src="img/sketch.png" alt="Sketch logo" class="img-fluid">
+                                    <p>Sketch</p>
+                                </div>
+                                <div class="logo">
+                                    <img src="img/photoshop.png" alt="Photoshop logo" class="img-fluid">
+                                    <p>Photoshop</p>
+                                </div>
+                                <div class="logo">
+                                    <img src="img/lightroom.png" alt="Lightroom logo" class="img-fluid">
+                                    <p>Lightroom</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 {% endblock %}
-
-<!--<div class="col-lg-6 col-sm-12 center p-5 bg-black font-white" id="web-dev">
-    <i class="fas fa-code"></i>
-    <h4><b>Web Development</b></h4>
-    <div class="underline underline-orange"></div>
-    <p class="py-3 px-5">Build sleek, engaging, professional websites to define your brand and stand out from the competition.</p>
-    <a href="#webDev" class="scrollTo"><button type="button" class="btn btn-secondary btn-orange">Learn more</button></a>
-</div>
-<div class="col-lg-6 col-sm-12 center p-5" id="photography">
-    <i class="fas fa-camera full-opacity"></i>
-    <h4 class="full-opacity"><b>Photography</b></h4>
-    <div class="underline bg-blue full-opacity"></div>
-    <p class="py-3 px-5 full-opacity">I shoot people and sometimes cut off their head. Portraits, Products, Cities, and Nature. </p>
-    <a href="#marketing" class="scrollTo full-opacity"><button type="button" class="btn btn-secondary btn-blue">Learn more</button></a>
-</div> -->

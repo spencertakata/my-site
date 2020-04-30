@@ -136,17 +136,41 @@ a:hover, a.dark-link:hover {
 #services-page #jumbo-services {
   background: #5f4bb6;
   background: linear-gradient(90deg, #00c4cc 0%, #3b96ff 52%, #5f4bb6 100%);
+  padding: 10em 0;
 }
 #services-page #jumbo-services h1 {
   font-size: 72px;
 }
-#services-page #jumbo-services p {
+#services-page #jumbo-services .lead {
   font-size: 24px;
 }
-#services-page #portrait-filter {
-  width: 300px;
-  border-radius: 10px;
-  border: 2px solid black;
+#services-page #jumbo-services .fas {
+  font-size: 100px;
+  color: #ffffff;
+  display: block;
+}
+#services-page .icon-row .flex-container {
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+#services-page .icon-row .flex-container .logo {
+  margin: 0 1em;
+}
+#services-page .icon-row .flex-container .logo p {
+  text-align: center;
+}
+#services-page .icon-row .flex-container .logo img {
+  height: 80px;
+}
+#services-page .icon-row .flex-container .logo:first-child {
+  margin: 0 1em 0 0;
+}
+#services-page .icon-row .flex-container .logo:last-child {
+  margin: 0 0 0 1em;
+}
+#services-page .row-2 {
+  margin: 0 auto;
 }
 
 .icon-sm {
@@ -191,6 +215,10 @@ footer #photo-cred {
 }
 
 @media (max-width: 767.98px) {
+  #services-page .web-dev-bio .copy {
+    padding: 0 10px;
+  }
+
   .img-shrink {
     margin-bottom: 1em;
     width: 70%;

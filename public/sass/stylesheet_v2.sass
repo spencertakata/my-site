@@ -189,14 +189,35 @@ a:hover, a.dark-link:hover
     #jumbo-services
         background: rgb(95,75,182)
         background: linear-gradient(90deg, $teal 0%, $blue 52%, $purple 100%)
+        padding: 10em 0
         h1
             font-size: 72px
-        p
+        .lead
             font-size: 24px
-    #portrait-filter
-        width: 300px
-        border-radius: 10px
-        border: 2px solid black
+
+        .fas
+            font-size: 100px
+            color: $white
+            display: block
+    .icon-row
+        .flex-container
+            display: flex
+            justify-content: left
+            flex-wrap: wrap
+            .logo
+                margin: 0 1em
+                p
+                    text-align: center
+                img
+                    height: 80px
+            .logo:first-child
+                margin: 0 1em 0 0
+            .logo:last-child
+                margin: 0 0 0 1em
+    .row-2
+        margin: 0 auto
+
+
 // #jumboGallery
 //     background-image: url("../img/jumboGallery.jpg")
 
@@ -369,6 +390,10 @@ footer
         font-size: .75rem
 
 @media (max-width: 767.98px)
+    #services-page
+        .web-dev-bio
+            .copy
+                padding: 0 10px
     // html
     //     font-size: 0.8rem
     .img-shrink
