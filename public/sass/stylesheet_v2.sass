@@ -21,12 +21,15 @@ $orange-hover: #fbbf51
 $blue: #3b96ff
 $blue-dark: #0069cb
 $blue-light: #7dc2ff
+$blue-ultra-light: #EBF4FF
 $teal: #00c4cc
 $teal-dark: #00939b
 $teal-light: #62f7ff
+$teal-ultra-light: #EBFEFF
 $purple: #5f4bb6
 $purple-dark: #2a2285
 $purple-light: #9177e9
+$purple-ultra-light: #E5E2F3
 $white: #ffffff
 $black: #000000
 $gray-dark: #242424
@@ -75,8 +78,8 @@ p, .p
     line-height: 1.75
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
     line-height: 1.5
-
-
+.copy
+    padding: 0 10px
 .righteous
     font-family: $righteous
 .raleway
@@ -189,26 +192,88 @@ a:hover, a.dark-link:hover
     #jumbo-services
         background: rgb(95,75,182)
         background: linear-gradient(90deg, $teal 0%, $blue 52%, $purple 100%)
-        padding: 10em 0
+        padding: 7em 0
         h1
             font-size: 72px
+            line-height: 80px
         .lead
             font-size: 24px
+            line-height: 30px
+    h3
+        font-size: 1.55em
+        line-height: 1.75em
     .icon-row
         .flex-container
             display: flex
             justify-content: left
             flex-wrap: wrap
+            padding: 0 10px
             .logo
                 margin: 0 1em
+                width: 80px
                 p
                     text-align: center
                 img
                     height: 80px
             .logo:first-child
                 margin: 0 1em 0 0
-            .logo:last-child
+            .logo:nth-child(4)
+                margin: 0 1em 0 0
+            //.logo:last-child
                 margin: 0 0 0 1em
+    #portfolio
+        padding: 1em 0
+        background-color: $blue-ultra-light
+        .card
+            margin: 1em 0
+        /* Hover effects */
+        .overlay-container
+            position: relative
+        img
+            display: block
+        .overlay
+            position: absolute
+            top: 0
+            bottom: 0
+            left: 0
+            right: 0
+            height: 100%
+            width: 100%
+            opacity: 0
+            transition: .5s ease
+            background-color: $purple
+        .overlay-container:hover .overlay
+            opacity: 1
+        .text
+            color: $white
+            font-size: 20px
+            position: absolute
+            top: 50%
+            left: 50%
+            -webkit-transoform: translate(-50%, -50%)
+            -ms-transform: translate(-50%, -50%)
+            transform: translate(-50%, -50%)
+            text-align: center
+        /* End hover effects */
+        #healthworker-card
+            img
+                padding: 1em .5em 1em
+                border-bottom: 1px solid rgba(0,0,0,.125)
+        .img-scroller
+                overflow-y: scroll
+                height: 300px
+                img
+                    margin: 0 auto
+        #google-card
+            img.google-logo
+                margin: 0 auto
+            #nest-desktop
+                img
+                    width: 100%
+            #nest-mobile
+                img
+                    width: 100%
+
 
 
 // #jumboGallery
@@ -386,16 +451,19 @@ footer
     #services-page
         // Dev write up
         .web-dev-bio
-            h3
+            //h3
                 font-size: 1.8rem
-            .copy
-                padding: 0 10px
+
         // Skill icons
-        .icon-row
+        //.icon-row
             .flex-container
                 padding: 0 10px
-                #amp-logo
+                #amp-logo, #sass
                     margin-left: 0
+                #sass
+                    margin-left: 0
+
+
     // html
     //     font-size: 0.8rem
     .img-shrink

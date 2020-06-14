@@ -43,6 +43,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   line-height: 1.5;
 }
 
+.copy {
+  padding: 0 10px;
+}
+
 .righteous {
   font-family: "Righteous", Palatino, Times, serif;
 }
@@ -136,21 +140,29 @@ a:hover, a.dark-link:hover {
 #services-page #jumbo-services {
   background: #5f4bb6;
   background: linear-gradient(90deg, #00c4cc 0%, #3b96ff 52%, #5f4bb6 100%);
-  padding: 10em 0;
+  padding: 7em 0;
 }
 #services-page #jumbo-services h1 {
   font-size: 72px;
+  line-height: 80px;
 }
 #services-page #jumbo-services .lead {
   font-size: 24px;
+  line-height: 30px;
+}
+#services-page h3 {
+  font-size: 1.55em;
+  line-height: 1.75em;
 }
 #services-page .icon-row .flex-container {
   display: flex;
   justify-content: left;
   flex-wrap: wrap;
+  padding: 0 10px;
 }
 #services-page .icon-row .flex-container .logo {
   margin: 0 1em;
+  width: 80px;
 }
 #services-page .icon-row .flex-container .logo p {
   text-align: center;
@@ -161,8 +173,69 @@ a:hover, a.dark-link:hover {
 #services-page .icon-row .flex-container .logo:first-child {
   margin: 0 1em 0 0;
 }
-#services-page .icon-row .flex-container .logo:last-child {
-  margin: 0 0 0 1em;
+#services-page .icon-row .flex-container .logo:nth-child(4) {
+  margin: 0 1em 0 0;
+}
+#services-page #portfolio {
+  padding: 1em 0;
+  background-color: #EBF4FF;
+  /* Hover effects */
+  /* End hover effects */
+}
+#services-page #portfolio .card {
+  margin: 1em 0;
+}
+#services-page #portfolio .overlay-container {
+  position: relative;
+}
+#services-page #portfolio img {
+  display: block;
+}
+#services-page #portfolio .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #5f4bb6;
+}
+#services-page #portfolio .overlay-container:hover .overlay {
+  opacity: 1;
+}
+#services-page #portfolio .text {
+  color: #ffffff;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transoform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+#services-page #portfolio #healthworker-card img {
+  padding: 1em 0.5em 1em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+#services-page #portfolio .img-scroller {
+  overflow-y: scroll;
+  height: 300px;
+}
+#services-page #portfolio .img-scroller img {
+  margin: 0 auto;
+}
+#services-page #portfolio #google-card img.google-logo {
+  margin: 0 auto;
+}
+#services-page #portfolio #google-card #nest-desktop img {
+  width: 100%;
+}
+#services-page #portfolio #google-card #nest-mobile img {
+  width: 100%;
 }
 
 .icon-sm {
@@ -207,19 +280,6 @@ footer #photo-cred {
 }
 
 @media (max-width: 767.98px) {
-  #services-page .web-dev-bio h3 {
-    font-size: 1.8rem;
-  }
-  #services-page .web-dev-bio .copy {
-    padding: 0 10px;
-  }
-  #services-page .icon-row .flex-container {
-    padding: 0 10px;
-  }
-  #services-page .icon-row .flex-container #amp-logo {
-    margin-left: 0;
-  }
-
   .img-shrink {
     margin-bottom: 1em;
     width: 70%;
