@@ -1,0 +1,92 @@
+#to-do-card .to-do-body {
+  font-family: "Roboto";
+  background: #70e1f5;
+  background: -webkit-linear-gradient(to right, #ffd194, #70e1f5);
+  background: linear-gradient(to right, #ffd194, #70e1f5);
+}
+#to-do-card #container {
+  width: 95%;
+  margin: 1em auto;
+  background-color: #f7f7f7;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+#to-do-card h1 {
+  background-color: #2980b9;
+  color: white;
+  margin: 0;
+  padding: 0.5em;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: normal;
+}
+#to-do-card .fa-plus {
+  float: right;
+  vertical-align: middle;
+  margin-top: 5px;
+}
+#to-do-card ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#to-do-card li {
+  background-color: #fff;
+  /*height: 40px*/
+  line-height: 40px;
+  color: #666;
+  vertical-align: middle;
+}
+#to-do-card li p {
+  padding-bottom: 5px;
+}
+#to-do-card li:nth-child(2n) {
+  background-color: #f7f7f7;
+}
+#to-do-card span {
+  background-color: #e74c3c;
+  display: inline-block;
+  margin-right: 20px;
+  text-align: center;
+  color: white;
+  background-color: #8f8f8f;
+  margin: 6px;
+  width: 30px;
+  height: 75%;
+}
+#to-do-card input {
+  width: 100%;
+  padding: 13px 13px 13px 20px;
+  font-size: 18px;
+  background-color: #f7f7f7;
+  color: #2980b9;
+  box-sizing: border-box;
+  border: 3px solid rgba(0, 0, 0, 0);
+}
+#to-do-card input:focus {
+  background-color: #fff;
+  border: 3px solid #2980b9;
+  outline: none;
+}
+#to-do-card .completed {
+  color: gray;
+  text-decoration: line-through;
+}
+@media (min-width: 767.98px) {
+  #to-do-card span {
+    background-color: #e74c3c;
+    height: 40px;
+    width: 0;
+    display: inline-block;
+    margin: 0 20px 0 0;
+    text-align: center;
+    color: white;
+    transition: 0.2s linear;
+    opacity: 0;
+  }
+  #to-do-card li:hover span {
+    width: 40px;
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=todo.css.map */
