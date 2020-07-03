@@ -104,10 +104,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
     color: $purple-dark
 .font-purple-light
     color: $purple-light
-// hr
-//     border: 0
-//     height: 1px
-//     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), $black-transparent, rgba(0, 0, 0, 0))
+
 a:link, a:visited
     color: $blue
     text-decoration: none
@@ -171,6 +168,14 @@ a:hover, a.dark-link:hover
 .nav-link
     &:active
         color: $orange
+
+.desktop
+    display: none
+
+/* === Buttons === */
+.btn-dark-outline
+    border: 2px solid $white
+    background-color: $black
 
 // Jumbotron
 
@@ -259,20 +264,27 @@ a:hover, a.dark-link:hover
             img
                 padding: 1em .5em 1em
                 border-bottom: 1px solid rgba(0,0,0,.125)
-        .img-scroller
-                overflow-y: scroll
-                height: 300px
-                img
-                    margin: 0 auto
+
         #google-card
+            .img-scroller
+                    overflow-y: scroll
+                    height: 300px
+                    img
+                        margin: 0 auto
             img.google-logo
                 margin: 0 auto
+            .nav-item
+                padding: .5em 1em
             #nest-desktop
                 img
                     width: 100%
             #nest-mobile
                 img
                     width: 100%
+        #to-do-card
+            .card-header
+                background-color: $white
+            .card-title
 
 
 
@@ -437,6 +449,16 @@ a:hover, a.dark-link:hover
 // .footer-movie
 //     position: absolute
 //     bottom: 0
+
+.img-shrink
+    margin-bottom: 1em
+    width: 70%
+    height: auto
+.img-gallery
+    margin: 1em 2em
+    width: 100%
+    height: auto
+    margin: 1em auto
 footer
     width: 100%
     padding: 2em 20%
@@ -447,7 +469,11 @@ footer
     #photo-cred
         font-size: .75rem
 
-@media (max-width: 767.98px)
+@media (min-width: 767.98px)
+    .mobile
+        display: none
+    .desktop
+        display: inherit
     #services-page
         // Dev write up
         .web-dev-bio
@@ -466,15 +492,7 @@ footer
 
     // html
     //     font-size: 0.8rem
-    .img-shrink
-        margin-bottom: 1em
-        width: 70%
-        height: auto
-    .img-gallery
-        margin: 1em 2em
-        width: 100%
-        height: auto
-        margin: 1em auto
+
     // .card-sm
     //     padding: 1em 4em 2em 4em
     //     margin: 2em

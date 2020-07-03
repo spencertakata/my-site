@@ -1,0 +1,14 @@
+.btn-dark-outline {
+    border: 1px solid #ffffff;
+    background-color: #000000;
+    color: #ffffff;
+}
+.bg-black {
+    background-color: #000000;
+}
+
+.btn-dark-outline:hover {
+    border: 1px solid #ffffff;
+    background-color: #000000;
+    color: #ffffff;
+}

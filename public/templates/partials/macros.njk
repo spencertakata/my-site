@@ -1,22 +1,19 @@
-<<<<<<< HEAD
-
-    {% macro galleryImg(imgLg, imgSm, alt="") %}
-        <div class="col-lg-4 col-sm-12">
-            <a data-fancybox="gallery" href="{{ imgLg }}">
-                <img src="{{ imgSm }}" class="img-fluid img-thumbnail img-gallery" alt="{{ alt }}" width="480" height="320">
-            </a>
-        </div>
-    {% endmacro %}
-
-    {% macro spacer(size) %}
-        <div class="{{ size }}">&nbsp;</div>
-    {% endmacro %}
-=======
-{% macro galleryImg(imgLg, imgSm) %}
+{% macro galleryImg(imgLg, imgSm, alt="") %}
     <div class="col-lg-4 col-sm-12">
         <a data-fancybox="gallery" href="{{ imgLg }}">
-            <img src="{{ imgSm }}" class="img-fluid img-thumbnail img-gallery">
+            <img src="{{ imgSm }}" class="img-fluid img-thumbnail img-gallery" alt="{{ alt }}" width="480" height="320">
         </a>
     </div>
 {% endmacro %}
->>>>>>> parent of 99d4c3b... Revert "adding nunjucks image gallery macros, added more images"
+
+{% macro spacer(size) %}
+    <div class="{{ size }}">&nbsp;</div>
+{% endmacro %}
+
+{% macro go_back(id) %}
+<div class="bg-black">
+    <a href="../../service-v2.html#{{ id }}">
+        <button class="btn btn-dark-outline righteous m-2" id="btn-go-back" type="button" name="button">&laquo; Go back</button>
+    </a>
+</div>
+{% endmacro %}

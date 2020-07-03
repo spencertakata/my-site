@@ -10,15 +10,16 @@
     <meta name="description" content="Spencer Takata Portfolio">
     <meta name="author" content="Spencer Takata">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- stylesheet -->
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- Custom Stylesheets -->
     <link rel="stylesheet" href="./css/stylesheet_v2.css">
+    <link rel="stylesheet" type="text/css" href="projects/to-do-app/assets/css/todos.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="./css/magnific-popup.css"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;0,500;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,700;1,800;1,900&family=Righteous&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;0,500;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,700;1,800;1,900&family=Righteous&display=swap&family=Roboto&display=swap" rel="stylesheet">
     <!-- favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
@@ -169,44 +170,44 @@
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                     <h2 class="font-teal-dark copy righteous">My Work</h2>
+                    <!-- Healthworker housing -->
                     <div class="card" id="healthworker-card">
                         <div class="overlay-container">
                             <img src="img/health-worker-housing-mockup.png" class="img-fluid img-card-top" alt="Mock up of website">
                             <div class="overlay">
                                 <div class="text">
                                     <p>A volunteer-run Covid-19 relief project</p>
-                                    <button type="button" class="btn btn-primary"><a href="#">Visit site</a></button>
+                                    <a href="covid_ny/deploy/index"><button type="button" class="btn btn-primary">Visit site</button></a>
                                 </div>
                             </div>
                         </div>
                         <div class="card-body">
                             <h5 class="card-title font-teal-dark">Health Worker Housing</h5>
                             <p class="card-text">At the start of the Covid-19 outbreak, I joined a volunteer initiative to connect healthcare workers with secondary housing to insulate their families from added risk. The site was designed to be simple, easily scalable, and deployed as fast as possible.</p>
-                            <a href="#" class="card-link">Visit Site &raquo;</a>
-                            <a href="#" class="card-link">View on Github &raquo;</a>
+                            <a href="projects/covid_ny/index.html" class="card-link">Visit Site &raquo;</a>
+                            <a href="https://github.com/spencertakata/covid_ny" class="card-link">View on Github &raquo;</a>
                         </div>
                     </div>
+                    <!-- Google -->
                     <div class="card" id="google-card">
                         <div class="card-body">
                             <img src="img/google-logo.png" alt="Google" class="img-fluid google-logo" width="70%">
-                            <p class="card-text">Responsive email development for several Google teams across products, including Google Nest, Chromecast, Actions on Google and more. Check out an example email with the buttons below.</p>
+                            <p class="card-text">With Google I build responsive emails for several teams & products, including Google Nest, Chromecast, Actions on Google and more. Check out an example email with the buttons below.</p>
                             <div class="card">
                                 <div class="card-header">
-                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                      <li class="nav-item" role="presentation">
-                                        <a class="nav-link active" id="desktop-tab" data-toggle="tab" href="#desktop" role="tab" aria-controls="desktop" aria-selected="true">Desktop</a>
-                                      </li>
-                                      <li class="nav-item" role="presentation">
-                                        <a class="nav-link" id="mobile-tab" data-toggle="tab" href="#mobile" role="tab" aria-controls="mobile" aria-selected="false">Mobile</a>
-                                      </li>
-                                    </ul>
-                                    <div class="tab-content" id="myTabContent">
-                                      <div class="tab-pane fade show active" id="desktop" role="tabpanel" aria-labelledby="desktop-tab">
+                                    <nav>
+                                      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                        <a class="nav-item nav-link active" id="nav-desktop-tab" data-toggle="tab" href="#desktop-tab" role="tab" aria-controls="nav-desktop" aria-selected="true">Desktop</a>
+                                        <a class="nav-item nav-link" id="nav-mobile-tab" data-toggle="tab" href="#mobile-tab" role="tab" aria-controls="nav-mobile" aria-selected="false">Mobile</a>
+                                      </div>
+                                    </nav>
+                                    <div class="tab-content" id="nav-tabContent">
+                                      <div class="tab-pane fade show active" id="desktop-tab" role="tabpanel" aria-labelledby="nav-desktop-tab">
                                           <div class="img-scroller" id="nest-desktop">
                                               <img src="img/nest-bf-desktop.png" alt="Google Nest email desktop version">
                                           </div>
                                       </div>
-                                      <div class="tab-pane fade" id="mobile" role="tabpanel" aria-labelledby="mobile-tab">
+                                      <div class="tab-pane fade" id="mobile-tab" role="tabpanel" aria-labelledby="nav-mobile-tab">
                                           <div class="img-scroller" id="nest-mobile">
                                               <img src="img/nest-bf-mobile.png" alt="Google Nest email mobile version">
                                           </div>
@@ -218,6 +219,25 @@
                         </div>
                     </div>
                     <!-- End #google-card -->
+                    <!-- To-Do list -->
+                    <div class="card" id="to-do-card">
+                        <div class="card-header">
+                            <h5 class="card-title font-teal-dark">To-Do List</h5>
+                            <p class="card-text">A basic to-do list app to organize tasks for the day. You can add new tasks, remove with the trash can icon, or strikeout by clicing the text. The version shown here is purely the front end. You can view a working app with data persistence built with Express, Node, and MongoDB on my github.</p>
+                        </div>
+                        <div class="card-body to-do-body">
+                            <div id="container">
+                            	<h1>To-Do List <i class="fa fa-plus"></i></h1>
+                            	<input type="text" placeholder="Add New Todo">
+                                <ul>
+                                    <li><span><i class="fa fa-trash"></i></span> Practice code</li>
+                                    <li><span><i class="fa fa-trash"></i></span> Get groceries</li>
+                                    <li><span><i class="fa fa-trash"></i></span> Clean the kitchen</li>
+                                    <li><span><i class="fa fa-trash"></i></span> Workout</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -264,6 +284,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <!-- My scripts -->
     <script src="js/myScripts.js"></script>
+    <script type="text/javascript" src="projects/to-do-app/assets/js/todos.js"></script>
     <!-- Fancy Box -->
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     

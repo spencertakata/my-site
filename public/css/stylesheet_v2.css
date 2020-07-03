@@ -137,6 +137,16 @@ a:hover, a.dark-link:hover {
   color: #f9ab18;
 }
 
+.desktop {
+  display: none;
+}
+
+/* === Buttons === */
+.btn-dark-outline {
+  border: 2px solid #ffffff;
+  background-color: #000000;
+}
+
 #services-page #jumbo-services {
   background: #5f4bb6;
   background: linear-gradient(90deg, #00c4cc 0%, #3b96ff 52%, #5f4bb6 100%);
@@ -221,15 +231,18 @@ a:hover, a.dark-link:hover {
   padding: 1em 0.5em 1em;
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
-#services-page #portfolio .img-scroller {
+#services-page #portfolio #google-card .img-scroller {
   overflow-y: scroll;
   height: 300px;
 }
-#services-page #portfolio .img-scroller img {
+#services-page #portfolio #google-card .img-scroller img {
   margin: 0 auto;
 }
 #services-page #portfolio #google-card img.google-logo {
   margin: 0 auto;
+}
+#services-page #portfolio #google-card .nav-item {
+  padding: 0.5em 1em;
 }
 #services-page #portfolio #google-card #nest-desktop img {
   width: 100%;
@@ -237,7 +250,9 @@ a:hover, a.dark-link:hover {
 #services-page #portfolio #google-card #nest-mobile img {
   width: 100%;
 }
-
+#services-page #portfolio #to-do-card .card-header {
+  background-color: #ffffff;
+}
 .icon-sm {
   font-size: 1.5em;
   margin: 0 0.5em;
@@ -267,6 +282,19 @@ a:hover, a.dark-link:hover {
   background-color: #3b96ff;
 }
 
+.img-shrink {
+  margin-bottom: 1em;
+  width: 70%;
+  height: auto;
+}
+
+.img-gallery {
+  margin: 1em 2em;
+  width: 100%;
+  height: auto;
+  margin: 1em auto;
+}
+
 footer {
   width: 100%;
   padding: 2em 20%;
@@ -279,18 +307,13 @@ footer #photo-cred {
   font-size: 0.75rem;
 }
 
-@media (max-width: 767.98px) {
-  .img-shrink {
-    margin-bottom: 1em;
-    width: 70%;
-    height: auto;
+@media (min-width: 767.98px) {
+  .mobile {
+    display: none;
   }
 
-  .img-gallery {
-    margin: 1em 2em;
-    width: 100%;
-    height: auto;
-    margin: 1em auto;
+  .desktop {
+    display: inherit;
   }
 }
 
