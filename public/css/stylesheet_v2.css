@@ -149,8 +149,8 @@ a:hover, a.dark-link:hover {
 
 #services-page #jumbo-services {
   background: #5f4bb6;
-  background: linear-gradient(90deg, #00c4cc 0%, #3b96ff 52%, #5f4bb6 100%);
-  padding: 7em 0;
+  background-background: linear-gradient(90deg, #00c4cc 0%, #3b96ff 52%, #5f4bb6 100%);
+  background-padding: 7em 0;
 }
 #services-page #jumbo-services h1 {
   font-size: 72px;
@@ -160,48 +160,47 @@ a:hover, a.dark-link:hover {
   font-size: 24px;
   line-height: 30px;
 }
-#services-page h3 {
+#services-page #jumbo-services h3 {
   font-size: 1.55em;
   line-height: 1.75em;
 }
-#services-page .icon-row .flex-container {
+#services-page #jumbo-services .icon-row .flex-container {
   display: flex;
   justify-content: left;
   flex-wrap: wrap;
   padding: 0 10px;
 }
-#services-page .icon-row .flex-container .logo {
+#services-page #jumbo-services .icon-row .flex-container .logo {
   margin: 0 1em;
-  width: 80px;
+  width: 70px;
 }
-#services-page .icon-row .flex-container .logo p {
+#services-page #jumbo-services .icon-row .flex-container .logo p {
   text-align: center;
 }
-#services-page .icon-row .flex-container .logo img {
-  height: 80px;
+#services-page #jumbo-services .icon-row .flex-container .logo img {
+  height: 70px;
 }
-#services-page .icon-row .flex-container .logo:first-child {
+#services-page #jumbo-services .icon-row .flex-container .logo:first-child {
   margin: 0 1em 0 0;
 }
-#services-page .icon-row .flex-container .logo:nth-child(4) {
-  margin: 0 1em 0 0;
+#services-page #jumbo-services .icon-row .flex-container #sass-logo {
+  margin: 0 1em 0 1em;
 }
-#services-page #portfolio {
+#services-page #jumbo-services #portfolio {
   padding: 1em 0;
   background-color: #EBF4FF;
-  /* Hover effects */
-  /* End hover effects */
 }
-#services-page #portfolio .card {
+#services-page #jumbo-services #portfolio .card {
   margin: 1em 0;
+  /* Hover effects */
 }
-#services-page #portfolio .overlay-container {
+#services-page #jumbo-services #portfolio .overlay-container {
   position: relative;
 }
-#services-page #portfolio img {
+#services-page #jumbo-services #portfolio img {
   display: block;
 }
-#services-page #portfolio .overlay {
+#services-page #jumbo-services #portfolio .overlay {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -213,10 +212,10 @@ a:hover, a.dark-link:hover {
   transition: 0.5s ease;
   background-color: #5f4bb6;
 }
-#services-page #portfolio .overlay-container:hover .overlay {
+#services-page #jumbo-services #portfolio .overlay-container:hover .overlay {
   opacity: 1;
 }
-#services-page #portfolio .text {
+#services-page #jumbo-services #portfolio .text {
   color: #ffffff;
   font-size: 20px;
   position: absolute;
@@ -226,31 +225,32 @@ a:hover, a.dark-link:hover {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+  /* End hover effects */
 }
-#services-page #portfolio #healthworker-card img {
+#services-page #jumbo-services #portfolio #healthworker-card img {
   padding: 1em 0.5em 1em;
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
-#services-page #portfolio #google-card .img-scroller {
+#services-page #jumbo-services #portfolio #healthworker-card #google-card .img-scroller {
   overflow-y: scroll;
   height: 300px;
 }
-#services-page #portfolio #google-card .img-scroller img {
+#services-page #jumbo-services #portfolio #healthworker-card #google-card .img-scroller img {
   margin: 0 auto;
 }
-#services-page #portfolio #google-card img.google-logo {
+#services-page #jumbo-services #portfolio #healthworker-card #google-card .img-scroller img.google-logo {
   margin: 0 auto;
 }
-#services-page #portfolio #google-card .nav-item {
+#services-page #jumbo-services #portfolio #healthworker-card #google-card .img-scroller .nav-item {
   padding: 0.5em 1em;
 }
-#services-page #portfolio #google-card #nest-desktop img {
+#services-page #jumbo-services #portfolio #healthworker-card #google-card .img-scroller #nest-desktop img {
   width: 100%;
 }
-#services-page #portfolio #google-card #nest-mobile img {
+#services-page #jumbo-services #portfolio #healthworker-card #google-card .img-scroller #nest-mobile img {
   width: 100%;
 }
-#services-page #portfolio #to-do-card .card-header {
+#services-page #jumbo-services #portfolio #healthworker-card #to-do-card .card-header {
   background-color: #ffffff;
 }
 
@@ -315,6 +315,23 @@ footer #photo-cred {
 
   .desktop {
     display: inherit;
+  }
+
+  #services-page .web-dev-bio .icon-row .flex-container {
+    padding: 0 10px;
+  }
+  #services-page .web-dev-bio .icon-row .flex-container #amp-logo {
+    margin-left: 0;
+  }
+  #services-page .web-dev-bio .icon-row .flex-container .logo:nth-child(4) {
+    margin: 0 1em 0 1em;
+  }
+
+  #services-page .icon-row .flex-container .logo:first-child {
+    margin: 0 1em 0 0;
+  }
+  #services-page .icon-row .flex-container .logo:nth-child(4) {
+    margin: 0 1em 0 1em;
   }
 }
 

@@ -48,11 +48,11 @@ $gray-dark: #242424
 
 
 html
-    scroll-behavior: smooth
+  scroll-behavior: smooth
 html, body
-    margin: 0
-    padding: 0
-    font-family: $raleway
+  margin: 0
+  padding: 0
+  font-family: $raleway
     //height: 100%
 // #container
 //     min-height: 100vh
@@ -62,57 +62,57 @@ html, body
 // Typography
 
 h1, .h1
-    font-size: 2.75rem
+  font-size: 2.75rem
 h2, .h2
-    font-size: 2.25rem
+  font-size: 2.25rem
 h3, .h3
-    font-size: 2rem
+  font-size: 2rem
 h4, .h4
-    font-size: 1.75rem
+  font-size: 1.75rem
 h5, .h5
-    font-size: 1.5rem
+  font-size: 1.5rem
 h6, .h6
-    font-size: 1.25rem
+  font-size: 1.25rem
 p, .p
-    font-size: 1.1rem
-    line-height: 1.75
+  font-size: 1.1rem
+  line-height: 1.75
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
-    line-height: 1.5
+  line-height: 1.5
 .copy
-    padding: 0 10px
+  padding: 0 10px
 .righteous
-    font-family: $righteous
+  font-family: $righteous
 .raleway
-    font-family: $raleway
+  font-family: $raleway
 .font-white
-    color: $white
+  color: $white
 .font-blue
-    color: $blue
+  color: $blue
 .font-blue-dark
-    color: $blue-dark
+  color: $blue-dark
 .font-blue-light
-    color: $blue-light
+  color: $blue-light
 .font-teal
-    color: $teal
+  color: $teal
 .font-teal-dark
-    color: $teal-dark
+  color: $teal-dark
 .font-teal-light
-    color: $teal-light
+  color: $teal-light
 .font-purple
-    color: $purple
+  color: $purple
 .font-purple-dark
-    color: $purple-dark
+  color: $purple-dark
 .font-purple-light
-    color: $purple-light
+  color: $purple-light
 
 a:link, a:visited
-    color: $blue
-    text-decoration: none
+  color: $blue
+  text-decoration: none
 a.dark-link, a.dark-link:visited
-    color: $white
-    text-decoration: none
+  color: $white
+  text-decoration: none
 a:hover, a.dark-link:hover
-    color: $purple-light
+  color: $purple-light
 // .caption
 //     font-size: 0.85rem
 //     color: #515151
@@ -148,34 +148,33 @@ a:hover, a.dark-link:hover
 //Navbar
 
 .navbar-dark
-    // font-family: $righteous
-    background-color: $gray-dark
-    .navbar-brand
-        color: $white
-        text-decoration: none
-    .navbar-nav
-        .nav-link
-            color: $white
-            text-decoration: none
+  background-color: $gray-dark
+  .navbar-brand
+    color: $white
+    text-decoration: none
+  .navbar-nav
+    .nav-link
+      color: $white
+      text-decoration: none
 .nav-item
-    padding: 0 1.5rem
-    font-size: 1rem
+  padding: 0 1.5rem
+  font-size: 1rem
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link:focus,
 .navbar-dark .navbar-brand:hover,
 .navbar-dark .navbar-brand:focus
-    color: $orange
+  color: $orange
 .nav-link
-    &:active
-        color: $orange
+  &:active
+    color: $orange
 
 .desktop
-    display: none
+  display: none
 
 /* === Buttons === */
 .btn-dark-outline
-    border: 2px solid $white
-    background-color: $black
+  border: 2px solid $white
+  background-color: $black
 
 // Jumbotron
 
@@ -194,96 +193,96 @@ a:hover, a.dark-link:hover
 //     width: 100%
 
 #services-page
-    #jumbo-services
-        background: rgb(95,75,182)
-        background: linear-gradient(90deg, $teal 0%, $blue 52%, $purple 100%)
-        padding: 7em 0
-        h1
-            font-size: 72px
-            line-height: 80px
-        .lead
-            font-size: 24px
-            line-height: 30px
+  #jumbo-services
+    background: rgb(95,75,182)
+      background: linear-gradient(90deg, $teal 0%, $blue 52%, $purple 100%)
+      padding: 7em 0
+    h1
+      font-size: 72px
+      line-height: 80px
+    .lead
+      font-size: 24px
+      line-height: 30px
     h3
-        font-size: 1.55em
-        line-height: 1.75em
+      font-size: 1.55em
+      line-height: 1.75em
     .icon-row
-        .flex-container
-            display: flex
-            justify-content: left
-            flex-wrap: wrap
-            padding: 0 10px
-            .logo
-                margin: 0 1em
-                width: 80px
-                p
-                    text-align: center
-                img
-                    height: 80px
-            .logo:first-child
-                margin: 0 1em 0 0
-            .logo:nth-child(4)
-                margin: 0 1em 0 0
-            //.logo:last-child
-                margin: 0 0 0 1em
-    #portfolio
-        padding: 1em 0
-        background-color: $blue-ultra-light
-        .card
-            margin: 1em 0
-        /* Hover effects */
-        .overlay-container
-            position: relative
-        img
-            display: block
-        .overlay
-            position: absolute
-            top: 0
-            bottom: 0
-            left: 0
-            right: 0
-            height: 100%
-            width: 100%
-            opacity: 0
-            transition: .5s ease
-            background-color: $purple
-        .overlay-container:hover .overlay
-            opacity: 1
-        .text
-            color: $white
-            font-size: 20px
-            position: absolute
-            top: 50%
-            left: 50%
-            -webkit-transoform: translate(-50%, -50%)
-            -ms-transform: translate(-50%, -50%)
-            transform: translate(-50%, -50%)
+      .flex-container
+        display: flex
+        justify-content: left
+        flex-wrap: wrap
+        padding: 0 10px
+        .logo
+          margin: 0 1em
+          width: 70px
+          p
             text-align: center
+          img
+            height: 70px
+        .logo:first-child
+          margin: 0 1em 0 0
+        //.logo:nth-child(4)
+          margin: 0 1em
+        #sass-logo
+          margin: 0 1em 0 1em
+    #portfolio
+      padding: 1em 0
+      background-color: $blue-ultra-light
+      .card
+        margin: 1em 0
+        /* Hover effects */
+      .overlay-container
+        position: relative
+      img
+        display: block
+      .overlay
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        height: 100%
+        width: 100%
+        opacity: 0
+        transition: .5s ease
+        background-color: $purple
+      .overlay-container:hover .overlay
+        opacity: 1
+      .text
+        color: $white
+        font-size: 20px
+        position: absolute
+        top: 50%
+        left: 50%
+        -webkit-transoform: translate(-50%, -50%)
+        -ms-transform: translate(-50%, -50%)
+        transform: translate(-50%, -50%)
+        text-align: center
         /* End hover effects */
-        #healthworker-card
-            img
-                padding: 1em .5em 1em
-                border-bottom: 1px solid rgba(0,0,0,.125)
+      #healthworker-card
+        img
+          padding: 1em .5em 1em
+          border-bottom: 1px solid rgba(0,0,0,.125)
 
         #google-card
-            .img-scroller
-                    overflow-y: scroll
-                    height: 300px
-                    img
-                        margin: 0 auto
+          .img-scroller
+            overflow-y: scroll
+            height: 300px
+            img
+              margin: 0 auto
             img.google-logo
-                margin: 0 auto
+              margin: 0 auto
             .nav-item
-                padding: .5em 1em
+              padding: .5em 1em
             #nest-desktop
-                img
-                    width: 100%
+              img
+                width: 100%
             #nest-mobile
-                img
-                    width: 100%
+              img
+                width: 100%
         #to-do-card
-            .card-header
-                background-color: $white
+          .card-header
+            background-color: $white
 
 
 
@@ -346,16 +345,16 @@ a:hover, a.dark-link:hover
 //     height: 12em
 //     width: auto
 .icon-sm
-    font-size: 1.5em
-    margin: 0 0.5em
-    color: $white
+  font-size: 1.5em
+  margin: 0 0.5em
+  color: $white
 .icon-lg
-    font-size: 3em
-    margin: 0 0.5em
-    color: $white
+  font-size: 3em
+  margin: 0 0.5em
+  color: $white
 .icon-lg:hover,
 .icon-sm:hover
-    color: $orange
+  color: $orange
 //
 // .img-thumbnail
 //     padding: 0.1em
@@ -395,15 +394,15 @@ a:hover, a.dark-link:hover
 // .bg-black-transparent
 //     background-color: $black-transparent
 .bg-black
-    background-color: #000000
+  background-color: #000000
 .bg-white
-    background-color: #ffffff
+  background-color: #ffffff
 // .bg-orange
 //     background-color: $orange
 // .bg-red
 //     background-color: $red
 .bg-blue
-    background-color: $blue
+  background-color: $blue
 // .bg-green
 //     background-color: $green
 
@@ -450,45 +449,47 @@ a:hover, a.dark-link:hover
 //     bottom: 0
 
 .img-shrink
-    margin-bottom: 1em
-    width: 70%
-    height: auto
+  margin-bottom: 1em
+  width: 70%
+  height: auto
 .img-gallery
-    margin: 1em 2em
-    width: 100%
-    height: auto
-    margin: 1em auto
+  margin: 1em 2em
+  width: 100%
+  height: auto
+  margin: 1em auto
 footer
-    width: 100%
-    padding: 2em 20%
-    background-color: $black
-    color: $white
-    line-height: 90%
-    text-align: center
-    #photo-cred
-        font-size: .75rem
+  width: 100%
+  padding: 2em 20%
+  background-color: $black
+  color: $white
+  line-height: 90%
+  text-align: center
+  #photo-cred
+    font-size: .75rem
 
 @media (min-width: 767.98px)
-    .mobile
-        display: none
-    .desktop
-        display: inherit
-    #services-page
-        // Dev write up
-        .web-dev-bio
-            //h3
-                font-size: 1.8rem
+  .mobile
+      display: none
+  .desktop
+      display: inherit
+  #services-page
+    .web-dev-bio
+      // Skill icons
+      .icon-row
+        .flex-container
+          padding: 0 10px
+          #amp-logo
+            margin-left: 0
+          .logo:nth-child(4)
+              margin: 0 1em 0 1em
 
-        // Skill icons
-        //.icon-row
-            .flex-container
-                padding: 0 10px
-                #amp-logo, #sass
-                    margin-left: 0
-                #sass
-                    margin-left: 0
-
-
+  #services-page
+    .icon-row
+      .flex-container
+        .logo:first-child
+          margin: 0 1em 0 0
+        .logo:nth-child(4)
+          margin: 0 1em 0 1em
     // html
     //     font-size: 0.8rem
 

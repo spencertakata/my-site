@@ -25,7 +25,8 @@
     "lodash.template": "^4.5.0",
     "mem": "^6.0.1",
     "mozjpeg": "^6.0.1",
-    "nunjucks": "^3.2.0"
+    "nunjucks": "^3.2.0",
+    "sass-convert": "^0.5.2"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
