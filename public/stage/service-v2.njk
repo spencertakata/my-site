@@ -3,188 +3,212 @@
 
 {% block banner %}
   <!-- BANNER -->
-      <div class="jumbotron jumbotron-fluid" id="jumbo-services">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col mx-auto text-center">
-              <h1 class="py-1 font-white righteous">Front End Developer</h1>
-              <p class="lead raleway font-white">Crafting beautiful websites for an exquisite user-experience</p>
+  <div class="jumbotron jumbotron-fluid" id="jumbo-services">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col mx-auto text-center">
+          <h1 class="py-1 font-white righteous">Front End Developer</h1>
+          <p class="lead raleway font-white">Crafting beautiful websites for an exquisite user-experience</p>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="container web-dev-bio">
+    <!-- Bio text -->
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-left">
+        <h3 class="font-blue-dark copy">Jack of all trades, Master of some</h3>
+        <p class="copy">My philosophy towards my work emphasizes a
+          <em>Jack of all trades, Master of
+            <span class="font-blue-dark">
+              <strong>some</strong></span></em>
+          approach. As a Front End Developer, my purview includes working with designers to bring mockups to life, effectively integrating with backend arhitecture, understanding the product strategy, and of course, creating interfaces for the best user
+          experience possible.
+        </p>
+        <p class="copy">While building websites and applications on the client side is my primary focus, I also maintain proficiency with Back End fundamentals, Creative Design tools, and Project Management skills.</p>
+      </div>
+    </div>
+    <!-- Row 1 -->
+    <div class="row icon-row">
+      <!-- Front end icons -->
+      <div class="col-lg-8 mx-auto">
+        <h3 class="font-blue-dark copy">Front End</h3>
+        <div class="flex-container">
+          <div class="logo" id="html-logo">
+            <img src="img/html.png" alt="hmtl logo">
+            <p>HTML</p>
+          </div>
+          <div class="logo" id="css-logo">
+            <img src="img/css.png" alt="css logo">
+            <p>CSS</p>
+          </div>
+          <div class="logo" id="js-logo">
+            <img src="img/javascript.png" alt="javascript logo">
+            <p>Javascript</p>
+          </div>
+          <div class="logo" id="sass-logo">
+            <img src="img/sass.png" alt="Sass logo">
+            <p>Sass</p>
+          </div>
+          <div class="logo" id="amp-logo">
+            <img src="img/amp.png" alt="Amp logo">
+            <p>AMP</p>
+          </div>
+          <div class="logo" id="nunjucks-logo">
+            <img src="img/nunjucks.png" alt="Nunjucks logo">
+            <p>Nunjucks</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Row 2 -->
+    <div class="row icon-row">
+      <div class="col-lg-8 mx-auto">
+        <!-- Nested container for responsive back end/creative layout -->
+        <div class="container-fluid">
+          <div class="row">
+            <!-- Back end column -->
+            <div class="col-lg-6 pl-0">
+              <h3 class="font-blue-dark copy">Back End</h3>
+              <div class="flex-container">
+                <div class="logo" id="python-logo">
+                  <img src="img/python.png" alt="Python logo">
+                  <p>Python</p>
+                </div>
+                <div class="logo" id="node-logo">
+                  <img src="img/node.png" alt="Node logo">
+                  <p>Node</p>
+                </div>
+                <div class="logo" id="mongo-logo">
+                  <img src="img/mongo.png" alt="Mongo Database logo">
+                  <p>Mongo DB</p>
+                </div>
+              </div>
+            </div>
+            <!-- Creative column -->
+            <div class="col-lg-6 pl-0">
+              <h3 class="font-blue-dark copy">Creative</h3>
+              <div class="flex-container">
+                <div class="logo" id="sketch-logo">
+                  <img src="img/sketch.png" alt="Sketch logo">
+                  <p>Sketch</p>
+                </div>
+                <div class="logo" id="photo-shop-logo">
+                  <img src="img/photoshop.png" alt="Photoshop logo">
+                  <p>Photoshop</p>
+                </div>
+                <div class="logo" id="lightroom-logo">
+                  <img src="img/lightroom.png" alt="Lightroom logo">
+                  <p>Lightroom</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-{% endblock %}
-
-{% block content %}
-    <div class="container web-dev-bio">
-        <!-- Bio text -->
-        <div class="row">
-            <div class="col-lg-8 mx-auto text-left">
-                <h3 class="font-teal-dark copy">Jack of all trades, Master of some</h3>
-                <p class="copy">My philosophy towards my work emphasizes a <em>Jack of all trades, Master of <span class="font-teal-dark"><strong>some</strong></span></em> approach. As a Front End Developer, my purview includes working with designers to bring mockups to life, effectively integrating with backend arhitecture, understanding the product strategy, and of course, creating interfaces for the best user experience possible. </p>
-                <p class="copy">While building websites and applications on the client side is my primary focus, I also maintain proficiency with Back End fundamentals, Creative Design tools, and Project Management skills.</p>
-            </div>
-        </div>
-        <!-- Row 1 -->
-        <div class="row icon-row">
-            <!-- Front end icons -->
-            <div class="col-lg-8 mx-auto">
-                <h3 class="font-teal-dark copy">Front End</h3>
-                <div class="flex-container">
-                    <div class="logo" id="html-logo">
-                        <img src="img/html.png" alt="hmtl logo">
-                        <p>HTML</p>
-                    </div>
-                    <div class="logo" id="css-logo">
-                        <img src="img/css.png" alt="css logo">
-                        <p>CSS</p>
-                    </div>
-                    <div class="logo" id="js-logo">
-                        <img src="img/javascript.png" alt="javascript logo">
-                        <p>Javascript</p>
-                    </div>
-                    <div class="logo" id="sass-logo">
-                        <img src="img/sass.png" alt="Sass logo">
-                        <p>Sass</p>
-                    </div>
-                    <div class="logo" id="amp-logo">
-                        <img src="img/amp.png" alt="Amp logo">
-                        <p>AMP</p>
-                    </div>
-                    <div class="logo" id="nunjucks-logo">
-                        <img src="img/nunjucks.png" alt="Nunjucks logo">
-                        <p>Nunjucks</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Row 2 -->
-        <div class="row icon-row">
-            <div class="col-lg-8 mx-auto">
-                <!-- Nested container for responsive back end/creative layout -->
-                <div class="container-fluid">
-                    <div class="row">
-                        <!-- Back end column -->
-                        <div class="col-lg-6 pl-0">
-                            <h3 class="font-teal-dark copy">Back End</h3>
-                            <div class="flex-container">
-                                <div class="logo" id="python-logo">
-                                    <img src="img/python.png" alt="Python logo">
-                                    <p>Python</p>
-                                </div>
-                                <div class="logo" id="node-logo">
-                                    <img src="img/node.png" alt="Node logo">
-                                    <p>Node</p>
-                                </div>
-                                <div class="logo" id="mongo-logo">
-                                    <img src="img/mongo.png" alt="Mongo Database logo">
-                                    <p>Mongo DB</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Creative column -->
-                        <div class="col-lg-6 pl-0">
-                            <h3 class="font-teal-dark copy">Creative</h3>
-                            <div class="flex-container">
-                                <div class="logo" id="sketch-logo">
-                                    <img src="img/sketch.png" alt="Sketch logo">
-                                    <p>Sketch</p>
-                                </div>
-                                <div class="logo" id="photo-shop-logo">
-                                    <img src="img/photoshop.png" alt="Photoshop logo">
-                                    <p>Photoshop</p>
-                                </div>
-                                <div class="logo" id="lightroom-logo">
-                                    <img src="img/lightroom.png" alt="Lightroom logo">
-                                    <p>Lightroom</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
+  </div>
 
-    <div id="portfolio">
-        <!-- Healthworker Housing site -->
-        <!-- patatat -->
-        <!-- released emails from google -->
-        <!-- To-do list -->
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <h2 class="font-teal-dark copy righteous">My Work</h2>
-                    <!-- Healthworker housing -->
-                    <div class="card" id="healthworker-card">
-                        <div class="overlay-container">
-                            <img src="img/health-worker-housing-mockup.png" class="img-fluid img-card-top" alt="Mock up of website">
-                            <div class="overlay">
-                                <div class="text">
-                                    <p>A volunteer-run Covid-19 relief project</p>
-                                    <a href="projects/covid_ny/index.html"><button type="button" class="btn btn-primary">Visit site</button></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title font-teal-dark">Health Worker Housing</h5>
-                            <p class="card-text">At the start of the Covid-19 outbreak, I joined a volunteer initiative to connect healthcare workers with secondary housing to insulate their families from added risk. The site was designed to be simple, easily scalable, and deployed as fast as possible.</p>
-                            <a href="projects/covid_ny/index.html" class="card-link">Visit Site &raquo;</a>
-                            <a href="https://github.com/spencertakata/covid_ny" class="card-link">View on Github &raquo;</a>
-                        </div>
-                    </div>
-                    <!-- Google -->
-                    <div class="card" id="google-card">
-                        <div class="card-body">
-                            <img src="img/google-logo.png" alt="Google" class="img-fluid google-logo" width="70%">
-                            <p class="card-text">With Google I build responsive emails for several teams & products, including Google Nest, Chromecast, Actions on Google and more. Check out an example email with the buttons below.</p>
-                            <div class="card">
-                                <div class="card-header">
-                                    <nav>
-                                      <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                        <a class="nav-item nav-link active" id="nav-desktop-tab" data-toggle="tab" href="#desktop-tab" role="tab" aria-controls="nav-desktop" aria-selected="true">Desktop</a>
-                                        <a class="nav-item nav-link" id="nav-mobile-tab" data-toggle="tab" href="#mobile-tab" role="tab" aria-controls="nav-mobile" aria-selected="false">Mobile</a>
-                                      </div>
-                                    </nav>
-                                    <div class="tab-content" id="nav-tabContent">
-                                      <div class="tab-pane fade show active" id="desktop-tab" role="tabpanel" aria-labelledby="nav-desktop-tab">
-                                          <div class="img-scroller" id="nest-desktop">
-                                              <img src="img/nest-bf-desktop.png" alt="Google Nest email desktop version">
-                                          </div>
-                                      </div>
-                                      <div class="tab-pane fade" id="mobile-tab" role="tabpanel" aria-labelledby="nav-mobile-tab">
-                                          <div class="img-scroller" id="nest-mobile">
-                                              <img src="img/nest-bf-mobile.png" alt="Google Nest email mobile version">
-                                          </div>
-                                      </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End .card -->
-                        </div>
-                    </div>
-                    <!-- End #google-card -->
-                    <!-- To-Do list -->
-                    <div class="card" id="to-do-card">
-                        <div class="card-header">
-                            <h5 class="card-title font-teal-dark">To-Do List</h5>
-                            <p class="card-text">A basic to-do list app to organize tasks for the day. You can add new tasks, remove with the trash can icon, or strikeout by clicing the text. The version shown here is purely the front end. You can view a working app with data persistence built with Express, Node, and MongoDB on my github.</p>
-                        </div>
-                        <div class="card-body to-do-body">
-                            <div id="container">
-                            	<h1>To-Do List <i class="fa fa-plus"></i></h1>
-                            	<input type="text" placeholder="Add New Todo">
-                                <ul>
-                                    <li><span><i class="fa fa-trash"></i></span> Get groceries</li>
-                                    <li><span><i class="fa fa-trash"></i></span> Clean the kitchen</li>
-                                    <li><span><i class="fa fa-trash"></i></span> Workout</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+  <div id="portfolio">
+    <!-- Healthworker Housing site -->
+    <!-- patatat -->
+    <!-- released emails from google -->
+    <!-- To-do list -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2 class="font-blue-dark copy righteous">My Work</h2>
+          <!-- Healthworker housing -->
+          <div class="card" id="healthworker-card">
+            <div class="overlay-container">
+              <img src="img/health-worker-housing-mockup.png" class="img-fluid img-card-top" alt="Mock up of website">
+              <div class="overlay">
+                <div class="text">
+                  <p>A volunteer-run Covid-19 relief project</p>
+                  <a href="projects/covid_ny/index.html">
+                    <button type="button" class="btn btn-primary">Visit site</button>
+                  </a>
                 </div>
+              </div>
             </div>
+            <div class="card-body">
+              <h5 class="card-title font-blue-dark">Health Worker Housing</h5>
+              <p class="card-text">At the start of the Covid-19 outbreak, I joined a volunteer initiative to connect healthcare workers with secondary housing to insulate their families from added risk. The site was designed to be simple, easily scalable, and
+                deployed as fast as possible.</p>
+              <a href="projects/covid_ny/index.html" class="card-link">Visit Site &raquo;</a>
+              <a href="https://github.com/spencertakata/covid_ny" class="card-link">View on Github &raquo;</a>
+            </div>
+          </div>
+          <!-- Google -->
+          <div class="card" id="google-card">
+            <div class="card-body">
+              <img src="img/google-logo.png" alt="Google" class="img-fluid google-logo" width="70%">
+              <p class="card-text">With Google I build responsive emails for several teams & products, including Google Nest, Chromecast, Actions on Google and more. Along with HTML and LESS/CSS, my build process utilizes Nunjucks templating, dynamic data integration with Freemarker, and accessibility best practices. Check out an example email with the buttons below.</p>
+              <p></p>
+              <div class="card">
+                <div class="card-header">
+                  <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                      <a class="nav-item nav-link active" id="nav-desktop-tab" data-toggle="tab" href="#desktop-tab" role="tab" aria-controls="nav-desktop" aria-selected="true">Desktop</a>
+                      <a class="nav-item nav-link" id="nav-mobile-tab" data-toggle="tab" href="#mobile-tab" role="tab" aria-controls="nav-mobile" aria-selected="false">Mobile</a>
+                    </div>
+                  </nav>
+                  <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="desktop-tab" role="tabpanel" aria-labelledby="nav-desktop-tab">
+                      <div class="img-scroller" id="nest-desktop">
+                        <img src="img/nest-bf-desktop.png" alt="Google Nest email desktop version">
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="mobile-tab" role="tabpanel" aria-labelledby="nav-mobile-tab">
+                      <div class="img-scroller" id="nest-mobile">
+                        <img src="img/nest-bf-mobile.png" alt="Google Nest email mobile version">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End .card -->
+            </div>
+          </div>
+          <!-- End #google-card -->
+          <!-- To-Do list -->
+          <div class="card" id="to-do-card">
+            <div class="card-header">
+              <h5 class="card-title font-blue-dark">To-Do List</h5>
+              <p class="card-text">A basic to-do list app to organize tasks for the day. You can add new tasks, remove with the trash can icon, or strikeout by clicing the text.</p>
+            </div>
+            <div class="card-body to-do-body">
+              <div id="container">
+                <h1>To-Do List
+                  <i class="fa fa-plus"></i>
+                </h1>
+                <input type="text" placeholder="Add New Todo">
+                <ul>
+                  <li>
+                    <span>
+                      <i class="fa fa-trash"></i>
+                    </span>
+                    Get groceries</li>
+                  <li>
+                    <span>
+                      <i class="fa fa-trash"></i>
+                    </span>
+                    Clean the kitchen</li>
+                  <li>
+                    <span>
+                      <i class="fa fa-trash"></i>
+                    </span>
+                    Workout</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-    <!-- End #portfolio -->
+  </div>
+  <!-- End #portfolio -->
 {% endblock %}

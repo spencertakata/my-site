@@ -1,3 +1,7 @@
+// Current fixed indentation
+
+// Current
+
 // CONTENTS
     Variables
     Typography
@@ -19,7 +23,8 @@ $orange: #f9ab18
 $orange-hover: #fbbf51
 /* New Design */
 $blue: #3b96ff
-$blue-dark: #0069cb
+//$blue-dark: #0069cb
+$blue-dark: #000066
 $blue-light: #7dc2ff
 $blue-ultra-light: #EBF4FF
 $teal: #00c4cc
@@ -195,42 +200,42 @@ a:hover, a.dark-link:hover
 #services-page
   #jumbo-services
     background: rgb(95,75,182)
-      background: linear-gradient(90deg, $teal 0%, $blue 52%, $purple 100%)
-      padding: 7em 0
+    background: linear-gradient(90deg, $teal 0%, $blue 52%, $purple 100%)
+    padding: 7em 0
     h1
       font-size: 72px
       line-height: 80px
     .lead
       font-size: 24px
       line-height: 30px
-    h3
-      font-size: 1.55em
-      line-height: 1.75em
-    .icon-row
-      .flex-container
-        display: flex
-        justify-content: left
-        flex-wrap: wrap
-        padding: 0 10px
-        .logo
-          margin: 0 1em
-          width: 70px
-          p
-            text-align: center
-          img
-            height: 70px
-        .logo:first-child
-          margin: 0 1em 0 0
-        //.logo:nth-child(4)
-          margin: 0 1em
-        #sass-logo
-          margin: 0 1em 0 1em
-    #portfolio
-      padding: 1em 0
-      background-color: $blue-ultra-light
-      .card
-        margin: 1em 0
-        /* Hover effects */
+  h3
+    font-size: 1.55em
+    line-height: 1.75em
+  .icon-row
+    .flex-container
+      display: flex
+      justify-content: left
+      flex-wrap: wrap
+      padding: 0 10px
+      .logo
+        margin: 0 1em
+        width: 70px
+        p
+          text-align: center
+        img
+          height: 60px
+          display: block
+          margin: 0 auto
+      .logo:first-child, .logo:nth-child(4)
+        margin: 0 1em 0 0
+
+  #portfolio
+    //background-image: url(../img/grey-background.jpg)
+    background-color: #5b5b5b
+    padding: 1em 0
+    .card
+      margin: 1em 0
+      /* Hover effects */
       .overlay-container
         position: relative
       img
@@ -258,31 +263,31 @@ a:hover, a.dark-link:hover
         -ms-transform: translate(-50%, -50%)
         transform: translate(-50%, -50%)
         text-align: center
-        /* End hover effects */
-      #healthworker-card
-        img
-          padding: 1em .5em 1em
-          border-bottom: 1px solid rgba(0,0,0,.125)
+      /* End hover effects */
+    #healthworker-card
+      img
+        padding: 1em .5em 1em
+        border-bottom: 1px solid rgba(0,0,0,.125)
 
-        #google-card
-          .img-scroller
-            overflow-y: scroll
-            height: 300px
-            img
-              margin: 0 auto
-            img.google-logo
-              margin: 0 auto
-            .nav-item
-              padding: .5em 1em
-            #nest-desktop
-              img
-                width: 100%
-            #nest-mobile
-              img
-                width: 100%
-        #to-do-card
-          .card-header
-            background-color: $white
+    #google-card
+      .img-scroller
+        overflow-y: scroll
+        height: 300px
+        img
+          margin: 0 auto
+      img.google-logo
+        margin: 0 auto
+      .nav-item
+        padding: .5em 1em
+      #nest-desktop
+        img
+          width: 100%
+      #nest-mobile
+        img
+          width: 100%
+    #to-do-card
+      .card-header
+        background-color: $white
 
 
 
