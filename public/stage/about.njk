@@ -1,15 +1,12 @@
-{% extends "boilerplate.njk" %}
+{% extends "boilerplate_v2.njk" %}
+{% set page_id = "about-page"%}
 
   <!-- banner -->
  {% block banner %}
-    <div class="jumbotron jumbo py-5" id="jumboAbout">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-6 p-2 my-5 font-white center bg-black-transparent">
-            <h1 class="righteous">Who I Am</h1>
-            <h4 class="raleway my-3">Get to know <i>me</i>, not just my work</h4>
-          </div>
-        </div>
+    <div class="banner flex" id="jumbo-about">
+      <div class="mx-auto text-center banner-text-container flex-item">
+        <h1 class="py-1 font-white righteous">Who I Am</h1>
+        <p class="lead raleway font-white">Get to know <i>me</i>, not just my work</p>
       </div>
     </div>
 {% endblock%}

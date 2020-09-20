@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,14 +10,16 @@
     <meta name="description" content="Spencer Takata Portfolio">
     <meta name="author" content="Spencer Takata">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- stylesheet -->
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Custom Stylesheets -->
+    <link rel="stylesheet" href="./css/stylesheet_v2.css">
+    <link rel="stylesheet" href="projects/to-do-app/assets/css/todo.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/stylesheet.css">
-    <link rel="stylesheet" href="./css/magnific-popup.css">
+    <!-- <link rel="stylesheet" href="./css/magnific-popup.css"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Arvo|Crimson+Text|Righteous|Spectral|Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;0,500;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,700;1,800;1,900&family=Righteous&display=swap&family=Roboto&display=swap" rel="stylesheet">
     <!-- favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
@@ -25,11 +29,10 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   </head>
   
-  
   <body>
-      <div id="content-container">
+      <div class="content-container" id="about-page">
           
-          <nav class="navbar navbar-expand-lg navbar-dark">
+          <nav class="navbar navbar-expand-lg navbar-dark righteous">
               <a class="navbar-brand" href="./index.html">Spencer Takata</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -54,14 +57,10 @@
         
 
     
-    <div class="jumbotron jumbo py-5" id="jumboAbout">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-6 p-2 my-5 font-white center bg-black-transparent">
-            <h1 class="righteous">Who I Am</h1>
-            <h4 class="raleway my-3">Get to know <i>me</i>, not just my work</h4>
-          </div>
-        </div>
+    <div class="banner flex" id="jumbo-about">
+      <div class="mx-auto text-center banner-text-container flex-item">
+        <h1 class="py-1 font-white righteous">Who I Am</h1>
+        <p class="lead raleway font-white">Get to know <i>me</i>, not just my work</p>
       </div>
     </div>
 
@@ -113,22 +112,22 @@
 
 
     
-    <footer>
-        <div class="footer">
-          <p><b>By Spencer Takata</b></p>
-          <p>spencer@spencertakata.com</p>
-          <div class="icons">
-            <a href="https://www.instagram.com/spencer.pix/"><i class="fab fa-instagram icon-sm"></i></a>
-            <a href="https://www.linkedin.com/in/spencertakata"><i class="fab fa-linkedin-in icon-sm"></i></a>
-            <a href="https://www.flickr.com/photos/156465445@N07/"><i class="fab fa-flickr icon-sm"></i></a>
-            <a href="https://github.com/spencertakata"><i class="fab fa-github-square icon-sm"></i></a>
-          </div>
-          <br>
-          <br>
-          <p id="photo-cred"></p>
-        </div>
-    </footer>
-</div>
+        <footer>
+            <div class="footer">
+              <p><b>By Spencer Takata</b></p>
+              <p>spencer@spencertakata.com</p>
+              <div class="icons">
+                <a href="https://www.instagram.com/spenstar123/"><i class="fab fa-instagram icon-sm"></i></a>
+                <a href="https://www.linkedin.com/in/spencertakata"><i class="fab fa-linkedin-in icon-sm"></i></a>
+                <a href="https://www.flickr.com/photos/156465445@N07/"><i class="fab fa-flickr icon-sm"></i></a>
+                <a href="https://github.com/spencertakata"><i class="fab fa-github-square icon-sm"></i></a>
+              </div>
+              <br>
+              <br>
+              <p id="photo-cred"></p>
+            </div>
+        </footer>
+    </div>
 
     
 
@@ -151,6 +150,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <!-- My scripts -->
     <script src="js/myScripts.js"></script>
+    <script type="text/javascript" src="projects/to-do-app/assets/js/todos.js"></script>
     <!-- Fancy Box -->
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     

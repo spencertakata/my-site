@@ -296,6 +296,28 @@ a:hover, a.dark-link:hover {
   text-align: center;
 }
 
+#testimonial {
+  padding: 4rem;
+}
+
+#webDev .icon-row .flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  padding: 15px 10px 0;
+}
+#webDev .icon-row .flex-container .logo p {
+  text-align: center;
+  font-size: 0.9rem;
+}
+#webDev .icon-row .flex-container .logo img {
+  height: 80px;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 #bitmoji {
   height: 12em;
   width: auto;
@@ -483,14 +505,28 @@ footer #photo-cred {
 
   .card-sm {
     padding: 1em 4em 2em 4em;
-    margin: 2em;
+    margin: 1.25em;
   }
 
   #testimonial {
     margin: 2em;
+    padding: 1rem;
+  }
+  #testimonial h3 {
+    font-size: 1.5em;
   }
 
   #jumboServices, #jumboGallery {
     min-height: 200px;
   }
+
+  #webDev .icon-row .flex-container {
+    padding: 15px 0 0;
+  }
+  #webDev .icon-row .flex-container .logo img {
+    height: 50px;
+    width: auto;
+  }
 }
+
+/*# sourceMappingURL=stylesheet.css.map */

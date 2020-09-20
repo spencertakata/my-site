@@ -10,6 +10,10 @@ html, body {
   font-family: "Lato", "Raleway", Verdana, Arial, sans-serif;
 }
 
+.primary-color {
+  color: #000066;
+}
+
 h1, .h1 {
   font-size: 2.75rem;
 }
@@ -41,10 +45,6 @@ p, .p {
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   line-height: 1.5;
-}
-
-.copy {
-  padding: 0 10px;
 }
 
 .righteous {
@@ -110,7 +110,7 @@ a:hover, a.dark-link:hover {
 }
 
 .navbar-dark {
-  background-color: #242424;
+  background-color: #141414;
 }
 .navbar-dark .navbar-brand {
   color: #ffffff;
@@ -147,22 +147,65 @@ a:hover, a.dark-link:hover {
   background-color: #000000;
 }
 
+.banner.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 350px;
+  height: 450px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+.banner.flex .banner-text-container {
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 90%;
+  padding: 2em;
+}
+.banner.flex .banner-text-container h1 {
+  font-size: 60px;
+  line-height: 72px;
+}
+.banner.flex .banner-text-container .lead {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card.no-shadow {
+  box-shadow: none;
+}
+
+/* === About === */
+#jumbo-about {
+  background-image: url(../img/about-banner.jpg);
+  height: 300px;
+}
+#jumbo-about .banner-text-container {
+  padding: 2rem 1.4rem;
+}
+#jumbo-about .banner-text-container .lead {
+  font-size: 22px;
+}
+
+/* === Services === */
 #services-page #jumbo-services {
-  background: #5f4bb6;
-  background: linear-gradient(90deg, #00c4cc 0%, #3b96ff 52%, #5f4bb6 100%);
-  padding: 7em 0;
+  background-image: url(../img/light-box-fixed.jpg);
+  background-image: url(../img/services-banner.jpg);
 }
 #services-page #jumbo-services h1 {
-  font-size: 72px;
-  line-height: 80px;
+  font-size: 60px;
+  line-height: 72px;
 }
 #services-page #jumbo-services .lead {
   font-size: 24px;
   line-height: 30px;
 }
-#services-page h3 {
-  font-size: 1.55em;
-  line-height: 1.75em;
+#services-page .icon-row {
+  display: none;
 }
 #services-page .icon-row .flex-container {
   display: flex;
@@ -171,26 +214,59 @@ a:hover, a.dark-link:hover {
   padding: 0 10px;
 }
 #services-page .icon-row .flex-container .logo {
-  margin: 0 1em;
-  width: 70px;
+  margin: 0 0.5rem;
+  width: 40px;
 }
 #services-page .icon-row .flex-container .logo p {
   text-align: center;
+  font-size: 0.75rem;
 }
 #services-page .icon-row .flex-container .logo img {
-  height: 60px;
+  width: 40px;
   display: block;
   margin: 0 auto;
 }
 #services-page .icon-row .flex-container .logo:first-child, #services-page .icon-row .flex-container .logo:nth-child(4) {
   margin: 0 1em 0 0;
 }
+#services-page #web-dev-bio {
+  margin: 0 0 1rem 0;
+}
+#services-page #web-dev-bio .bio-headline {
+  margin: 1rem 0;
+}
+#services-page #dev-process {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 1rem;
+}
+#services-page #dev-process h3 {
+  font-family: "Righteous", Palatino, Times, serif;
+  margin-bottom: 0;
+}
+#services-page #dev-process .process-icon {
+  width: 50px;
+  text-align: center;
+}
+#services-page #dev-process i {
+  font-size: 2.5rem;
+  display: inline-block;
+}
 #services-page #portfolio {
-  background-color: #5b5b5b;
+  background-color: rgba(0, 0, 125, 0.125);
   padding: 1em 0;
+}
+#services-page #portfolio .heading {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #ffffff;
+}
+#services-page #portfolio #dev-title {
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
 }
 #services-page #portfolio .card {
   margin: 1em 0;
+  border: 1px solid rgba(0, 0, 0, 0.2);
   /* Hover effects */
   /* End hover effects */
 }
@@ -238,19 +314,24 @@ a:hover, a.dark-link:hover {
   margin: 0 auto;
 }
 #services-page #portfolio #google-card img.google-logo {
-  margin: 0 auto;
+  width: 50%;
+  margin-bottom: 1rem;
 }
 #services-page #portfolio #google-card .nav-item {
   padding: 0.5em 1em;
 }
-#services-page #portfolio #google-card #nest-desktop img {
-  width: 100%;
-}
-#services-page #portfolio #google-card #nest-mobile img {
-  width: 100%;
-}
 #services-page #portfolio #to-do-card .card-header {
   background-color: #ffffff;
+}
+
+.underline {
+  height: 0.5rem;
+  width: 65%;
+  margin: 0 auto 0.5rem;
+}
+
+.underline-blue {
+  background-color: #000066;
 }
 
 .icon-sm {
@@ -270,6 +351,10 @@ a:hover, a.dark-link:hover {
   color: #f9ab18;
 }
 
+.bg-black-transparent {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
 .bg-black {
   background-color: #000000;
 }
@@ -278,8 +363,19 @@ a:hover, a.dark-link:hover {
   background-color: #ffffff;
 }
 
+.bg-orange {
+  background-color: #f9ab18;
+}
+
 .bg-blue {
   background-color: #3b96ff;
+}
+
+.btn-blue {
+  background-color: #000066;
+}
+.btn-blue:hover {
+  background-color: #000099;
 }
 
 .img-shrink {
@@ -316,13 +412,13 @@ footer #photo-cred {
     display: inherit;
   }
 
-  #services-page .web-dev-bio .icon-row .flex-container {
+  #services-page #web-dev-bio .icon-row .flex-container {
     padding: 0 10px;
   }
-  #services-page .web-dev-bio .icon-row .flex-container #amp-logo {
+  #services-page #web-dev-bio .icon-row .flex-container #amp-logo {
     margin-left: 0;
   }
-  #services-page .web-dev-bio .icon-row .flex-container .logo:nth-child(4) {
+  #services-page #web-dev-bio .icon-row .flex-container .logo:nth-child(4) {
     margin: 0 1em 0 1em;
   }
 
