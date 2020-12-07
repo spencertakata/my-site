@@ -1,160 +1,19 @@
-// Current fixed indentation
+@import ./partials/_variables
+@import ./partials/_services, ./partials/_typography
 
-// Current
-
-// CONTENTS
-    Variables
-    Typography
-    Design Elements
-    Alignment
-    Navbar
-    Jumbotron
-    Cards
-    Icons & Images
-    Backgrounds
-    Buttons
-    Footer
-    Media Query
-
-/* Variables */
-$raleway: 'Lato', 'Raleway', Verdana, Arial, sans-serif
-$righteous: 'Righteous', Palatino, Times, serif
-$primary-color: #000066
-$primary-light: #0000a3
-$secondary-color: #f9ab18
-$orange: #f9ab18
-$orange-hover: #fbbf51
-/* New Design */
-$blue: #3b96ff
-//$blue-dark: #0069cb
-$blue-dark: #000066
-$blue-light: #7dc2ff
-$blue-ultra-light: #EBF4FF
-$teal: #00c4cc
-$teal-dark: #00939b
-$teal-light: #62f7ff
-$teal-ultra-light: #EBFEFF
-$purple: #5f4bb6
-$purple-dark: #2a2285
-$purple-light: #9177e9
-$purple-ultra-light: #E5E2F3
-$white: #ffffff
-$black: #000000
-$black-transparent: rgba(0, 0, 0, 0.75)
-$gray-dark: #141414
-// $blue: #000066
-$blue-hover: #000099
-// $green: #26734d
-// $green-hover: #339966
-// $red: #dc3545
-// $black-transparent-dark: rgba(0, 0, 0, 0.9)
-// $white: #fff
-// $light-gray-border: #cccccc
-// $card-dark-bg: #3d3d3d
-
-
-
-
+/* === Elements === */
 html
   scroll-behavior: smooth
 html, body
   margin: 0
   padding: 0
   font-family: $raleway
-    //height: 100%
-// #container
-//     min-height: 100vh
-//     position: relative
-//     background-color: #000000
+hr
+  border-top: 1px solid
+  border-image-source: linear-gradient(90deg, rgba(211,211,211,0.3) 0%, rgba(157,157,157,1) 50%, rgba(211,211,211,0.3) 100%)
+  border-image-slice: 1
 
-.primary-color
-  color: $primary-color
-// Typography
-
-h1, .h1
-  font-size: 2.75rem
-h2, .h2
-  font-size: 2.25rem
-h3, .h3
-  font-size: 2rem
-h4, .h4
-  font-size: 1.75rem
-h5, .h5
-  font-size: 1.5rem
-h6, .h6
-  font-size: 1.25rem
-p, .p
-  font-size: 1.1rem
-  line-height: 1.75
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
-  line-height: 1.5
-.righteous
-  font-family: $righteous
-.raleway
-  font-family: $raleway
-.font-white
-  color: $white
-.font-blue
-  color: $blue
-.font-blue-dark
-  color: $blue-dark
-.font-blue-light
-  color: $blue-light
-.font-teal
-  color: $teal
-.font-teal-dark
-  color: $teal-dark
-.font-teal-light
-  color: $teal-light
-.font-purple
-  color: $purple
-.font-purple-dark
-  color: $purple-dark
-.font-purple-light
-  color: $purple-light
-
-a:link, a:visited
-  color: $blue
-  text-decoration: none
-a.dark-link, a.dark-link:visited
-  color: $white
-  text-decoration: none
-a:hover, a.dark-link:hover
-  color: $purple-light
-// .caption
-//     font-size: 0.85rem
-//     color: #515151
-//     font-style: italic
-//     text-align: center
-// .date
-//     font-size: 0.7em
-//     font-style: italic
-//     color: $black-transparent
-
-// Design Elements
-// .feature-text, .headline, #headlineContact
-//     align-items: center
-//     border: 1px solid black
-//     text-align: center
-// .feature-text
-//     background-color: rgba(0, 0, 0, 0.5)
-// .headline
-//     background-color: $black-transparent
-// #headlineContact
-//     margin: 10em 1em 0 1em
-
-// Alignment
-// .left
-//     text-align: left
-//     align-items: left
-// .center
-//     margin: 0 auto
-//     text-align: center
-//     justify-content: center
-//     align-items: center
-
-//Navbar
-
+/* === Navbar === */
 .navbar-dark
   background-color: $gray-dark
   .navbar-brand
@@ -179,26 +38,7 @@ a:hover, a.dark-link:hover
 .desktop
   display: none
 
-/* === Buttons === */
-.btn-dark-outline
-  border: 2px solid $white
-  background-color: $black
-
-// Jumbotron
-
-// .jumbo
-//     background-size: cover
-//     background-position: center center
-//     margin-bottom: 0
-// #jumboHome
-//     padding: 10% 0 25% 0
-//     background-image: url(../img/city.jpg)
-// #jumboServices
-//     background-image: url("https://i.imgur.com/5rCEzKW.jpg")
-//     min-height: 350px
-//     width: 100%
-
-// Banner
+/* === Banner === */
 .banner.flex
   display: flex
   justify-content: center
@@ -218,243 +58,27 @@ a:hover, a.dark-link:hover
     .lead
       font-size: 24px
       line-height: 30px
+
+/* === Buttons === */
+.btn-dark-outline
+  border: 2px solid $white
+  background-color: $black
+.btn-blue
+  background-color: $primary-color
+  &:hover
+    background-color: $blue-hover
+
+/* === Design Utilities === */
 .card
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 .card.no-shadow
   box-shadow: none
-/* === About === */
-#jumbo-about
-    background-image: url(../img/about-banner.jpg)
-    height: 300px
-    .banner-text-container
-      padding: 2rem 1.4rem
-      .lead
-        font-size: 22px
-
-/* === Services === */
-#services-page
-  #jumbo-services
-    //background: rgb(95,75,182)
-    //background: linear-gradient(90deg, $teal 0%, $blue 52%, $purple 100%)
-    background-image: url(../img/light-box-fixed.jpg)
-    background-image: url(../img/services-banner.jpg)
-    h1
-      font-size: 60px
-      line-height: 72px
-    .lead
-      font-size: 24px
-      line-height: 30px
-  //h3
-    font-size: 1.55em
-    line-height: 1.75em
-  .icon-row
-    display: none
-    .flex-container
-      display: flex
-      justify-content: left
-      flex-wrap: wrap
-      padding: 0 10px
-      .logo
-        margin: 0 .5rem
-        width: 40px
-        p
-          text-align: center
-          font-size: 0.75rem
-        img
-          width: 40px
-          display: block
-          margin: 0 auto
-      .logo:first-child, .logo:nth-child(4)
-        margin: 0 1em 0 0
-  #web-dev-bio
-    margin: 0 0 1rem 0
-    .bio-headline
-      margin: 1rem 0
-  #dev-process
-    background-color: $black
-    color: $white
-    padding: 1rem
-    h3
-      font-family: $righteous
-      margin-bottom: 0
-    .process-icon
-      width: 50px
-      text-align: center
-    i
-      font-size: 2.5rem
-      display: inline-block
-  #portfolio
-    //background-image: url(../img/grey-background.jpg)
-    //background-color: #f5f5f5
-    //background-color: $primary-color
-    background-color: rgba(0, 0, 125, 0.125)
-    padding: 1em 0
-    .heading
-      background-color: $black-transparent
-      color: $white
-    #dev-title
-      margin-top: 1.5rem
-      margin-bottom: 2.5rem
-    .card
-      margin: 1em 0
-      border: 1px solid rgba(0, 0, 0, 0.2)
-      /* Hover effects */
-      .overlay-container
-        position: relative
-      img
-        display: block
-      .overlay
-        position: absolute
-        top: 0
-        bottom: 0
-        left: 0
-        right: 0
-        height: 100%
-        width: 100%
-        opacity: 0
-        transition: .5s ease
-        background-color: $purple
-      .overlay-container:hover .overlay
-        opacity: 1
-      .text
-        color: $white
-        font-size: 20px
-        position: absolute
-        top: 50%
-        left: 50%
-        -webkit-transoform: translate(-50%, -50%)
-        -ms-transform: translate(-50%, -50%)
-        transform: translate(-50%, -50%)
-        text-align: center
-      /* End hover effects */
-    #healthworker-card
-      img
-        padding: 1em .5em 1em
-        border-bottom: 1px solid rgba(0,0,0,.125)
-
-    #google-card
-      .img-scroller
-        overflow-y: scroll
-        height: 300px
-        img
-          margin: 0 auto
-      img.google-logo
-        width: 50%
-        margin-bottom: 1rem
-      .nav-item
-        padding: .5em 1em
-      #nest-desktop
-        //img
-          //width: 80%
-      #nest-mobile
-        //img
-          //width: 100%
-    #to-do-card
-      .card-header
-        background-color: $white
-
-
-
-// #jumboGallery
-//     background-image: url("../img/jumboGallery.jpg")
-
-// Cards
-
-// .card-sm, .card-lg, .card-lg-dark
-//     background-color: $white
-//     border-left: 1px solid $light-gray-border
-//     border-bottom: 1px solid $light-gray-border
-//     border-right: 1px solid $light-gray-border
-// .card-sm
-//     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1)
-//     margin: 1.25%
-//     padding: 0.5em 0.9em 0.9em 0.9em
-// .card-lg
-//     box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.1)
-//     margin: 1.25%
-//     padding: 2rem 2.5rem
-// .card-lg-dark
-//     box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.1)
-//     margin: 1.25%
-//     background-color: $card-dark-bg
 .underline
     height: 0.5rem
     width: 65%
     margin: 0 auto 0.5rem
-// .red-top
-//     border-top: 3px solid $red
-// .green-top
-//     border-top: 3px solid $green
-// .orange
-//     color: $orange
-// .orange-top
-//     border-top: 3px solid $orange
-
-// .blue-top
-//     border-top: 3px solid $blue
 .underline-blue
     background-color: $primary-color
-//
-// .dark
-//     padding: 0.8rem 0
-//     margin: 0.8rem 0
-//     background-color: $black-transparent
-//     color: $white
-//     width: 100%
-//     text-align: center
-
-//Icons & Images
-
-// #bitmoji
-//     height: 12em
-//     width: auto
-.icon-sm
-  font-size: 1.5em
-  margin: 0 0.5em
-  color: $white
-.icon-lg
-  font-size: 3em
-  margin: 0 0.5em
-  color: $white
-.icon-lg:hover,
-.icon-sm:hover
-  color: $orange
-//
-// .img-thumbnail
-//     padding: 0.1em
-//     background-color: #383838
-// .body-img
-//   display: block
-//   margin: 2.5rem auto 1rem auto
-//   width: 70%
-//   height: auto
-//   border: 4px solid black
-
-
-//Backgrounds
-// #photography
-//     background-image: url("https://images.unsplash.com/photo-1480365334925-2aee561aa28e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1546&q=80")
-//     background-size: cover
-//     background-position: center
-// #web-dev
-//     // background-image: url("https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80")
-//     // background-size: cover
-//     // background-position: center
-//     padding: 0
-
-// .full-opacity
-//     opacity: 1.0 !important
-// .grey-background, .grey-background-2, .grey-background-3, .contact-background
-//     padding: 1%
-//     margin: 0
-//     background-size: cover
-//     background-position: center center
-// .grey-background
-//     background-image: url(../img/grey-background.jpg)
-// .grey-background-2
-//     background-color: #e0e0e0
-// .grey-background-3
-//     background-color: #5b5b5b
 .bg-black-transparent
   background-color: $black-transparent
 .bg-black
@@ -463,54 +87,16 @@ a:hover, a.dark-link:hover
   background-color: $white
 .bg-orange
   background-color: $orange
-// .bg-red
-//     background-color: $red
 .bg-blue
   background-color: $blue
-// .bg-green
-//     background-color: $green
+.primary-color
+  color: $primary-color
 
-// #contactBody
-//     background: url(../img/city.jpg)
-//     background-size: cover
-//     background-position: center
-//     height: 100vh
-// .buffer
-//     padding: 0.75em 0
+//Icons & Images
 
-// Buttons
-//
-// .btn
-//     font-family: $righteous
-// .btn
-//     background-color: $blue
-//     border: 1px solid black
-// .btn-secondary
-//     background-color: #8e8e8e
-// .btn-secondary:hover, .btn:hover
-//     background-color: $orange
-//     border: 1px solid black
-// .btn-green
-//     color: $white
-//     background-color: $green
-//     &:hover
-//         color: $white
-//         background-color: $green-hover
-// .btn-orange
-//     background-color: $orange
-//     color: $white
-//     border: 1px solid black
-//     &:hover
-//         background-color: $orange-hover
-.btn-blue
-  background-color: $primary-color
-  &:hover
-    background-color: $blue-hover
-
-
-// .footer-movie
-//     position: absolute
-//     bottom: 0
+// #bitmoji
+//     height: 12em
+//     width: auto
 
 .img-shrink
   margin-bottom: 1em
@@ -530,37 +116,22 @@ footer
   text-align: center
   #photo-cred
     font-size: .75rem
+.icon-sm
+  font-size: 1.5em
+  margin: 0 0.5em
+  color: $white
+.icon-lg
+  font-size: 3em
+  margin: 0 0.5em
+  color: $white
+.icon-lg:hover,
+.icon-sm:hover
+  color: $orange
 
 @media (min-width: 767.98px)
   .mobile
-      display: none
+    display: none
   .desktop
-      display: inherit
-  #services-page
-    #web-dev-bio
-      // Skill icons
-      .icon-row
-        .flex-container
-          padding: 0 10px
-          #amp-logo
-            margin-left: 0
-          .logo:nth-child(4)
-              margin: 0 1em 0 1em
+    display: inherit
 
-  #services-page
-    .icon-row
-      .flex-container
-        .logo:first-child
-          margin: 0 1em 0 0
-        .logo:nth-child(4)
-          margin: 0 1em 0 1em
-    // html
-    //     font-size: 0.8rem
-
-    // .card-sm
-    //     padding: 1em 4em 2em 4em
-    //     margin: 2em
-    // #testimonial
-    //     margin: 2em
-    // #jumboServices, #jumboGallery
-    //     min-height: 200px
+    
