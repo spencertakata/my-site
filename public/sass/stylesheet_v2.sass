@@ -42,14 +42,15 @@ hr
 .banner.flex
   display: flex
   justify-content: center
-  align-items: center
+  align-items: flex-start
   min-height: 350px
-  height: 450px
+  height: 100vh
   width: 100%
   background-size: cover
   background-position: center center
   .banner-text-container
     background-color: $black-transparent
+    margin-top: 4rem
     width: 90%
     padding: 2em
     h1
@@ -64,9 +65,13 @@ hr
   border: 2px solid $white
   background-color: $black
 .btn-blue
-  background-color: $primary-color
+  background-color: $blue-dark
   &:hover
     background-color: $blue-hover
+.btn-purple
+  background-color: $purple
+  &:hover
+    background-color: $purple-light
 
 /* === Design Utilities === */
 .card
