@@ -33,3 +33,18 @@ $blue-hover: #000099
 // $white: #fff
 // $light-gray-border: #cccccc
 // $card-dark-bg: #3d3d3d
+$card-bg-dark: rgba(0,0,0,0.7)
+$card-bg-light: rgba(255,255,255,0.7)
+$card-color-dark: $white
+$card-color-light: $black
+$card-border-dark: 1px solid $white
+$card-border-light: 1px solid $black
+$card-border-radius: 4px
+$carousel-border-radius: 4px
+$card-padding: 1.125rem
+
+@mixin card($background-color, $color, $border, $border-radius)
+    background-color: $background-color
+    color: $color
+    border: $border
+    border-radius: $border-radius

@@ -5,6 +5,7 @@
     h1
       font-size: 60px
       line-height: 72px
+      text-transform: uppercase
     .lead
       font-size: 24px
       line-height: 30px
@@ -58,14 +59,17 @@
       margin-bottom: 4.5rem
       text-transform: uppercase
       background-color: rgba(0,0,0,0.5)
-      border: 1px solid #f5f5f5
+      border: 1px solid $white
+      border-radius: $card-border-radius
       font-size: 4rem
       color: $white
     .card
       margin: 2.5em 0
-      background-color: rgba(0,0,0,0.5)
-      border: 1px solid $white
-      color: $white
+      @include card($card-bg-dark, $card-color-dark, $card-border-dark, $card-border-radius)
+      // background-color: rgba(0,0,0,0.5)
+      // border: 1px solid $white
+      // border-radius: $card-border-radius
+      // color: $white
       .card-title
         text-transform: uppercase
         font-weight: 700
@@ -108,15 +112,33 @@
         margin-bottom: 1rem
   /* PM */
   #project-management-container
-    background: linear-gradient(90deg, $teal-light, $purple-light), rgba(255,255,255, 0.9)
+    background-image: url(../img/ocean-overhead.jpg)
+    background-size: cover
+    background-repeat: no-repeat
+    //background: linear-gradient(90deg, rgba(98, 247, 255, 0.4), rgba(145, 119, 233, 0.4)), rgba(255,255,255, 0.9)
+    padding-top: 3rem
+    padding-bottom: 3rem
     .headline
-      color: $white
-      background-color: $black-transparent
-      margin-top: 2.5rem
-    img
-      margin: .75rem 0
+      @include card($card-bg-light, $card-color-light, $card-border-light, $card-border-radius)
+      text-transform: uppercase
+    .card
+      @include card($card-bg-light, $card-color-light, $card-border-light, $card-border-radius)
+    hr
+      border-image-source: linear-gradient(90deg, rgba(211,211,211,0.3) 0%, rgba(85,85,85,1) 50%, rgba(211,211,211,0.3) 100%)
+      margin-top: 0
     .pm-item
       margin-bottom: 1rem
+    .carousel
+      .carousel-indicators
+        bottom: 190px
+      .carousel-item
+        img
+          margin: 0
+        .text-container
+          padding: 0.5rem
+      .carousel-control-prev, .carousel-control-next
+        opacity: 0.75
+        bottom: 30px
   /* Marketing */
   #marketing-container
     .headline
