@@ -3,13 +3,12 @@
   #jumbo-services
     background-image: url(../img/services-banner.jpg)
     h1
-      font-size: 60px
-      line-height: 72px
+      font-size: 3.5rem
+      line-height: 4.5rem
       text-transform: uppercase
     .lead
-      font-size: 24px
-      line-height: 30px
-  
+      font-size: 24px  
+      line-height: 1.2
   /* My stack icons */
   .icon-row
     display: none
@@ -40,6 +39,8 @@
     background-color: $black
     color: $white
     padding: 1rem
+    .process-card
+      justify-content: space-between
     h3
       font-family: $righteous
       margin-bottom: 0
@@ -56,20 +57,13 @@
     padding: 1em 0
     #dev-title
       margin-top: 3rem
-      margin-bottom: 4.5rem
+      margin-bottom: 0
       text-transform: uppercase
-      background-color: rgba(0,0,0,0.5)
-      border: 1px solid $white
-      border-radius: $card-border-radius
       font-size: 4rem
-      color: $white
+      @include card($card-bg-dark, $card-color-dark, $card-border-dark, $card-border-radius)
     .card
       margin: 2.5em 0
       @include card($card-bg-dark, $card-color-dark, $card-border-dark, $card-border-radius)
-      // background-color: rgba(0,0,0,0.5)
-      // border: 1px solid $white
-      // border-radius: $card-border-radius
-      // color: $white
       .card-title
         text-transform: uppercase
         font-weight: 700
@@ -107,6 +101,7 @@
         padding: 1em .5em 1em
         border-bottom: 1px solid rgba(0,0,0,.125)
     #google-card
+      margin-top: 1.5rem
       img.google-logo
         width: 50%
         margin-bottom: 1rem
@@ -141,17 +136,45 @@
         bottom: 30px
   /* Marketing */
   #marketing-container
+    background-image: url(https://images.unsplash.com/photo-1516443908743-4e6597970510?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80)
+    //background-image: url(https://images.unsplash.com/photo-1554147090-e1221a04a025?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1331&q=80)
+    //background-image: url()
+    background-size: cover
+    background-repeat: no-repeat
+    padding-top: 2rem
+    padding-bottom: 2rem
     .headline
-      margin-top: 2rem
+      @include card($card-bg-light, $card-color-light, $card-border-light, $card-border-radius)
+      font-size: 3rem
+      text-transform: uppercase
+    .card      
+      @include card($card-bg-light, $card-color-light, $card-border-light, $card-border-radius)
     img.stock-img
       width: 100%
       margin-bottom: 1rem
 
   
   @media (min-width: 767.98px)
-    .banner.flex
+    #jumbo-services
+      height: 70vh
+      h1
+        font-size: 6rem
+        line-height: 1.2
+      .lead
+        font-size: 1.5rem
       .banner-text-container
+        margin-top: 6em
         width: 50%
+        border-radius: 15px
+    #dev-process
+      .process-card
+        justify-content: initial
+        > div
+          margin: 0 auto
+      .process-icon
+        margin: 0 1rem
+      i
+        font-size: inherit
       #web-dev-bio
         // Skill icons
         .icon-row
@@ -164,3 +187,5 @@
               margin: 0 1em 0 0
             .logo:nth-child(4)
                 margin: 0 1em 0 1em
+    #project-management-container, #marketing-container
+      height: 100%

@@ -13,6 +13,9 @@ hr
   border-image-source: linear-gradient(90deg, rgba(211,211,211,0.3) 0%, rgba(157,157,157,1) 50%, rgba(211,211,211,0.3) 100%)
   border-image-slice: 1
 
+.desktop
+  display: none  !important
+
 /* === Navbar === */
 .navbar-dark
   background-color: $gray-dark
@@ -44,7 +47,7 @@ hr
   justify-content: center
   align-items: flex-start
   min-height: 350px
-  height: 100vh
+  //height: 100vh
   width: 100%
   background-size: cover
   background-position: center center
@@ -54,10 +57,10 @@ hr
     border-radius: $card-border-radius
     margin-top: 4rem
     width: 90%
-    padding: 2em
+    padding: 1.25em
     h1
-      font-size: 60px
-      line-height: 72px
+      font-size: 3.75em
+      line-height: 4.5em
     .lead
       font-size: 24px
       line-height: 30px
@@ -134,11 +137,13 @@ footer
 .icon-lg:hover,
 .icon-sm:hover
   color: $orange
+.photo-cred
+  font-size: 0.75rem
 
 @media (min-width: 767.98px)
   .mobile
-    display: none
+    display: none !important
   .desktop
-    display: inherit
+    display: initial !important
 
     
