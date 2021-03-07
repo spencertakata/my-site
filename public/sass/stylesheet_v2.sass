@@ -13,6 +13,8 @@ hr
   border-image-source: linear-gradient(90deg, rgba(211,211,211,0.3) 0%, rgba(157,157,157,1) 50%, rgba(211,211,211,0.3) 100%)
   border-image-slice: 1
 
+.flex-container
+  display: flex
 .desktop
   display: none  !important
 
@@ -42,8 +44,7 @@ hr
   display: none
 
 /* === Banner === */
-.banner.flex
-  display: flex
+.banner
   justify-content: center
   align-items: flex-start
   min-height: 350px
@@ -140,10 +141,25 @@ footer
 .photo-cred
   font-size: 0.75rem
 
+/* ========================= test ============================= */
 @media (min-width: 767.98px)
   .mobile
     display: none !important
   .desktop
     display: initial !important
+  /* ====== JUMBO ====== */
+  // ANCHOR
+  .banner
+    height: 70vh
+    .banner-text-container
+      margin-top: 6rem
+      width: 50%
+      border-radius: 15px
+      padding: 1.25em
+    h1
+      font-size: 6rem
+      line-height: 1.2
+    .lead
+      font-size: 1.5rem
 
     
