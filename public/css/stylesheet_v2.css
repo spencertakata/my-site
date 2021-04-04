@@ -10,7 +10,7 @@
   /* ====== MARKETING ====== */
 }
 #services-page #jumbo-services {
-  background-image: url(../img/services-banner.jpg);
+  background-image: url(/img/services-banner.jpg);
 }
 #services-page #jumbo-services h1 {
   font-size: 3.5rem;
@@ -27,6 +27,9 @@
 }
 #services-page #web-dev-bio .bio-headline {
   margin: 1rem 0;
+}
+#services-page #web-dev-bio .icon-row {
+  display: none;
 }
 #services-page #dev-process {
   background-color: #050505;
@@ -54,7 +57,7 @@
   margin-bottom: 0;
 }
 #services-page #portfolio {
-  background-image: url(../img/tree-bg.jpg);
+  background-image: url(/img/tree-bg.jpg);
   background-size: 100%;
   padding: 1em 0;
 }
@@ -63,7 +66,7 @@
   margin-bottom: 0;
   text-transform: uppercase;
   font-size: 4rem;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.85);
   color: #f7f7f7;
   border: 1px solid #f7f7f7;
   border-radius: 4px;
@@ -71,7 +74,7 @@
 #services-page #portfolio #google-card {
   margin-top: 1.5rem;
 }
-#services-page #portfolio #google-card img.google-logo {
+#services-page #portfolio #google-card .google-logo {
   width: 50%;
   margin-bottom: 1rem;
 }
@@ -81,7 +84,7 @@
 }
 #services-page #portfolio .card {
   margin: 2.5em 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.85);
   color: #f7f7f7;
   border: 1px solid #f7f7f7;
   border-radius: 4px;
@@ -125,21 +128,17 @@
   text-align: center;
 }
 #services-page #project-management-container {
-  background-image: url(../img/ocean-overhead.jpg);
+  background-image: url(/img/ocean-overhead.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
 #services-page #project-management-container .headline {
-  background-color: rgba(255, 255, 255, 0.7);
-  color: #050505;
-  border: 1px solid #050505;
-  border-radius: 4px;
   text-transform: uppercase;
 }
 #services-page #project-management-container .card {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.85);
   color: #050505;
   border: 1px solid #050505;
   border-radius: 4px;
@@ -165,22 +164,18 @@
   bottom: 30px;
 }
 #services-page #marketing-container {
-  background-image: url(https://images.unsplash.com/photo-1516443908743-4e6597970510?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80);
+  background-image: url(/img/desert-mobile.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 #services-page #marketing-container .headline {
-  background-color: rgba(255, 255, 255, 0.7);
-  color: #050505;
-  border: 1px solid #050505;
-  border-radius: 4px;
   font-size: 3rem;
   text-transform: uppercase;
 }
 #services-page #marketing-container .card {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.85);
   color: #050505;
   border: 1px solid #050505;
   border-radius: 4px;
@@ -190,12 +185,33 @@
   margin-bottom: 1rem;
 }
 
+@media (min-width: 768px) {
+  #services-page {
+    /* ====== PROCESS ====== */
+  }
+  #services-page #dev-process {
+    padding: 2.125rem;
+    flex-direction: row;
+  }
+  #services-page #dev-process .process-card {
+    justify-content: initial;
+    margin: 0;
+  }
+  #services-page #dev-process .process-card > div {
+    margin: 0 auto;
+  }
+  #services-page #dev-process .process-icon {
+    margin: 0 1rem;
+  }
+  #services-page #dev-process i {
+    font-size: inherit;
+  }
+}
 /* ====================== DESKTOP ======================= */  
-@media (min-width: 767.98px) {
+@media (min-width: 992px) {
   #services-page {
     /* ====== JUMBO ====== */
     /* ====== WEB BIO ====== */
-    /* ====== PROCESS ====== */
     /* ====== PORTFOLIO ====== */
   }
   #services-page #web-dev-bio p {
@@ -212,7 +228,6 @@
   #services-page #web-dev-bio .icon-row .headline {
     width: 100%;
     margin-bottom: 1rem;
-    color: #3c3c3c;
   }
   #services-page #web-dev-bio .icon-row img {
     height: 70px;
@@ -245,25 +260,59 @@
   }
   #services-page #dev-process {
     padding: 2.125rem 12.5%;
-    flex-direction: row;
   }
-  #services-page #dev-process .process-card {
-    justify-content: initial;
+  #services-page #portfolio {
+    background-image: url(/img/tree-bg-landscape.jpg);
+    padding: 3rem 0;
+  }
+  #services-page #portfolio #dev-title {
+    margin: 0 auto 3rem;
+    width: 60%;
+  }
+  #services-page #portfolio .card-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  #services-page #portfolio .card {
+    width: 30%;
     margin: 0;
   }
-  #services-page #dev-process .process-card > div {
+  #services-page #portfolio #google-card {
+    margin: 0;
+  }
+  #services-page #portfolio #google-card .google-logo {
     margin: 0 auto;
   }
-  #services-page #dev-process .process-icon {
-    margin: 0 1rem;
+  #services-page #portfolio .card-title {
+    text-align: center;
+    font-size: 1.3rem;
   }
-  #services-page #dev-process i {
-    font-size: inherit;
+  #services-page #project-management-container {
+    background-size: 100%;
   }
-  #services-page #project-management-container, #services-page #marketing-container {
-    height: 100%;
+  #services-page #marketing-container {
+    background-image: url(/img/desert-desktop.jpg);
+    background-position: 50% 30%;
+  }
+  #services-page #marketing-container .card {
+    flex-direction: row-reverse;
+  }
+  #services-page #project-management-container .headline, #services-page #marketing-container .headline {
+    font-size: 2.5rem;
+  }
+  #services-page #project-management-container .card-body, #services-page #marketing-container .card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #services-page #project-management-container .desk-col, #services-page #marketing-container .desk-col {
+    width: 47%;
   }
 }
+body {
+  color: #141414;
+}
+
 h1, .h1 {
   font-size: 2.75rem;
 }

@@ -201,99 +201,178 @@
 <div id="portfolio">
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 mx-auto">
+      <div class="col-lg-12 mx-auto">
         <h2 class="copy righteous text-center heading" id="dev-title">Dev Work</h2>
-        
-        <div class="card no-shadow" id="google-card">
-          <div class="card-body">
-            <img src="img/google-logo.png" alt="Google" class="google-logo d-block">
-            <p class="card-text">I work with clients at Google to build responsive emails and websites for several
-              products including Google Nest, Chromecast, Actions on Google and more. Along with HTML and LESS/CSS, my
-              build process utilizes Nunjucks templating, dynamic behavior and data integration with Freemarker,
-              localization, and accessibility best practices.</p>
-            <p></p>
+        <div class="card-container">
+          
+          <div class="card no-shadow" id="google-card">
+            <div class="card-body">
+              <img src="img/google-logo.png" alt="Google" class="google-logo d-block">
+              <p class="card-text">I build responsive marketing emails and websites for Google clients. Along with HTML and LESS/CSS, my
+                build process utilizes Nunjucks templating, personalized data integration,
+                localization, and accessibility best practices.</p>
             <div id="carousel-google-controls" class="carousel slide" data-ride="carousel" data-interval="3000">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img class="d-block w-100" src="img/google-home-hub.jpg" alt="First slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="img/google-home-hub.jpg" alt="First slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="img/home-mini.jpg" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="img/chromecast.jpg" alt="Third slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="img/google-nest.jpg" alt="Fourth slide">
+                  </div>
                 </div>
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="img/home-mini.jpg" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="img/chromecast.jpg" alt="Third slide">
-                </div>
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="img/google-nest.jpg" alt="Fourth slide">
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#carousel-google-controls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carousel-google-controls" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
-          </div>
-        </div>
-        
-        <div class="card no-shadow" id="healthworker-card">
-          <div class="overlay-container">
-            <img src="img/health-worker-housing-mockup.png" class="img-fluid img-card-top" alt="Mock up of website">
-            <div class="overlay">
-              <div class="text">
-                <p>A volunteer-run Covid-19 relief project</p>
-                <a href="projects/covid_ny/index.html">
-                  <button type="button" class="btn btn-primary">Visit site</button>
+                <a class="carousel-control-prev" href="#carousel-google-controls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-google-controls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
                 </a>
               </div>
             </div>
           </div>
-          <div class="card-body">
-            <h5 class="card-title">Health Worker Housing</h5>
-            <p class="card-text">At the start of the Covid-19 outbreak, I joined a volunteer initiative to connect
-              healthcare workers with secondary housing to insulate their families from added risk. The site was
-              designed to be simple, easily scalable, and
-              deployed as fast as possible.</p>
-            <a href="projects/covid_ny/index.html" class="card-link"><button type="button"
-                class="btn btn-secondary btn-purple">View site &raquo;</button></a>
+          
+          <div class="card no-shadow" id="healthworker-card">
+            <div class="card-body">
+              <h5 class="card-title">Health Worker Housing</h5>
+              <p class="card-text">At the start of the Covid-19 outbreak, I joined a volunteer initiative to connect
+                healthcare workers with secondary housing to insulate their families from added risk. The site was
+                designed to be simple, easily scalable, and
+                deployed as fast as possible.</p>
+            </div>
+            <div class="overlay-container">
+              <img src="img/health-worker-housing-mockup.png" class="img-fluid img-card-top" alt="Mock up of website">
+              <div class="overlay">
+                <div class="text">
+                  <p>A volunteer-run Covid-19 relief project</p>
+                  <a href="projects/covid_ny/index.html">
+                    <button type="button" class="btn btn-primary">Visit site</button>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
+          
+          <div class="card no-shadow" id="to-do-card">
+            <div class="card-header">
+              <h5 class="card-title">To-Do List</h5>
+              <p class="card-text">A basic to-do list app to organize tasks for the day. You can add new tasks, remove
+                with the trash can icon, or strikeout by clicking the text.</p>
+            </div>
+            <div class="card-body to-do-body">
+              <div id="container">
+                <h1>To-Do List
+                  <i class="fa fa-plus"></i>
+                </h1>
+                <input type="text" placeholder="Add New Todo">
+                <ul>
+                  <li>
+                    <span>
+                      <i class="fa fa-trash"></i>
+                    </span>
+                    Get groceries
+                  </li>
+                  <li>
+                    <span>
+                      <i class="fa fa-trash"></i>
+                    </span>
+                    Clean the kitchen
+                  </li>
+                  <li>
+                    <span>
+                      <i class="fa fa-trash"></i>
+                    </span>
+                    Workout
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="project-management-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
         
-        <div class="card no-shadow" id="to-do-card">
-          <div class="card-header">
-            <h5 class="card-title">To-Do List</h5>
-            <p class="card-text">A basic to-do list app to organize tasks for the day. You can add new tasks, remove
-              with the trash can icon, or strikeout by clicing the text.</p>
-          </div>
-          <div class="card-body to-do-body">
-            <div id="container">
-              <h1>To-Do List
-                <i class="fa fa-plus"></i>
-              </h1>
-              <input type="text" placeholder="Add New Todo">
-              <ul>
-                <li>
-                  <span>
-                    <i class="fa fa-trash"></i>
-                  </span>
-                  Get groceries
-                </li>
-                <li>
-                  <span>
-                    <i class="fa fa-trash"></i>
-                  </span>
-                  Clean the kitchen
-                </li>
-                <li>
-                  <span>
-                    <i class="fa fa-trash"></i>
-                  </span>
-                  Workout
-                </li>
-              </ul>
+        <div class="card">
+          <div class="card-body">
+            <div class="text-container desk-col left">
+              <h3 class="righteous text-center headline">Project Management</h3>
+              <p>Before moving into Web Development I spent 4 years as a Project Manager. Although web developement is now
+                my primary focus, I utilize my experience as a PM to support operational cohesion among developers, clients,
+                and other deparments. My approach to project management is centered on three main&nbsp;pillars:</p>
+              <ol>
+                <li><b>Support and empower</b> individual team members, arming them with the resources, clarity, and
+                  self-efficacy to achieve project deliverables.</li>
+                <li><b>Understand and drive</b> all stakeholder priorities, ensuring project requirements are realized with
+                  nothing but the highest quality.</li>
+                <li><b>Identify and act</b> on opportunities for efficiencies, process improvements, and project
+                  development, facilitating continuous growth.</li>
+              </ol>
+              <p>With this philosophy, I’ve led digital marketing projects, agency creative work, award ceremonies,
+                fundraisers, multi-faceted volunteer initiatives, and more.</p>
+            </div>
+            
+            <div id="pmCarousel" class="carousel slide desk-col" data-ride="carousel" data-interval="8000">
+              <ol class="carousel-indicators">
+                <li data-target="#pmCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#pmCarousel" data-slide-to="1"></li>
+                <li data-target="#pmCarousel" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  
+                  <img src="img/google-assistant.jpg" class="d-block w-100 img-fluid">
+                  <div class="text-container">
+                    <p><b><a href="https://assistant.google.com/">Google Assistant</a></b> - Boost customer engagement and
+                      retention with monthly email newsletters to Google Assistant users worldwide.</p>
+                    <p><a href="https://assistant.google.com/">Explore the Google <span class="nowrap">Assistant
+                          &raquo;</span></a></p>
+                  </div>
+                </div>
+                
+                <div class="carousel-item">
+                  <img src="img/hr.jpg" class=" d-block w-100 img-fluid">
+                  <div class="text-container">
+                    <p><b><a href="https://humanracesc.org/">The 2017 Human Race</a></b> - A 6 week fundraising campaign,
+                      culminating in a 5 mile run and celebration. $400,000+ raised for 130 nonprofits. </p>
+                    <p><a
+                        href="https://www.santacruzsentinel.com/2017/05/13/human-race-rounds-west-cliff-drive-with-record-year/">Read
+                        more &raquo;</a></p>
+                  </div>
+                </div>
+                
+                <div class="carousel-item">
+                  <img src="https://i.imgur.com/nE8OaIx.jpg" class="d-block w-100 img-fluid">
+                  <div class="text-container">
+                    <p><b><a href="https://scvolunteercenter.org/events-2/be-the-difference-awards/">Be the Difference
+                          Awards</a></b> - Recognizing the Top 50 People, Groups and Businesses who do the most to
+                      transform Santa Cruz County through volunteerism.</p>
+                    <p><a href="https://www.youtube.com/playlist?list=PLzOAByB5_2-nbapYRhmpEvZRTSrR1G7BT">Hear their <span
+                          class="nowrap">stories &raquo;</span></a></p>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#pmCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#pmCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
             </div>
           </div>
         </div>
@@ -302,112 +381,29 @@
   </div>
 </div>
 
-
-
-<div class="container-fluid p-0">
-  <div class="row">
-    <div class="col-12 col-lg-6 p-0">
-      
-      <div class="container-fluid" id="project-management-container">
-        <div class="row">
-          <div class="col">
-            <h3 class="dark righteous text-center headline">Project Management</h3>
-            <div class="card">
-              <div class="left card-body">
-                <p>Before moving into Web Development I spent 4 years as a Project Manager. Although web developement is now
-                  my primary focus, I utilize my experience as a PM to support operational cohesion among developers, clients,
-                  and other deparments. My approach to project management is centered on three main&nbsp;pillars:</p>
-                <ol>
-                  <li><b>Support and empower</b> individual team members, arming them with the resources, clarity, and
-                    self-efficacy to achieve project deliverables.</li>
-                  <li><b>Understand and drive</b> all stakeholder priorities, ensuring project requirements are realized with
-                    nothing but the highest quality.</li>
-                  <li><b>Identify and act</b> on opportunities for efficiencies, process improvements, and project
-                    development, facilitating continuous growth.</li>
-                </ol>
-                <p>With this philosophy, I’ve led digital marketing projects, agency creative work, award ceremonies,
-                  fundraisers, multi-faceted volunteer initiatives, and more.</p>
-                <p>Check out some of my favorite projects below</p>
-                
-                <div id="pmCarousel" class="carousel slide" data-ride="carousel" data-interval="8000">
-                  <ol class="carousel-indicators">
-                    <li data-target="#pmCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#pmCarousel" data-slide-to="1"></li>
-                    <li data-target="#pmCarousel" data-slide-to="2"></li>
-                  </ol>
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      
-                      <img src="img/google-assistant.jpg" class="d-block w-100 img-fluid">
-                      <div class="text-container">
-                        <p><b><a href="https://assistant.google.com/">Google Assistant</a></b> - Boost customer engagement and
-                          retention with monthly email newsletters to Google Assistant users worldwide.</p>
-                        <p><a href="https://assistant.google.com/">Explore the Google <span class="nowrap">Assistant
-                              &raquo;</span></a></p>
-                      </div>
-                    </div>
-                    
-                    <div class="carousel-item">
-                      <img src="img/hr.jpg" class=" d-block w-100 img-fluid">
-                      <div class="text-container">
-                        <p><b><a href="https://humanracesc.org/">The 2017 Human Race</a></b> - A 6 week fundraising campaign,
-                          culminating in a 5 mile run and celebration. $400,000+ raised for 130 nonprofits. </p>
-                        <p><a
-                            href="https://www.santacruzsentinel.com/2017/05/13/human-race-rounds-west-cliff-drive-with-record-year/">Read
-                            more &raquo;</a></p>
-                      </div>
-                    </div>
-                    
-                    <div class="carousel-item">
-                      <img src="https://i.imgur.com/nE8OaIx.jpg" class="d-block w-100 img-fluid">
-                      <div class="text-container">
-                        <p><b><a href="https://scvolunteercenter.org/events-2/be-the-difference-awards/">Be the Difference
-                              Awards</a></b> - Recognizing the Top 50 People, Groups and Businesses who do the most to
-                          transform Santa Cruz County through volunteerism.</p>
-                        <p><a href="https://www.youtube.com/playlist?list=PLzOAByB5_2-nbapYRhmpEvZRTSrR1G7BT">Hear their <span
-                              class="nowrap">stories &raquo;</span></a></p>
-                      </div>
-                    </div>
-                  </div>
-                  <a class="carousel-control-prev" href="#pmCarousel" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                  </a>
-                  <a class="carousel-control-next" href="#pmCarousel" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                  </a>
-                </div>
-              </div>
+<div id="marketing-container">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="left card">
+          <div class="card-body">
+            <div class="desk-col">
+              <h3 class="righteous text-center headline">Marketing</h3>
+              <p>Currently I'm at <a href="https://www.hawkeyeagency.com/">Hawkeye Agency</a>, supporting data-driven B2B
+                and B2C marketing campaigns for products such as the <a href="https://assistant.google.com/">Google
+                  Assistant</a>, <a href="https://store.google.com/us/product/chromecast">Chromecast</a>, and <a
+                  href="https://developers.google.com/actions/">Actions on Google</a>. Our award winning CRM program
+                utilizes long-term brand strategies, game-changing creative campaigns, and one-of-a-kind media marketing
+                programs to boost user retention and engagement.</p>
+              <p>In addition to my current work, I also have experience with <b>email, social, and content marketing</b>.
+                Thoughtful, targeted, strategic marketing practices inform my work to help you reach your audience with the
+                right content, in the right place, at the right time.</p>
+            </div>
+            <div class="desk-col">
+              <img src="img/marketing-stock.jpg" class="stock-img" alt="" aria-hidden="true">
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    
-    <div class="col-12 col-lg-6 p-0">
-      <div class="container-fluid" id="marketing-container">
-        <div class="row">
-          <div class="col">
-            <hr class="m-0">
-            <h3 class="righteous text-center headline">Marketing</h3>
-            <div class="left card">
-              <div class="card-body">
-                <p>Currently I'm at <a href="https://www.hawkeyeagency.com/">Hawkeye Agency</a>, supporting data-driven B2B
-                  and B2C marketing campaigns for products such as the <a href="https://assistant.google.com/">Google
-                    Assistant</a>, <a href="https://store.google.com/us/product/chromecast">Chromecast</a>, and <a
-                    href="https://developers.google.com/actions/">Actions on Google</a>. Our award winning CRM program
-                  utilizes long-term brand strategies, game-changing creative campaigns, and one-of-a-kind media marketing
-                  programs to boost user retention and engagement.</p>
-                <p>In addition to my current work, I also have experience with <b>email, social, and content marketing</b>.
-                  Thoughtful, targeted, strategic marketing practices inform my work to help you reach your audience with the
-                  right content, in the right place, at the right time.</p>
-                <img src="img/marketing-stock.jpg" class="stock-img" alt="" aria-hidden="true">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       </div>
     </div>
   </div>
@@ -435,7 +431,7 @@
           
 <p class="photo-cred">Stock imagery courtesy of <a href='https://unsplash.com/@anete_lusina'>Anete Lūsiņa</a>, <a
     href="https://unsplash.com/@iamjustiinn?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Justin
-    Van Aken</a>, and <a href="https://unsplash.com/@onebackpackphotography">Zack Woolwine</a>.</p>
+    Van Aken</a>, <a href='https://unsplash.com/@emma?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Emma Van Sant</a>, and <a href="https://unsplash.com/@onebackpackphotography">Zack Woolwine</a>.</p>
 
         </div>
       </footer>
