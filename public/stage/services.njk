@@ -1,192 +1,367 @@
-{% extends "boilerplate.njk" %}
+{% extends "boilerplate_v2.njk" %}
+{% set page_id = "services-page"%}
 
 {% block banner %}
-  <!-- BANNER -->
-      <div class="jumbotron jumbo" id="jumboServices">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-6 p-2 m-5 bg-black-transparent font-white righteous center">
-              <h1 class="">What I Do</h1>
+{# Banner #}
+<div class="banner d-flex" id="jumbo-services">
+  <div class="mx-auto text-center banner-text-container flex-item">
+    <h1 class="py-1 font-white righteous">What I do</h1>
+    <p class="lead raleway font-white">Craft beautiful websites for an exquisite user experience</p>
+  </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container web-dev-bio" id="web-dev-bio">
+  {# Bio text #}
+  <div class="row">
+    <div class="col-lg-8 mx-auto text-left">
+      <h2 class="headline righteous copy bio-headline text-center">Jack of all trades, Master of some</h2>
+      <div class="underline bg-orange mb-4"></div>
+      <p class="copy">My philosophy towards my work emphasizes a
+        <em>Jack of all trades, Master of <span><strong>some</strong></span></em> approach. As a Front End Developer, my
+        purview includes working with designers to bring mockups to life, effectively integrating with backend
+        arhitecture, understanding the product strategy, and of course, creating interfaces for the best user
+        experience possible.
+      </p>
+      <p class="copy">While building websites and applications on the client side is my primary focus, I also maintain
+        proficiency with Back End fundamentals, Creative Design tools, and Project Management skills.</p>
+    </div>
+  </div>
+  {# Row 1 #}
+  <div class="row icon-row">
+    {# Front end icons #}
+    <div class="col-lg-8 mx-auto">
+      <h3 class="headline text-center copy righteous">Front End</h3>
+      <div class="flex-container" id="front-end-icon-container">
+        <div class="logo" id="html-logo">
+          <img src="img/html.png" alt="hmtl logo">
+          <p>HTML</p>
+        </div>
+        <div class="logo" id="css-logo">
+          <img src="img/css.png" alt="css logo">
+          <p>CSS</p>
+        </div>
+        <div class="logo" id="js-logo">
+          <img src="img/javascript.png" alt="javascript logo">
+          <p>Javascript</p>
+        </div>
+        <div class="logo" id="sass-logo">
+          <img src="img/sass.png" alt="Sass logo">
+          <p>Sass</p>
+        </div>
+        <div class="logo" id="amp-logo">
+          <img src="img/amp.png" alt="Amp logo">
+          <p>AMP</p>
+        </div>
+        <div class="logo" id="nunjucks-logo">
+          <img src="img/nunjucks.png" alt="Nunjucks logo">
+          <p>Nunjucks</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  {# Row 2 #}
+  <div class="row icon-row">
+    <div class="col-lg-8 mx-auto">
+      {# Nested container for responsive back end/creative layout #}
+      <div class="flex-container">
+        {# Back end #}
+        <div class="pl-0 flex-container" id="back-end-icon-container">
+          <h3 class="headline copy righteous">Back End</h3>
+          <div class="flex-container">
+            <div class="logo" id="python-logo">
+              <img src="img/python.png" alt="Python logo">
+              <p>Python</p>
+            </div>
+            <div class="logo" id="node-logo">
+              <img src="img/node.png" alt="Node logo">
+              <p>Node</p>
+            </div>
+            <div class="logo" id="mongo-logo">
+              <img src="img/mongo.png" alt="Mongo Database logo">
+              <p>Mongo DB</p>
+            </div>
+          </div>
+        </div>
+        {# Creative column #}
+        <div class="pl-0 flex-container" id="creative-icon-container">
+          <h3 class="headline copy righteous">Creative</h3>
+          <div class="flex-container">
+            <div class="logo" id="sketch-logo">
+              <img src="img/sketch.png" alt="Sketch logo">
+              <p>Sketch</p>
+            </div>
+            <div class="logo" id="photo-shop-logo">
+              <img src="img/photoshop.png" alt="Photoshop logo">
+              <p>Photoshop</p>
+            </div>
+            <div class="logo" id="lightroom-logo">
+              <img src="img/lightroom.png" alt="Lightroom logo">
+              <p>Lightroom</p>
             </div>
           </div>
         </div>
       </div>
-{% endblock %}
-
-{% block content %}
-<!-- OVERVIEW -->
-    <div class="grey-background row justify-content-center">
-      <br>
-        <!-- PM -->
-      <div class="col-lg-3 col-md-8 col-sm-8 col-xs-8 card card-sm orange-top">
-
-        <div class="center justify-content-center">
-          <i class="fas fa-code"></i>
-          <h4><b>Web Development</b></h4>
-          <div class="underline underline-orange"></div>
-          <p>Build sleek, engaging, professional websites to define your brand and stand out from the competition.</p>
-          <a href="#webDev" class="scrollTo"><button type="button" class="btn btn-secondary btn-orange">Learn more</button></a>
-      </div>
-      </div>
-      <!-- WEB DEV -->
-      <div class="col-lg-3 col-md-8 col-sm-8 col-xs-8 card card-sm green-top">
-        <div class="center">
-          <i class="fas fa-project-diagram"></i>
-          <h4><b>Project Management</b></h4>
-          <div class="underline underline-green"></div>
-          <p>Turn goals into results, with a focus on email campaigns, event planning, and agency creative work.</p>
-          <a href="#projectManagement" class="scrollTo"><button type="button" class="btn btn-secondary btn-green">Learn more</button></a>
-        </div>
-      </div>
-      <!-- MARKETING -->
-      <div class="col-lg-3 col-md-8 col-sm-8 col-xs-8 card card-sm blue-top">
-        <div class="center">
-          <i class="fas fa-desktop"></i>
-          <h4><b>Digital Marketing</b></h4>
-          <div class="underline underline-blue"></div>
-          <p>Create and sustain meaningful relationships with your audience that keep them coming back.</p>
-          <a href="#marketing" class="scrollTo"><button type="button" class="btn btn-secondary btn-blue">Learn more</button></a>
-        </div>
-      </div>
-      <!-- TESTIMONIAL -->
-      <div class="col-md-8 col-sm-10 col-xs-8 my-4 center font-white righteous feature-text" id="testimonial">
-        <h3>Let's build something amazing</h3>
-        <h3>Professional digital services - Here to help you thrive</h3>
-      </div>
     </div>
+  </div>
+</div>
 
-<!-- PORTFOLIO -->
-<!--WEB DEV -->
-    <div class="row justify-content-center grey-background-3">
-      <div class="col-lg-6 col-sm-10 col-xs-8 card card-lg orange-top" id="webDev">
-        <h3 class="dark righteous center">Web Development</h3>
-        <br>
-        <div class="left">
-          <p class="copy">My philosophy towards my work emphasizes a
-            <em>Jack of all trades, Master of <span><strong>some</strong></span></em> approach. As a Front End Developer, my purview includes working with designers to bring mockups to life, effectively integrating with backend arhitecture, understanding the product strategy, and of course, creating interfaces for the best user
-            experience possible.
-          </p>
-          <p class="copy">While building websites and applications on the client side is my primary focus, I also maintain proficiency with Back End fundamentals, Creative Design tools, and Project Management skills.</p>
-          <p>Currently I am at <a href="https://www.hawkeyeagency.com/">Hawkeye Agency</a> dedicated full time to building websites and emails for a variety of Google clients. I work closely with Project Management and QA teams to ensure that deliverables are with on time with complete satisfaction.</p>
-          <div class="row icon-row">
-            <!-- Front end icons -->
-            <div class="col mx-auto">
-              <!--<h3 class="headline copy righteous">Front End</h3>-->
-              <div class="flex-container">
-                <div class="logo" id="html-logo">
-                  <img src="img/html.png" width="80" alt="hmtl logo">
-                  <p>HTML</p>
+{# Dev Process - Plan, Design, Develop #}
+<div class="bg-black d-flex container-fluid" id="dev-process">
+  {# Card 1 #}
+  <div class="d-flex align-items-center process-card">
+    <div>
+      <h3>Plan <i class="far fa-lightbulb desktop"></i>
+      </h3>
+      <p>Clear vision, solid goals</p>
+    </div>
+    <div class="process-icon mobile">
+      <i class="far fa-lightbulb"></i>
+    </div>
+  </div>
+  {# Card 2 #}
+  <div class="d-flex align-items-center process-card">
+    <div>
+      <h3>Design <i class="fas fa-palette desktop"></i>
+      </h3>
+      <p>Look, feel, experience</p>
+    </div>
+    <div class="process-icon mobile">
+      <i class="fas fa-palette"></i>
+    </div>
+  </div>
+  {# Card 3 #}
+  <div class="d-flex align-items-center process-card">
+    <div>
+      <h3>Develop <i class="fas fa-laptop-code desktop"></i></h3>
+      <p>Elegant, responsive, secure</p>
+    </div>
+    <div class="process-icon mobile">
+      <i class="fas fa-laptop-code"></i>
+    </div>
+  </div>
+</div>
+
+<div id="portfolio">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 mx-auto">
+        <h2 class="copy righteous text-center heading" id="dev-title">Dev Work</h2>
+        <div class="card-container">
+          {# Google #}
+          <div class="card no-shadow" id="google-card">
+            <div class="card-body">
+              <img src="img/google-logo.png" alt="Google" class="google-logo d-block">
+              <p class="card-text">I build responsive marketing emails and websites for Google clients. Along with HTML and LESS/CSS, my
+                build process utilizes Nunjucks templating, personalized data integration,
+                localization, and accessibility best practices.</p>
+            <div id="carousel-google-controls" class="carousel slide" data-ride="carousel" data-interval="3000">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="img/google-home-hub.jpg" alt="First slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="img/home-mini.jpg" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="img/chromecast.jpg" alt="Third slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="img/google-nest.jpg" alt="Fourth slide">
+                  </div>
                 </div>
-                <div class="logo" id="css-logo">
-                  <img src="img/css.png" alt="css logo">
-                  <p>CSS</p>
-                </div>
-                <div class="logo" id="js-logo">
-                  <img src="img/javascript.png" alt="javascript logo">
-                  <p>Javascript</p>
-                </div>
-                <div class="logo" id="sass-logo">
-                  <img src="img/sass.png" alt="Sass logo">
-                  <p>Sass</p>
-                </div>
-                <div class="logo" id="amp-logo">
-                  <img src="img/amp.png" alt="Amp logo">
-                  <p>AMP</p>
-                </div>
-                <div class="logo" id="nunjucks-logo">
-                  <img src="img/nunjucks.png" alt="Nunjucks logo">
-                  <p>Nunjucks</p>
+                <a class="carousel-control-prev" href="#carousel-google-controls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-google-controls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          {# Healthworker housing #}
+          <div class="card no-shadow" id="healthworker-card">
+            <div class="card-body">
+              <h5 class="card-title">Health Worker Housing</h5>
+              <p class="card-text">At the start of the Covid-19 outbreak, I joined a volunteer initiative to connect
+                healthcare workers with secondary housing to insulate their families from added risk. The site was
+                designed to be simple, easily scalable, and
+                deployed as fast as possible.</p>
+            </div>
+            <div class="overlay-container">
+              <img src="img/health-worker-housing-mockup.png" class="img-fluid img-card-top" alt="Mock up of website">
+              <div class="overlay">
+                <div class="text">
+                  <p>A volunteer-run Covid-19 relief project</p>
+                  <a href="projects/covid_ny/index.html">
+                    <button type="button" class="btn btn-primary">Visit site</button>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
-          {# <p>Want to bring your brand in the digital space? Or maybe give your existing site an upgrade? Either way, <b>I'm here to help.</b></p>
-          <p>I build sleek, engaging, mobile responsive emails and websites for businesses, nonprofits, and individuals who want to stand out from the crowd. Whether you’re starting from scratch or coming in for a tune up, I will take a personalized, goal oriented approach to optimizing your online presence.</p>
-          <p>My current work centers around building responsive emails for a variety of Google products and services. I work closely with Project Management and QA teams to ensure that deliverables are with on time with complete satisfaction.</p>
-          <p>Skills and technologies I offer include:</p>
-          <ul>
-            <li>HTML, CSS, Javascript, Jinja, Freemarker</li>
-            <li>Custom built websites, themes, templates</li>
-            <li>CMS set up and support such as Wordpress, Wix, Squarespace</li>
-            <li>Designing a look and feel for your site</li>
-            <li>Sourcing high-quality professional imagery</li>
-          </ul>
-          <p>Together, we can talk through your aspirations and ideas to make sure your site truly representantes your brand and supports your goals.</p> #}
-        </div>
+          {# To-do list #}
+          <div class="card no-shadow" id="to-do-card">
+            <div class="card-header">
+              <h5 class="card-title">To-Do List</h5>
+              <p class="card-text">A basic to-do list app to organize tasks for the day. You can add new tasks, remove
+                with the trash can icon, or strikeout by clicking the text.</p>
+            </div>
+            <div class="card-body to-do-body">
+              <div id="container">
+                <h1>To-Do List
+                  <i class="fa fa-plus"></i>
+                </h1>
+                <input type="text" placeholder="Add New Todo">
+                <ul>
+                  <li>
+                    <span>
+                      <i class="fa fa-trash"></i>
+                    </span>
+                    Get groceries
+                  </li>
+                  <li>
+                    <span>
+                      <i class="fa fa-trash"></i>
+                    </span>
+                    Clean the kitchen
+                  </li>
+                  <li>
+                    <span>
+                      <i class="fa fa-trash"></i>
+                    </span>
+                    Workout
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
       </div>
-
-  <!--PROJECT MANAGEMENT -->
-      <div class="col-lg-6 col-sm-10 col-xs-8 card card-lg green-top" id="projectManagement">
-        <h3 class="dark righteous center">Project Management</h3>
-        <br>
-        <div class="left">
-          <p>As a Project Manager, I’m committed to achieving real results for my clients on time and on budget. My approach to project management is centered on three main pillars:</p>
-          <ol>
-            <li><b>Support and empower</b> individual team members, arming them with the resources, clarity, and self-efficacy to achieve project deliverables.</li>
-            <li><b>Understand and drive</b> all stakeholder priorities, ensuring project requirements are realized with nothing but the highest quality.</li>
-            <li><b>Identify and act</b> on opportunities for efficiencies, process improvements, and project development, facilitating continuous growth.</li>
-          </ol>
-          <p>With this philosophy, I’ve led digital marketing projects, agency creative work, award ceremonies, fundraisers, multi-faceted volunteer initiatives, and more.</p>
-          <p>Check out some of my favorite projects below</p>
-        </div>
-        <hr>
-        <!--GOOGLE ASSISTANT-->
-        <div class="row portfolio left">
-          <div class="col-lg-4 justify-content-center">
-            <img src="img/opa.png" class="img-fluid img-thumbnail img-small">
-          </div>
-          <div class="col-lg-8 left">
-            <p><b><a href="https://assistant.google.com/">Google Assistant</a></b> - Boost customer engagement and retention with monthly email newsletters to Google Assistant users worldwide.</p>
-            <p><a href="https://assistant.google.com/">Explore the Google Assistant</a></p>
-          </div>
-        </div>
-        <!-- HUMAN RACE -->
-        <div class="row portfolio left">
-          <div class="col-lg-4">
-            <img src="img/hr.jpg" class="img-thumbnail img-small">
-          </div>
-          <div class="col-lg-8">
-            <p><b><a href="https://humanracesc.org/">The 2017 Human Race</a></b> - A 6 week fundraising campaign, culminating in a 5 mile run and celebration. $400,000+ raised for 130 nonprofits. </p>
-            <p><a href="https://www.santacruzsentinel.com/2017/05/13/human-race-rounds-west-cliff-drive-with-record-year/">See what the Santa Cruz Sentinel had to say</a></p>
-          </div>
-        </div>
-        <!-- BTD -->
-        <div class="row portfolio left">
-          <div class="col-lg-4">
-            <img src="https://i.imgur.com/nE8OaIx.jpg" class="img-thumbnail img-small">
-          </div>
-          <div class="col-lg-8">
-            <p><b><a href="https://scvolunteercenter.org/events-2/be-the-difference-awards/">Be the Difference Awards</a></b> - Recognizing the Top 50 People, Groups and Businesses who do the most to transform Santa Cruz County through volunteerism.</p>
-            <p><a href="https://www.youtube.com/playlist?list=PLzOAByB5_2-nbapYRhmpEvZRTSrR1G7BT">Hear their stories</a></p>
-          </div>
-        </div>
-      </div>
-      <!-- DIGITAL MARKETING -->
-      <div class="col-lg-6 col-sm-10 col-xs-8 card card-lg blue-top" id="marketing">
-        <h3 class="dark righteous center">Digital Marketing</h3>
-        <br>
-        <div class="left">
-          <p>Currently I'm at <a href="https://www.agency.epsilon.com/">Epsilon Agency</a>, supporting data-driven B2B and B2C email campaigns for products such as the <a href="https://assistant.google.com/">Google Assistant</a>, <a href="https://store.google.com/us/product/chromecast">Chromecast</a>, and <a href="https://developers.google.com/actions/">Actions on Google</a>. Our award winning CRM program utilizes long-term brand strategies, game-changing creative campaigns, and one-of-a-kind media marketing programs to boost user retention and engagement.</p>
-          <p>In addition to my current work, I also have experience with <b>email, social, and content marketing</b> for past events & projects I've managed. Thoughtful, targeted, strategic marketing practices inform my work to help you reach your audience with the right content, in the right place, at the right time.</p>
-          <hr>
-        </div>
-        <div class="row center">
-          <div class="col-lg-4">
-            <a href="https://hermesawards.com/"><img src="https://i.imgur.com/tSrjHHW.png" class="img-thumbnail img-shrink"></a>
-          </div>
-          <div class="col-lg-4">
-            <a href="https://www.horizoninteractiveawards.com/"><img src="https://i.imgur.com/Pvu0N29.png" class="img-thumbnail img-shrink"></a>
-          </div>
-          <div class="col-lg-4">
-            <a href="http://www.iacaward.org/iac/"><img src="https://i.imgur.com/qRwCaVl.png" class="img-thumbnail img-shrink"></a>
-          </div>
-        </div>
-      </div>
-
-<!-- CTA -->
-      <div class="col-lg-6 font-white p-4 feature-text center">
-        <h3 class="righteous">Do you want to make something happen?<br>If so, I'd love to help.</h3>
-        <a href="./contact.html"><button class="btn btn-orange pt-2"><h4>Let's talk</h4></button></a>
       </div>
     </div>
+  </div>
+</div>
+
+{# ==== End Web Dev ==== #}
+<div id="project-management-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        {# === PROJECT MANAGEMENT === #}
+        <div class="card">
+          <div class="card-body">
+            <div class="text-container desk-col left">
+              <h3 class="righteous text-center headline">Project Management</h3>
+              <p>Before moving into Web Development I spent 4 years as a Project Manager. Although web developement is now
+                my primary focus, I utilize my experience as a PM to support operational cohesion among developers, clients,
+                and other deparments. My approach to project management is centered on three main&nbsp;pillars:</p>
+              <ol>
+                <li><b>Support and empower</b> individual team members, arming them with the resources, clarity, and
+                  self-efficacy to achieve project deliverables.</li>
+                <li><b>Understand and drive</b> all stakeholder priorities, ensuring project requirements are realized with
+                  nothing but the highest quality.</li>
+                <li><b>Identify and act</b> on opportunities for efficiencies, process improvements, and project
+                  development, facilitating continuous growth.</li>
+              </ol>
+              <p>With this philosophy, I’ve led digital marketing projects, agency creative work, award ceremonies,
+                fundraisers, multi-faceted volunteer initiatives, and more.</p>
+            </div>
+            {# Carousel #}
+            <div id="pmCarousel" class="carousel slide desk-col" data-ride="carousel" data-interval="8000">
+              <ol class="carousel-indicators">
+                <li data-target="#pmCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#pmCarousel" data-slide-to="1"></li>
+                <li data-target="#pmCarousel" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  {# Google Card #}
+                  <img src="img/google-assistant.jpg" class="d-block w-100 img-fluid">
+                  <div class="text-container">
+                    <p><b><a href="https://assistant.google.com/">Google Assistant</a></b> - Boost customer engagement and
+                      retention with monthly email newsletters to Google Assistant users worldwide.</p>
+                    <p><a href="https://assistant.google.com/">Explore the Google <span class="nowrap">Assistant
+                          &raquo;</span></a></p>
+                  </div>
+                </div>
+                {# HR Card #}
+                <div class="carousel-item">
+                  <img src="img/hr.jpg" class=" d-block w-100 img-fluid">
+                  <div class="text-container">
+                    <p><b><a href="https://humanracesc.org/">The 2017 Human Race</a></b> - A 6 week fundraising campaign,
+                      culminating in a 5 mile run and celebration. $400,000+ raised for 130 nonprofits. </p>
+                    <p><a
+                        href="https://www.santacruzsentinel.com/2017/05/13/human-race-rounds-west-cliff-drive-with-record-year/">Read
+                        more &raquo;</a></p>
+                  </div>
+                </div>
+                {# BTD Card #}
+                <div class="carousel-item">
+                  <img src="https://i.imgur.com/nE8OaIx.jpg" class="d-block w-100 img-fluid">
+                  <div class="text-container">
+                    <p><b><a href="https://scvolunteercenter.org/events-2/be-the-difference-awards/">Be the Difference
+                          Awards</a></b> - Recognizing the Top 50 People, Groups and Businesses who do the most to
+                      transform Santa Cruz County through volunteerism.</p>
+                    <p><a href="https://www.youtube.com/playlist?list=PLzOAByB5_2-nbapYRhmpEvZRTSrR1G7BT">Hear their <span
+                          class="nowrap">stories &raquo;</span></a></p>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#pmCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#pmCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{# === MARKETING === #}
+<div id="marketing-container">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="left card">
+          <div class="card-body">
+            <div class="desk-col">
+              <h3 class="righteous text-center headline">Marketing</h3>
+              <p>Currently I'm at <a href="https://www.hawkeyeagency.com/">Hawkeye Agency</a>, supporting data-driven B2B
+                and B2C marketing campaigns for products such as the <a href="https://assistant.google.com/">Google
+                  Assistant</a>, <a href="https://store.google.com/us/product/chromecast">Chromecast</a>, and <a
+                  href="https://developers.google.com/actions/">Actions on Google</a>. Our award winning CRM program
+                utilizes long-term brand strategies, game-changing creative campaigns, and one-of-a-kind media marketing
+                programs to boost user retention and engagement.</p>
+              <p>In addition to my current work, I also have experience with <b>email, social, and content marketing</b>.
+                Thoughtful, targeted, strategic marketing practices inform my work to help you reach your audience with the
+                right content, in the right place, at the right time.</p>
+            </div>
+            <div class="desk-col">
+              <img src="img/marketing-stock.jpg" class="stock-img" alt="" aria-hidden="true">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+{% endblock %}
+
+{% block photo_cred %}
+<p class="photo-cred">Stock imagery courtesy of <a href='https://unsplash.com/@anete_lusina'>Anete Lūsiņa</a>, <a
+    href="https://unsplash.com/@iamjustiinn?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Justin
+    Van Aken</a>, <a href='https://unsplash.com/@emma?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Emma Van Sant</a>, and <a href="https://unsplash.com/@onebackpackphotography">Zack Woolwine</a>.</p>
 {% endblock %}
