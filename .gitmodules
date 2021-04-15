@@ -1,0 +1,6 @@
+[submodule "covid_ny"]
+	path = public/projects/covid_ny
+	url = https://github.com/spencertakata/covid_ny
+[submodule "to-do-app"]
+	path = public/projects/to-do-app
+	url = https://github.com/spencertakata/to-do-app
