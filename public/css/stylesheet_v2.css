@@ -58,10 +58,9 @@
 #services-page #portfolio {
   background-image: url(/img/tree-bg.jpg);
   background-size: 100%;
-  padding: 1em 0;
+  padding: 3rem 0;
 }
 #services-page #portfolio #dev-title {
-  margin-top: 3rem;
   margin-bottom: 0;
   text-transform: uppercase;
   font-size: 4rem;
@@ -80,6 +79,10 @@
 #services-page #portfolio #healthworker-card img {
   padding: 1em 0.5em 1em;
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+#services-page #portfolio #to-do-card {
+  margin-top: 2.5rem;
+  margin-bottom: 0;
 }
 #services-page #portfolio .card {
   margin: 2.5em 0;
@@ -130,8 +133,7 @@
   background-image: url(/img/ocean-overhead.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding: 3rem 0;
 }
 #services-page #project-management-container .headline {
   text-transform: uppercase;
@@ -166,8 +168,7 @@
   background-image: url(/img/desert-mobile.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 3rem 0;
 }
 #services-page #marketing-container .headline {
   font-size: 3rem;
@@ -262,7 +263,7 @@
   }
   #services-page #portfolio {
     background-image: url(/img/tree-bg-landscape.jpg);
-    padding: 3rem 0;
+    padding: 6rem 0;
   }
   #services-page #portfolio #dev-title {
     margin: 0 auto 3rem;
@@ -282,6 +283,9 @@
   #services-page #portfolio #google-card .google-logo {
     margin: 0 auto;
   }
+  #services-page #portfolio #to-do-card {
+    margin: 0;
+  }
   #services-page #portfolio .card-title {
     text-align: center;
     font-size: 1.3rem;
@@ -293,8 +297,11 @@
     background-image: url(/img/desert-desktop.jpg);
     background-position: 50% 30%;
   }
-  #services-page #marketing-container .card {
+  #services-page #marketing-container .card-body {
     flex-direction: row-reverse;
+  }
+  #services-page #project-management-container, #services-page #marketing-container {
+    padding: 6rem 0;
   }
   #services-page #project-management-container .headline, #services-page #marketing-container .headline {
     font-size: 2.5rem;
@@ -420,6 +427,27 @@ a:hover, a.dark-link:hover {
   text-align: center;
 }
 
+/* === About === */
+#jumbo-about {
+  background-image: url(/img/about-banner.jpg);
+  background-size: cover;
+  min-height: 350px;
+  justify-content: center;
+  align-items: center;
+}
+#jumbo-about .banner-text-container {
+  padding: 2rem 1.4rem;
+  background-color: rgba(0, 0, 0, 0.85);
+  width: 50%;
+}
+#jumbo-about .banner-text-container .lead {
+  font-size: 22px;
+  margin: 0;
+}
+#jumbo-about .banner-text-container h1, #jumbo-about .banner-text-container p {
+  margin: 0;
+}
+
 /* === Elements === */
 html {
   scroll-behavior: smooth;
@@ -493,11 +521,11 @@ hr {
   border-radius: 4px;
   margin-top: 4rem;
   width: 90%;
-  padding: 1.25em;
+  padding: 1.25rem;
 }
 .banner .banner-text-container h1 {
-  font-size: 3.75em;
-  line-height: 4.5em;
+  font-size: 3.75rem;
+  line-height: 4.5rem;
 }
 .banner .banner-text-container .lead {
   font-size: 24px;
