@@ -1,7 +1,9 @@
 /* === About === */
 #jumbo-about {
   background-image: url(/img/about-banner.jpg);
+  background-size: cover;
   align-items: flex-start;
+  height: 70vw;
 }
 #jumbo-about .banner-text-container {
   background-color: rgba(0, 0, 0, 0.85);
@@ -17,6 +19,21 @@
   margin: 0;
 }
 
+@media (min-width: 992px) {
+  #jumbo-about {
+    height: 50vh;
+  }
+  #jumbo-about .banner-text-container {
+    width: 35%;
+    margin-top: 5rem;
+  }
+  #jumbo-about .banner-text-container h1 {
+    font-size: 4rem;
+  }
+  #jumbo-about .banner-text-container p {
+    font-size: 22px;
+  }
+}
 /* Variables */
 /* New Design */
 html {
