@@ -1,7 +1,9 @@
 /* === About === */
 #jumbo-about
   background-image: url(/img/about-banner.jpg)
+  background-size: cover
   align-items: flex-start
+  height: 70vw
   .banner-text-container
     //padding: 2rem 1.4rem
     background-color: rgba(0, 0, 0, .85)
@@ -13,4 +15,14 @@
       margin: 0
     h1, p
       margin: 0
-//test
+
+@media (min-width: 992px)
+  #jumbo-about
+    height: 50vh
+    .banner-text-container
+      width: 35%
+      margin-top: 5rem
+      h1
+        font-size: 4rem
+      p
+        font-size: 22px

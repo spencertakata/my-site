@@ -348,7 +348,8 @@ p, .p {
   line-height: 1.75;
 }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
   line-height: 1.2;
 }
 
@@ -430,7 +431,9 @@ a:hover, a.dark-link:hover {
 /* === About === */
 #jumbo-about {
   background-image: url(/img/about-banner.jpg);
+  background-size: cover;
   align-items: flex-start;
+  height: 70vw;
 }
 #jumbo-about .banner-text-container {
   background-color: rgba(0, 0, 0, 0.85);
@@ -446,6 +449,21 @@ a:hover, a.dark-link:hover {
   margin: 0;
 }
 
+@media (min-width: 992px) {
+  #jumbo-about {
+    height: 50vh;
+  }
+  #jumbo-about .banner-text-container {
+    width: 35%;
+    margin-top: 5rem;
+  }
+  #jumbo-about .banner-text-container h1 {
+    font-size: 4rem;
+  }
+  #jumbo-about .banner-text-container p {
+    font-size: 22px;
+  }
+}
 /* === Elements === */
 html {
   scroll-behavior: smooth;
