@@ -1,4 +1,5 @@
 const gulp = require('gulp');
+const { watch, series } = require('gulp');
 const nunjucksRender = require('gulp-nunjucks-render');
 
 
@@ -14,4 +15,7 @@ function nunjucks() {
 };
 
 
-exports.default = nunjucks
+exports.default = nunjucks;
+exports.dev = function(){
+    watch('public/stage/*.njk', nunjucks);
+}

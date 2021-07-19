@@ -1,15 +1,19 @@
 $container-padding-m-y: 3rem
 $container-padding-d-y: 6rem
+$section-border-width: 5px
 
 /* ===== Services ===== */
 #services-page
+
   /* === JUMBO === */
   #jumbo-services
     background-image: url(/img/services-banner.jpg)
+
     h1
       font-size: 3.5rem
       line-height: 4.5rem
       text-transform: uppercase
+
     .lead
       font-size: 24px  
       line-height: 1.2
@@ -17,28 +21,36 @@ $container-padding-d-y: 6rem
   /* ====== INTRO BIO ====== */
   #web-dev-bio
     margin: 1rem auto
+
     .bio-headline
       margin: 1rem 0
+
     .icon-row
       display: none
+
   /* ====== PROCESS BOXES ====== */
   #dev-process
     background-color: $black
     color: $white
     justify-content: space-around
     flex-direction: column
+
     .process-card
       justify-content: space-between
       margin: 1rem 0
+
     h3
       font-family: $righteous
       margin-bottom: 0
+
     .process-icon
       width: 50px
       text-align: center
+
     i
       font-size: 2.5rem
       display: inline-block
+
     p
       margin-bottom: 0
 
@@ -46,36 +58,50 @@ $container-padding-d-y: 6rem
   #portfolio
     background-image: url(/img/tree-bg.jpg)
     background-size: 100%
+    //border-top: $section-border-width solid $white
     padding: 3rem 0
+
     #dev-title
       //margin-top: 3rem
-      margin-bottom: 0
-      text-transform: uppercase
-      font-size: 4rem
+      padding: 1.25rem
       @include card($card-bg-dark, $card-color-dark, $card-border-dark, $card-border-radius)
+
+      h2
+        margin-bottom: 1rem
+        text-transform: uppercase
+        font-size: 3.25rem
+
     #google-card
-      margin-top: 1.5rem
+      //margin-top: 1.5rem
+
       .google-logo
         width: 50%
         margin-bottom: 1rem
+
     #healthworker-card
       img
         padding: 1em .5em 1em
         border-bottom: 1px solid rgba(0,0,0,.125)
+
     #to-do-card
-      margin-top: 2.5rem
-      margin-bottom: 0
+      //margin-top: 2.5rem
+      //margin-bottom: 0
+
     .card
       margin: 2.5em 0
       @include card($card-bg-dark, $card-color-dark, $card-border-dark, $card-border-radius)
+
       .card-title
         text-transform: uppercase
         font-weight: 700
+
       /* Hover effects */
       .overlay-container
         position: relative
+
       img
         display: block
+
       .overlay
         position: absolute
         top: 0
@@ -87,8 +113,10 @@ $container-padding-d-y: 6rem
         opacity: 0
         transition: .5s ease
         background-color: $purple
+
       .overlay-container:hover .overlay
         opacity: 1
+
         .text
           color: $white
           font-size: 20px
@@ -106,139 +134,223 @@ $container-padding-d-y: 6rem
     background-image: url(/img/ocean-overhead.jpg)
     background-size: cover
     background-repeat: no-repeat
+    border-bottom: 5px solid $black
+    border-top: 5px solid $black
     padding: $container-padding-m-y 0
+
     .headline
-      text-transform: uppercase      
+      text-transform: uppercase   
+
     .card
       @include card($card-bg-light, $card-color-light, $card-border-light, $card-border-radius)
+
     hr
       border-image-source: linear-gradient(90deg, rgba(211,211,211,0.3) 0%, rgba(85,85,85,1) 50%, rgba(211,211,211,0.3) 100%)
       margin-top: 0
+
     .pm-item
       margin-bottom: 1rem
+
     .carousel
       .carousel-indicators
         bottom: 190px
+
       .carousel-item
         img
           margin: 0
+
         .text-container
           padding: 0.5rem
+
       .carousel-control-prev, .carousel-control-next
         opacity: 0.75
         bottom: 30px
+
   /* ====== MARKETING ====== */
   #marketing-container
     background-image: url(/img/desert-mobile.jpg)
     background-size: cover
     background-repeat: no-repeat
     padding: $container-padding-m-y 0
+
     .headline
       font-size: 3rem
       text-transform: uppercase
+
     .card      
       @include card($card-bg-light, $card-color-light, $card-border-light, $card-border-radius)
+
     img.stock-img
       width: 100%
       margin-bottom: 1rem
 
+
+/* ========================================= TABLET ============================================== */
 @media (min-width: 768px)
+
   #services-page
+
+    #jumbo-services
+      .banner-text-container
+        width: 70%
+      h1
+        font-size: 4rem
+
+    .banner
+      height: 50vw
+
     /* ====== PROCESS ====== */
     #dev-process
       padding: 2.125rem
       flex-direction: row
+
       .process-card
         justify-content: initial
         margin: 0
+
         > div
           margin: 0 auto
+
       .process-icon
         margin: 0 1rem
+
       i
         font-size: inherit
 
-/* ====================== DESKTOP ======================= */  
+    #portfolio
+
+      #dev-title
+
+        h2
+          text-align: center
+          //font-size: 3rem
+      #google-card
+        .google-logo
+          width: 35%
+
+
+
+/* ===================================================== DESKTOP ================================================== */  
 @media (min-width: 992px)
   #services-page
+
     /* ====== JUMBO ====== */
     #jumbo-services
+      border-bottom: 5px solid $black
       //height: 70vh
+      .banner-text-container
+        width: 50%
+
     /* ====== WEB BIO ====== */
     #web-dev-bio
       p
-        font-size: 1.25rem
+        font-size: 1.5rem
+
       // Skill icons
       .icon-row
         display: initial
         text-align: center
+
         .flex-container
           flex-direction: row
           flex-wrap: wrap
+
         .headline
           width: 100%
           margin-bottom: 1rem
+
         img
           height: 70px
           width: auto
+
         .logo
           width: auto
+
         p
           font-size: 0.85rem
+
         #front-end-icon-container
           justify-content: space-around
+
           #amp-logo
             margin-left: 0
+
           .logo:first-child
             margin: 0 1em 0 0
+
           .logo:nth-child(4)
               margin: 0 1em 0 1em
+
         #back-end-icon-container, #creative-icon-container
           width: 50%
+
           .flex-container
             justify-content: space-around
             width: 100%
+
     #dev-process
       padding: 2.125rem 12.5%
+
     /* ====== PORTFOLIO ====== */
     #portfolio
       background-image: url(/img/tree-bg-landscape.jpg)
       padding: $container-padding-d-y 0
+
       #dev-title
         margin: 0 auto 3rem
-        width: 60%
+        padding: 2rem
+        width: 80%
+
+        h2
+          text-align: center
+          font-size: 4rem
+        
+        p
+          font-size: 1.4rem
+
       .card-container
         display: flex
-        justify-content: space-between
+        justify-content: space-evenly
+
       .card
-        width: 30%
-        margin: 0
+        width: 100%
+        max-width: 330px
+        margin: 1rem
+        flex-grow: 2
+
       #google-card
-        margin: 0
+
         .google-logo
-          //width: 30%
-          margin: 0 auto
+          margin: 0 auto .75rem
+          width: 50%
+
       #to-do-card
-        margin: 0
+
       .card-title
         text-align: center
         font-size: 1.3rem
+
     #project-management-container
       background-size: 100%
+
     #marketing-container
       background-image: url(/img/desert-desktop.jpg)
       background-position: 50% 30%
+
       .card-body
         flex-direction: row-reverse
       
     #project-management-container, #marketing-container
       //height: 100%
       padding: $container-padding-d-y 0
+
       .headline
         font-size: 2.5rem
+
       .card-body
         display: flex
         justify-content: space-between
         align-items: center
+
       .desk-col
         width: 47%

@@ -22,7 +22,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "gulp nunjucks && gulp css"
+    "build": "gulp nunjucks && sass ./public/sass/:./public/css/",
+    "sass-watch": "sass --watch ./public/sass/:./public/css/",
+    "dev": "gulp dev & npm run sass-watch"
   },
   "repository": {
     "type": "git",
