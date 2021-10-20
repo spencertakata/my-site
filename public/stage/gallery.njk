@@ -1,100 +1,115 @@
 {% extends "boilerplate.njk" %}
 
+{% set photoArr = [
+    [
+      ["img/snowboard-lg.jpg", "img/snowboard-sm.jpg"],
+      ["img/surf-lg.jpg", "img/surf-sm.jpg"],
+      ["img/graffiti-lg.jpg", "img/graffiti-sm.jpg"]
+    ],
+    [
+      ["img/boat-lg.jpg", "img/boat-sm.jpg"],
+      ["img/kona-lg.jpg", "img/kona-sm.jpg"],
+      ["img/plant-fountain-lg.jpg", "img/plant-fountain-sm.jpg"]
+    ],
+        [
+      ["img/bird-nest-lg.jpg", "img/bird-nest-sm.jpg"],
+      ["img/rose-2-lg.jpg", "img/rose-2-sm.jpg"],
+      ["img/ducks-2-lg.jpg", "img/ducks-2-sm.jpg"]
+    ],
+    [
+      ["img/ginger-lg.jpg", "img/ginger-sm.jpg"],
+      ["img/tahoe-stars-lg.jpg", "img/tahoe-stars-sm.jpg"],
+      ["img/peacock-2-lg.jpg", "img/peacock-2-sm.jpg"]
+    ],
+    [
+      ["img/lake-chain-lg.jpg", "img/lake-chain-sm.jpg"],
+      ["img/kaya-lg.jpg", "img/kaya-sm.jpg"],
+      ["img/lotus-lg.jpg", "img/lotus-sm.jpg"]
+    ],
+    [
+      ["img/rose-lg.jpg", "img/rose-sm.jpg"],
+      ["img/sf-lg.jpg", "img/sf-sm.jpg"],
+      ["img/nola-band-lg.jpg", "img/nola-band-sm.jpg"]
+    ],
+    [
+      ["img/shithead-lg.jpg", "img/shithead-sm.jpg"],
+      ["img/chapel-lg.jpg", "img/chapel-sm.jpg"],
+      ["img/squaw-exit-lg.jpg", "img/squaw-exit-sm.jpg"]
+    ],
+    [
+      ["img/mountains-lg.jpg", "img/mountains-sm.jpg"],
+      ["img/peacock-lg.jpg", "img/peacock-sm.jpg"],
+      ["img/bucket-lg.jpg", "img/bucket-sm.jpg"]
+    ],
+    [
+      ["img/reflection-lg.jpg", "img/reflection-sm.jpg"],
+      ["img/church-lg.jpg", "img/church-sm.jpg"],
+      ["img/johnson-lg.jpg", "img/johnson-sm.jpg"]
+    ],
+    [
+      ["img/poppy-lg.jpg", "img/poppy-sm.jpg"],
+      ["img/oxo-lg.jpg", "img/oxo-sm.jpg"],
+      ["img/rain-glass-lg.jpg", "img/rain-glass-sm.jpg"]
+    ],
+    [
+      ["img/tire-lg.jpg", "img/tire-sm.jpg"],
+      ["img/pink-flowers-lg.jpg", "img/pink-flowers-sm.jpg"],
+      ["img/papa-cool-lg.jpg", "img/papa-cool-sm.jpg"]
+    ],
+    [
+      ["img/kush-lg.jpg", "img/kush-sm.jpg"],
+      ["img/carlos-lg.jpg", "img/carlos-sm.jpg"],
+      ["img/souls-lg.jpg", "img/souls-sm.jpg"]
+    ],
+    [
+      ["img/sqauw-flare-lg.jpg", "img/squaw-flare-sm.jpg"],
+      ["img/hydrant-2-lg.jpg", "img/hydrant-2-sm.jpg"],
+      ["img/portland-lg.jpg", "img/portland-sm.jpg"]
+    ],
+    [
+      ["img/lamp.jpg", "img/lamp-sm.jpg"],
+      ["img/kona-neon-lg.jpg", "img/kona-neon-sm.jpg"],
+      ["img/plant-lg.jpg", "img/plant-lg.jpg"]
+    ],
+    [
+      ["img/duck-lg.jpg", "img/duck-sm.jpg"],
+      ["img/mission-lg.jpg", "img/mission-sm.jpg"],
+      ["img/hydrant-lg.jpg", "img/hydrant-sm.jpg"]
+    ],
+    [
+      ["img/nola-night-lg.jpg", "img/nola-night-sm.jpg"],
+      ["img/ny-graffiti-lg.jpg", "img/ny-graffiti-sm.jpg"],
+      ["img/succulent-lg.jpg", "img/succulent-sm.jpg"]
+    ]
+  ]
+%}
+
+
 {% block banner %}
 <!-- JUMBOTRON -->
-
-      <div class="jumbotron jumbo" id="jumboGallery">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-6 p-2 mb-3 mt-5 center font-white bg-black-transparent">
-              <h1 class="righteous">Gallery</h1>
-              <h4 class="raleway pb-3">A collection of my favorite photos</h4>
-            </div>
-          </div>
+  <div class="jumbotron jumbo" id="jumboGallery">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 p-2 mb-3 mt-5 center font-white bg-black-transparent">
+          <h1 class="righteous">Gallery</h1>
+          <h4 class="raleway pb-3">A collection of my favorite photos</h4>
         </div>
       </div>
+    </div>
+  </div>
 {% endblock %}
 
 {% block content %}
 <!-- GALLERY START -->
-      <div class="grey-background-3">
-        <div class="container">
-        <!-- Row 1 -->
-            <div class="row my-4">
-                {{ macro.galleryImg("img/snowboard-lg.jpg", "img/snowboard-sm.jpg")}}
-                {{ macro.galleryImg("img/surf-lg.jpg", "img/surf-sm.jpg") }}
-                {{ macro.galleryImg("img/graffiti-lg.jpg", "img/graffiti-sm.jpg") }}
-            </div>
-            <!-- Row 2 -->
-            <div class="row my-4">
-                {{ macro.galleryImg("img/boat-lg.jpg", "img/boat-sm.jpg") }}
-                {{ macro.galleryImg("img/kona-lg.jpg", "img/kona-sm.jpg") }}
-                {{ macro.galleryImg("img/plant-fountain-lg.jpg", "img/plant-fountain-sm.jpg") }}
-            </div>
-            <!-- Row 3 -->
-            <div class="row my-4">
-                {{ macro.galleryImg("img/rose-lg.jpg", "img/rose-sm.jpg") }}
-                {{ macro.galleryImg("img/sf-lg.jpg", "img/sf-sm.jpg") }}
-                {{ macro.galleryImg("img/nola-band-lg.jpg", "img/nola-band-sm.jpg") }}
-            </div>
-            <!-- Row 4 -->
-            <div class="row my-4">
-                {{ macro.galleryImg("img/shithead-lg.jpg", "img/shithead-sm.jpg") }}
-                {{ macro.galleryImg("img/chapel-lg.jpg", "img/chapel-sm.jpg") }}
-                {{ macro.galleryImg("img/squaw-exit-lg.jpg", "img/squaw-exit-sm.jpg")}}
-            </div>
-            <!-- Row 5 -->
-            <div class="row my-4">
-                {{ macro.galleryImg("img/mountains-lg.jpg", "img/mountains-sm.jpg") }}
-                {{ macro.galleryImg("img/peacock-lg.jpg", "img/peacock-sm.jpg") }}
-                {{ macro.galleryImg("img/bucket-lg.jpg", "img/bucket-sm.jpg") }}
-            </div>
-            <!-- Row 6 -->
-            <div class="row my-4">
-                {{ macro.galleryImg("img/reflection-lg.jpg", "img/reflection-sm.jpg")}}
-                {{ macro.galleryImg("img/church-lg.jpg", "img/church-sm.jpg")}}
-                {{ macro.galleryImg("img/johnson-lg.jpg", "img/johnson-sm.jpg")}}
-            </div>
-            <!-- Row 7 -->
-            <div class="row my-4">
-                {{ macro.galleryImg("img/poppy-lg.jpg", "img/poppy-sm.jpg")}}
-                {{ macro.galleryImg("img/oxo-lg.jpg", "img/oxo-sm.jpg")}}
-                {{ macro.galleryImg("img/rain-glass-lg.jpg", "img/rain-glass-sm.jpg")}}
-            </div>
-            <!-- Row 8 -->
-            <div class="row my-4">
-                {{ macro.galleryImg("img/tire-lg.jpg", "img/tire-sm.jpg")}}
-                {{ macro.galleryImg("img/pink-flowers-lg.jpg", "img/pink-flowers-sm.jpg")}}
-                {{ macro.galleryImg("img/papa-cool-lg.jpg", "img/papa-cool-sm.jpg")}}
-            </div>
-            <!-- Row 9 -->
-            <div class="row my-4">
-                {{ macro.galleryImg("img/kush-lg.jpg", "img/kush-sm.jpg")}}
-                {{ macro.galleryImg("img/carlos-lg.jpg", "img/carlos-sm.jpg")}}
-                {{ macro.galleryImg("img/souls-lg.jpg", "img/souls-sm.jpg")}}
-            </div>
-            <!-- Row 10 -->
-            <div class="row my-4">
-                {{ macro.galleryImg("img/sqauw-flare-lg.jpg", "img/squaw-flare-sm.jpg")}}
-                {{ macro.galleryImg("img/hydrant-2-lg.jpg", "img/hydrant-2-sm.jpg") }}
-                {{ macro.galleryImg("img/portland-lg.jpg", "img/portland-sm.jpg") }}
-            </div>
-            <div class="row my-4">
-                {{ macro.galleryImg("img/lamp.jpg", "img/lamp-sm.jpg") }}
-                {{ macro.galleryImg("img/kona-neon-lg.jpg", "img/kona-neon-sm.jpg")}}
-                {{ macro.galleryImg("img/plant-lg.jpg", "img/plant-lg.jpg")}}
-            </div>
-            <div class="row my-4">
-                {{ macro.galleryImg("img/duck-lg.jpg", "img/duck-sm.jpg")}}
-                {{ macro.galleryImg("img/mission-lg.jpg", "img/mission-sm.jpg")}}
-                {{ macro.galleryImg("img/hydrant-lg.jpg", "img/hydrant-sm.jpg")}}
-            </div>
-            <!-- Row 11 -->
-            <div class="row my-4">
-                {{ macro.galleryImg("img/nola-night-lg.jpg", "img/nola-night-sm.jpg")}}
-                {{ macro.galleryImg("img/ny-graffiti-lg.jpg", "img/ny-graffiti-sm.jpg")}}
-                {{ macro.galleryImg("img/succulent-lg.jpg", "img/succulent-sm.jpg")}}
-            </div>
-        </div>
+  <div class="grey-background-3">
+    <div class="container">
+    {% for row in photoArr %}
+      <div class="row my-4">
+        {{ macro.galleryImg(row[0][0], row[0][1]) }}
+        {{ macro.galleryImg(row[1][0], row[1][1]) }}
+        {{ macro.galleryImg(row[2][0], row[2][1]) }}
+      </div>
+    {% endfor %}
     </div>
+  </div>
 {% endblock %}
