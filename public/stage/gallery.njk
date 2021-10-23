@@ -1,4 +1,6 @@
-{% extends "boilerplate.njk" %}
+{% extends "boilerplate_v2.njk" %}
+{% set page_id = "gallery" %}
+{% set page_stylesheet = "gallery.css" %}
 
 {% set photoArr = [
     [
@@ -85,26 +87,20 @@
 %}
 
 
-{% block banner %}
-<!-- JUMBOTRON -->
-  <div class="jumbotron jumbo" id="jumboGallery">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-6 p-2 mb-3 mt-5 center font-white bg-black-transparent">
-          <h1 class="righteous">Gallery</h1>
-          <h4 class="raleway pb-3">A collection of my favorite photos</h4>
-        </div>
-      </div>
+{% block banner %}  
+  <div class="banner" id="gallery-banner">
+    <div class="banner-text-container">
+      <h1 class="righteous">Gallery</h1>
+      <h4 class="raleway pb-3">A collection of my favorite photos</h4>
     </div>
   </div>
 {% endblock %}
 
 {% block content %}
-<!-- GALLERY START -->
-  <div class="grey-background-3">
+  <div class="gallery-body">
     <div class="container">
     {% for row in photoArr %}
-      <div class="row my-4">
+      <div class="row">
         {{ macro.galleryImg(row[0][0], row[0][1]) }}
         {{ macro.galleryImg(row[1][0], row[1][1]) }}
         {{ macro.galleryImg(row[2][0], row[2][1]) }}
