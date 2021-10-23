@@ -4,84 +4,79 @@
 
 {% set photoArr = [
     [
-      ["img/snowboard-lg.jpg", "img/snowboard-sm.jpg"],
-      ["img/surf-lg.jpg", "img/surf-sm.jpg"],
-      ["img/graffiti-lg.jpg", "img/graffiti-sm.jpg"]
+      ["img/snowboard-lg.jpg"],
+      ["img/surf-lg.jpg"],
+      ["img/graffiti-lg.jpg"]
     ],
     [
-      ["img/boat-lg.jpg", "img/boat-sm.jpg"],
-      ["img/kona-lg.jpg", "img/kona-sm.jpg"],
-      ["img/plant-fountain-lg.jpg", "img/plant-fountain-sm.jpg"]
+      ["img/boat-lg.jpg"],
+      ["img/kona-neon-lg.jpg"],
+      ["img/plant-fountain-lg.jpg"]
     ],
         [
-      ["img/bird-nest-lg.jpg", "img/bird-nest-sm.jpg"],
-      ["img/rose-2-lg.jpg", "img/rose-2-sm.jpg"],
-      ["img/ducks-2-lg.jpg", "img/ducks-2-sm.jpg"]
+      ["img/bird-nest-lg.jpg"],
+      ["img/rose-2-lg.jpg"],
+      ["img/ducks-2-lg.jpg"]
     ],
     [
-      ["img/ginger-lg.jpg", "img/ginger-sm.jpg"],
-      ["img/tahoe-stars-lg.jpg", "img/tahoe-stars-sm.jpg"],
-      ["img/peacock-2-lg.jpg", "img/peacock-2-sm.jpg"]
+      ["img/ginger-lg.jpg"],
+      ["img/tahoe-stars-lg.jpg"],
+      ["img/peacock-2-lg.jpg"]
     ],
     [
-      ["img/lake-chain-lg.jpg", "img/lake-chain-sm.jpg"],
-      ["img/kaya-lg.jpg", "img/kaya-sm.jpg"],
-      ["img/lotus-lg.jpg", "img/lotus-sm.jpg"]
+      ["img/lake-chain-lg.jpg"],
+      ["img/kaya-lg.jpg"],
+      ["img/lotus-lg.jpg"]
     ],
     [
-      ["img/rose-lg.jpg", "img/rose-sm.jpg"],
-      ["img/sf-lg.jpg", "img/sf-sm.jpg"],
-      ["img/nola-band-lg.jpg", "img/nola-band-sm.jpg"]
+      ["img/rose-lg.jpg"],
+      ["img/sf-lg.jpg"],
+      ["img/nola-band-lg.jpg"]
     ],
     [
-      ["img/shithead-lg.jpg", "img/shithead-sm.jpg"],
-      ["img/chapel-lg.jpg", "img/chapel-sm.jpg"],
-      ["img/squaw-exit-lg.jpg", "img/squaw-exit-sm.jpg"]
+      ["img/shithead-lg.jpg"],
+      ["img/chapel-lg.jpg"],
+      ["img/squaw-exit-lg.jpg"]
     ],
     [
-      ["img/mountains-lg.jpg", "img/mountains-sm.jpg"],
-      ["img/peacock-lg.jpg", "img/peacock-sm.jpg"],
-      ["img/bucket-lg.jpg", "img/bucket-sm.jpg"]
+      ["img/mountains-lg.jpg"],
+      ["img/peacock-lg.jpg"],
+      ["img/bucket-lg.jpg"]
     ],
     [
-      ["img/reflection-lg.jpg", "img/reflection-sm.jpg"],
-      ["img/church-lg.jpg", "img/church-sm.jpg"],
-      ["img/johnson-lg.jpg", "img/johnson-sm.jpg"]
+      ["img/reflection-lg.jpg"],
+      ["img/church-lg.jpg"],
+      ["img/johnson-lg.jpg"]
     ],
     [
-      ["img/poppy-lg.jpg", "img/poppy-sm.jpg"],
-      ["img/oxo-lg.jpg", "img/oxo-sm.jpg"],
-      ["img/rain-glass-lg.jpg", "img/rain-glass-sm.jpg"]
+      ["img/poppy-lg.jpg"],
+      ["img/oxo-lg.jpg"],
+      ["img/rain-glass-lg.jpg"]
     ],
     [
-      ["img/tire-lg.jpg", "img/tire-sm.jpg"],
-      ["img/pink-flowers-lg.jpg", "img/pink-flowers-sm.jpg"],
-      ["img/papa-cool-lg.jpg", "img/papa-cool-sm.jpg"]
+      ["img/tire-lg.jpg"],
+      ["img/pink-flowers-lg.jpg"],
+      ["img/papa-cool-lg.jpg"]
     ],
     [
-      ["img/kush-lg.jpg", "img/kush-sm.jpg"],
-      ["img/carlos-lg.jpg", "img/carlos-sm.jpg"],
-      ["img/souls-lg.jpg", "img/souls-sm.jpg"]
+      ["img/kush-lg.jpg"],
+      ["img/carlos-lg.jpg"],
+      ["img/souls-lg.jpg"]
     ],
     [
-      ["img/sqauw-flare-lg.jpg", "img/squaw-flare-sm.jpg"],
-      ["img/hydrant-2-lg.jpg", "img/hydrant-2-sm.jpg"],
-      ["img/portland-lg.jpg", "img/portland-sm.jpg"]
+      ["img/squaw-flare-lg.jpg"],
+      ["img/hydrant-2-lg.jpg"],
+      ["img/succulent-lg.jpg"]
     ],
     [
-      ["img/lamp.jpg", "img/lamp-sm.jpg"],
-      ["img/kona-neon-lg.jpg", "img/kona-neon-sm.jpg"],
-      ["img/plant-lg.jpg", "img/plant-lg.jpg"]
+      ["img/lamp-lg.jpg"],
+      ["img/kona-lg.jpg"],
+      ["img/plant-lg.jpg"]
     ],
     [
-      ["img/duck-lg.jpg", "img/duck-sm.jpg"],
-      ["img/mission-lg.jpg", "img/mission-sm.jpg"],
-      ["img/hydrant-lg.jpg", "img/hydrant-sm.jpg"]
-    ],
-    [
-      ["img/nola-night-lg.jpg", "img/nola-night-sm.jpg"],
-      ["img/ny-graffiti-lg.jpg", "img/ny-graffiti-sm.jpg"],
-      ["img/succulent-lg.jpg", "img/succulent-sm.jpg"]
+      ["img/duck-lg.jpg"],
+      ["img/mission-lg.jpg"],
+      ["img/nola-night-lg.jpg"]
     ]
   ]
 %}
@@ -101,9 +96,9 @@
     <div class="container">
     {% for row in photoArr %}
       <div class="row">
-        {{ macro.galleryImg(row[0][0], row[0][1]) }}
-        {{ macro.galleryImg(row[1][0], row[1][1]) }}
-        {{ macro.galleryImg(row[2][0], row[2][1]) }}
+        {{ macro.galleryImg(row[0][0]) }}
+        {{ macro.galleryImg(row[1][0]) }}
+        {{ macro.galleryImg(row[2][0]) }}
       </div>
     {% endfor %}
     </div>
