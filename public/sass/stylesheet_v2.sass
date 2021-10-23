@@ -1,5 +1,4 @@
-@import ./partials/_variables
-@import ./partials/_services, ./partials/_typography, ./partials/_about
+@import ./partials/_variables, ./partials/_typography
 
 /* === Elements === */
 html
@@ -60,7 +59,9 @@ hr
     background-color: $black-transparent
     border: 1px solid $white
     border-radius: $card-border-radius
+    color: $white
     margin-top: 4rem
+    text-align: center
     width: 90%
     padding: 1.25rem
     h1
@@ -152,12 +153,11 @@ footer
   .desktop
     display: initial !important
   /* ====== JUMBO ====== */
-  // ANCHOR
   .banner
     height: 70vh
     .banner-text-container
       margin-top: 6rem
-      width: 50%
+      width: 70%
       border-radius: 15px
       padding: 1.25em
     h1
