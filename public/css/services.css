@@ -1,17 +1,457 @@
-/* Error: Undefined variable.
- *    ,
- * 33 |     background-color: $black
- *    |                       ^^^^^^
- *    '
- *   public/sass/services.sass 33:23  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 33 \2502      background-color: $black\a    \2502                        ^^^^^^\a    \2575 \a   public/sass/services.sass 33:23  root stylesheet";
+/* Variables */
+/* New Design */
+body {
+  color: #141414;
 }
+
+h1, .h1 {
+  font-size: 2.75rem;
+}
+
+h2, .h2 {
+  font-size: 2.25rem;
+}
+
+h3, .h3 {
+  font-size: 2rem;
+}
+
+h4, .h4 {
+  font-size: 1.75rem;
+}
+
+h5, .h5 {
+  font-size: 1.5rem;
+}
+
+h6, .h6 {
+  font-size: 1.25rem;
+}
+
+p, .p {
+  font-size: 1.1rem;
+  line-height: 1.75;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  line-height: 1.2;
+}
+
+.righteous {
+  font-family: "Righteous", Palatino, Times, serif;
+}
+
+.raleway {
+  font-family: "Lato", "Raleway", Verdana, Arial, sans-serif;
+}
+
+.font-white {
+  color: #f7f7f7;
+}
+
+.font-blue {
+  color: #0070F0;
+}
+
+.font-blue-dark {
+  color: #000066;
+}
+
+.font-blue-light {
+  color: #7dc2ff;
+}
+
+.font-teal {
+  color: #00c4cc;
+}
+
+.font-teal-dark {
+  color: #00939b;
+}
+
+.font-teal-light {
+  color: #62f7ff;
+}
+
+.font-purple {
+  color: #5f4bb6;
+}
+
+.font-purple-dark {
+  color: #2a2285;
+}
+
+.font-purple-light {
+  color: #9177e9;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.headline.dark {
+  color: #f7f7f7;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+a:link, a:visited {
+  color: #0070F0;
+  text-decoration: none;
+}
+
+a.dark-link, a.dark-link:visited {
+  color: #f7f7f7;
+  text-decoration: underline;
+}
+
+a:hover, a.dark-link:hover {
+  color: #9177e9;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* ===== Services ===== */
+#services-page {
+  /* === JUMBO === */
+  /* ====== INTRO BIO ====== */
+  /* ====== PROCESS BOXES ====== */
+  /* ====== PORTFOLIO ===== */
+  /* ====== PM ====== */
+  /* ====== MARKETING ====== */
+}
+#services-page #jumbo-services {
+  background-image: url(/img/services-banner.jpg);
+}
+#services-page #jumbo-services h1 {
+  font-size: 3.5rem;
+  line-height: 4.5rem;
+  text-transform: uppercase;
+}
+#services-page #jumbo-services .lead {
+  font-size: 24px;
+  line-height: 1.2;
+}
+#services-page #web-dev-bio {
+  margin: 1rem auto;
+}
+#services-page #web-dev-bio .bio-headline {
+  margin: 1rem 0;
+}
+#services-page #web-dev-bio .icon-row {
+  display: none;
+}
+#services-page #dev-process {
+  background-color: #050505;
+  color: #f7f7f7;
+  justify-content: space-around;
+  flex-direction: column;
+}
+#services-page #dev-process .process-card {
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+#services-page #dev-process h3 {
+  font-family: "Righteous", Palatino, Times, serif;
+  margin-bottom: 0;
+}
+#services-page #dev-process .process-icon {
+  width: 50px;
+  text-align: center;
+}
+#services-page #dev-process i {
+  font-size: 2.5rem;
+  display: inline-block;
+}
+#services-page #dev-process p {
+  margin-bottom: 0;
+}
+#services-page #portfolio {
+  background-image: url(/img/tree-bg.jpg);
+  background-size: 100%;
+  padding: 3rem 0;
+}
+#services-page #portfolio #dev-title {
+  padding: 1.25rem;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #f7f7f7;
+  border: 1px solid #f7f7f7;
+  border-radius: 4px;
+}
+#services-page #portfolio #dev-title h2 {
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-size: 3.25rem;
+}
+#services-page #portfolio #google-card .google-logo {
+  width: 50%;
+  margin-bottom: 1rem;
+}
+#services-page #portfolio #healthworker-card img {
+  padding: 1em 0.5em 1em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+#services-page #portfolio .card {
+  margin: 2.5em 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #f7f7f7;
+  border: 1px solid #f7f7f7;
+  border-radius: 4px;
+  /* Hover effects */
+  /* End hover effects */
+}
+#services-page #portfolio .card .card-title {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+#services-page #portfolio .card .overlay-container {
+  position: relative;
+}
+#services-page #portfolio .card img {
+  display: block;
+}
+#services-page #portfolio .card .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #5f4bb6;
+}
+#services-page #portfolio .card .overlay-container:hover .overlay {
+  opacity: 1;
+}
+#services-page #portfolio .card .overlay-container:hover .overlay .text {
+  color: #f7f7f7;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transoform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+#services-page #project-management-container {
+  background-image: url(/img/ocean-overhead.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom: 5px solid #050505;
+  border-top: 5px solid #050505;
+  padding: 3rem 0;
+}
+#services-page #project-management-container .headline {
+  text-transform: uppercase;
+}
+#services-page #project-management-container .card {
+  background-color: rgba(255, 255, 255, 0.85);
+  color: #050505;
+  border: 1px solid #050505;
+  border-radius: 4px;
+}
+#services-page #project-management-container hr {
+  border-image-source: linear-gradient(90deg, rgba(211, 211, 211, 0.3) 0%, #555555 50%, rgba(211, 211, 211, 0.3) 100%);
+  margin-top: 0;
+}
+#services-page #project-management-container .pm-item {
+  margin-bottom: 1rem;
+}
+#services-page #project-management-container .carousel .carousel-indicators {
+  bottom: 190px;
+}
+#services-page #project-management-container .carousel .carousel-item img {
+  margin: 0;
+}
+#services-page #project-management-container .carousel .carousel-item .text-container {
+  padding: 0.5rem;
+}
+#services-page #project-management-container .carousel .carousel-control-prev, #services-page #project-management-container .carousel .carousel-control-next {
+  opacity: 0.75;
+  bottom: 30px;
+}
+#services-page #marketing-container {
+  background-image: url(/img/desert-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 3rem 0;
+}
+#services-page #marketing-container .headline {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+#services-page #marketing-container .card {
+  background-color: rgba(255, 255, 255, 0.85);
+  color: #050505;
+  border: 1px solid #050505;
+  border-radius: 4px;
+}
+#services-page #marketing-container img.stock-img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+/* ========================================= TABLET ============================================== */
+@media (min-width: 768px) {
+  #services-page {
+    /* ====== PROCESS ====== */
+  }
+  #services-page #jumbo-services .banner-text-container {
+    width: 70%;
+  }
+  #services-page #jumbo-services h1 {
+    font-size: 4rem;
+  }
+  #services-page .banner {
+    height: 50vw;
+  }
+  #services-page #dev-process {
+    padding: 2.125rem;
+    flex-direction: row;
+  }
+  #services-page #dev-process .process-card {
+    justify-content: initial;
+    margin: 0;
+  }
+  #services-page #dev-process .process-card > div {
+    margin: 0 auto;
+  }
+  #services-page #dev-process .process-icon {
+    margin: 0 1rem;
+  }
+  #services-page #dev-process i {
+    font-size: inherit;
+  }
+  #services-page #portfolio #dev-title h2 {
+    text-align: center;
+  }
+  #services-page #portfolio #google-card .google-logo {
+    width: 35%;
+  }
+}
+/* ===================================================== DESKTOP ================================================== */  
+@media (min-width: 992px) {
+  #services-page {
+    /* ====== JUMBO ====== */
+    /* ====== WEB BIO ====== */
+    /* ====== PORTFOLIO ====== */
+  }
+  #services-page #jumbo-services {
+    border-bottom: 5px solid #050505;
+  }
+  #services-page #jumbo-services .banner-text-container {
+    width: 50%;
+  }
+  #services-page #web-dev-bio p {
+    font-size: 1.5rem;
+  }
+  #services-page #web-dev-bio .icon-row {
+    display: initial;
+    text-align: center;
+  }
+  #services-page #web-dev-bio .icon-row .flex-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #services-page #web-dev-bio .icon-row .headline {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  #services-page #web-dev-bio .icon-row img {
+    height: 70px;
+    width: auto;
+  }
+  #services-page #web-dev-bio .icon-row .logo {
+    width: auto;
+  }
+  #services-page #web-dev-bio .icon-row p {
+    font-size: 0.85rem;
+  }
+  #services-page #web-dev-bio .icon-row #front-end-icon-container {
+    justify-content: space-around;
+  }
+  #services-page #web-dev-bio .icon-row #front-end-icon-container #amp-logo {
+    margin-left: 0;
+  }
+  #services-page #web-dev-bio .icon-row #front-end-icon-container .logo:first-child {
+    margin: 0 1em 0 0;
+  }
+  #services-page #web-dev-bio .icon-row #front-end-icon-container .logo:nth-child(4) {
+    margin: 0 1em 0 1em;
+  }
+  #services-page #web-dev-bio .icon-row #back-end-icon-container, #services-page #web-dev-bio .icon-row #creative-icon-container {
+    width: 50%;
+  }
+  #services-page #web-dev-bio .icon-row #back-end-icon-container .flex-container, #services-page #web-dev-bio .icon-row #creative-icon-container .flex-container {
+    justify-content: space-around;
+    width: 100%;
+  }
+  #services-page #dev-process {
+    padding: 2.125rem 12.5%;
+  }
+  #services-page #portfolio {
+    background-image: url(/img/tree-bg-landscape.jpg);
+    padding: 6rem 0;
+  }
+  #services-page #portfolio #dev-title {
+    margin: 0 auto 3rem;
+    padding: 2rem;
+    width: 80%;
+  }
+  #services-page #portfolio #dev-title h2 {
+    text-align: center;
+    font-size: 4rem;
+  }
+  #services-page #portfolio #dev-title p {
+    font-size: 1.4rem;
+  }
+  #services-page #portfolio .card-container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  #services-page #portfolio .card {
+    width: 100%;
+    max-width: 330px;
+    margin: 1rem;
+    flex-grow: 2;
+  }
+  #services-page #portfolio #google-card .google-logo {
+    margin: 0 auto 0.75rem;
+    width: 50%;
+  }
+  #services-page #portfolio .card-title {
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  #services-page #project-management-container {
+    background-size: 100%;
+  }
+  #services-page #marketing-container {
+    background-image: url(/img/desert-desktop.jpg);
+    background-position: 50% 30%;
+  }
+  #services-page #marketing-container .card-body {
+    flex-direction: row-reverse;
+  }
+  #services-page #project-management-container, #services-page #marketing-container {
+    padding: 6rem 0;
+  }
+  #services-page #project-management-container .headline, #services-page #marketing-container .headline {
+    font-size: 2.5rem;
+  }
+  #services-page #project-management-container .card-body, #services-page #marketing-container .card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #services-page #project-management-container .desk-col, #services-page #marketing-container .desk-col {
+    width: 47%;
+  }
+}
+
+/*# sourceMappingURL=services.css.map */
