@@ -58,34 +58,6 @@ h1, h2, h3, h4, h5, h6,
   color: #000066;
 }
 
-.font-blue-light {
-  color: #7dc2ff;
-}
-
-.font-teal {
-  color: #00c4cc;
-}
-
-.font-teal-dark {
-  color: #00939b;
-}
-
-.font-teal-light {
-  color: #62f7ff;
-}
-
-.font-purple {
-  color: #5f4bb6;
-}
-
-.font-purple-dark {
-  color: #2a2285;
-}
-
-.font-purple-light {
-  color: #9177e9;
-}
-
 .nowrap {
   white-space: nowrap;
 }
