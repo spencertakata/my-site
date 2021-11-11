@@ -1,6 +1,6 @@
+@import ./variables, ./typography
 /* === About === */
 #about-page
-
   #jumbo-about
     background-image: url(/img/about-banner.jpg)
     background-size: cover
@@ -67,7 +67,11 @@
     width: 100%
 
   button.to-services
+    color: $white
     width: 100%
+    border: 2px solid $white
+    background-color: $black
+    padding: 12px 5px
 
     h4
       font-size: 1.5rem
@@ -133,3 +137,24 @@
     
     button.to-services
       width: 50%
+
+@media (min-width: 992px)
+  #about-page
+    #jumbo-about
+      .banner-text-container
+        width: 40%
+        
+        .lead
+          font-size: 24px
+
+    .about-container
+      padding: 4rem 15%
+
+    .card
+      margin: 4rem 0
+      padding: 2.5rem
+
+    button.to-services
+      border: 3px solid $white
+      h4
+        font-size: 2rem

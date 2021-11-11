@@ -85,6 +85,93 @@ a:hover, a.dark-link:hover {
   text-align: center;
 }
 
+/* Variables */
+/* New Design */
+body {
+  color: #141414;
+}
+
+h1, .h1 {
+  font-size: 2.75rem;
+}
+
+h2, .h2 {
+  font-size: 2.25rem;
+}
+
+h3, .h3 {
+  font-size: 2rem;
+}
+
+h4, .h4 {
+  font-size: 1.75rem;
+}
+
+h5, .h5 {
+  font-size: 1.5rem;
+}
+
+h6, .h6 {
+  font-size: 1.25rem;
+}
+
+p, .p {
+  font-size: 1.1rem;
+  line-height: 1.75;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  line-height: 1.2;
+}
+
+.righteous {
+  font-family: "Righteous", Palatino, Times, serif;
+}
+
+.raleway {
+  font-family: "Lato", "Raleway", Verdana, Arial, sans-serif;
+}
+
+.font-white {
+  color: #f7f7f7;
+}
+
+.font-blue {
+  color: #0070F0;
+}
+
+.font-blue-dark {
+  color: #000066;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.headline.dark {
+  color: #f7f7f7;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+a:link, a:visited {
+  color: #0070F0;
+  text-decoration: none;
+}
+
+a.dark-link, a.dark-link:visited {
+  color: #f7f7f7;
+  text-decoration: underline;
+}
+
+a:hover, a.dark-link:hover {
+  color: #9177e9;
+}
+
+.text-center {
+  text-align: center;
+}
+
 /* === About === */
 #about-page #jumbo-about {
   background-image: url(/img/about-banner.jpg);
@@ -156,7 +243,11 @@ a:hover, a.dark-link:hover {
   width: 100%;
 }
 #about-page button.to-services {
+  color: #f7f7f7;
   width: 100%;
+  border: 2px solid #f7f7f7;
+  background-color: #050505;
+  padding: 12px 5px;
 }
 #about-page button.to-services h4 {
   font-size: 1.5rem;
@@ -222,6 +313,27 @@ a:hover, a.dark-link:hover {
   }
   #about-page button.to-services {
     width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  #about-page #jumbo-about .banner-text-container {
+    width: 40%;
+  }
+  #about-page #jumbo-about .banner-text-container .lead {
+    font-size: 24px;
+  }
+  #about-page .about-container {
+    padding: 4rem 15%;
+  }
+  #about-page .card {
+    margin: 4rem 0;
+    padding: 2.5rem;
+  }
+  #about-page button.to-services {
+    border: 3px solid #f7f7f7;
+  }
+  #about-page button.to-services h4 {
+    font-size: 2rem;
   }
 }
 /* Variables */

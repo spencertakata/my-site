@@ -1,17 +1,253 @@
-/* Error: Undefined mixin.
- *    ,
- * 32 |     @include card($white, $card-color-light, $card-border-light, $card-border-radius)
- *    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
- *    '
- *   public/sass/about.sass 32:5  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 32 \2502      @include card($white, $card-color-light, $card-border-light, $card-border-radius)\a    \2502      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   public/sass/about.sass 32:5  root stylesheet";
+/* Variables */
+/* New Design */
+body {
+  color: #141414;
 }
+
+h1, .h1 {
+  font-size: 2.75rem;
+}
+
+h2, .h2 {
+  font-size: 2.25rem;
+}
+
+h3, .h3 {
+  font-size: 2rem;
+}
+
+h4, .h4 {
+  font-size: 1.75rem;
+}
+
+h5, .h5 {
+  font-size: 1.5rem;
+}
+
+h6, .h6 {
+  font-size: 1.25rem;
+}
+
+p, .p {
+  font-size: 1.1rem;
+  line-height: 1.75;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  line-height: 1.2;
+}
+
+.righteous {
+  font-family: "Righteous", Palatino, Times, serif;
+}
+
+.raleway {
+  font-family: "Lato", "Raleway", Verdana, Arial, sans-serif;
+}
+
+.font-white {
+  color: #f7f7f7;
+}
+
+.font-blue {
+  color: #0070F0;
+}
+
+.font-blue-dark {
+  color: #000066;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.headline.dark {
+  color: #f7f7f7;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+a:link, a:visited {
+  color: #0070F0;
+  text-decoration: none;
+}
+
+a.dark-link, a.dark-link:visited {
+  color: #f7f7f7;
+  text-decoration: underline;
+}
+
+a:hover, a.dark-link:hover {
+  color: #9177e9;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* === About === */
+#about-page #jumbo-about {
+  background-image: url(/img/about-banner.jpg);
+  background-size: cover;
+  align-items: flex-start;
+  height: 70vw;
+}
+#about-page #jumbo-about .banner-text-container {
+  background-color: rgba(0, 0, 0, 0.85);
+  margin-top: 3rem;
+  padding: 1rem 1rem 1.5rem;
+  width: 90%;
+}
+#about-page #jumbo-about .banner-text-container .headline {
+  margin-bottom: 0.5rem;
+  font-size: 4.25rem;
+}
+#about-page #jumbo-about .banner-text-container .lead {
+  font-size: 1.25rem;
+  margin: 0;
+}
+#about-page #jumbo-about .banner-text-container h1, #about-page #jumbo-about .banner-text-container p {
+  margin: 0;
+}
+#about-page .about-container {
+  background-color: #5b5b5b;
+  padding: 1rem;
+}
+#about-page .card {
+  background-color: #f7f7f7;
+  color: #050505;
+  border: 1px solid #050505;
+  border-radius: 4px;
+  padding: 1rem;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+}
+#about-page .card.even {
+  flex-direction: column-reverse;
+}
+#about-page .card .column {
+  width: 100%;
+}
+#about-page .card#card-1 {
+  margin-top: 1rem;
+}
+#about-page .card .headline {
+  font-family: righteous;
+  text-align: center;
+  background-color: #050505;
+  border-radius: 4px;
+  padding: 0.75rem 0;
+  margin: 0 0 1rem 0;
+  color: #f7f7f7;
+}
+#about-page .caption {
+  font-size: 0.75rem;
+  font-style: italic;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+#about-page .img-container {
+  margin: 1.5rem auto 0;
+  display: flex;
+  flex-direction: column;
+}
+#about-page .body-img {
+  width: 100%;
+}
+#about-page button.to-services {
+  color: #f7f7f7;
+  width: 100%;
+  border: 2px solid #f7f7f7;
+  background-color: #050505;
+  padding: 12px 5px;
+}
+#about-page button.to-services h4 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+@media (min-width: 600px) {
+  #about-page .about-container {
+    padding: 2rem 15%;
+  }
+  #about-page #jumbo-about {
+    height: 50vh;
+  }
+  #about-page #jumbo-about .banner-text-container {
+    width: 70%;
+  }
+  #about-page #jumbo-about .banner-text-container .headline {
+    font-size: 4rem;
+  }
+  #about-page .card {
+    padding: 1.5rem;
+  }
+}
+@media (min-width: 992px) {
+  #about-page #jumbo-about {
+    height: 50vh;
+  }
+  #about-page #jumbo-about .banner-text-container {
+    width: 50%;
+    margin-top: 5rem;
+  }
+  #about-page #jumbo-about .banner-text-container h1 {
+    font-size: 4rem;
+  }
+  #about-page #jumbo-about .banner-text-container p {
+    font-size: 22px;
+  }
+  #about-page .about-container {
+    padding: 2rem 5%;
+  }
+  #about-page .card {
+    flex-direction: row;
+  }
+  #about-page .card.even {
+    flex-direction: row;
+  }
+  #about-page .card .column {
+    width: 50%;
+  }
+  #about-page .card .headline {
+    margin: 0 auto 1rem;
+  }
+  #about-page .img-container {
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+  }
+  #about-page .img-container.right {
+    margin: 0 0 0 auto;
+  }
+  #about-page .img-container.left {
+    margin: 0 auto 0 0;
+  }
+  #about-page button.to-services {
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  #about-page #jumbo-about .banner-text-container {
+    width: 40%;
+  }
+  #about-page #jumbo-about .banner-text-container .lead {
+    font-size: 24px;
+  }
+  #about-page .about-container {
+    padding: 4rem 15%;
+  }
+  #about-page .card {
+    margin: 4rem 0;
+    padding: 2.5rem;
+  }
+  #about-page button.to-services {
+    border: 3px solid #f7f7f7;
+  }
+  #about-page button.to-services h4 {
+    font-size: 2rem;
+  }
+}
+
+/*# sourceMappingURL=about.css.map */
