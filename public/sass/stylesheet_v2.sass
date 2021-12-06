@@ -1,4 +1,5 @@
 @import ./variables, ./typography
+@import ./index, ./about, ./services, ./contact, ./gallery
 
 /* === Elements === */
 html
@@ -77,12 +78,14 @@ hr
   background-color: $black
 .btn-blue
   background-color: $blue-dark
+  color: $white
   &:hover
     background-color: $blue-hover
-.btn-purple
-  background-color: $purple
-  &:hover
-    background-color: $purple-light
+    color: $white
+// .btn-purple
+//   background-color: $purple
+//   &:hover
+//     background-color: $purple-light
 
 /* === Design Utilities === */
 .card
@@ -95,6 +98,8 @@ hr
     margin: 0 auto 0.5rem
 .underline-blue
     background-color: $primary-color
+.underline-orange
+    background-color: $orange
 .bg-black-transparent
   background-color: $black-transparent
 .bg-black
