@@ -1,0 +1,164 @@
+@import ./variables, ./typography
+#home-page
+
+  // Banner
+  #jumbo-home
+    background-image: url(../img/city.jpg)
+
+  .banner
+    .banner-text-container
+      padding: 1rem
+
+      h1
+        font-size: 4rem
+      
+      .subhead
+        display: none
+      
+      i
+        display: none
+  
+  // Into section
+  .intro-container
+    padding: 2rem 1rem
+    text-align: center
+
+    .copy
+      margin: 0 auto
+
+    .underline
+      margin: 2rem auto
+    
+    h4
+      font-size: 1.5rem
+    
+    #bitmoji
+      height: 12em
+      width: auto
+  
+  // Content boxes section
+  .content-cards
+    background-image: url(../img/grey-background.jpg)
+    padding: 1rem
+
+    .card-container
+      display: flex
+      flex-direction: column
+
+      .card
+        @include card($white, $card-color-light, $card-border-light, $card-border-radius)
+        text-align: center
+        padding: 1rem
+        margin: 1rem auto
+
+        .dark
+          background-color: $black-transparent
+          border-radius: $card-border-radius
+          color: $white
+          font-size: 2rem
+          padding: 0.7rem
+
+        img
+          border-radius: $card-border-radius
+          max-width: 100%
+          height: auto
+        
+        button
+          margin-bottom: 1rem
+          background-color: $blue
+          border-color: $black
+          color: $white
+          font-family: $righteous
+        button:hover
+          background-color: $orange
+
+@media (min-width: 500px)
+  #home-page
+    .intro-container
+      .copy
+        max-width: 70%
+
+@media (min-width: 600px)
+  #home-page
+    .banner
+      .banner-text-container
+        .subhead, i
+          display: block
+        .subhead
+          font-size: 20px
+    .intro-container
+      padding: 2rem 4rem
+
+      .copy
+        max-width: 80%
+      
+      #bitmoji
+        margin-top: 1.5rem
+
+    .content-cards
+      padding: 1rem 4rem
+
+@media (min-width: 768px)
+  #home-page
+    .intro-container
+      padding: 2rem 6rem
+
+    .content-cards
+      padding: 1rem 6rem
+
+      .copy
+        max-width: 600px
+
+      .card
+        max-width: 550px
+
+@media (min-width: 992px)
+  #home-page
+    .banner
+      .banner-text-container
+        width: 60%
+
+        .subhead
+          font-size: 20px
+    
+    .intro-container
+      padding: 2rem 10rem
+      
+      .underline
+        width: 40%
+
+    .content-cards
+
+      .card-container
+        flex-direction: row
+        flex-wrap: wrap
+
+        .card
+          width: 350px
+          flex-shrink: 0
+        
+@media (min-width: 1220px)
+  #home-page
+    .banner
+      height: 100vh
+
+      .banner-text-container
+        .headline
+          margin-bottom: 1rem
+        .subhead
+          font-size: 26px
+          
+    .intro-container
+      .copy
+        max-width: 60%
+    
+    .content-cards
+      padding: 1rem 3rem
+
+@media (min-width: 1440px)
+  #home-page
+    .banner
+      .banner-text-container
+        width: 50%
+    
+    
