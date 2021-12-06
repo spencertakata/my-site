@@ -46,7 +46,7 @@
     .headline
       font-family: righteous
       text-align: center
-      background-color: $black
+      background-color: $black-transparent
       border-radius: $card-border-radius
       padding: 0.75rem 0
       margin: 0 0 1rem 0
@@ -62,6 +62,9 @@
     margin: 1.5rem auto 0
     display: flex
     flex-direction: column
+  
+  img
+    border-radius: $card-border-radius
 
   .body-img
     width: 100%
@@ -70,8 +73,10 @@
     color: $white
     width: 100%
     border: 2px solid $white
-    background-color: $black
+    background-color: $blue
     padding: 12px 5px
+    &:hover
+      background-color: $orange
 
     h4
       font-size: 1.5rem

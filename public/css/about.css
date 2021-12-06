@@ -135,7 +135,7 @@ a:hover, a.dark-link:hover {
 #about-page .card .headline {
   font-family: righteous;
   text-align: center;
-  background-color: #050505;
+  background-color: rgba(0, 0, 0, 0.75);
   border-radius: 4px;
   padding: 0.75rem 0;
   margin: 0 0 1rem 0;
@@ -152,6 +152,9 @@ a:hover, a.dark-link:hover {
   display: flex;
   flex-direction: column;
 }
+#about-page img {
+  border-radius: 4px;
+}
 #about-page .body-img {
   width: 100%;
 }
@@ -159,8 +162,11 @@ a:hover, a.dark-link:hover {
   color: #f7f7f7;
   width: 100%;
   border: 2px solid #f7f7f7;
-  background-color: #050505;
+  background-color: #0070F0;
   padding: 12px 5px;
+}
+#about-page button.to-services:hover {
+  background-color: #f9ab18;
 }
 #about-page button.to-services h4 {
   font-size: 1.5rem;
