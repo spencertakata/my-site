@@ -4,10 +4,12 @@
 /* === Elements === */
 html
   scroll-behavior: smooth
+
 html, body
   margin: 0
   padding: 0
   font-family: $raleway
+
 hr
   border-top: 1px solid
   border-image-source: linear-gradient(90deg, rgba(211,211,211,0.3) 0%, rgba(157,157,157,1) 50%, rgba(211,211,211,0.3) 100%)
@@ -20,26 +22,31 @@ hr
     flex-wrap: wrap
 
 .desktop
-  display: none  !important
+  display: none !important
 
 /* === Navbar === */
 .navbar-dark
   background-color: $gray-dark
+
   .navbar-brand
     color: $white
     text-decoration: none
+
   .navbar-nav
     .nav-link
       color: $white
       text-decoration: none
+
 .nav-item
   padding: 0 1.5rem
   font-size: 1rem
+
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link:focus,
 .navbar-dark .navbar-brand:hover,
 .navbar-dark .navbar-brand:focus
   color: $orange
+
 .nav-link
   &:active
     color: $orange
@@ -56,6 +63,7 @@ hr
   width: 100%
   background-size: cover
   background-position: center center
+
   .banner-text-container
     background-color: $black-transparent
     border: 1px solid $white
@@ -65,9 +73,11 @@ hr
     text-align: center
     width: 90%
     padding: 1.25rem
+
     h1
       font-size: 3.75rem
       line-height: 4.5rem
+
     .lead
       font-size: 24px
       line-height: 30px
@@ -76,58 +86,62 @@ hr
 .btn-dark-outline
   border: 2px solid $white
   background-color: $black
+
 .btn-blue
   background-color: $blue-dark
   color: $white
   &:hover
     background-color: $blue-hover
     color: $white
-// .btn-purple
-//   background-color: $purple
-//   &:hover
-//     background-color: $purple-light
 
 /* === Design Utilities === */
 .card
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+
 .card.no-shadow
   box-shadow: none
+
 .underline
-    height: 0.5rem
-    width: 65%
-    margin: 0 auto 0.5rem
+  height: 0.5rem
+  width: 65%
+  margin: 0 auto 0.5rem
+
 .underline-blue
-    background-color: $primary-color
+  background-color: $primary-color
+
 .underline-orange
-    background-color: $orange
+  background-color: $orange
+
 .bg-black-transparent
   background-color: $black-transparent
+
 .bg-black
   background-color: $black
+
 .bg-white
   background-color: $white
+
 .bg-orange
   background-color: $orange
+
 .bg-blue
   background-color: $blue
+
 .primary-color
   color: $primary-color
 
 //Icons & Images
-
-// #bitmoji
-//     height: 12em
-//     width: auto
-
 .img-shrink
   margin-bottom: 1em
   width: 70%
   height: auto
+
 .img-gallery
   margin: 1em 2em
   width: 100%
   height: auto
   margin: 1em auto
+
 footer
   width: 100%
   padding: 2em 20%
@@ -137,17 +151,21 @@ footer
   text-align: center
   #photo-cred
     font-size: .75rem
+
 .icon-sm
   font-size: 1.5em
   margin: 0 0.5em
   color: $white
+
 .icon-lg
   font-size: 3em
   margin: 0 0.5em
   color: $white
+
 .icon-lg:hover,
 .icon-sm:hover
   color: $orange
+  
 .photo-cred
   font-size: 0.75rem
 

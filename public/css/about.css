@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5, h6,
 
 .headline.dark {
   color: #f7f7f7;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.85);
 }
 
 a:link, a:visited {
@@ -135,7 +135,7 @@ a:hover, a.dark-link:hover {
 #about-page .card .headline {
   font-family: righteous;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.85);
   border-radius: 4px;
   padding: 0.75rem 0;
   margin: 0 0 1rem 0;

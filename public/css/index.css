@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5, h6,
 
 .headline.dark {
   color: #f7f7f7;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.85);
 }
 
 a:link, a:visited {
@@ -106,6 +106,7 @@ a:hover, a.dark-link:hover {
 }
 #home-page .intro-container .copy {
   margin: 0 auto;
+  line-height: 1.4;
 }
 #home-page .intro-container .underline {
   margin: 2rem auto;
@@ -135,7 +136,7 @@ a:hover, a.dark-link:hover {
   margin: 1rem auto;
 }
 #home-page .content-cards .card-container .card .dark {
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.85);
   border-radius: 4px;
   color: #f7f7f7;
   font-size: 2rem;
@@ -204,7 +205,7 @@ a:hover, a.dark-link:hover {
     font-size: 20px;
   }
   #home-page .intro-container {
-    padding: 2rem 10rem;
+    padding: 3rem 10rem;
   }
   #home-page .intro-container .underline {
     width: 40%;
@@ -232,7 +233,7 @@ a:hover, a.dark-link:hover {
     max-width: 60%;
   }
   #home-page .content-cards {
-    padding: 1rem 3rem;
+    padding: 4rem 3rem;
   }
 }
 @media (min-width: 1440px) {
