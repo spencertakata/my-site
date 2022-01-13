@@ -86,7 +86,7 @@ a:hover, a.dark-link:hover {
 }
 
 #home-page #jumbo-home {
-  background-image: url(../img/city.jpg);
+  background-image: url(../img/calm-lake-lg.jpg);
 }
 #home-page .banner .banner-text-container {
   padding: 1rem;
@@ -103,6 +103,8 @@ a:hover, a.dark-link:hover {
 #home-page .intro-container {
   padding: 2rem 1rem;
   text-align: center;
+  border-top: 4px solid #050505;
+  border-bottom: 4px solid #050505;
 }
 #home-page .intro-container .copy {
   margin: 0 auto;
@@ -130,20 +132,20 @@ a:hover, a.dark-link:hover {
   background-color: #f7f7f7;
   color: #050505;
   border: 1px solid #050505;
-  border-radius: 4px;
+  border-radius: 0px;
   text-align: center;
   padding: 1rem;
   margin: 1rem auto;
 }
 #home-page .content-cards .card-container .card .dark {
   background-color: rgba(0, 0, 0, 0.85);
-  border-radius: 4px;
+  border-radius: 0px;
   color: #f7f7f7;
   font-size: 2rem;
   padding: 0.7rem;
 }
 #home-page .content-cards .card-container .card img {
-  border-radius: 4px;
+  border-radius: 0px;
   max-width: 100%;
   height: auto;
 }
@@ -153,9 +155,11 @@ a:hover, a.dark-link:hover {
   border-color: #050505;
   color: #f7f7f7;
   font-family: "Righteous", Palatino, Times, serif;
+  box-shadow: 4px 4px #050505;
 }
-#home-page .content-cards .card-container .card button:hover {
-  background-color: #f9ab18;
+#home-page .content-cards .card-container .card button:active {
+  transform: translateY(3px);
+  box-shadow: 2px 3px #050505;
 }
 
 @media (min-width: 500px) {
