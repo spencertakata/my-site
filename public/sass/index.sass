@@ -3,7 +3,7 @@
 
   // Banner
   #jumbo-home
-    background-image: url(../img/city.jpg)
+    background-image: url(../img/calm-lake-lg.jpg)
 
   .banner
     .banner-text-container
@@ -22,6 +22,8 @@
   .intro-container
     padding: 2rem 1rem
     text-align: center
+    border-top: 4px solid $black
+    border-bottom: 4px solid $black
 
     .copy
       margin: 0 auto
@@ -70,8 +72,10 @@
           border-color: $black
           color: $white
           font-family: $righteous
-        button:hover
-          background-color: $orange
+          box-shadow: 4px 4px $black
+        button:active
+          transform: translateY(3px)
+          box-shadow: 2px 3px $black
 
 @media (min-width: 500px)
   #home-page

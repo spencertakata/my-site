@@ -117,7 +117,7 @@ a:hover, a.dark-link:hover {
   background-color: #f7f7f7;
   color: #050505;
   border: 1px solid #050505;
-  border-radius: 4px;
+  border-radius: 0px;
   padding: 1rem;
   margin: 2rem auto;
   display: flex;
@@ -136,7 +136,7 @@ a:hover, a.dark-link:hover {
   font-family: righteous;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.85);
-  border-radius: 4px;
+  border-radius: 0px;
   padding: 0.75rem 0;
   margin: 0 0 1rem 0;
   color: #f7f7f7;
@@ -153,7 +153,7 @@ a:hover, a.dark-link:hover {
   flex-direction: column;
 }
 #about-page img {
-  border-radius: 4px;
+  border-radius: 0px;
 }
 #about-page .body-img {
   width: 100%;
@@ -161,12 +161,13 @@ a:hover, a.dark-link:hover {
 #about-page button.to-services {
   color: #f7f7f7;
   width: 100%;
-  border: 2px solid #f7f7f7;
   background-color: #0070F0;
   padding: 12px 5px;
+  box-shadow: 5px 5px #050505;
 }
-#about-page button.to-services:hover {
-  background-color: #f9ab18;
+#about-page button.to-services:active {
+  box-shadow: 2px 3px #050505;
+  transform: translateY(5px);
 }
 #about-page button.to-services h4 {
   font-size: 1.5rem;
@@ -247,9 +248,6 @@ a:hover, a.dark-link:hover {
   #about-page .card {
     margin: 4rem 0;
     padding: 2.5rem;
-  }
-  #about-page button.to-services {
-    border: 3px solid #f7f7f7;
   }
   #about-page button.to-services h4 {
     font-size: 2rem;

@@ -72,11 +72,13 @@
   button.to-services
     color: $white
     width: 100%
-    border: 2px solid $white
+    //border: 2px solid $white
     background-color: $blue
     padding: 12px 5px
-    &:hover
-      background-color: $orange
+    box-shadow: 5px 5px $black
+    &:active
+      box-shadow: 2px 3px $black
+      transform: translateY(5px)
 
     h4
       font-size: 1.5rem
@@ -160,6 +162,6 @@
       padding: 2.5rem
 
     button.to-services
-      border: 3px solid $white
+      //border: 3px solid $white
       h4
         font-size: 2rem

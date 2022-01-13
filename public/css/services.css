@@ -150,7 +150,7 @@ a:hover, a.dark-link:hover {
   background-color: rgba(0, 0, 0, 0.85);
   color: #f7f7f7;
   border: 1px solid #f7f7f7;
-  border-radius: 4px;
+  border-radius: 0px;
 }
 #services-page #portfolio #dev-title h2 {
   margin-bottom: 1rem;
@@ -170,7 +170,7 @@ a:hover, a.dark-link:hover {
   background-color: rgba(0, 0, 0, 0.85);
   color: #f7f7f7;
   border: 1px solid #f7f7f7;
-  border-radius: 4px;
+  border-radius: 0px;
   /* Hover effects */
   /* End hover effects */
 }
@@ -225,7 +225,7 @@ a:hover, a.dark-link:hover {
   background-color: rgba(255, 255, 255, 0.85);
   color: #050505;
   border: 1px solid #050505;
-  border-radius: 4px;
+  border-radius: 0px;
 }
 #services-page #project-management-container hr {
   border-image-source: linear-gradient(90deg, rgba(211, 211, 211, 0.3) 0%, #555555 50%, rgba(211, 211, 211, 0.3) 100%);
@@ -261,7 +261,7 @@ a:hover, a.dark-link:hover {
   background-color: rgba(255, 255, 255, 0.85);
   color: #050505;
   border: 1px solid #050505;
-  border-radius: 4px;
+  border-radius: 0px;
 }
 #services-page #marketing-container img.stock-img {
   width: 100%;
