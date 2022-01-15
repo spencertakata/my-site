@@ -1,4 +1,5 @@
-@import ./variables, ./typography
+@use './variables' as *
+@use './typography' as *
 
 $container-padding-m-y: 3rem
 $container-padding-d-y: 6rem
@@ -60,7 +61,6 @@ $section-border-width: 5px
   #portfolio
     background-image: url(/img/tree-bg.jpg)
     background-size: 100%
-    //border-top: $section-border-width solid $white
     padding: 3rem 0
 
     #dev-title
@@ -87,6 +87,8 @@ $section-border-width: 5px
 
     .card
       margin: 2.5em 0
+      box-shadow: 5px 5px #C3C3C3
+      border-width: 2px
       @include card($card-bg-dark, $card-color-dark, $card-border-dark, $card-border-radius)
 
       .card-title
@@ -142,9 +144,9 @@ $section-border-width: 5px
     .card
       @include card($card-bg-light, $card-color-light, $card-border-light, $card-border-radius)
 
-    hr
-      border-image-source: linear-gradient(90deg, rgba(211,211,211,0.3) 0%, rgba(85,85,85,1) 50%, rgba(211,211,211,0.3) 100%)
-      margin-top: 0
+    // hr
+    //   border-image-source: linear-gradient(90deg, rgba(211,211,211,0.3) 0%, rgba(85,85,85,1) 50%, rgba(211,211,211,0.3) 100%)
+    //   margin-top: 0
 
     .pm-item
       margin-bottom: 1rem

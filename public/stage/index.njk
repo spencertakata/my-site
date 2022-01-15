@@ -1,34 +1,35 @@
 {% extends "boilerplate_v2.njk" %}
 {% set page_id = "home-page" %}
+{% set page_stylesheet = "index" %}
 
   <!-- banner -->
 {% block banner %}
   <section class="banner d-flex" id="jumbo-home">
     <div class="banner-text-container flex-item">
-      <h1 class="righteous headline">Spencer Takata</h1>
-      <h4 class="raleway subhead">Project Manager // Web Developer // Digital Marketer</h4>
-      <a href="#scroll" class="scrollTo"><i class="fas fa-angle-down icon-lg"></i></a>
+      <h1 class="righteous headline">Hi I'm Spencer</h1>
+      <h4 class="raleway subhead">I write code, run projects, and <span class="nowrap">take cool photos</span></h4>
+      <span><a href="#scroll" class="scrollTo icon-link"><i class="fas fa-angle-down icon-lg"></i></a></span>
     </div>
   </section>
 {% endblock %}
 
 {% block content %}
   <!-- Headline -->
-  <section class="intro-container" id="scroll">
-    <h3 class="copy"><b><span class="font-blue">Hi I'm Spencer,</span><span class="mobile"><br></span> and I want to help transform your <i>ideas</i> <span class="nowrap">into <i>reality</i>.</span></b></h3>
+  {# <section class="intro-container" id="">
+    <h3 class="copy headline"><b><span class="font-blue">Hi I'm Spencer,</span><span class="mobile"><br></span> and I want to help transform your <i>ideas</i> <span class="nowrap">into <i>reality</i>.</span></b></h3>
     <div class="underline underline-orange"></div>
-    <h4 class="copy">Based in Northern California.<br>Available&nbsp;worldwide</h3>
-    <img src="img/bitmoji.png" id="bitmoji">
-  </section>
+    <h4 class="copy subhead">Based in Northern California.<br>Available&nbsp;worldwide</h3>
+    <img src="img/me-fall-color.jpg" class="img" />
+  </section> #}
 
 {# 3 content boxes #}
-  <section class="content-cards">
+  <section class="content-cards" id="scroll">
     <div class="card-container">
       {# Card 1 #}
       <div class="card">
         <h4 class="dark righteous">Who I Am</h4>
         <p>Get to know <i>me</i>, not just my work. How I got here, where I want to go, what I love doing and why I love doing it.</p>
-        <a href="./about.html"><button class="btn">Read more</button></a>
+        <a href="./about.html"><button class="btn btn-blue">Read more</button></a>
         <div class="buffer"></div>
         <a href="./about.html">
           <img src="img/about-me-3.jpg">
@@ -39,7 +40,7 @@
       <div class="card">
         <h4 class="dark righteous">What I Do</h4>
         <p>Turn goals into results. I lead projects, develop websites, and build brands to help you reach your goals.</p>
-        <a href="./services.html"><button class="btn btn-primary">See my work</button></a>
+        <a href="./services.html"><button class="btn btn-blue">See my work</button></a>
         <div class="buffer"></div>
         <a href="./services.html">
           <img src="img/hustle.jpg">
@@ -50,7 +51,7 @@
       <div class="card">
         <h4 class="dark righteous">How to Connect</h4>
         <p>Do you want to make something happen? I'd love to help. Let's connect and discover what we can accomplish.</p>
-        <a href="./contact.html"><button class="btn btn-primary">Connect with me</button></a>
+        <a href="./contact.html"><button class="btn btn-blue">Connect with me</button></a>
         <div class="buffer"></div>
         <a href="./contact.html">
           <img src="img/notepad.jpg">

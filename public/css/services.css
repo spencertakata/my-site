@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5, h6,
 
 .headline.dark {
   color: #f7f7f7;
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 a:link, a:visited {
@@ -167,6 +167,8 @@ a:hover, a.dark-link:hover {
 }
 #services-page #portfolio .card {
   margin: 2.5em 0;
+  box-shadow: 5px 5px #C3C3C3;
+  border-width: 2px;
   background-color: rgba(0, 0, 0, 0.85);
   color: #f7f7f7;
   border: 1px solid #f7f7f7;
@@ -226,10 +228,6 @@ a:hover, a.dark-link:hover {
   color: #050505;
   border: 1px solid #050505;
   border-radius: 0px;
-}
-#services-page #project-management-container hr {
-  border-image-source: linear-gradient(90deg, rgba(211, 211, 211, 0.3) 0%, #555555 50%, rgba(211, 211, 211, 0.3) 100%);
-  margin-top: 0;
 }
 #services-page #project-management-container .pm-item {
   margin-bottom: 1rem;

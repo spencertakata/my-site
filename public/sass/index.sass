@@ -1,4 +1,7 @@
-@import ./variables, ./typography
+// @use ./variables, ./typography
+@use './variables' as *
+@use './typography' as *
+
 #home-page
 
   // Banner
@@ -8,41 +11,28 @@
   .banner
     .banner-text-container
       padding: 1rem
+      text-align: left
 
-      h1
-        font-size: 4rem
+      .headline
+        font-size: 12vw
       
       .subhead
+        font-size: 1.25rem
+      
+      .icon-link
         display: none
       
       i
         display: none
-  
-  // Into section
-  .intro-container
-    padding: 2rem 1rem
-    text-align: center
-    border-top: 4px solid $black
-    border-bottom: 4px solid $black
-
-    .copy
-      margin: 0 auto
-      line-height: 1.4
-
-    .underline
-      margin: 2rem auto
-    
-    h4
-      font-size: 1.5rem
-    
-    #bitmoji
-      height: 12em
-      width: auto
+        margin: 0.8rem 0 0 0
+        animation: bounce 2s infinite
+        font-size: 3.5rem
   
   // Content boxes section
   .content-cards
     background-image: url(../img/grey-background.jpg)
     padding: 1rem
+    border-top: 5px solid $black
 
     .card-container
       display: flex
@@ -55,7 +45,7 @@
         margin: 1rem auto
 
         .dark
-          background-color: $black-transparent
+          background-color: rgb(30,30,30)
           border-radius: $card-border-radius
           color: $white
           font-size: 2rem
@@ -68,51 +58,42 @@
         
         button
           margin-bottom: 1rem
-          background-color: $blue
-          border-color: $black
-          color: $white
-          font-family: $righteous
-          box-shadow: 4px 4px $black
-        button:active
-          transform: translateY(3px)
-          box-shadow: 2px 3px $black
-
-@media (min-width: 500px)
-  #home-page
-    .intro-container
-      .copy
-        max-width: 70%
 
 @media (min-width: 600px)
   #home-page
     .banner
-      .banner-text-container
-        .subhead, i
-          display: block
-        .subhead
-          font-size: 20px
-    .intro-container
-      padding: 2rem 4rem
+      padding: 0 4rem
 
-      .copy
-        max-width: 80%
-      
-      #bitmoji
-        margin-top: 1.5rem
+      .banner-text-container
+        width: 100%
+
+        .headline
+          font-size: 10vw
+
+        .subhead
+          font-size: 1.75rem
 
     .content-cards
       padding: 1rem 4rem
 
 @media (min-width: 768px)
   #home-page
-    .intro-container
-      padding: 2rem 6rem
+    .banner
+      padding: 0 6rem
+      height: 50vh
+
+      .banner-text-container
+        margin-top: 6rem
+        padding: 1.5rem
+
+        .headline
+          font-size: 4rem
+
+        .subhead
+          font-size: 1.5rem
 
     .content-cards
       padding: 1rem 6rem
-
-      .copy
-        max-width: 600px
 
       .card
         max-width: 550px
@@ -121,7 +102,9 @@
   #home-page
     .banner
       .banner-text-container
-        width: 60%
+        width: 50vw
+        margin-right: auto
+        margin-left: 0
 
         .subhead
           font-size: 20px
@@ -146,12 +129,23 @@
   #home-page
     .banner
       height: 100vh
+      padding: 0 8rem
 
       .banner-text-container
+        margin-top: 7.5rem
+        width: 55%
+
         .headline
           margin-bottom: 1rem
+
         .subhead
           font-size: 26px
+
+        .icon-link
+          display: initial
+
+        i
+          display: block
           
     .intro-container
       .copy
@@ -166,4 +160,14 @@
       .banner-text-container
         width: 50%
     
-    
+@keyframes bounce 
+  // 50%
+  //   transform: translateY(5px)
+  // 100%
+  //   transform: translateY(0px)
+  0%, 20%, 50%, 80%, 100%
+    transform: translateY(0)
+  40%
+    transform: translateY(-20px)
+  60%
+    transform: translateY(-10px)

@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5, h6,
 
 .headline.dark {
   color: #f7f7f7;
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 a:link, a:visited {
@@ -135,7 +135,7 @@ a:hover, a.dark-link:hover {
 #about-page .card .headline {
   font-family: righteous;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: rgba(0, 0, 0, 0.75);
   border-radius: 0px;
   padding: 0.75rem 0;
   margin: 0 0 1rem 0;
@@ -166,8 +166,11 @@ a:hover, a.dark-link:hover {
   box-shadow: 5px 5px #050505;
 }
 #about-page button.to-services:active {
-  box-shadow: 2px 3px #050505;
   transform: translateY(5px);
+}
+#about-page button.to-services:hover {
+  background-color: #10F9F9;
+  color: #050505;
 }
 #about-page button.to-services h4 {
   font-size: 1.5rem;
@@ -248,6 +251,9 @@ a:hover, a.dark-link:hover {
   #about-page .card {
     margin: 4rem 0;
     padding: 2.5rem;
+  }
+  #about-page button.to-services {
+    border: none;
   }
   #about-page button.to-services h4 {
     font-size: 2rem;
