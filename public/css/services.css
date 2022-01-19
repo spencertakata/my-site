@@ -1,5 +1,4 @@
 /* Variables */
-/* New Design */
 body {
   color: #141414;
 }
@@ -47,15 +46,15 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .font-white {
-  color: #f7f7f7;
+  color: #fff;
 }
 
 .font-blue {
-  color: #0070F0;
+  color: #3F37C9;
 }
 
 .font-blue-dark {
-  color: #000066;
+  color: #0069cb;
 }
 
 .nowrap {
@@ -63,17 +62,17 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .headline.dark {
-  color: #f7f7f7;
+  color: #fff;
   background-color: rgba(0, 0, 0, 0.75);
 }
 
 a:link, a:visited {
-  color: #0070F0;
+  color: #3F37C9;
   text-decoration: none;
 }
 
 a.dark-link, a.dark-link:visited {
-  color: #f7f7f7;
+  color: #fff;
   text-decoration: underline;
 }
 
@@ -116,8 +115,8 @@ a:hover, a.dark-link:hover {
   display: none;
 }
 #services-page #dev-process {
-  background-color: #050505;
-  color: #f7f7f7;
+  background-color: #011627;
+  color: #fff;
   justify-content: space-around;
   flex-direction: column;
 }
@@ -148,8 +147,8 @@ a:hover, a.dark-link:hover {
 #services-page #portfolio #dev-title {
   padding: 1.25rem;
   background-color: rgba(0, 0, 0, 0.85);
-  color: #f7f7f7;
-  border: 1px solid #f7f7f7;
+  color: #fff;
+  border: 1px solid #fff;
   border-radius: 0px;
 }
 #services-page #portfolio #dev-title h2 {
@@ -170,8 +169,8 @@ a:hover, a.dark-link:hover {
   box-shadow: 5px 5px #C3C3C3;
   border-width: 2px;
   background-color: rgba(0, 0, 0, 0.85);
-  color: #f7f7f7;
-  border: 1px solid #f7f7f7;
+  color: #fff;
+  border: 1px solid #fff;
   border-radius: 0px;
   /* Hover effects */
   /* End hover effects */
@@ -196,13 +195,13 @@ a:hover, a.dark-link:hover {
   width: 100%;
   opacity: 0;
   transition: 0.5s ease;
-  background-color: #5f4bb6;
+  background-color: #7209B7;
 }
 #services-page #portfolio .card .overlay-container:hover .overlay {
   opacity: 1;
 }
 #services-page #portfolio .card .overlay-container:hover .overlay .text {
-  color: #f7f7f7;
+  color: #fff;
   font-size: 20px;
   position: absolute;
   top: 50%;
@@ -216,8 +215,8 @@ a:hover, a.dark-link:hover {
   background-image: url(/img/ocean-overhead.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  border-bottom: 5px solid #050505;
-  border-top: 5px solid #050505;
+  border-bottom: 5px solid #011627;
+  border-top: 5px solid #011627;
   padding: 3rem 0;
 }
 #services-page #project-management-container .headline {
@@ -225,8 +224,8 @@ a:hover, a.dark-link:hover {
 }
 #services-page #project-management-container .card {
   background-color: rgba(255, 255, 255, 0.85);
-  color: #050505;
-  border: 1px solid #050505;
+  color: #011627;
+  border: 1px solid #011627;
   border-radius: 0px;
 }
 #services-page #project-management-container .pm-item {
@@ -257,8 +256,8 @@ a:hover, a.dark-link:hover {
 }
 #services-page #marketing-container .card {
   background-color: rgba(255, 255, 255, 0.85);
-  color: #050505;
-  border: 1px solid #050505;
+  color: #011627;
+  border: 1px solid #011627;
   border-radius: 0px;
 }
 #services-page #marketing-container img.stock-img {
@@ -312,7 +311,7 @@ a:hover, a.dark-link:hover {
     /* ====== PORTFOLIO ====== */
   }
   #services-page #jumbo-services {
-    border-bottom: 5px solid #050505;
+    border-bottom: 5px solid #011627;
   }
   #services-page #jumbo-services .banner-text-container {
     width: 50%;

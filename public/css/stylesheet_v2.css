@@ -1,5 +1,4 @@
 /* Variables */
-/* New Design */
 body {
   color: #141414;
 }
@@ -47,15 +46,15 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .font-white {
-  color: #f7f7f7;
+  color: #fff;
 }
 
 .font-blue {
-  color: #0070F0;
+  color: #3F37C9;
 }
 
 .font-blue-dark {
-  color: #000066;
+  color: #0069cb;
 }
 
 .nowrap {
@@ -63,17 +62,17 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .headline.dark {
-  color: #f7f7f7;
+  color: #fff;
   background-color: rgba(0, 0, 0, 0.75);
 }
 
 a:link, a:visited {
-  color: #0070F0;
+  color: #3F37C9;
   text-decoration: none;
 }
 
 a.dark-link, a.dark-link:visited {
-  color: #f7f7f7;
+  color: #fff;
   text-decoration: underline;
 }
 
@@ -116,11 +115,11 @@ html, body {
   background-color: #141414;
 }
 .navbar-dark .navbar-brand {
-  color: #f7f7f7;
+  color: #fff;
   text-decoration: none;
 }
 .navbar-dark .navbar-nav .nav-link {
-  color: #f7f7f7;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -155,10 +154,10 @@ html, body {
 }
 .banner .banner-text-container {
   background-color: rgba(0, 0, 0, 0.75);
-  border: 1px solid #f7f7f7;
+  border: 1px solid #fff;
   border-radius: 0;
-  box-shadow: 5px 5px #f7f7f7;
-  color: #f7f7f7;
+  box-shadow: 5px 5px #fff;
+  color: #fff;
   margin-top: 4rem;
   text-align: center;
   width: 90%;
@@ -179,24 +178,24 @@ html, body {
 }
 
 .btn-dark-outline {
-  border: 2px solid #f7f7f7;
-  background-color: #050505;
+  border: 2px solid #fff;
+  background-color: #011627;
 }
 
 .btn-blue {
-  background-color: #0070F0;
-  border-color: #050505;
-  color: #f7f7f7;
+  background-color: #3F37C9;
+  border-color: #011627;
+  color: #fff;
   font-family: "Righteous", Palatino, Times, serif;
-  box-shadow: 4px 4px #050505;
+  box-shadow: 4px 4px #011627;
 }
 .btn-blue:active {
   transform: translateY(3px);
-  box-shadow: 2px 3px #050505;
+  box-shadow: 2px 3px #011627;
 }
 .btn-blue:hover {
   background-color: #10F9F9;
-  color: #050505;
+  color: #011627;
 }
 
 /* === Design Utilities === */
@@ -227,11 +226,11 @@ html, body {
 }
 
 .bg-black {
-  background-color: #050505;
+  background-color: #011627;
 }
 
 .bg-white {
-  background-color: #f7f7f7;
+  background-color: #fff;
 }
 
 .bg-orange {
@@ -239,7 +238,7 @@ html, body {
 }
 
 .bg-blue {
-  background-color: #0070F0;
+  background-color: #3F37C9;
 }
 
 .primary-color {
@@ -262,8 +261,8 @@ html, body {
 footer {
   width: 100%;
   padding: 2em 20%;
-  background-color: #050505;
-  color: #f7f7f7;
+  background-color: #011627;
+  color: #fff;
   line-height: 90%;
   text-align: center;
 }
@@ -274,13 +273,13 @@ footer #photo-cred {
 .icon-sm {
   font-size: 1.5em;
   margin: 0 0.5em;
-  color: #f7f7f7;
+  color: #fff;
 }
 
 .icon-lg {
   font-size: 3em;
   margin: 0 0.5em;
-  color: #f7f7f7;
+  color: #fff;
 }
 
 .icon-lg:hover,

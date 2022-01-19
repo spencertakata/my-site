@@ -7,24 +7,36 @@
   <section class="banner d-flex" id="jumbo-home">
     <div class="banner-text-container flex-item">
       <h1 class="righteous headline">Hi I'm Spencer</h1>
-      <h4 class="raleway subhead">I write code, run projects, and <span class="nowrap">take cool photos</span></h4>
+      <h4 class="raleway subhead">I write code, run projects, and <span class="nowrap">take cool photos </span></h4>
+      {# <i class="fa-solid fa-code"></i>
+      <i class="fa-solid fa-list-check"></i>
+      <i class="fa-solid fa-camera"></i> #}
       <span><a href="#scroll" class="scrollTo icon-link"><i class="fas fa-angle-down icon-lg"></i></a></span>
     </div>
   </section>
 {% endblock %}
 
-{% block content %}
-  <!-- Headline -->
-  {# <section class="intro-container" id="">
-    <h3 class="copy headline"><b><span class="font-blue">Hi I'm Spencer,</span><span class="mobile"><br></span> and I want to help transform your <i>ideas</i> <span class="nowrap">into <i>reality</i>.</span></b></h3>
-    <div class="underline underline-orange"></div>
-    <h4 class="copy subhead">Based in Northern California.<br>Available&nbsp;worldwide</h3>
-    <img src="img/me-fall-color.jpg" class="img" />
-  </section> #}
 
+{% block content %}
 {# 3 content boxes #}
-  <section class="content-cards" id="scroll">
-    <div class="card-container">
+  <section class="content-cards main-content" id="scroll">
+    <img src="img/wave-divider-dark.svg" class="wave-divider">
+    <div class="d-flex content-block" id="content-block-1">
+      <div class="column left copy-container">
+        <h4 class="righteous headline copy">Who I Am</h4>
+        <p class="body copy">Get to know <i>me</i>, not just my work. How I got here, where I want to go, what I love doing and why I love doing it.</p>
+        <div class="btn-container">
+          <a href="./about.html"><button class="btn white-outline">Read more</button></a>
+        </div>
+      </div>
+      <div class="column right img-container">
+        <a href="./about.html">
+          <img src="img/me-fall-color.jpg">
+        </a>
+      </div>
+    </div>
+
+    <!-- <div class="card-container">
       {# Card 1 #}
       <div class="card">
         <h4 class="dark righteous">Who I Am</h4>
@@ -58,7 +70,7 @@
         </a>
       </div>
       
-    </div>
+    </div> -->
 
 
   </section>

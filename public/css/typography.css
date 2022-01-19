@@ -1,5 +1,4 @@
 /* Variables */
-/* New Design */
 body {
   color: #141414;
 }
@@ -47,15 +46,15 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .font-white {
-  color: #f7f7f7;
+  color: #fff;
 }
 
 .font-blue {
-  color: #0070F0;
+  color: #3F37C9;
 }
 
 .font-blue-dark {
-  color: #000066;
+  color: #0069cb;
 }
 
 .nowrap {
@@ -63,17 +62,17 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .headline.dark {
-  color: #f7f7f7;
+  color: #fff;
   background-color: rgba(0, 0, 0, 0.75);
 }
 
 a:link, a:visited {
-  color: #0070F0;
+  color: #3F37C9;
   text-decoration: none;
 }
 
 a.dark-link, a.dark-link:visited {
-  color: #f7f7f7;
+  color: #fff;
   text-decoration: underline;
 }
 
