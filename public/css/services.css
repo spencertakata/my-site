@@ -115,7 +115,7 @@ a:hover, a.dark-link:hover {
   display: none;
 }
 #services-page #dev-process {
-  background-color: #011627;
+  background-color: #0a0a0a;
   color: #fff;
   justify-content: space-around;
   flex-direction: column;
@@ -215,8 +215,8 @@ a:hover, a.dark-link:hover {
   background-image: url(/img/ocean-overhead.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  border-bottom: 5px solid #011627;
-  border-top: 5px solid #011627;
+  border-bottom: 5px solid #0a0a0a;
+  border-top: 5px solid #0a0a0a;
   padding: 3rem 0;
 }
 #services-page #project-management-container .headline {
@@ -224,8 +224,8 @@ a:hover, a.dark-link:hover {
 }
 #services-page #project-management-container .card {
   background-color: rgba(255, 255, 255, 0.85);
-  color: #011627;
-  border: 1px solid #011627;
+  color: #0a0a0a;
+  border: 1px solid #0a0a0a;
   border-radius: 0px;
 }
 #services-page #project-management-container .pm-item {
@@ -256,8 +256,8 @@ a:hover, a.dark-link:hover {
 }
 #services-page #marketing-container .card {
   background-color: rgba(255, 255, 255, 0.85);
-  color: #011627;
-  border: 1px solid #011627;
+  color: #0a0a0a;
+  border: 1px solid #0a0a0a;
   border-radius: 0px;
 }
 #services-page #marketing-container img.stock-img {
@@ -311,7 +311,7 @@ a:hover, a.dark-link:hover {
     /* ====== PORTFOLIO ====== */
   }
   #services-page #jumbo-services {
-    border-bottom: 5px solid #011627;
+    border-bottom: 5px solid #0a0a0a;
   }
   #services-page #jumbo-services .banner-text-container {
     width: 50%;

@@ -36,8 +36,6 @@
   
   // Content boxes section
   .main-content
-    //background-image: url(../img/grey-background.jpg)
-    //border-top: 5px solid $black
 
     .wave-divider
       width: 100%
@@ -46,7 +44,7 @@
       background-color: #30044E
       //display: none
 
-    /*ew stles */ 
+    /* New stles */ 
 
     .d-flex
       flex-direction: column
@@ -54,34 +52,42 @@
       .column
         width: 100%
 
-    // .outline
-    //   border: 2px solid $white
-    //   border-radius: 3px
-    //   padding: 1rem
-    //   margin-bottom: 2rem
-
     .content-block 
       padding: 4rem 1rem
+      color: $white
 
       &#content-block-1
-        background-color: #30044E   
-        color: $white 
+        background-color: #30044E 
+        .btn:hover
+          background-color: $pink 
+
+      &#content-block-2
+        background-color: #292929
+        .btn:hover
+          background-color: $aqua-dark
+
+      &#content-block-3
+        // background-color: $aqua-darker
+        background-color: $pink-dark
+        .btn:hover
+          background-color: $purple
 
       .headline
         font-size: 3.25rem
-      .body
+
+      .body, .btn
         font-size: 1.5rem
       
       .btn-container
         margin: 2rem auto 1.5rem
-        .btn.white-outline
+        .btn
           border: 2px solid $white
           box-shadow: 5px 5px $white
-          font-family: $righteous
           color: $white
+          &:active
+            transform: translateY(4px)
+            box-shadow: 2px 2px $white
 
-          &:hover
-            background-color: $pink 
 
       .img-container
         margin: 3rem 0
@@ -91,31 +97,6 @@
           box-shadow: 5px 5px $white
     /* end new styles */
 
-    // .card-container
-      padding: 1rem
-      display: flex
-      flex-direction: column
-
-      .card
-        @include card($white, $card-color-light, $card-border-light, $card-border-radius)
-        text-align: center
-        padding: 1rem
-        margin: 1rem auto
-
-        .dark
-          background-color: rgb(30,30,30)
-          border-radius: $card-border-radius
-          color: $white
-          font-size: 2rem
-          padding: 0.7rem
-
-        img
-          border-radius: $card-border-radius
-          max-width: 100%
-          height: auto
-        
-        button
-          margin-bottom: 1rem
 @media (min-width: 500px)
   #home-page
     .main-content
@@ -159,16 +140,6 @@
       .content-block
         padding: 4rem
         
-        .content-inner
-          //max-width: 600px
-          //margin: 0 auto
-
-    // .card-container
-    //   padding: 1rem 6rem
-
-    //   .card
-    //     max-width: 550px
-
 @media (min-width: 992px)
   #home-page
     .banner
@@ -186,36 +157,35 @@
       .underline
         width: 40%
 
-    .content-cards
+    .main-content
       .content-block
+        padding: 3rem 6rem
         &.d-flex
           flex-direction: row
 
         .column
           width: 50%
 
-          &.copy-container
-            padding-right: 2.5rem
+        .copy-container
+          &.left
+            padding-right: 4rem
+          &.right
+            padding-left: 4rem
 
         .headline
           font-size: 3.5rem
 
         .body
-          font-size: 2.25rem      
+          font-size: 1.75rem      
         
         .btn-container
           margin: 3rem 0 1.5rem
           
         .btn
           font-size: 2rem
-
-      // .card-container
-      //   flex-direction: row
-      //   flex-wrap: wrap
-
-      //   .card
-      //     width: 350px
-      //     flex-shrink: 0
+        
+        .img-container
+          margin: 0
         
 @media (min-width: 1220px)
   #home-page
@@ -225,32 +195,36 @@
 
       .banner-text-container
         margin-top: 7.5rem
-        width: 55%
+        width: 65%
 
         .headline
           margin-bottom: 1rem
+          font-size: 5rem
 
         .subhead
-          font-size: 26px
+          font-size: 2rem
 
         .icon-link
           display: inline-block
 
         i
           display: block
-          
-    .intro-container
-      .copy
-        max-width: 60%
-    
-    .card-container
-      padding: 4rem 3rem
 
-@media (min-width: 1440px)
-  #home-page
-    .banner
-      .banner-text-container
-        width: 50%
+    .main-content
+      .content-block
+        padding: 7rem 
+
+        .copy-container
+          &.left
+            padding-right: 6rem
+          &.right
+            padding-left: 6rem 
+
+// @media (min-width: 1440px)
+  // #home-page
+  //   .banner
+  //     .banner-text-container
+  //       width: 50%
     
 @keyframes bounce 
   // 50%

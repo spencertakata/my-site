@@ -95,11 +95,15 @@ html, body {
   font-family: "Lato", "Raleway", Verdana, Arial, sans-serif;
 }
 
-.flex-container {
+.flex-container, .d-flex {
   display: flex;
 }
-.flex-container.flex-wrap {
+.flex-container.flex-wrap, .d-flex.flex-wrap {
   flex-wrap: wrap;
+}
+
+.stack-reverse {
+  flex-direction: column-reverse;
 }
 
 .desktop {
@@ -179,23 +183,23 @@ html, body {
 
 .btn-dark-outline {
   border: 2px solid #fff;
-  background-color: #011627;
+  background-color: #0a0a0a;
 }
 
 .btn-blue {
   background-color: #3F37C9;
-  border-color: #011627;
+  border-color: #0a0a0a;
   color: #fff;
   font-family: "Righteous", Palatino, Times, serif;
-  box-shadow: 4px 4px #011627;
+  box-shadow: 4px 4px #0a0a0a;
 }
 .btn-blue:active {
   transform: translateY(3px);
-  box-shadow: 2px 3px #011627;
+  box-shadow: 2px 3px #0a0a0a;
 }
 .btn-blue:hover {
   background-color: #10F9F9;
-  color: #011627;
+  color: #0a0a0a;
 }
 
 /* === Design Utilities === */
@@ -226,7 +230,7 @@ html, body {
 }
 
 .bg-black {
-  background-color: #011627;
+  background-color: #0a0a0a;
 }
 
 .bg-white {
@@ -261,7 +265,7 @@ html, body {
 footer {
   width: 100%;
   padding: 2em 20%;
-  background-color: #011627;
+  background-color: #0a0a0a;
   color: #fff;
   line-height: 90%;
   text-align: center;

@@ -10,11 +10,14 @@ html, body
   padding: 0
   font-family: $font-body
 
-.flex-container
+.flex-container, .d-flex
   display: flex
   
   &.flex-wrap
     flex-wrap: wrap
+
+.stack-reverse
+  flex-direction: column-reverse
 
 .desktop
   display: none !important

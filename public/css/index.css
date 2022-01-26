@@ -115,7 +115,7 @@ a:hover, a.dark-link:hover {
   color: #F72585;
 }
 #home-page .main-content {
-  /*ew stles */ 
+  /* New stles */ 
   /* end new styles */
 }
 #home-page .main-content .wave-divider {
@@ -132,28 +132,43 @@ a:hover, a.dark-link:hover {
 }
 #home-page .main-content .content-block {
   padding: 4rem 1rem;
+  color: #fff;
 }
 #home-page .main-content .content-block#content-block-1 {
   background-color: #30044E;
-  color: #fff;
+}
+#home-page .main-content .content-block#content-block-1 .btn:hover {
+  background-color: #F72585;
+}
+#home-page .main-content .content-block#content-block-2 {
+  background-color: #292929;
+}
+#home-page .main-content .content-block#content-block-2 .btn:hover {
+  background-color: #05B3B3;
+}
+#home-page .main-content .content-block#content-block-3 {
+  background-color: #36072F;
+}
+#home-page .main-content .content-block#content-block-3 .btn:hover {
+  background-color: #7209B7;
 }
 #home-page .main-content .content-block .headline {
   font-size: 3.25rem;
 }
-#home-page .main-content .content-block .body {
+#home-page .main-content .content-block .body, #home-page .main-content .content-block .btn {
   font-size: 1.5rem;
 }
 #home-page .main-content .content-block .btn-container {
   margin: 2rem auto 1.5rem;
 }
-#home-page .main-content .content-block .btn-container .btn.white-outline {
+#home-page .main-content .content-block .btn-container .btn {
   border: 2px solid #fff;
   box-shadow: 5px 5px #fff;
-  font-family: "Righteous", Palatino, Times, serif;
   color: #fff;
 }
-#home-page .main-content .content-block .btn-container .btn.white-outline:hover {
-  background-color: #F72585;
+#home-page .main-content .content-block .btn-container .btn:active {
+  transform: translateY(4px);
+  box-shadow: 2px 2px #fff;
 }
 #home-page .main-content .content-block .img-container {
   margin: 3rem 0;
@@ -219,26 +234,35 @@ a:hover, a.dark-link:hover {
   #home-page .intro-container .underline {
     width: 40%;
   }
-  #home-page .content-cards .content-block.d-flex {
+  #home-page .main-content .content-block {
+    padding: 3rem 6rem;
+  }
+  #home-page .main-content .content-block.d-flex {
     flex-direction: row;
   }
-  #home-page .content-cards .content-block .column {
+  #home-page .main-content .content-block .column {
     width: 50%;
   }
-  #home-page .content-cards .content-block .column.copy-container {
-    padding-right: 2.5rem;
+  #home-page .main-content .content-block .copy-container.left {
+    padding-right: 4rem;
   }
-  #home-page .content-cards .content-block .headline {
+  #home-page .main-content .content-block .copy-container.right {
+    padding-left: 4rem;
+  }
+  #home-page .main-content .content-block .headline {
     font-size: 3.5rem;
   }
-  #home-page .content-cards .content-block .body {
-    font-size: 2.25rem;
+  #home-page .main-content .content-block .body {
+    font-size: 1.75rem;
   }
-  #home-page .content-cards .content-block .btn-container {
+  #home-page .main-content .content-block .btn-container {
     margin: 3rem 0 1.5rem;
   }
-  #home-page .content-cards .content-block .btn {
+  #home-page .main-content .content-block .btn {
     font-size: 2rem;
+  }
+  #home-page .main-content .content-block .img-container {
+    margin: 0;
   }
 }
 @media (min-width: 1220px) {
@@ -248,13 +272,14 @@ a:hover, a.dark-link:hover {
   }
   #home-page .banner .banner-text-container {
     margin-top: 7.5rem;
-    width: 55%;
+    width: 65%;
   }
   #home-page .banner .banner-text-container .headline {
     margin-bottom: 1rem;
+    font-size: 5rem;
   }
   #home-page .banner .banner-text-container .subhead {
-    font-size: 26px;
+    font-size: 2rem;
   }
   #home-page .banner .banner-text-container .icon-link {
     display: inline-block;
@@ -262,16 +287,14 @@ a:hover, a.dark-link:hover {
   #home-page .banner .banner-text-container i {
     display: block;
   }
-  #home-page .intro-container .copy {
-    max-width: 60%;
+  #home-page .main-content .content-block {
+    padding: 7rem;
   }
-  #home-page .card-container {
-    padding: 4rem 3rem;
+  #home-page .main-content .content-block .copy-container.left {
+    padding-right: 6rem;
   }
-}
-@media (min-width: 1440px) {
-  #home-page .banner .banner-text-container {
-    width: 50%;
+  #home-page .main-content .content-block .copy-container.right {
+    padding-left: 6rem;
   }
 }
 @keyframes bounce {
