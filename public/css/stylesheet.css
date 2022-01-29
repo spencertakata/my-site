@@ -184,7 +184,7 @@ a:hover, a.dark-link:hover {
   width: 100%;
   background-color: #3F37C9;
   padding: 12px 5px;
-  box-shadow: 5px 5px #011627;
+  box-shadow: 5px 5px #0a0a0a;
 }
 
 #about-page button.to-services:active {
@@ -193,7 +193,7 @@ a:hover, a.dark-link:hover {
 
 #about-page button.to-services:hover {
   background-color: #10F9F9;
-  color: #011627;
+  color: #0a0a0a;
 }
 
 #about-page button.to-services h4 {

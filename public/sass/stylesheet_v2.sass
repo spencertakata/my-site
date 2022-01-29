@@ -1,5 +1,5 @@
-@use './variables' as *
-@use './typography' as *
+@use './_variables' as *
+@use './_typography' as *
 
 /* === Global === */
 html
@@ -46,7 +46,11 @@ html, body
 .navbar-dark .navbar-nav .nav-link:focus,
 .navbar-dark .navbar-brand:hover,
 .navbar-dark .navbar-brand:focus
-  color: $orange
+  color: $aqua
+  // text-decoration: underline
+  // background: -webkit-linear-gradient($aqua, $pink)
+  // -webkit-background-clip: text
+  // -webkit-text-fill-color: transparent
 
 .nav-link
   &:active
@@ -65,24 +69,24 @@ html, body
   background-size: cover
   background-position: center center
 
-  .banner-text-container
-    background-color: $black-transparent
-    border: 1px solid $white
-    border-radius: 0
-    box-shadow: 5px 5px $white
-    color: $white
-    margin-top: 4rem
-    text-align: center
-    width: 90%
-    padding: 1rem
+.banner-text-container
+  background-color: $black-transparent
+  border: 1px solid $white
+  border-radius: 0
+  box-shadow: 5px 5px $white
+  color: $white
+  margin-top: 4rem
+  text-align: center
+  width: 90%
+  padding: 1rem
 
-    .headline
-      font-size: 3.75rem
-      line-height: 1.2
+  .headline
+    font-size: 3.75rem
+    line-height: 1.2
 
-    .subhead
-      font-size: 24px
-      line-height: 1.5
+  .subhead
+    font-size: 24px
+    line-height: 1.5
 
 /* === Buttons === */
 .btn

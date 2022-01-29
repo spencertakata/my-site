@@ -84,216 +84,223 @@ a:hover, a.dark-link:hover {
   text-align: center;
 }
 
-#home-page #jumbo-home {
+#jumbo-home {
   background-image: url(../img/blue-pink-wave-dark.svg);
   background-position: 25% 50%;
 }
-#home-page .banner {
+
+.banner {
   height: 70vh;
 }
-#home-page .banner .banner-text-container {
+.banner .banner-text-container {
   margin-top: 3rem;
   padding: 1rem;
   text-align: center;
 }
-#home-page .banner .banner-text-container .headline {
+.banner .headline {
   font-size: 12vw;
 }
-#home-page .banner .banner-text-container .subhead {
+.banner .subhead {
   font-size: 1.75rem;
 }
-#home-page .banner .banner-text-container .icon-link {
+.banner .icon-link {
   display: none;
 }
-#home-page .banner .banner-text-container i {
+.banner i {
   display: none;
   margin: 0.8rem 0 0 0;
   animation: bounce 2s infinite;
   font-size: 3.5rem;
 }
-#home-page .banner .banner-text-container i:hover {
+.banner i:hover {
   color: #F72585;
 }
-#home-page .main-content {
+
+.main-content {
   /* New stles */ 
-  /* end new styles */
 }
-#home-page .main-content .wave-divider {
+.main-content .wave-divider {
   width: 100%;
-  transform: rotate(180deg);
   max-height: 50px;
+}
+.main-content .wave-divider.top {
+  transform: rotate(180deg);
   background-color: #30044E;
 }
-#home-page .main-content .d-flex {
-  flex-direction: column;
-}
-#home-page .main-content .d-flex .column {
-  width: 100%;
-}
-#home-page .main-content .content-block {
-  padding: 4rem 1rem;
-  color: #fff;
-}
-#home-page .main-content .content-block#content-block-1 {
-  background-color: #30044E;
-}
-#home-page .main-content .content-block#content-block-1 .btn:hover {
-  background-color: #F72585;
-}
-#home-page .main-content .content-block#content-block-2 {
-  background-color: #292929;
-}
-#home-page .main-content .content-block#content-block-2 .btn:hover {
-  background-color: #05B3B3;
-}
-#home-page .main-content .content-block#content-block-3 {
+.main-content .wave-divider.bottom {
   background-color: #36072F;
 }
-#home-page .main-content .content-block#content-block-3 .btn:hover {
+.main-content .d-flex {
+  flex-direction: column;
+}
+.main-content .d-flex.stack-reverse {
+  flex-direction: column-reverse;
+}
+.main-content .d-flex .column {
+  width: 100%;
+}
+.main-content .content-block {
+  padding: 4rem 1rem;
+  color: #fff;
+  /* end new styles */
+}
+.main-content .content-block#content-block-1 {
+  background-color: #30044E;
+}
+.main-content .content-block#content-block-1 .btn:hover {
+  background-color: #F72585;
+}
+.main-content .content-block#content-block-2 {
+  background-color: #292929;
+}
+.main-content .content-block#content-block-2 .btn:hover {
+  background-color: #05B3B3;
+}
+.main-content .content-block#content-block-3 {
+  background-color: #36072F;
+}
+.main-content .content-block#content-block-3 .btn:hover {
   background-color: #7209B7;
 }
-#home-page .main-content .content-block .headline {
+.main-content .content-block .headline {
   font-size: 3.25rem;
 }
-#home-page .main-content .content-block .body, #home-page .main-content .content-block .btn {
+.main-content .content-block .body, .main-content .content-block .btn {
   font-size: 1.5rem;
 }
-#home-page .main-content .content-block .btn-container {
+.main-content .content-block .btn-container {
   margin: 2rem auto 1.5rem;
 }
-#home-page .main-content .content-block .btn-container .btn {
+.main-content .content-block .btn-container .btn {
   border: 2px solid #fff;
   box-shadow: 5px 5px #fff;
   color: #fff;
 }
-#home-page .main-content .content-block .btn-container .btn:active {
+.main-content .content-block .btn-container .btn:active {
   transform: translateY(4px);
   box-shadow: 2px 2px #fff;
 }
-#home-page .main-content .content-block .img-container {
+.main-content .content-block .img-container {
   margin: 3rem 0;
 }
-#home-page .main-content .content-block .img-container img {
+.main-content .content-block .img-container img {
   width: 100%;
   border: 2px solid #fff;
   box-shadow: 5px 5px #fff;
 }
 
 @media (min-width: 500px) {
-  #home-page .main-content .content-block {
+  .main-content .content-block {
     padding: 4rem;
   }
 }
 @media (min-width: 600px) {
-  #home-page .banner {
+  .banner {
     padding: 0 4rem;
   }
-  #home-page .banner .banner-text-container {
+  .banner .banner-text-container {
     width: 100%;
   }
-  #home-page .banner .banner-text-container .headline {
+  .banner .headline {
     font-size: 10vw;
   }
-  #home-page .banner .banner-text-container .subhead {
+  .banner .subhead {
     font-size: 1.75rem;
   }
-  #home-page .card-container {
+  .banner .card-container {
     padding: 1rem 4rem;
   }
 }
 @media (min-width: 768px) {
-  #home-page .banner {
+  .banner {
     padding: 0 6rem;
     height: 60vh;
   }
-  #home-page .banner .banner-text-container {
+  .banner .banner-text-container {
     padding: 1.5rem;
   }
-  #home-page .banner .banner-text-container .headline {
+  .banner .headline {
     font-size: 4rem;
   }
-  #home-page .banner .banner-text-container .subhead {
+  .banner .subhead {
     font-size: 1.5rem;
   }
-  #home-page .main-content .content-block {
+
+  .main-content .content-block {
     padding: 4rem;
   }
 }
 @media (min-width: 992px) {
-  #home-page .banner .banner-text-container {
+  .banner .banner-text-container {
     width: 60vw;
     margin-right: 0;
     margin-left: 0;
   }
-  #home-page .banner .banner-text-container .subhead {
+  .banner .subhead {
     font-size: 20px;
   }
-  #home-page .intro-container {
-    padding: 3rem 10rem;
-  }
-  #home-page .intro-container .underline {
-    width: 40%;
-  }
-  #home-page .main-content .content-block {
+
+  .main-content .content-block {
     padding: 3rem 6rem;
   }
-  #home-page .main-content .content-block.d-flex {
+  .main-content .content-block.d-flex {
     flex-direction: row;
   }
-  #home-page .main-content .content-block .column {
+  .main-content .content-block .column {
     width: 50%;
   }
-  #home-page .main-content .content-block .copy-container.left {
+  .main-content .content-block .copy-container.left {
     padding-right: 4rem;
   }
-  #home-page .main-content .content-block .copy-container.right {
+  .main-content .content-block .copy-container.right {
     padding-left: 4rem;
   }
-  #home-page .main-content .content-block .headline {
+  .main-content .content-block .headline {
     font-size: 3.5rem;
   }
-  #home-page .main-content .content-block .body {
+  .main-content .content-block .body {
     font-size: 1.75rem;
   }
-  #home-page .main-content .content-block .btn-container {
+  .main-content .content-block .btn-container {
     margin: 3rem 0 1.5rem;
   }
-  #home-page .main-content .content-block .btn {
+  .main-content .content-block .btn {
     font-size: 2rem;
   }
-  #home-page .main-content .content-block .img-container {
+  .main-content .content-block .img-container {
     margin: 0;
   }
 }
 @media (min-width: 1220px) {
-  #home-page .banner {
+  .banner {
     height: 100vh;
     padding: 0 8rem;
   }
-  #home-page .banner .banner-text-container {
+  .banner .banner-text-container {
     margin-top: 7.5rem;
     width: 65%;
   }
-  #home-page .banner .banner-text-container .headline {
+  .banner .headline {
     margin-bottom: 1rem;
     font-size: 5rem;
   }
-  #home-page .banner .banner-text-container .subhead {
+  .banner .subhead {
     font-size: 2rem;
   }
-  #home-page .banner .banner-text-container .icon-link {
+  .banner .icon-link {
     display: inline-block;
   }
-  #home-page .banner .banner-text-container i {
+  .banner i {
     display: block;
   }
-  #home-page .main-content .content-block {
+
+  .main-content .content-block {
     padding: 7rem;
   }
-  #home-page .main-content .content-block .copy-container.left {
+  .main-content .copy-container.left {
     padding-right: 6rem;
   }
-  #home-page .main-content .content-block .copy-container.right {
+  .main-content .copy-container.right {
     padding-left: 6rem;
   }
 }
