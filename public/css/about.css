@@ -89,10 +89,9 @@ a:hover, a.dark-link:hover {
   background-image: url(/img/wave-aqua-pink-dark.svg);
   background-size: cover;
   align-items: flex-start;
-  height: 70vw;
 }
 #jumbo-about .banner-text-container {
-  margin-top: 2rem;
+  margin: 3rem 0 12rem;
   padding: 1rem 1rem 1.5rem;
   text-align: center;
 }
@@ -109,7 +108,7 @@ a:hover, a.dark-link:hover {
 }
 
 .main-content {
-  background-color: #5b5b5b;
+  background-color: #CCC;
 }
 .main-content .wave-divider {
   width: 100%;
@@ -119,11 +118,11 @@ a:hover, a.dark-link:hover {
   transform: rotate(180deg);
 }
 .main-content .wave-divider.bottom {
-  background-color: #5b5b5b;
+  background-color: #CCC;
 }
 .main-content .content-block {
   flex-direction: column;
-  padding: 1rem;
+  padding: 1.5rem 1rem;
 }
 .main-content .content-block.stack-reverse {
   flex-direction: column-reverse;
@@ -131,27 +130,46 @@ a:hover, a.dark-link:hover {
 .main-content .content-block .column {
   width: 100%;
 }
+.main-content .content-block .headline {
+  font-family: "Righteous", Palatino, Times, serif;
+  font-size: 2.75rem;
+  margin-bottom: 0.5rem;
+}
+.main-content .content-block .body {
+  font-size: 1.375rem;
+}
+.main-content .content-block a {
+  color: #3F37C9;
+}
 .main-content .content-block img {
   width: 100%;
+  box-shadow: 8px 8px #525252;
+  border: 2px solid #0a0a0a;
+  margin-top: 1rem;
 }
 .main-content .content-block .caption {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   text-align: center;
-  margin-top: 5px;
+  margin: 1rem 0 0 0;
+  font-style: italic;
+}
+.main-content .btn-container {
+  padding: 0 1rem;
+  margin: 1rem auto 3rem;
 }
 .main-content button.to-services {
-  color: #fff;
   width: 100%;
-  background-color: #3F37C9;
   padding: 12px 5px;
   box-shadow: 5px 5px #0a0a0a;
+  background-color: #10F9F9;
+  color: #0a0a0a;
 }
 .main-content button.to-services:active {
   transform: translateY(5px);
+  box-shadow: 2px 2px #0a0a0a;
 }
 .main-content button.to-services:hover {
-  background-color: #10F9F9;
-  color: #0a0a0a;
+  background-color: #06DBDB;
 }
 .main-content button.to-services h4 {
   font-size: 1.5rem;
@@ -178,10 +196,6 @@ a:hover, a.dark-link:hover {
   #jumbo-about .banner-text-container .headline {
     font-size: 4rem;
   }
-
-  .spencer {
-    padding: 1.5rem;
-  }
 }
 @media (min-width: 768px) {
   #jumbo-about .banner-text-container {
@@ -189,10 +203,6 @@ a:hover, a.dark-link:hover {
   }
 }
 @media (min-width: 992px) {
-  .spencer .column {
-    width: 50%;
-  }
-
   #jumbo-about {
     height: 70vh;
     background-size: 100%;
