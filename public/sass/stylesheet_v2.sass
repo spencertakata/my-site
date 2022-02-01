@@ -46,11 +46,7 @@ html, body
 .navbar-dark .navbar-nav .nav-link:focus,
 .navbar-dark .navbar-brand:hover,
 .navbar-dark .navbar-brand:focus
-  color: $aqua
-  // text-decoration: underline
-  // background: -webkit-linear-gradient($aqua, $pink)
-  // -webkit-background-clip: text
-  // -webkit-text-fill-color: transparent
+  color: $orange
 
 .nav-link
   &:active
@@ -64,7 +60,6 @@ html, body
   justify-content: center
   align-items: flex-start
   min-height: 350px
-  //height: 100vh
   width: 100%
   background-size: cover
   background-position: center center
@@ -75,9 +70,7 @@ html, body
   border-radius: 0
   box-shadow: 5px 5px $white
   color: $white
-  margin-top: 4rem
   text-align: center
-  width: 90%
   padding: 1rem
 
   .headline
@@ -87,6 +80,10 @@ html, body
   .subhead
     font-size: 24px
     line-height: 1.5
+  
+  .wave-divider
+    &.top
+      margin-top: -1px
 
 /* === Buttons === */
 .btn
@@ -116,16 +113,16 @@ html, body
 .card.no-shadow
   box-shadow: none
 
-.underline
-  height: 0.5rem
-  width: 65%
-  margin: 0 auto 0.5rem
+// .underline
+//   height: 0.5rem
+//   width: 65%
+//   margin: 0 auto 0.5rem
 
-.underline-blue
-  background-color: $primary-color
+// .underline-blue
+//   background-color: $primary-color
 
-.underline-orange
-  background-color: $orange
+// .underline-orange
+//   background-color: $orange
 
 .bg-black-transparent
   background-color: $black-transparent
@@ -192,10 +189,7 @@ footer
     display: initial !important
   /* ====== JUMBO ====== */
   .banner
-    height: 70vh
     .banner-text-container
-      margin-top: 6rem
-      width: 70%
       padding: 1.25em
     h1
       font-size: 6rem

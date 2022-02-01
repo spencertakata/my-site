@@ -136,7 +136,7 @@ html, body {
 .navbar-dark .navbar-nav .nav-link:focus,
 .navbar-dark .navbar-brand:hover,
 .navbar-dark .navbar-brand:focus {
-  color: #10F9F9;
+  color: #f9ab18;
 }
 
 .nav-link:active {
@@ -163,9 +163,7 @@ html, body {
   border-radius: 0;
   box-shadow: 5px 5px #fff;
   color: #fff;
-  margin-top: 4rem;
   text-align: center;
-  width: 90%;
   padding: 1rem;
 }
 .banner-text-container .headline {
@@ -175,6 +173,9 @@ html, body {
 .banner-text-container .subhead {
   font-size: 24px;
   line-height: 1.5;
+}
+.banner-text-container .wave-divider.top {
+  margin-top: -1px;
 }
 
 /* === Buttons === */
@@ -210,20 +211,6 @@ html, body {
 
 .card.no-shadow {
   box-shadow: none;
-}
-
-.underline {
-  height: 0.5rem;
-  width: 65%;
-  margin: 0 auto 0.5rem;
-}
-
-.underline-blue {
-  background-color: #000066;
-}
-
-.underline-orange {
-  background-color: #f9ab18;
 }
 
 .bg-black-transparent {
@@ -307,12 +294,7 @@ footer #photo-cred {
   }
 
   /* ====== JUMBO ====== */
-  .banner {
-    height: 70vh;
-  }
   .banner .banner-text-container {
-    margin-top: 6rem;
-    width: 70%;
     padding: 1.25em;
   }
   .banner h1 {

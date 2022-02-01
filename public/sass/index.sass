@@ -15,8 +15,9 @@ $block-3-color: $pink-dark
 
 .banner
   height: 70vh
+  padding: 3rem 1rem 0
   .banner-text-container
-    margin-top: 3rem
+    //margin-top: 3rem
     padding: 1rem
     text-align: center
 
@@ -45,6 +46,7 @@ $block-3-color: $pink-dark
     &.top
       transform: rotate(180deg)
       background-color: $block-1-color
+      margin-top: -1px
     &.bottom
       background-color: $block-3-color
 
@@ -65,7 +67,7 @@ $block-3-color: $pink-dark
     &#content-block-1
       background-color: $block-1-color 
       .btn:hover
-        background-color: $pink 
+        background-color: $purple
 
     &#content-block-2
       background-color: $block-2-color
@@ -75,7 +77,7 @@ $block-3-color: $pink-dark
     &#content-block-3
       background-color: $block-3-color
       .btn:hover
-        background-color: $purple
+        background-color: $pink
 
     .headline
       font-size: 3.25rem
@@ -108,11 +110,6 @@ $block-3-color: $pink-dark
 
 @media (min-width: 600px)
   .banner
-    padding: 0 4rem
-
-    .banner-text-container
-      width: 100%
-
     .headline
       font-size: 10vw
 
@@ -124,7 +121,6 @@ $block-3-color: $pink-dark
 
 @media (min-width: 768px)
   .banner
-    padding: 0 6rem
     height: 60vh
 
     .banner-text-container
@@ -143,12 +139,13 @@ $block-3-color: $pink-dark
 @media (min-width: 992px)
   .banner
     .banner-text-container
-      width: 60vw
-      margin-right: 0
-      margin-left: 0
+      padding: 1.5rem 2rem
+    
+    .headline
+      font-size: 5.5rem
 
     .subhead
-      font-size: 20px
+      font-size: 1.75rem
 
   .main-content
     .content-block
@@ -183,11 +180,7 @@ $block-3-color: $pink-dark
 @media (min-width: 1220px)
   .banner
     height: 100vh
-    padding: 0 8rem
-
-    .banner-text-container
-      margin-top: 7.5rem
-      width: 65%
+    padding: 5rem 1rem
 
     .headline
       margin-bottom: 1rem

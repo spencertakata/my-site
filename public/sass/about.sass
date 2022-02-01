@@ -7,12 +7,12 @@
   background-image: url(/img/wave-aqua-pink-dark.svg)
   background-size: cover
   align-items: flex-start
+  padding: 3rem 0 12rem
 
   .banner-text-container
-    margin: 3rem 0 12rem
+    margin-top: 0
     padding: 1rem 1rem 1.5rem
     text-align: center
-    //width: 90%
 
   .headline
     margin-bottom: 0.5rem
@@ -24,6 +24,13 @@
 
   h1, p
     margin: 0
+  i
+    display: none
+    margin: 0.8rem 0 0 0
+    animation: bounce 2s infinite
+    font-size: 3.5rem
+    &:hover
+      color: $pink
 
 .main-content
   // background-color: $dark-gray
@@ -36,6 +43,7 @@
 
     &.top
       transform: rotate(180deg)
+      margin-top: -1px
 
     &.bottom
       background-color: $gray-light
@@ -62,7 +70,8 @@
 
     img
       width: 100%
-      box-shadow: 8px 8px $gray
+      //box-shadow: 8px 8px 5px $gray
+      border-radius: 20px
       border: 2px solid $black
       margin-top: 1rem
 
@@ -82,15 +91,13 @@
     box-shadow: 5px 5px $black
     background-color: $aqua
     color: $black
+    font-size: 1.5rem
+      margin: 0
     &:active
       transform: translateY(5px)
       box-shadow: 2px 2px $black
     &:hover
       background-color: $aqua-medium
-
-    h4
-      font-size: 1.5rem
-      margin: 0
   
 @media (min-width: 500px)
   #jumbo-about
@@ -98,63 +105,85 @@
       width: auto
       padding: 1rem 3rem 1.5rem
 
-@media (min-width: 600px)
   .main-content
-    padding: 2rem 15%
+    .content-block
+      padding: 1.5rem 2.5rem
 
+    .btn-container
+      padding: 0 2.5rem
+
+@media (min-width: 600px)
   #jumbo-about
-    height: 50vh
-
     .banner-text-container
-      margin-top: 4rem
-
       .headline
         font-size: 4rem
 
 
 @media (min-width: 768px)
   #jumbo-about
-    .banner-text-container
-      margin-top: 5rem
+    padding-top: 5rem
+
+    .banner-text-container      
+      .headline
+        font-size: 5rem
+
+      .subhead
+        font-size: 2rem
+  
+  .main-content
+    .content-block
+      padding: 1.5rem 4rem
 
 @media (min-width: 992px)
   #jumbo-about
-    height: 70vh
     background-size: 100%
-    height: 60vh
     align-items: flex-start
+  
+  .main-content
+    .wave-divider.top
+      margin-bottom: 2rem
+    .content-block
+      padding: 1.5rem 15%
 
-    .banner-text-container
-      margin-top: 8rem
-      margin-right: auto
-      margin-left: 8rem
+    .btn-container
+      padding: 0 15%
 
-      h1
-        font-size: 4rem
-
-      .subhead
-        font-size: 22px
-
-  button.to-services
-    width: 50%
-    border: none
-
-    h4
-      font-size: 2rem
+      button
+        width: auto
+        padding: 12px 1rem
+        margin: 0 auto
+        display: block
+        font-size: 2rem
 
 
 @media (min-width: 1220px)
   #jumbo-about
-    background-position: 0 60%
     align-items: center
-    height: 70vh
+    padding: 5rem 1rem 18rem
 
     .banner-text-container
-      margin-top: 0rem
-      margin-bottom: 2rem
-      margin-left: 12vw
-
       .headline
         font-size: 5rem
+      i
+        display: block
+  .main-content
+    .content-block
+      padding: 1.5rem 25%
 
+      .headline
+        font-size: 3.75rem
+      
+      .body
+        font-size: 1.5rem
+
+    .btn-container
+      padding: 0 25%
+
+@keyframes bounce 
+  0%, 20%, 50%, 80%, 100%
+    transform: translateY(0)
+  40%
+    transform: translateY(-20px)
+  60%
+    transform: translateY(-10px)
       
