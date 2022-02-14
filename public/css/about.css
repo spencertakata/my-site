@@ -199,7 +199,7 @@ a:hover, a.dark-link:hover {
   }
 }
 @media (min-width: 600px) {
-  #jumbo-about .banner-text-container .headline {
+  #jumbo-about .headline {
     font-size: 4rem;
   }
 }
@@ -207,10 +207,10 @@ a:hover, a.dark-link:hover {
   #jumbo-about {
     padding-top: 5rem;
   }
-  #jumbo-about .banner-text-container .headline {
+  #jumbo-about .headline {
     font-size: 5rem;
   }
-  #jumbo-about .banner-text-container .subhead {
+  #jumbo-about .subhead {
     font-size: 2rem;
   }
 
@@ -246,10 +246,10 @@ a:hover, a.dark-link:hover {
     align-items: center;
     padding: 5rem 1rem 18rem;
   }
-  #jumbo-about .banner-text-container .headline {
-    font-size: 5rem;
+  #jumbo-about .headline {
+    font-size: 6rem;
   }
-  #jumbo-about .banner-text-container i {
+  #jumbo-about i {
     display: block;
   }
 

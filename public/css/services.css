@@ -84,89 +84,104 @@ a:hover, a.dark-link:hover {
   text-align: center;
 }
 
-/* ===== Services ===== */
-#services-page {
-  /* === JUMBO === */
-  /* ====== INTRO BIO ====== */
-  /* ====== PROCESS BOXES ====== */
-  /* ====== PORTFOLIO ===== */
-  /* ====== PM ====== */
-  /* ====== MARKETING ====== */
+.wave-divider {
+  width: 100%;
+  max-height: 50px;
 }
-#services-page #jumbo-services {
-  background-image: url(/img/services-banner.jpg);
+.wave-divider.top {
+  transform: rotate(180deg);
+  margin-top: -1px;
+  background-color: #CCC;
 }
-#services-page #jumbo-services h1 {
-  font-size: 3.5rem;
-  line-height: 4.5rem;
-  text-transform: uppercase;
+.wave-divider.bottom {
+  background-color: #CCC;
 }
-#services-page #jumbo-services .lead {
-  font-size: 24px;
-  line-height: 1.2;
+
+/* ====== INTRO BIO ====== */
+#web-dev-bio {
+  padding: 1rem;
+  background-color: #CCC;
 }
-#services-page #web-dev-bio {
-  margin: 1rem auto;
-}
-#services-page #web-dev-bio .bio-headline {
+#web-dev-bio .headline {
   margin: 1rem 0;
+  text-align: center;
 }
-#services-page #web-dev-bio .icon-row {
+#web-dev-bio .icon-rows {
   display: none;
 }
-#services-page #dev-process {
+#web-dev-bio .icon-container {
+  flex-wrap: wrap;
+  flex: 1;
+  align-items: center;
+  justify-content: space-around;
+}
+#web-dev-bio .icon-container .logo {
+  padding: 0.5rem;
+  text-align: center;
+}
+#web-dev-bio .icon-container img {
+  height: 50px;
+  width: auto;
+}
+#web-dev-bio .caption {
+  font-size: 0.9rem;
+}
+
+/* ====== PROCESS BOXES ====== */
+#dev-process {
   background-color: #0a0a0a;
   color: #fff;
   justify-content: space-around;
   flex-direction: column;
 }
-#services-page #dev-process .process-card {
+#dev-process .process-card {
   justify-content: space-between;
   margin: 1rem 0;
 }
-#services-page #dev-process h3 {
+#dev-process h3 {
   font-family: "Righteous", Palatino, Times, serif;
   margin-bottom: 0;
 }
-#services-page #dev-process .process-icon {
+#dev-process .process-icon {
   width: 50px;
   text-align: center;
 }
-#services-page #dev-process i {
+#dev-process i {
   font-size: 2.5rem;
   display: inline-block;
 }
-#services-page #dev-process p {
+#dev-process p {
   margin-bottom: 0;
 }
-#services-page #portfolio {
+
+/* ====== PORTFOLIO ===== */
+#portfolio {
   background-image: url(/img/tree-bg.jpg);
   background-size: 100%;
   padding: 3rem 0;
 }
-#services-page #portfolio #dev-title {
+#portfolio #dev-title {
   padding: 1.25rem;
   background-color: rgba(0, 0, 0, 0.85);
   color: #fff;
   border: 1px solid #fff;
   border-radius: 0px;
 }
-#services-page #portfolio #dev-title h2 {
+#portfolio #dev-title h2 {
   margin-bottom: 1rem;
   text-transform: uppercase;
   font-size: 3.25rem;
 }
-#services-page #portfolio #google-card .google-logo {
+#portfolio #google-card .google-logo {
   width: 50%;
   margin-bottom: 1rem;
 }
-#services-page #portfolio #healthworker-card img {
+#portfolio #healthworker-card img {
   padding: 1em 0.5em 1em;
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
-#services-page #portfolio .card {
+#portfolio .card {
   margin: 2.5em 0;
-  box-shadow: 5px 5px #C3C3C3;
   border-width: 2px;
   background-color: rgba(0, 0, 0, 0.85);
   color: #fff;
@@ -175,17 +190,17 @@ a:hover, a.dark-link:hover {
   /* Hover effects */
   /* End hover effects */
 }
-#services-page #portfolio .card .card-title {
+#portfolio .card .card-title {
   text-transform: uppercase;
   font-weight: 700;
 }
-#services-page #portfolio .card .overlay-container {
+#portfolio .card .overlay-container {
   position: relative;
 }
-#services-page #portfolio .card img {
+#portfolio .card img {
   display: block;
 }
-#services-page #portfolio .card .overlay {
+#portfolio .card .overlay {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -197,10 +212,10 @@ a:hover, a.dark-link:hover {
   transition: 0.5s ease;
   background-color: #7209B7;
 }
-#services-page #portfolio .card .overlay-container:hover .overlay {
+#portfolio .card .overlay-container:hover .overlay {
   opacity: 1;
 }
-#services-page #portfolio .card .overlay-container:hover .overlay .text {
+#portfolio .card .overlay-container:hover .overlay .text {
   color: #fff;
   font-size: 20px;
   position: absolute;
@@ -211,7 +226,9 @@ a:hover, a.dark-link:hover {
   transform: translate(-50%, -50%);
   text-align: center;
 }
-#services-page #project-management-container {
+
+/* ====== PM ====== */
+#project-management-container {
   background-image: url(/img/ocean-overhead.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -219,206 +236,193 @@ a:hover, a.dark-link:hover {
   border-top: 5px solid #0a0a0a;
   padding: 3rem 0;
 }
-#services-page #project-management-container .headline {
+#project-management-container .headline {
   text-transform: uppercase;
 }
-#services-page #project-management-container .card {
+#project-management-container .card {
   background-color: rgba(255, 255, 255, 0.85);
   color: #0a0a0a;
   border: 1px solid #0a0a0a;
   border-radius: 0px;
 }
-#services-page #project-management-container .pm-item {
+#project-management-container .pm-item {
   margin-bottom: 1rem;
 }
-#services-page #project-management-container .carousel .carousel-indicators {
+#project-management-container .carousel .carousel-indicators {
   bottom: 190px;
 }
-#services-page #project-management-container .carousel .carousel-item img {
+#project-management-container .carousel .carousel-item img {
   margin: 0;
 }
-#services-page #project-management-container .carousel .carousel-item .text-container {
+#project-management-container .carousel .carousel-item .text-container {
   padding: 0.5rem;
 }
-#services-page #project-management-container .carousel .carousel-control-prev, #services-page #project-management-container .carousel .carousel-control-next {
+#project-management-container .carousel .carousel-control-prev, #project-management-container .carousel .carousel-control-next {
   opacity: 0.75;
   bottom: 30px;
 }
-#services-page #marketing-container {
+
+/* ====== MARKETING ====== */
+#marketing-container {
   background-image: url(/img/desert-mobile.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   padding: 3rem 0;
 }
-#services-page #marketing-container .headline {
+#marketing-container .headline {
   font-size: 3rem;
   text-transform: uppercase;
 }
-#services-page #marketing-container .card {
+#marketing-container .card {
   background-color: rgba(255, 255, 255, 0.85);
   color: #0a0a0a;
   border: 1px solid #0a0a0a;
   border-radius: 0px;
 }
-#services-page #marketing-container img.stock-img {
+#marketing-container img.stock-img {
   width: 100%;
   margin-bottom: 1rem;
 }
 
+@media (min-width: 600px) {
+  #web-dev-bio {
+    padding: 1.5rem;
+  }
+  #web-dev-bio .icon-rows {
+    display: block;
+  }
+  #web-dev-bio .all-icons {
+    display: none;
+  }
+}
 /* ========================================= TABLET ============================================== */
 @media (min-width: 768px) {
-  #services-page {
-    /* ====== PROCESS ====== */
+  #web-dev-bio {
+    padding: 2rem 3rem;
   }
-  #services-page #jumbo-services .banner-text-container {
-    width: 70%;
+  #web-dev-bio .headline {
+    font-size: 2.5rem;
   }
-  #services-page #jumbo-services h1 {
-    font-size: 4rem;
+  #web-dev-bio .body {
+    font-size: 1.25rem;
   }
-  #services-page .banner {
-    height: 50vw;
+  #web-dev-bio .icon-container .logo {
+    padding: 0.875rem;
   }
-  #services-page #dev-process {
+  #web-dev-bio .icon-container img {
+    height: 60px;
+  }
+
+  /* ====== PROCESS ====== */
+  #dev-process {
     padding: 2.125rem;
     flex-direction: row;
   }
-  #services-page #dev-process .process-card {
+  #dev-process .process-card {
     justify-content: initial;
     margin: 0;
   }
-  #services-page #dev-process .process-card > div {
+  #dev-process .process-card > div {
     margin: 0 auto;
   }
-  #services-page #dev-process .process-icon {
+  #dev-process .process-icon {
     margin: 0 1rem;
   }
-  #services-page #dev-process i {
+  #dev-process i {
     font-size: inherit;
   }
-  #services-page #portfolio #dev-title h2 {
+
+  #portfolio #dev-title h2 {
     text-align: center;
   }
-  #services-page #portfolio #google-card .google-logo {
+  #portfolio #google-card .google-logo {
     width: 35%;
   }
 }
 /* ===================================================== DESKTOP ================================================== */  
 @media (min-width: 992px) {
-  #services-page {
-    /* ====== JUMBO ====== */
-    /* ====== WEB BIO ====== */
-    /* ====== PORTFOLIO ====== */
+  /* ====== WEB BIO ====== */
+  #web-dev-bio .copy-container, #web-dev-bio .icon-container {
+    max-width: 800px;
+    margin: 0 auto;
   }
-  #services-page #jumbo-services {
-    border-bottom: 5px solid #0a0a0a;
+  #web-dev-bio .headline {
+    font-size: 3rem;
   }
-  #services-page #jumbo-services .banner-text-container {
-    width: 50%;
-  }
-  #services-page #web-dev-bio p {
+  #web-dev-bio .body {
     font-size: 1.5rem;
   }
-  #services-page #web-dev-bio .icon-row {
-    display: initial;
-    text-align: center;
+  #web-dev-bio .icon-container {
+    justify-content: space-evenly;
   }
-  #services-page #web-dev-bio .icon-row .flex-container {
-    flex-direction: row;
-    flex-wrap: wrap;
+  #web-dev-bio .icon-container img {
+    height: 65px;
   }
-  #services-page #web-dev-bio .icon-row .headline {
-    width: 100%;
-    margin-bottom: 1rem;
-  }
-  #services-page #web-dev-bio .icon-row img {
-    height: 70px;
-    width: auto;
-  }
-  #services-page #web-dev-bio .icon-row .logo {
-    width: auto;
-  }
-  #services-page #web-dev-bio .icon-row p {
-    font-size: 0.85rem;
-  }
-  #services-page #web-dev-bio .icon-row #front-end-icon-container {
-    justify-content: space-around;
-  }
-  #services-page #web-dev-bio .icon-row #front-end-icon-container #amp-logo {
-    margin-left: 0;
-  }
-  #services-page #web-dev-bio .icon-row #front-end-icon-container .logo:first-child {
-    margin: 0 1em 0 0;
-  }
-  #services-page #web-dev-bio .icon-row #front-end-icon-container .logo:nth-child(4) {
-    margin: 0 1em 0 1em;
-  }
-  #services-page #web-dev-bio .icon-row #back-end-icon-container, #services-page #web-dev-bio .icon-row #creative-icon-container {
-    width: 50%;
-  }
-  #services-page #web-dev-bio .icon-row #back-end-icon-container .flex-container, #services-page #web-dev-bio .icon-row #creative-icon-container .flex-container {
-    justify-content: space-around;
-    width: 100%;
-  }
-  #services-page #dev-process {
+
+  #dev-process {
     padding: 2.125rem 12.5%;
   }
-  #services-page #portfolio {
+
+  /* ====== PORTFOLIO ====== */
+  #portfolio {
     background-image: url(/img/tree-bg-landscape.jpg);
     padding: 6rem 0;
   }
-  #services-page #portfolio #dev-title {
+  #portfolio #dev-title {
     margin: 0 auto 3rem;
     padding: 2rem;
     width: 80%;
   }
-  #services-page #portfolio #dev-title h2 {
+  #portfolio #dev-title h2 {
     text-align: center;
     font-size: 4rem;
   }
-  #services-page #portfolio #dev-title p {
+  #portfolio #dev-title p {
     font-size: 1.4rem;
   }
-  #services-page #portfolio .card-container {
+  #portfolio .card-container {
     display: flex;
     justify-content: space-evenly;
   }
-  #services-page #portfolio .card {
+  #portfolio .card {
     width: 100%;
     max-width: 330px;
     margin: 1rem;
     flex-grow: 2;
   }
-  #services-page #portfolio #google-card .google-logo {
+  #portfolio #google-card .google-logo {
     margin: 0 auto 0.75rem;
     width: 50%;
   }
-  #services-page #portfolio .card-title {
+  #portfolio .card-title {
     text-align: center;
     font-size: 1.3rem;
   }
-  #services-page #project-management-container {
+
+  #project-management-container {
     background-size: 100%;
   }
-  #services-page #marketing-container {
+
+  #marketing-container {
     background-image: url(/img/desert-desktop.jpg);
     background-position: 50% 30%;
   }
-  #services-page #marketing-container .card-body {
+  #marketing-container .card-body {
     flex-direction: row-reverse;
   }
-  #services-page #project-management-container, #services-page #marketing-container {
+
+  #project-management-container, #marketing-container {
     padding: 6rem 0;
   }
-  #services-page #project-management-container .headline, #services-page #marketing-container .headline {
+  #project-management-container .headline, #marketing-container .headline {
     font-size: 2.5rem;
   }
-  #services-page #project-management-container .card-body, #services-page #marketing-container .card-body {
+  #project-management-container .card-body, #marketing-container .card-body {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  #services-page #project-management-container .desk-col, #services-page #marketing-container .desk-col {
+  #project-management-container .desk-col, #marketing-container .desk-col {
     width: 47%;
   }
 }

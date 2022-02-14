@@ -2,111 +2,78 @@
 {% set page_id = "services-page"%}
 {% set page_stylesheet = "services" %}
 
+{% set icons = [
+    "html",
+    "css",
+    "javascript",
+    "sass",
+    "amp",
+    "nunjucks",
+    "python",
+    "node",
+    "mongo",
+    "sketch",
+    "photoshop",
+    "lightroom"
+  ]
+%}
+
+{% set row_1 = icons.slice(0, (icons.length / 2)) %}
+{% set row_2 = icons.slice((icons.length/2) + 1) %}
+
 {% block banner %}
 {# Banner #}
-<div class="banner d-flex" id="jumbo-services">
-  <div class="mx-auto text-center banner-text-container flex-item">
-    <h1 class="py-1 font-white righteous">What I do</h1>
-    <p class="lead raleway font-white">Craft beautiful websites for an exquisite user&nbsp;experience</p>
+{# <div class="banner d-flex" id="jumbo-services">
+  <div class="banner-text-container flex-item">
+    <h1 class="headline righteous">What I do</h1>
+    <p class="subhead raleway">Craft beautiful websites for an <span class="desktop"><br></span>exquisite user&nbsp;experience</p>
   </div>
-</div>
+</div> #}
 {% endblock %}
 
 {% block content %}
-<div class="container web-dev-bio" id="web-dev-bio">
-  {# Bio text #}
-  <div class="row">
-    <div class="col-lg-8 mx-auto text-left">
-      <h2 class="headline righteous copy bio-headline text-center">Jack of all trades, Master of some</h2>
-      <div class="underline bg-orange mb-4"></div>
-      <p class="copy">My philosophy towards my work emphasizes a
-        <em>Jack of all trades, Master of <span><strong>some</strong></span></em> approach. As a Front End Developer, my
-        purview includes working with designers to bring mockups to life, effectively integrating with backend
-        arhitecture, understanding the product strategy, and of course, creating interfaces for the best user
-        experience possible.
-      </p>
-      <p class="copy">While building websites and applications on the client side is my primary focus, I also maintain
-        proficiency with Back End fundamentals, Creative Design tools, and Project Management skills.</p>
-    </div>
+<img src="img/wave-divider-dark.svg" class="wave-divider top">
+<section class="web-dev-bio" id="web-dev-bio">
+  <div class="copy-container">
+    <h2 class="headline righteous copy">Jack of all trades, <span class="nowrap">Master of some</span></h2>
+    <p class="body copy">My philosophy towards my work emphasizes a
+      <em>Jack of all trades, Master of <span><strong>some</strong></span></em> approach. As a Front End Developer, my
+      purview includes working with designers to bring mockups to life, effectively integrating with backend
+      arhitecture, understanding the product strategy, and of course, creating interfaces for the best user
+      experience possible.<br><br>
+      While building websites and applications on the client side is my primary focus, I also maintain
+      proficiency with Back End fundamentals, Creative Design tools, and Project Management skills.
+    </p>
   </div>
-  {# Row 1 #}
-  <div class="row icon-row">
-    {# Front end icons #}
-    <div class="col-lg-8 mx-auto">
-      <h3 class="headline text-center copy righteous">Front End</h3>
-      <div class="flex-container" id="front-end-icon-container">
-        <div class="logo" id="html-logo">
-          <img src="img/html.png" alt="hmtl logo">
-          <p>HTML</p>
-        </div>
-        <div class="logo" id="css-logo">
-          <img src="img/css.png" alt="css logo">
-          <p>CSS</p>
-        </div>
-        <div class="logo" id="js-logo">
-          <img src="img/javascript.png" alt="javascript logo">
-          <p>Javascript</p>
-        </div>
-        <div class="logo" id="sass-logo">
-          <img src="img/sass.png" alt="Sass logo">
-          <p>Sass</p>
-        </div>
-        <div class="logo" id="amp-logo">
-          <img src="img/amp.png" alt="Amp logo">
-          <p>AMP</p>
-        </div>
-        <div class="logo" id="nunjucks-logo">
-          <img src="img/nunjucks.png" alt="Nunjucks logo">
-          <p>Nunjucks</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  {# Row 2 #}
-  <div class="row icon-row">
-    <div class="col-lg-8 mx-auto">
-      {# Nested container for responsive back end/creative layout #}
-      <div class="flex-container">
-        {# Back end #}
-        <div class="pl-0 flex-container" id="back-end-icon-container">
-          <h3 class="headline copy righteous">Back End</h3>
-          <div class="flex-container">
-            <div class="logo" id="python-logo">
-              <img src="img/python.png" alt="Python logo">
-              <p>Python</p>
-            </div>
-            <div class="logo" id="node-logo">
-              <img src="img/node.png" alt="Node logo">
-              <p>Node</p>
-            </div>
-            <div class="logo" id="mongo-logo">
-              <img src="img/mongo.png" alt="Mongo Database logo">
-              <p>Mongo DB</p>
-            </div>
+  <div class="all-icons">
+    <div class="icon-container d-flex">
+      {% for icon in icons %}
+        <div class="logo" id="{{ icon }}-logo">
+          <img src="img/{{ icon }}.png" alt="{{ icon }} logo">
+          <p class="caption">{{ icon|capitalize }}</p>
           </div>
-        </div>
-        {# Creative column #}
-        <div class="pl-0 flex-container" id="creative-icon-container">
-          <h3 class="headline copy righteous">Creative</h3>
-          <div class="flex-container">
-            <div class="logo" id="sketch-logo">
-              <img src="img/sketch.png" alt="Sketch logo">
-              <p>Sketch</p>
-            </div>
-            <div class="logo" id="photo-shop-logo">
-              <img src="img/photoshop.png" alt="Photoshop logo">
-              <p>Photoshop</p>
-            </div>
-            <div class="logo" id="lightroom-logo">
-              <img src="img/lightroom.png" alt="Lightroom logo">
-              <p>Lightroom</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      {% endfor %}
     </div>
   </div>
-</div>
+  <div class="icon-rows">
+    <div class="icon-container d-flex row row-1">
+      {% for icon in row_1 %}
+        <div class="logo" id="{{ icon }}-logo">
+          <img src="img/{{ icon }}.png" alt="{{ icon }} logo">
+          <p class="caption">{{ icon|capitalize }}</p>
+          </div>
+      {% endfor %}
+    </div>
+    <div class="icon-container d-flex row row-2">
+      {% for icon in row_2 %}
+        <div class="logo" id="{{ icon }}-logo">
+          <img src="img/{{ icon }}.png" alt="{{ icon }} logo">
+          <p class="caption">{{ icon|capitalize }}</p>
+          </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
 
 {# Dev Process - Plan, Design, Develop #}
 <div class="bg-black d-flex container-fluid" id="dev-process">
@@ -366,7 +333,7 @@
                 programs to boost user retention and engagement.</p>
               <p>In addition to my current work, I also have experience with <b>email, social, and content marketing</b>.
                 Thoughtful, targeted, strategic marketing practices inform my work to help you reach your audience with the
-                right content, in the right place, at the right time.</p>
+                right content, in the right place, at the right&nbsp;time.</p>
             </div>
             <div class="desk-col">
               <img src="img/marketing-stock.jpg" class="stock-img" alt="" aria-hidden="true">

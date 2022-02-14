@@ -116,9 +116,6 @@ a:hover, a.dark-link:hover {
   color: #F72585;
 }
 
-.main-content {
-  /* New stles */ 
-}
 .main-content .wave-divider {
   width: 100%;
   max-height: 50px;
@@ -138,18 +135,17 @@ a:hover, a.dark-link:hover {
   flex-direction: column-reverse;
 }
 .main-content .d-flex .column {
-  width: 100%;
+  flex: 100%;
 }
 .main-content .content-block {
   padding: 4rem 1rem;
   color: #fff;
-  /* end new styles */
 }
 .main-content .content-block#content-block-1 {
   background-color: #30044E;
 }
 .main-content .content-block#content-block-1 .btn:hover {
-  background-color: #7209B7;
+  background-color: #05B3B3;
 }
 .main-content .content-block#content-block-2 {
   background-color: #292929;
@@ -161,7 +157,7 @@ a:hover, a.dark-link:hover {
   background-color: #36072F;
 }
 .main-content .content-block#content-block-3 .btn:hover {
-  background-color: #F72585;
+  background-color: #05B3B3;
 }
 .main-content .content-block .headline {
   font-size: 3.25rem;
@@ -242,7 +238,7 @@ a:hover, a.dark-link:hover {
     flex-direction: row;
   }
   .main-content .content-block .column {
-    width: 50%;
+    flex: 50%;
   }
   .main-content .content-block .copy-container.left {
     padding-right: 4rem;
