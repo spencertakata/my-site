@@ -2,6 +2,7 @@
 {% set page_id = "services-page"%}
 {% set page_stylesheet = "services" %}
 
+{# My stack icons #}
 {% set icons = [
     "html",
     "css",
@@ -11,7 +12,8 @@
     "nunjucks",
     "python",
     "node",
-    "mongo",
+    "react",
+    "handlebars",
     "sketch",
     "photoshop",
     "lightroom"
@@ -20,6 +22,20 @@
 
 {% set row_1 = icons.slice(0, (icons.length / 2)) %}
 {% set row_2 = icons.slice((icons.length/2) + 1) %}
+
+{# Dev Process Macro #}
+{% macro process_card(headline, subhead, icon) %}
+  <div class="process-card">
+    <div>
+      <h3>{{ headline }} <i class="fas fa-{{ icon }} desktop"></i>
+      </h3>
+      <p>{{ subhead }} </p>
+    </div>
+    <div class="process-icon mobile">
+      <i class="fas fa-{{ icon }}"></i>
+    </div>
+  </div>
+{% endmacro %}
 
 {% block banner %}
 {# Banner #}
@@ -45,6 +61,7 @@
       proficiency with Back End fundamentals, Creative Design tools, and Project Management skills.
     </p>
   </div>
+  {# Mobile, loop all icons with flex wrap #}
   <div class="all-icons">
     <div class="icon-container d-flex">
       {% for icon in icons %}
@@ -55,6 +72,7 @@
       {% endfor %}
     </div>
   </div>
+  {# Loop icons in even rows of 2 #}
   <div class="icon-rows">
     <div class="icon-container d-flex row row-1">
       {% for icon in row_1 %}
@@ -76,39 +94,10 @@
 </section>
 
 {# Dev Process - Plan, Design, Develop #}
-<div class="bg-black d-flex container-fluid" id="dev-process">
-  {# Card 1 #}
-  <div class="d-flex align-items-center process-card">
-    <div>
-      <h3>Plan <i class="far fa-lightbulb desktop"></i>
-      </h3>
-      <p>Clear vision, solid goals</p>
-    </div>
-    <div class="process-icon mobile">
-      <i class="far fa-lightbulb"></i>
-    </div>
-  </div>
-  {# Card 2 #}
-  <div class="d-flex align-items-center process-card">
-    <div>
-      <h3>Design <i class="fas fa-palette desktop"></i>
-      </h3>
-      <p>Look, feel, experience</p>
-    </div>
-    <div class="process-icon mobile">
-      <i class="fas fa-palette"></i>
-    </div>
-  </div>
-  {# Card 3 #}
-  <div class="d-flex align-items-center process-card">
-    <div>
-      <h3>Develop <i class="fas fa-laptop-code desktop"></i></h3>
-      <p>Elegant, responsive, secure</p>
-    </div>
-    <div class="process-icon mobile">
-      <i class="fas fa-laptop-code"></i>
-    </div>
-  </div>
+<div class="d-flex" id="dev-process">
+  {{ process_card(headline="Plan", subhead="Clear vision, solid goals", icon="lightbulb")}}
+  {{ process_card(headline="Design", subhead="Look, feel, experience", icon="palette")}}
+  {{ process_card(headline="Develop", subhead="Elegant, responsive, secure", icon="code")}}
 </div>
 
 <div id="portfolio">

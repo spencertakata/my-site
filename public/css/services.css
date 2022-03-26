@@ -133,9 +133,13 @@ a:hover, a.dark-link:hover {
   color: #fff;
   justify-content: space-around;
   flex-direction: column;
+  width: 100%;
+  padding: 0 1.5rem;
 }
 #dev-process .process-card {
   justify-content: space-between;
+  align-items: center;
+  display: flex;
   margin: 1rem 0;
 }
 #dev-process h3 {

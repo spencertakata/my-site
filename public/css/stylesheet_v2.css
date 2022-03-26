@@ -143,10 +143,6 @@ html, body {
   color: #f9ab18;
 }
 
-.desktop {
-  display: none;
-}
-
 /* === Banner === */
 .banner {
   justify-content: center;
@@ -233,10 +229,6 @@ html, body {
   background-color: #3F37C9;
 }
 
-.primary-color {
-  color: #000066;
-}
-
 .img-shrink {
   margin-bottom: 1em;
   width: 70%;
@@ -294,16 +286,6 @@ footer #photo-cred {
   }
 
   /* ====== JUMBO ====== */
-  .banner .banner-text-container {
-    padding: 1.25em;
-  }
-  .banner h1 {
-    font-size: 6rem;
-    line-height: 1.2;
-  }
-  .banner .lead {
-    font-size: 1.5rem;
-  }
 }
 
 /*# sourceMappingURL=stylesheet_v2.css.map */
