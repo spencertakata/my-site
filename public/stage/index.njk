@@ -1,64 +1,75 @@
 {% extends "boilerplate_v2.njk" %}
 {% set page_id = "home-page" %}
+{% set page_stylesheet = "index" %}
 
-  <!-- banner -->
 {% block banner %}
   <section class="banner d-flex" id="jumbo-home">
     <div class="banner-text-container flex-item">
-      <h1 class="righteous headline">Spencer Takata</h1>
-      <h4 class="raleway subhead">Project Manager // Web Developer // Digital Marketer</h4>
-      <a href="#scroll" class="scrollTo"><i class="fas fa-angle-down icon-lg"></i></a>
+      <h1 class="righteous headline">Hi I'm Spencer</h1>
+      <h4 class="raleway subhead">I write code, run projects, and <span class="nowrap">take cool photos </span></h4>
+      <span><a href="#scroll" class="scrollTo icon-link"><i class="fas fa-angle-down icon-lg"></i></a></span>
     </div>
   </section>
 {% endblock %}
 
 {% block content %}
-  <!-- Headline -->
-  <section class="intro-container" id="scroll">
-    <h3 class="copy"><b><span class="font-blue">Hi I'm Spencer,</span><span class="mobile"><br></span> and I want to help transform your <i>ideas</i> <span class="nowrap">into <i>reality</i>.</span></b></h3>
-    <div class="underline underline-orange"></div>
-    <h4 class="copy">Based in Northern California.<br>Available&nbsp;worldwide</h3>
-    <img src="img/bitmoji.png" id="bitmoji">
-  </section>
-
 {# 3 content boxes #}
-  <section class="content-cards">
-    <div class="card-container">
-      {# Card 1 #}
-      <div class="card">
-        <h4 class="dark righteous">Who I Am</h4>
-        <p>Get to know <i>me</i>, not just my work. How I got here, where I want to go, what I love doing and why I love doing it.</p>
-        <a href="./about.html"><button class="btn">Read more</button></a>
-        <div class="buffer"></div>
-        <a href="./about.html">
-          <img src="img/about-me-3.jpg">
+  <section class="content-cards main-content" id="scroll">
+    <img src="img/wave-divider-dark.svg" class="wave-divider top">
+
+    {# Who I am #}
+    <div class="d-flex content-block" id="content-block-1">
+      <div class="column left copy-container">
+        <h4 class="righteous headline copy">Who I Am</h4>
+        <p class="body copy">
+          Get to know <i>me</i>, not just my work&mdash;how I got here, where I want to go, what I love doing and why I love doing&nbsp;it.
+        </p>
+        <div class="btn-container">
+          <a href="./about.html"><button class="btn righteous">Read more</button></a>
+        </div>
+      </div>
+      <div class="column right img-container">
+        <a href="./about">
+          <img src="img/me-fall-color.jpg">
         </a>
       </div>
-
-      {# Card 2 #}
-      <div class="card">
-        <h4 class="dark righteous">What I Do</h4>
-        <p>Turn goals into results. I lead projects, develop websites, and build brands to help you reach your goals.</p>
-        <a href="./services.html"><button class="btn btn-primary">See my work</button></a>
-        <div class="buffer"></div>
-        <a href="./services.html">
+    </div>
+    
+    {# What I do #}
+    <div class="d-flex content-block stack-reverse" id="content-block-2">
+      <div class="column left img-container">
+        <a href="./about.html">
           <img src="img/hustle.jpg">
         </a>
       </div>
+      <div class="column right copy-container">
+        <h4 class="righteous headline copy">What I do</h4>
+        <p class="body copy">
+          My primary professional focus is in Web&nbsp;Development with a background in Project&nbsp;Management. I also pursue photography semi-professionally, taking on occasional gigs as my schedule&nbsp;allows.
+        </p>
+        <div class="btn-container">
+          <a href="./services"><button class="btn righteous">See my work</button></a>
+        </div>
+      </div>
+    </div>
 
-      {# Card 3 #}
-      <div class="card">
-        <h4 class="dark righteous">How to Connect</h4>
-        <p>Do you want to make something happen? I'd love to help. Let's connect and discover what we can accomplish.</p>
-        <a href="./contact.html"><button class="btn btn-primary">Connect with me</button></a>
-        <div class="buffer"></div>
-        <a href="./contact.html">
+    {# Contact #}
+    <div class="d-flex content-block" id="content-block-3">
+      <div class="column left copy-container">
+        <h4 class="righteous headline copy">How To Connect</h4>
+        <p class="body copy">
+          Interested in collaborating? Let's chat and discover what we can accomplish. 
+        </p>
+        <div class="btn-container">
+          <a href="./contact"><button class="btn righteous">Get in touch</button></a>
+        </div>
+      </div>
+      <div class="column right img-container">
+        <a href="./about">
           <img src="img/notepad.jpg">
         </a>
       </div>
-      
     </div>
-
-
+    <img src="img/wave-divider-dark.svg" class="wave-divider bottom">
   </section>
 {% endblock %}

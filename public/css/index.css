@@ -1,5 +1,4 @@
 /* Variables */
-/* New Design */
 body {
   color: #141414;
 }
@@ -47,15 +46,15 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .font-white {
-  color: #f7f7f7;
+  color: #fff;
 }
 
 .font-blue {
-  color: #0070F0;
+  color: #3F37C9;
 }
 
 .font-blue-dark {
-  color: #000066;
+  color: #0069cb;
 }
 
 .nowrap {
@@ -63,17 +62,17 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .headline.dark {
-  color: #f7f7f7;
-  background-color: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 a:link, a:visited {
-  color: #0070F0;
+  color: #3F37C9;
   text-decoration: none;
 }
 
 a.dark-link, a.dark-link:visited {
-  color: #f7f7f7;
+  color: #fff;
   text-decoration: underline;
 }
 
@@ -85,164 +84,222 @@ a:hover, a.dark-link:hover {
   text-align: center;
 }
 
-#home-page #jumbo-home {
-  background-image: url(../img/calm-lake-lg.jpg);
+#jumbo-home {
+  background-image: url(../img/blue-pink-wave-dark.svg);
+  background-position: 25% 50%;
 }
-#home-page .banner .banner-text-container {
+
+.banner {
+  height: 70vh;
+  padding: 3rem 1rem 0;
+}
+.banner .banner-text-container {
   padding: 1rem;
-}
-#home-page .banner .banner-text-container h1 {
-  font-size: 4rem;
-}
-#home-page .banner .banner-text-container .subhead {
-  display: none;
-}
-#home-page .banner .banner-text-container i {
-  display: none;
-}
-#home-page .intro-container {
-  padding: 2rem 1rem;
   text-align: center;
-  border-top: 4px solid #050505;
-  border-bottom: 4px solid #050505;
 }
-#home-page .intro-container .copy {
-  margin: 0 auto;
-  line-height: 1.4;
+.banner .headline {
+  font-size: 12vw;
 }
-#home-page .intro-container .underline {
-  margin: 2rem auto;
+.banner .subhead {
+  font-size: 1.75rem;
 }
-#home-page .intro-container h4 {
-  font-size: 1.5rem;
+.banner .icon-link {
+  display: none;
 }
-#home-page .intro-container #bitmoji {
-  height: 12em;
-  width: auto;
+.banner i {
+  display: none;
+  margin: 0.8rem 0 0 0;
+  animation: bounce 2s infinite;
+  font-size: 3.5rem;
 }
-#home-page .content-cards {
-  background-image: url(../img/grey-background.jpg);
-  padding: 1rem;
+.banner i:hover {
+  color: #F72585;
 }
-#home-page .content-cards .card-container {
-  display: flex;
+
+.main-content .wave-divider {
+  width: 100%;
+  max-height: 50px;
+}
+.main-content .wave-divider.top {
+  transform: rotate(180deg);
+  background-color: #30044E;
+  margin-top: -1px;
+}
+.main-content .wave-divider.bottom {
+  background-color: #36072F;
+}
+.main-content .d-flex {
   flex-direction: column;
 }
-#home-page .content-cards .card-container .card {
-  background-color: #f7f7f7;
-  color: #050505;
-  border: 1px solid #050505;
-  border-radius: 0px;
-  text-align: center;
-  padding: 1rem;
-  margin: 1rem auto;
+.main-content .d-flex.stack-reverse {
+  flex-direction: column-reverse;
 }
-#home-page .content-cards .card-container .card .dark {
-  background-color: rgba(0, 0, 0, 0.85);
-  border-radius: 0px;
-  color: #f7f7f7;
-  font-size: 2rem;
-  padding: 0.7rem;
+.main-content .d-flex .column {
+  flex: 100%;
 }
-#home-page .content-cards .card-container .card img {
-  border-radius: 0px;
-  max-width: 100%;
-  height: auto;
+.main-content .content-block {
+  padding: 4rem 1rem;
+  color: #fff;
 }
-#home-page .content-cards .card-container .card button {
-  margin-bottom: 1rem;
-  background-color: #0070F0;
-  border-color: #050505;
-  color: #f7f7f7;
-  font-family: "Righteous", Palatino, Times, serif;
-  box-shadow: 4px 4px #050505;
+.main-content .content-block#content-block-1 {
+  background-color: #30044E;
 }
-#home-page .content-cards .card-container .card button:active {
-  transform: translateY(3px);
-  box-shadow: 2px 3px #050505;
+.main-content .content-block#content-block-1 .btn:hover {
+  background-color: #05B3B3;
+}
+.main-content .content-block#content-block-2 {
+  background-color: #292929;
+}
+.main-content .content-block#content-block-2 .btn:hover {
+  background-color: #05B3B3;
+}
+.main-content .content-block#content-block-3 {
+  background-color: #36072F;
+}
+.main-content .content-block#content-block-3 .btn:hover {
+  background-color: #05B3B3;
+}
+.main-content .content-block .headline {
+  font-size: 3.25rem;
+}
+.main-content .content-block .body, .main-content .content-block .btn {
+  font-size: 1.5rem;
+}
+.main-content .content-block .btn-container {
+  margin: 2rem auto 1.5rem;
+}
+.main-content .content-block .btn-container .btn {
+  border: 2px solid #fff;
+  box-shadow: 5px 5px #fff;
+  color: #fff;
+}
+.main-content .content-block .btn-container .btn:active {
+  transform: translateY(4px);
+  box-shadow: 2px 2px #fff;
+}
+.main-content .content-block .img-container {
+  margin: 3rem 0;
+}
+.main-content .content-block .img-container img {
+  width: 100%;
+  border: 2px solid #fff;
+  box-shadow: 5px 5px #fff;
 }
 
 @media (min-width: 500px) {
-  #home-page .intro-container .copy {
-    max-width: 70%;
+  .main-content .content-block {
+    padding: 4rem;
   }
 }
 @media (min-width: 600px) {
-  #home-page .banner .banner-text-container .subhead, #home-page .banner .banner-text-container i {
-    display: block;
+  .banner .headline {
+    font-size: 10vw;
   }
-  #home-page .banner .banner-text-container .subhead {
-    font-size: 20px;
+  .banner .subhead {
+    font-size: 1.75rem;
   }
-  #home-page .intro-container {
-    padding: 2rem 4rem;
-  }
-  #home-page .intro-container .copy {
-    max-width: 80%;
-  }
-  #home-page .intro-container #bitmoji {
-    margin-top: 1.5rem;
-  }
-  #home-page .content-cards {
+  .banner .card-container {
     padding: 1rem 4rem;
   }
 }
 @media (min-width: 768px) {
-  #home-page .intro-container {
-    padding: 2rem 6rem;
+  .banner {
+    height: 60vh;
   }
-  #home-page .content-cards {
-    padding: 1rem 6rem;
+  .banner .banner-text-container {
+    padding: 1.5rem;
   }
-  #home-page .content-cards .copy {
-    max-width: 600px;
+  .banner .headline {
+    font-size: 4rem;
   }
-  #home-page .content-cards .card {
-    max-width: 550px;
+  .banner .subhead {
+    font-size: 1.5rem;
+  }
+
+  .main-content .content-block {
+    padding: 4rem;
   }
 }
 @media (min-width: 992px) {
-  #home-page .banner .banner-text-container {
-    width: 60%;
+  .banner .banner-text-container {
+    padding: 1.5rem 2rem;
   }
-  #home-page .banner .banner-text-container .subhead {
-    font-size: 20px;
+  .banner .headline {
+    font-size: 5.5rem;
   }
-  #home-page .intro-container {
-    padding: 3rem 10rem;
+  .banner .subhead {
+    font-size: 1.75rem;
   }
-  #home-page .intro-container .underline {
-    width: 40%;
+
+  .main-content .content-block {
+    padding: 3rem 6rem;
   }
-  #home-page .content-cards .card-container {
+  .main-content .content-block.d-flex {
     flex-direction: row;
-    flex-wrap: wrap;
   }
-  #home-page .content-cards .card-container .card {
-    width: 350px;
-    flex-shrink: 0;
+  .main-content .content-block .column {
+    flex: 50%;
+  }
+  .main-content .content-block .copy-container.left {
+    padding-right: 4rem;
+  }
+  .main-content .content-block .copy-container.right {
+    padding-left: 4rem;
+  }
+  .main-content .content-block .headline {
+    font-size: 3.5rem;
+  }
+  .main-content .content-block .body {
+    font-size: 1.75rem;
+  }
+  .main-content .content-block .btn-container {
+    margin: 3rem 0 1.5rem;
+  }
+  .main-content .content-block .btn {
+    font-size: 2rem;
+  }
+  .main-content .content-block .img-container {
+    margin: 0;
   }
 }
 @media (min-width: 1220px) {
-  #home-page .banner {
+  .banner {
     height: 100vh;
+    padding: 5rem 1rem;
   }
-  #home-page .banner .banner-text-container .headline {
+  .banner .headline {
     margin-bottom: 1rem;
+    font-size: 5rem;
   }
-  #home-page .banner .banner-text-container .subhead {
-    font-size: 26px;
+  .banner .subhead {
+    font-size: 2rem;
   }
-  #home-page .intro-container .copy {
-    max-width: 60%;
+  .banner .icon-link {
+    display: inline-block;
   }
-  #home-page .content-cards {
-    padding: 4rem 3rem;
+  .banner i {
+    display: block;
+  }
+
+  .main-content .content-block {
+    padding: 7rem;
+  }
+  .main-content .copy-container.left {
+    padding-right: 6rem;
+  }
+  .main-content .copy-container.right {
+    padding-left: 6rem;
   }
 }
-@media (min-width: 1440px) {
-  #home-page .banner .banner-text-container {
-    width: 50%;
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
   }
 }
 

@@ -14,13 +14,19 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- Custom Stylesheets -->
     <link rel="stylesheet" href="css/stylesheet_v2.css">
-
+    
+    <link rel="stylesheet" href="css/index.css">
+    
     <link rel="stylesheet" href="css/todo.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/408d1f15d6.js" crossorigin="anonymous"></script>
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;0,500;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,700;1,800;1,900&family=Righteous&display=swap&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@400;500;700&display=swap" rel="stylesheet"> 
     <!-- favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
@@ -60,61 +66,72 @@
     
   <section class="banner d-flex" id="jumbo-home">
     <div class="banner-text-container flex-item">
-      <h1 class="righteous headline">Spencer Takata</h1>
-      <h4 class="raleway subhead">Project Manager // Web Developer // Digital Marketer</h4>
-      <a href="#scroll" class="scrollTo"><i class="fas fa-angle-down icon-lg"></i></a>
+      <h1 class="righteous headline">Hi I'm Spencer</h1>
+      <h4 class="raleway subhead">I write code, run projects, and <span class="nowrap">take cool photos </span></h4>
+      <span><a href="#scroll" class="scrollTo icon-link"><i class="fas fa-angle-down icon-lg"></i></a></span>
     </div>
   </section>
 
 
     
-  <!-- Headline -->
-  <section class="intro-container" id="scroll">
-    <h3 class="copy"><b><span class="font-blue">Hi I'm Spencer,</span><span class="mobile"><br></span> and I want to help transform your <i>ideas</i> <span class="nowrap">into <i>reality</i>.</span></b></h3>
-    <div class="underline underline-orange"></div>
-    <h4 class="copy">Based in Northern California.<br>Available&nbsp;worldwide</h3>
-    <img src="img/bitmoji.png" id="bitmoji">
-  </section>
 
+  <section class="content-cards main-content" id="scroll">
+    <img src="img/wave-divider-dark.svg" class="wave-divider top">
 
-  <section class="content-cards">
-    <div class="card-container">
-      
-      <div class="card">
-        <h4 class="dark righteous">Who I Am</h4>
-        <p>Get to know <i>me</i>, not just my work. How I got here, where I want to go, what I love doing and why I love doing it.</p>
-        <a href="./about.html"><button class="btn">Read more</button></a>
-        <div class="buffer"></div>
-        <a href="./about.html">
-          <img src="img/about-me-3.jpg">
+    
+    <div class="d-flex content-block" id="content-block-1">
+      <div class="column left copy-container">
+        <h4 class="righteous headline copy">Who I Am</h4>
+        <p class="body copy">
+          Get to know <i>me</i>, not just my work&mdash;how I got here, where I want to go, what I love doing and why I love doing&nbsp;it.
+        </p>
+        <div class="btn-container">
+          <a href="./about.html"><button class="btn righteous">Read more</button></a>
+        </div>
+      </div>
+      <div class="column right img-container">
+        <a href="./about">
+          <img src="img/me-fall-color.jpg">
         </a>
       </div>
-
-      
-      <div class="card">
-        <h4 class="dark righteous">What I Do</h4>
-        <p>Turn goals into results. I lead projects, develop websites, and build brands to help you reach your goals.</p>
-        <a href="./services.html"><button class="btn btn-primary">See my work</button></a>
-        <div class="buffer"></div>
-        <a href="./services.html">
+    </div>
+    
+    
+    <div class="d-flex content-block stack-reverse" id="content-block-2">
+      <div class="column left img-container">
+        <a href="./about.html">
           <img src="img/hustle.jpg">
         </a>
       </div>
+      <div class="column right copy-container">
+        <h4 class="righteous headline copy">What I do</h4>
+        <p class="body copy">
+          My primary professional focus is in Web&nbsp;Development with a background in Project&nbsp;Management. I also pursue photography semi-professionally, taking on occasional gigs as my schedule&nbsp;allows.
+        </p>
+        <div class="btn-container">
+          <a href="./services"><button class="btn righteous">See my work</button></a>
+        </div>
+      </div>
+    </div>
 
-      
-      <div class="card">
-        <h4 class="dark righteous">How to Connect</h4>
-        <p>Do you want to make something happen? I'd love to help. Let's connect and discover what we can accomplish.</p>
-        <a href="./contact.html"><button class="btn btn-primary">Connect with me</button></a>
-        <div class="buffer"></div>
-        <a href="./contact.html">
+    
+    <div class="d-flex content-block" id="content-block-3">
+      <div class="column left copy-container">
+        <h4 class="righteous headline copy">How To Connect</h4>
+        <p class="body copy">
+          Interested in collaborating? Let's chat and discover what we can accomplish. 
+        </p>
+        <div class="btn-container">
+          <a href="./contact"><button class="btn righteous">Get in touch</button></a>
+        </div>
+      </div>
+      <div class="column right img-container">
+        <a href="./about">
           <img src="img/notepad.jpg">
         </a>
       </div>
-      
     </div>
-
-
+    <img src="img/wave-divider-dark.svg" class="wave-divider bottom">
   </section>
 
 

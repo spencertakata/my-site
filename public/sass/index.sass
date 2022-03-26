@@ -1,169 +1,212 @@
-@import ./variables, ./typography
-#home-page
+// @use ./variables, ./typography
+@use './_variables' as *
+@use './_typography' as *
 
-  // Banner
-  #jumbo-home
-    background-image: url(../img/calm-lake-lg.jpg)
+$block-1-color: #30044E
+$block-2-color: $dark-gray
+$block-3-color: $pink-dark
 
-  .banner
-    .banner-text-container
-      padding: 1rem
+// Banner
+#jumbo-home
+  background-image: url(../img/blue-pink-wave-dark.svg)
+  background-position: 25% 50%
 
-      h1
-        font-size: 4rem
-      
-      .subhead
-        display: none
-      
-      i
-        display: none
-  
-  // Into section
-  .intro-container
-    padding: 2rem 1rem
+.banner
+  height: 70vh
+  padding: 3rem 1rem 0
+
+  .banner-text-container
+    padding: 1rem
     text-align: center
-    border-top: 4px solid $black
-    border-bottom: 4px solid $black
 
-    .copy
-      margin: 0 auto
-      line-height: 1.4
+  .headline
+    font-size: 12vw
+  
+  .subhead
+    font-size: 1.75rem
+  
+  .icon-link
+    display: none
+  
+  i
+    display: none
+    margin: 0.8rem 0 0 0
+    animation: bounce 2s infinite
+    font-size: 3.5rem
+    &:hover
+      color: $pink
 
-    .underline
-      margin: 2rem auto
-    
-    h4
+// Content boxes section
+.main-content
+  .wave-divider
+    width: 100%
+    max-height: 50px
+
+    &.top
+      transform: rotate(180deg)
+      background-color: $block-1-color
+      margin-top: -1px
+
+    &.bottom
+      background-color: $block-3-color
+
+  .d-flex
+    flex-direction: column
+     
+    &.stack-reverse
+      flex-direction: column-reverse
+
+    .column
+      flex: 100%
+
+  .content-block 
+    padding: 4rem 1rem
+    color: $white
+
+    &#content-block-1
+      background-color: $block-1-color 
+      .btn:hover
+        background-color: $aqua-dark
+
+    &#content-block-2
+      background-color: $block-2-color
+      .btn:hover
+        background-color: $aqua-dark
+
+    &#content-block-3
+      background-color: $block-3-color
+      .btn:hover
+        background-color: $aqua-dark
+
+    .headline
+      font-size: 3.25rem
+
+    .body, .btn
       font-size: 1.5rem
     
-    #bitmoji
-      height: 12em
-      width: auto
-  
-  // Content boxes section
-  .content-cards
-    background-image: url(../img/grey-background.jpg)
-    padding: 1rem
+    .btn-container
+      margin: 2rem auto 1.5rem
+      .btn
+        border: 2px solid $white
+        box-shadow: 5px 5px $white
+        color: $white
+        &:active
+          transform: translateY(4px)
+          box-shadow: 2px 2px $white
 
-    .card-container
-      display: flex
-      flex-direction: column
-
-      .card
-        @include card($white, $card-color-light, $card-border-light, $card-border-radius)
-        text-align: center
-        padding: 1rem
-        margin: 1rem auto
-
-        .dark
-          background-color: $black-transparent
-          border-radius: $card-border-radius
-          color: $white
-          font-size: 2rem
-          padding: 0.7rem
-
-        img
-          border-radius: $card-border-radius
-          max-width: 100%
-          height: auto
-        
-        button
-          margin-bottom: 1rem
-          background-color: $blue
-          border-color: $black
-          color: $white
-          font-family: $righteous
-          box-shadow: 4px 4px $black
-        button:active
-          transform: translateY(3px)
-          box-shadow: 2px 3px $black
+    .img-container
+      margin: 3rem 0
+      img
+        width: 100%
+        border: 2px solid $white
+        box-shadow: 5px 5px $white
 
 @media (min-width: 500px)
-  #home-page
-    .intro-container
-      .copy
-        max-width: 70%
+  .main-content
+    .content-block
+      padding: 4rem
 
 @media (min-width: 600px)
-  #home-page
-    .banner
-      .banner-text-container
-        .subhead, i
-          display: block
-        .subhead
-          font-size: 20px
-    .intro-container
-      padding: 2rem 4rem
+  .banner
+    .headline
+      font-size: 10vw
 
-      .copy
-        max-width: 80%
-      
-      #bitmoji
-        margin-top: 1.5rem
+    .subhead
+      font-size: 1.75rem
 
-    .content-cards
+    .card-container
       padding: 1rem 4rem
 
 @media (min-width: 768px)
-  #home-page
-    .intro-container
-      padding: 2rem 6rem
+  .banner
+    height: 60vh
 
-    .content-cards
-      padding: 1rem 6rem
+    .banner-text-container
+      padding: 1.5rem
 
-      .copy
-        max-width: 600px
+    .headline
+      font-size: 4rem
 
-      .card
-        max-width: 550px
-
+    .subhead
+      font-size: 1.5rem
+  
+  .main-content
+    .content-block
+      padding: 4rem
+        
 @media (min-width: 992px)
-  #home-page
-    .banner
-      .banner-text-container
-        width: 60%
-
-        .subhead
-          font-size: 20px
+  .banner
+    .banner-text-container
+      padding: 1.5rem 2rem
     
-    .intro-container
-      padding: 3rem 10rem
-      
-      .underline
-        width: 40%
+    .headline
+      font-size: 5.5rem
 
-    .content-cards
+    .subhead
+      font-size: 1.75rem
 
-      .card-container
+  .main-content
+    .content-block
+      padding: 3rem 6rem
+      &.d-flex
         flex-direction: row
-        flex-wrap: wrap
 
-        .card
-          width: 350px
-          flex-shrink: 0
+      .column
+        flex: 50%
+
+      .copy-container
+        &.left
+          padding-right: 4rem
+        &.right
+          padding-left: 4rem
+
+      .headline
+        font-size: 3.5rem
+
+      .body
+        font-size: 1.75rem      
+      
+      .btn-container
+        margin: 3rem 0 1.5rem
+        
+      .btn
+        font-size: 2rem
+      
+      .img-container
+        margin: 0
         
 @media (min-width: 1220px)
-  #home-page
-    .banner
-      height: 100vh
+  .banner
+    height: 100vh
+    padding: 5rem 1rem
 
-      .banner-text-container
-        .headline
-          margin-bottom: 1rem
-        .subhead
-          font-size: 26px
-          
-    .intro-container
-      .copy
-        max-width: 60%
-    
-    .content-cards
-      padding: 4rem 3rem
+    .headline
+      margin-bottom: 1rem
+      font-size: 5rem
 
-@media (min-width: 1440px)
-  #home-page
-    .banner
-      .banner-text-container
-        width: 50%
+    .subhead
+      font-size: 2rem
+
+    .icon-link
+      display: inline-block
+
+    i
+      display: block
+
+  .main-content
+    .content-block
+      padding: 7rem 
+
+    .copy-container
+      &.left
+        padding-right: 6rem
+      &.right
+        padding-left: 6rem 
     
-    
+@keyframes bounce 
+  0%, 20%, 50%, 80%, 100%
+    transform: translateY(0)
+  40%
+    transform: translateY(-20px)
+  60%
+    transform: translateY(-10px)
