@@ -122,7 +122,7 @@ a:hover, a.dark-link:hover {
 }
 .main-content .wave-divider.top {
   transform: rotate(180deg);
-  background-color: #30044E;
+  background-color: #21054C;
   margin-top: -1px;
 }
 .main-content .wave-divider.bottom {
@@ -142,7 +142,7 @@ a:hover, a.dark-link:hover {
   color: #fff;
 }
 .main-content .content-block#content-block-1 {
-  background-color: #30044E;
+  background-color: #21054C;
 }
 .main-content .content-block#content-block-1 .btn:hover {
   background-color: #05B3B3;
